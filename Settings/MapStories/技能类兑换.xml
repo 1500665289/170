@@ -1,0 +1,37 @@
+<Stories><List>
+	<Story Name="WX_JNL" Parent="BaseFillingStory">
+		<DisplayName>煅天山门</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/DTM.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>换取太阳金经——尘归尘（500积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 500 then
+					me:AddModifier("WX_JN_1_1")
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+					me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

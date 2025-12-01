@@ -1,0 +1,544 @@
+<Stories><List>
+<Story Name="WX_FYT"  Parent="BaseFillingStory">
+	<DisplayName>防御塔进阶</DisplayName>
+	<Desc>对防御塔进行升级进阶</Desc>
+	<Selections>
+		<li>
+			<Display>注入英魂</Display>
+			<OKResult>
+				<![CDATA[	
+				local FYT = story:GetBindThing()
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local C = FYT.GetName(FYT)
+				me:AddMsg(string.format(XT("获取防御塔内核代码：%s"), tostring(B)));
+				me:AddMsg("请选择想要对"..C.."进行的进阶");
+				me:TriggerStory("WXFYTGEY");
+				]]>
+			</OKResult>	
+        </li>
+		<li>
+			<Display>温酒</Display>
+			<DisplayCondition>
+			<![CDATA[ local B = story:GetBindThing().ID+10000000000	World:GetFlag(B) >= 11 ]]>
+			</DisplayCondition>
+		
+			<OKResult>
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local C = World:GetFlag(B)
+				if C == 11 then
+					if JF >= 600 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",600)
+					me:AddMsg("成功激活温酒技能，持续时间内获得百分30暴击");
+					World:SetFlag(B+11,300)
+					else
+					me:AddMsg("激活失败，积分不足以激活该技能");
+					end
+				elseif C == 12 then
+					if JF >= 800 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",800)
+					me:AddMsg("成功激活温酒技能，持续时间内获得百分30暴击");
+					World:SetFlag(B+12,300)
+					else
+					me:AddMsg("激活失败，积分不足以激活该技能");
+					end
+				elseif C == 13 then
+					if JF >= 1000 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+					me:AddMsg("成功激活温酒技能，持续时间内获得百分30暴击");
+					World:SetFlag(B+13,300)
+					else
+					me:AddMsg("激活失败，积分不足以激活该技能");
+					end
+				end
+					
+				
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要积分大于1500");</NOResult>
+        </li>
+		<li>
+			<Display>没兴趣</Display>
+			<OKResult>
+				me:AddMsg("啥也不想干。");
+			</OKResult>	
+        </li>
+		</Selections>
+    </Story>
+	<Story Name="WXFYTGEY"  Parent="BaseFillingStory">
+	<DisplayName>关羽</DisplayName>
+	<Desc>字云长，汉末三国时期蜀汉名将、武圣。</Desc>
+	<Selections>
+		<li>
+			<Display>人物介绍</Display>
+			<OKResult>
+				<![CDATA[	
+				me:AddMsg("关羽，本字长生，后改字云长，早年因犯事逃离家乡流落至幽州涿郡。 到了中平元年（184年），黄巾起义爆发，刘备在涿县组织起了一支义勇军。关羽、张飞都加入其中，随刘备辗转各地，参与扑灭黄巾军的战争，刘备、关羽、张飞三人的感情好到连睡觉也要睡在一起。 刘备担任平原相时，任命关羽、张飞为别部司马，分统部曲。随刘备出席活动时，关羽和张飞则侍立刘备左右，保护刘备周全。")
+				me:AddMsg("十八镇诸侯讨董卓时，温酒斩华雄，三英战吕布。 刘备徐州兵败，约三事降汉不降曹，为曹操解白马之围，斩颜良、诛文丑。得知刘备下落后，千里走单骑，过五关斩六将，斩蔡阳兄弟释疑，在古城三兄弟聚义。 赤壁之战时在华容道又不忍杀害曹操将其放走。刘备称王后，关羽官拜五虎上将之首，领兵攻取襄阳，水淹七军，斩庞德、擒于禁，樊城之战时被毒箭暗算，刮骨疗毒，后吕蒙白衣渡江袭取荆州，徐晃趁机夺了偃城，关羽腹背受敌，败走麦城，后被杀，蜀吴魏三个国家都为其举办丧礼。  死后曾经数次显圣，追吕蒙之魂，骂孙权，惊曹操。")
+				]]>
+			</OKResult>	
+        </li>
+		<li>
+			<Display>获取当前防御塔星级进阶列表</Display>
+			<OKResult>
+				<![CDATA[	
+				local FYT = story:GetBindThing()
+				local C = FYT.GetName(FYT)
+				if C == "关二爷" then
+				me:TriggerStory("WXFYTGEY0_1");
+				elseif C == "关二爷★" then
+				me:TriggerStory("WXFYTGEY0_2");
+				elseif C == "关二爷★★" then
+				me:TriggerStory("WXFYTGEY0_3");
+				else
+				me:AddMsg("该防御塔已升级至满级"）
+				end
+				
+				]]>
+			</OKResult>	
+        </li>
+		<li>
+			<Display>获取当前已有能力展示</Display>
+			<OKResult>
+				<![CDATA[	
+				me:AddMsg("青龙斩:对单体敌方单位造成2000灵力500真气伤害，该伤害受单位灵力护盾影响，当低于100灵力或真气伤害时可造成致命损伤。"）
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local C = World:GetFlag(B)
+					if C == 13 then
+					me:AddMsg("三阶温酒技能：主动激活后可在一段时间内获得百分50暴击概率，每次激活消耗1000积分.");
+					elseif C == 12 then
+					me:AddMsg("二阶温酒技能：主动激活后可在一段时间内获得百分40暴击概率。每次激活消耗800积分.");
+					elseif C == 11 then
+					me:AddMsg("一阶温酒技能：主动激活后可在一段时间内获得百分30暴击概率。每次激活消耗600积分.");
+					elseif C == 23 then
+					me:AddMsg("三阶走单骑技能：当地图上有且仅有一名敌方单位是，青龙斩伤害提高100%,并降低每次攻击消耗4.");
+					elseif C == 22 then
+					me:AddMsg("二阶走单骑技能：当地图上有且仅有一名敌方单位是，青龙斩伤害提高70%，并降低每次攻击消耗3");
+					elseif C == 21 then
+					me:AddMsg("一阶走单骑技能：当地图上有且仅有一名敌方单位是，青龙斩伤害提高50%，并降低每次攻击消耗2");
+					elseif C == 33 then
+					me:AddMsg("三阶斩龙技能：对目标造成灵力或其真气上限千分三额外伤害.");
+					elseif C == 32 then 
+					me:AddMsg("二阶斩龙技能：对目标造成灵力或其真气上限千分二额外伤害");
+					elseif C == 31 then 
+					me:AddMsg("一阶斩龙技能：对目标造成灵力或其真气上限千分一额外伤害");
+					end
+					if C == 113 then
+					me:AddMsg("三阶青龙万华斩技能：提高青龙斩伤害400%.");
+					elseif C == 112 then
+					me:AddMsg("二阶青龙万华斩技能：提高青龙斩伤害300%.");
+					elseif C == 111 then
+					me:AddMsg("一阶青龙万华斩技能：提高青龙斩伤害200%.");
+					elseif C == 213 then
+					me:AddMsg("三阶水淹七军技能：对火属性功法修行者造成9倍基础伤害提升.");
+					elseif C == 212 then
+					me:AddMsg("二阶水淹七军技能：对火属性功法修行者造成6倍基础伤害提升.");
+					elseif C == 211 then
+					me:AddMsg("一阶水淹七军技能：对火属性功法修行者造成3倍基础伤害提升.");
+					elseif C == 313 then
+					me:AddMsg("三阶怒斩技能：积攒一段时间怒气3000后，可对单位造成一次当前灵力或真气百分比80伤害.");
+					elseif C == 312 then 
+					me:AddMsg("二阶怒斩技能：积攒一段时间怒气3000后，可对单位造成一次当前灵力或真气百分比60伤害.");
+					elseif C == 311 then 
+					me:AddMsg("一阶怒斩技能：积攒一段时间怒气3000后，可对单位造成一次当前灵力或真气百分比40伤害.");
+					end
+					if C == 1113 then
+					me:AddMsg("三阶武圣称号：获得己方体修数量，提高青龙斩或青龙万华斩加体修数量乘3w的伤害价值。");
+					elseif C == 1112 then
+					me:AddMsg("二阶武圣称号：获得己方体修数量，提高青龙斩或青龙万华斩加体修数量乘2w的伤害价值。");
+					elseif C == 1111 then
+					me:AddMsg("一阶武圣称号：获得己方体修数量，提高青龙斩或青龙万华斩加体修数量乘1w的伤害价值。");
+					elseif C == 2113 then
+					me:AddMsg("三阶美髯公称号：降低全场进场敌人的护盾值3.");
+					elseif C == 2112 then
+					me:AddMsg("二阶美髯公称号：降低全场进场敌人的护盾值2.");
+					elseif C == 211 then
+					me:AddMsg("一阶美髯公称号：降低全场进场敌人的护盾值1.");
+					elseif C == 3113 then
+					me:AddMsg("三阶壮缪候称号：积攒一段时间怒气3000后，地图上每存在一具友方尸体，获得额外3w纯粹伤害.");
+					elseif C == 3112 then 
+					me:AddMsg("二阶壮缪候称号：积攒一段时间怒气3000后，地图上每存在一具友方尸体，获得额外2w纯粹伤害.");
+					elseif C == 3111 then 
+					me:AddMsg("一阶壮缪候称号：积攒一段时间怒气3000后，地图上每存在一具友方尸体，获得额外1w纯粹伤害.");
+					end
+				]]>
+			</OKResult>	
+        </li>
+		
+		<li>
+			<Display>没兴趣</Display>
+			<OKResult>
+				me:AddMsg("啥也不想干。");
+			</OKResult>	
+        </li>
+		</Selections>
+    </Story>
+	
+	<Story Name="WXFYTGEY0_1"  Parent="BaseFillingStory">
+	<DisplayName>对关二爷进行一阶升级</DisplayName>
+	<Desc>能力三选一。</Desc>
+	<Selections>
+		<li>
+			<Display>温酒</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 1500
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local FYT = story:GetBindThing()
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				if JF >= 1500 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶温酒技能：主动激活后可在一段时间内获得百分50暴击概率，每次激活消耗1000积分.");
+					World:SetFlag(B,13)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶温酒技能：主动激活后可在一段时间内获得百分40暴击概率。每次激活消耗800积分.");
+					World:SetFlag(B,12)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶温酒技能：主动激活后可在一段时间内获得百分30暴击概率。每次激活消耗600积分.");
+					World:SetFlag(B,11)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#32cd32]关二爷★[color=#32cd32]");	
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要积分大于1500");</NOResult>
+        </li>
+		<li>
+			<Display>走单骑</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 2000
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				
+				if JF >= 2000 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2000)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶走单骑技能：当地图上有且仅有一名敌方单位是，青龙斩伤害提高100%,并降低每次攻击消耗4.");
+					World:SetFlag(B,23)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶走单骑技能：当地图上有且仅有一名敌方单位是，青龙斩伤害提高70%，并降低每次攻击消耗3");
+					World:SetFlag(B,22)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶走单骑技能：当地图上有且仅有一名敌方单位是，青龙斩伤害提高50%，并降低每次攻击消耗2");
+					World:SetFlag(B,21)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#32cd32]关二爷★[color=#32cd32]");	
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要2000积分");</NOResult>
+        </li>
+		<li>
+			<Display>斩龙</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 1700
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				
+				if JF >= 1700 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1700)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶斩龙技能：对目标造成灵力或其真气上限千分三额外伤害.");
+					World:SetFlag(B,33)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶斩龙技能：对目标造成灵力或其真气上限千分二额外伤害");
+					World:SetFlag(B,32)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶斩龙技能：对目标造成灵力或其真气上限千分一额外伤害");
+					World:SetFlag(B,31)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#32cd32]关二爷★[color=#32cd32]");	
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要1700积分");</NOResult>
+        </li>
+		<li>
+			<Display>返回</Display>
+			<OKResult>
+				me:TriggerStory("FYT1");
+			</OKResult>	
+        </li>
+		<li>
+			<Display>没兴趣</Display>
+			<OKResult>
+				me:AddMsg("啥也不想干。");
+			</OKResult>	
+        </li>
+		</Selections>
+    </Story>
+	
+	<Story Name="WXFYTGEY0_2"  Parent="BaseFillingStory">
+	<DisplayName>对关二爷进行二阶升级</DisplayName>
+	<Desc>能力三选一。</Desc>
+	<Selections>
+		<li>
+			<Display>青龙万华斩</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 3500
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local FYT = story:GetBindThing()
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				if JF >= 3500 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶青龙万华斩技能：提高青龙斩伤害400%.");
+					World:SetFlag(B+1,113)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶青龙万华斩技能：提高青龙斩伤害300%.");
+					World:SetFlag(B+1,112)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶青龙万华斩技能：提高青龙斩伤害200%.消");
+					World:SetFlag(B+1,111)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#8b008b]关二爷★★[color=#8b008b]");	
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要积分大于3500");</NOResult>
+        </li>
+		<li>
+			<Display>水淹七军</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 4000
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				
+				if JF >= 4000 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶水淹七军技能：对火属性功法修行者造成9倍基础伤害提升.");
+					World:SetFlag(B,213)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶水淹七军技能：对火属性功法修行者造成6倍基础伤害提升");
+					World:SetFlag(B,212)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶水淹七军技能：对火属性功法修行者造成3倍基础伤害提升");
+					World:SetFlag(B,211)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#8b008b]关二爷★★[color=#8b008b]");		
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要4000积分");</NOResult>
+        </li>
+		<li>
+			<Display>怒斩</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 3700
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				
+				if JF >= 3700 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3700)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶怒斩技能：积攒一段时间怒气3000后，可对单位造成一次当前灵力或真气百分比80伤害.");
+					World:SetFlag(B,313)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶怒斩技能：积攒一段时间怒气3000后，可对单位造成一次当前灵力或真气百分比60伤害.");
+					World:SetFlag(B,312)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶怒斩技能：积攒一段时间怒气3000后，可对单位造成一次当前灵力或真气百分比40伤害.");
+					World:SetFlag(B,311)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#8b008b]关二爷★★[color=#8b008b]");		
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要3700积分");</NOResult>
+        </li>
+		<li>
+			<Display>返回</Display>
+			<OKResult>
+				me:TriggerStory("FYT1");
+			</OKResult>	
+        </li>
+		<li>
+			<Display>没兴趣</Display>
+			<OKResult>
+				me:AddMsg("啥也不想干。");
+			</OKResult>	
+        </li>
+		</Selections>
+    </Story>
+	
+		<Story Name="WXFYTGEY0_3"  Parent="BaseFillingStory">
+	<DisplayName>对关二爷进行三阶升级</DisplayName>
+	<Desc>能力三选一。</Desc>
+	<Selections>
+		<li>
+			<Display>武圣</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 8000
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local FYT = story:GetBindThing()
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				if JF >= 8000 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",8000)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶武圣技能：获得己方体修数量，提高青龙斩或青龙万华斩加体修数量乘3w的伤害价值。");
+					World:SetFlag(B,1113)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶武圣技能：获得己方体修数量，提高青龙斩或青龙万华斩加体修数量乘2w的伤害价值。");
+					World:SetFlag(B,1112)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶武圣技能：获得己方体修数量，提高青龙斩或青龙万华斩加体修数量乘1w的伤害价值。");
+					World:SetFlag(B,1111)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#dc143c]武圣[color=#dc143c]");	
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要积分大于8000");</NOResult>
+        </li>
+		<li>
+			<Display>美髯公</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 8000
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				
+				if JF >= 8000 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",8000)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶美髯公技能：降低全场进场敌人的护盾值3.");
+					World:SetFlag(B,2113)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶美髯公技能：降低全场进场敌人的护盾值2");
+					World:SetFlag(B,2112)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶美髯公技能：降低全场进场敌人的护盾值1");
+					World:SetFlag(B,2111)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#ffff00]美髯公[color=#ffff00]");		
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要8000积分");</NOResult>
+        </li>
+		<li>
+			<Display>壮缪候</Display>
+			<Condition>
+			<![CDATA[	GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB") >= 8000
+			]]>
+			</Condition>
+			<OKResult>
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+				
+				if JF >= 8000 then
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",8000)
+				local A = story:GetBindThing().ID
+				local B = A+10000000000
+				local GL = me:GetGLevel(1,12)
+				me:AddMsg(string.format(XT("获取英魂编码：%s"), tostring(B)));
+					if GL >= 12 then
+					me:AddMsg("提升关二爷能力，获得三阶壮缪候技能：地图上每存在一具友方尸体，获得额外3w纯粹伤害.");
+					World:SetFlag(B,3113)
+					elseif GL >= 9 then 
+					me:AddMsg("提升关二爷能力，获得二阶壮缪候技能：地图上每存在一具友方尸体，获得额外2w纯粹伤害.");
+					World:SetFlag(B,3112)
+					elseif GL >= 6 then 
+					me:AddMsg("提升关二爷能力，获得一阶壮缪候技能：地图上每存在一具友方尸体，获得额外1w纯粹伤害.");
+					World:SetFlag(B,3111)
+					else
+					me:AddMsg("角色境界过低无法提升该单位。");
+					end
+					FYT:SetName("[color=#000080]壮缪候[color=#000080]");		
+				end
+				]]>
+			</OKResult>	
+			<NOResult>me:AddMsg("需要8000积分");</NOResult>
+        </li>
+		<li>
+			<Display>返回</Display>
+			<OKResult>
+				me:TriggerStory("FYT1");
+			</OKResult>	
+        </li>
+		<li>
+			<Display>没兴趣</Display>
+			<OKResult>
+				me:AddMsg("啥也不想干。");
+			</OKResult>	
+        </li>
+		</Selections>
+    </Story>
+	
+</List></Stories>

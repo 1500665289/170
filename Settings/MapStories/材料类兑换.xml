@@ -1,0 +1,878 @@
+<Stories><List>
+	<Story Name="WX_CLL" Parent="BaseFillingStory">
+		<DisplayName>帝渊山脉（一阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/DYSM.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>剧情道具兑换</Display>
+				<OKResult>
+				me:TriggerStory("CLL_JQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>铁料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_TL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>固体材料（未开启）</Display>
+				<OKResult>
+				me:TriggerStory("CLL_GTCL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>木材（未开启）</Display>
+				<OKResult>
+				me:TriggerStory("CLL_MC");
+				</OKResult>
+			</li>
+			<li>
+				<Display>液体材料（未开启）</Display>
+				<OKResult>
+				me:TriggerStory("CLL_YTCL");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，让其他人融合吧。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_CLL2" Parent="BaseFillingStory">
+		<DisplayName>帝渊山脉（二阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/DYSM.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>铁料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_TL2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>固体材料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_GTCL2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>木材</Display>
+				<OKResult>
+				me:TriggerStory("CLL_MC2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>液体材料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_YTCL2");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，让其他人融合吧。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_CLL3" Parent="BaseFillingStory">
+		<DisplayName>帝渊山脉（三阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/DYSM.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>铁料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_TL3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>固体材料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_GTCL3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>木材</Display>
+				<OKResult>
+				me:TriggerStory("CLL_MC3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>液体材料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_YTCL3");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，让其他人融合吧。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CLL_JQ" Parent="BaseFillingStory">
+		<DisplayName>任务道具兑换</DisplayName>
+		<Desc>各个剧本故事关键道具。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>T病毒血清（1000积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 1000 then
+							me:DropAwardItem("Item_TBDXQ",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+	
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头再看看别的"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CLL_TL" Parent="BaseFillingStory">
+		<DisplayName>铁料出售</DisplayName>
+		<Desc>主要出售木材，铁料，液体，固态材料等。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>深海-Pb（2000/3000积分5/10份）</Display>
+				<DisplayCondition>World:GetFlag(100000011) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 2000 then
+							me:DropAwardItem("Item_JSHJ",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2000)
+							me:AddMsg(XT("[NAME]消耗积分2000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>紫晶（2000/3000积分5/10份）</Display>
+				<DisplayCondition>World:GetFlag(100000011) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 2000 then
+							me:DropAwardItem("Item_JSZJ",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2000)
+							me:AddMsg(XT("[NAME]消耗积分2000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>水银（2000/3000积分5/10份）</Display>
+				<DisplayCondition>World:GetFlag(100000011) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 2000 then
+							me:DropAwardItem("Item_JSSY",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2000)
+							me:AddMsg(XT("[NAME]消耗积分2000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>T—水晶（2000/3000积分5/10份）</Display>
+				<DisplayCondition>World:GetFlag(100000011) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 2000 then
+							me:DropAwardItem("Item_JSTSJ",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2000)
+							me:AddMsg(XT("[NAME]消耗积分2000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>稀金（2000/3000积分5/10份）</Display>
+				<DisplayCondition>World:GetFlag(100000011) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 2000 then
+							me:DropAwardItem("Item_JSXJ",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2000)
+							me:AddMsg(XT("[NAME]消耗积分2000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>无属性铁料（100积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 100 then
+							me:DropAwardItem("Item_YJWSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+							me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>金属性铁料（100积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 100 then
+							me:DropAwardItem("Item_YJJSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+							me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>木属性铁料（100积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 100 then
+							me:DropAwardItem("Item_YJMSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+							me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>水属性铁料（100积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 100 then
+							me:DropAwardItem("Item_YJSSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+							me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>火属性铁料（100积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 100 then
+							me:DropAwardItem("Item_YJHSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+							me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>土属性铁料（100积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 100 then
+							me:DropAwardItem("Item_YJTSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+							me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头再看看别的"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CLL_TL2" Parent="BaseFillingStory">
+		<DisplayName>铁料出售</DisplayName>
+		<Desc>出售二阶、三阶铁料</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>二阶铁料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_TL2_2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>三阶铁料</Display>
+				<OKResult>
+				me:TriggerStory("CLL_TL2_3");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CLL_TL2_2" Parent="BaseFillingStory">
+		<DisplayName>铁料出售</DisplayName>
+		<Desc>出售二阶铁料</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>无属性铁料（500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 500 then
+							me:DropAwardItem("Item_EJWSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+							me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>金属性铁料（500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 500 then
+							me:DropAwardItem("Item_EJJSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+							me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>木属性铁料（500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 500 then
+							me:DropAwardItem("Item_EJMSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+							me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>水属性铁料（500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 500 then
+							me:DropAwardItem("Item_EJSSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+							me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>火属性铁料（500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 500 then
+							me:DropAwardItem("Item_EJHSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+							me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>土属性铁料（500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 500 then
+							me:DropAwardItem("Item_EJTSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+							me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他品阶</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("CLL_TL2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CLL_TL2_3" Parent="BaseFillingStory">
+		<DisplayName>铁料出售</DisplayName>
+		<Desc>出售三阶铁料</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>无属性铁料（1500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 1500 then
+							me:DropAwardItem("Item_SJWSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>金属性铁料（1500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 1500 then
+							me:DropAwardItem("Item_SJJSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>木属性铁料（1500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 1500 then
+							me:DropAwardItem("Item_SJMSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>水属性铁料（1500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 1500 then
+							me:DropAwardItem("Item_SJSSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>火属性铁料（1500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 1500 then
+							me:DropAwardItem("Item_SJHSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>土属性铁料（1500积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 1500 then
+							me:DropAwardItem("Item_SJTSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他品阶</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("CLL_TL2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CLL_TL3" Parent="BaseFillingStory">
+		<DisplayName>铁料出售</DisplayName>
+		<Desc>出售四阶铁料</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>无属性铁料（4000积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 4000 then
+							me:DropAwardItem("Item_WSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>金属性铁料（4000积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 4000 then
+							me:DropAwardItem("Item_JSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>木属性铁料（4000积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 4000 then
+							me:DropAwardItem("Item_MSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>水属性铁料（4000积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 4000 then
+							me:DropAwardItem("Item_SSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>火属性铁料（4000积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 4000 then
+							me:DropAwardItem("Item_HSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>土属性铁料（4000积分5份）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 4000 then
+							me:DropAwardItem("Item_TSXT",5);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+</List></Stories>

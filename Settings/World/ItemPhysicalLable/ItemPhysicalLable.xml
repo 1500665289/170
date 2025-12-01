@@ -1,0 +1,204 @@
+<PhysicalLables><List>
+		<Lable Name="ZSJB"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="1"/><!--法宝威力-->
+			<li Kind="LingRecover" Addp="0.5"/><!--回灵速度-->
+			<li Kind="MaxLing" Addp="1"/><!--灵气容量-->
+			<li Kind="FlySpeed" Addp="1"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="1"/><!--转弯速度-->
+			<li Kind="KnockBackResistance" Addp="1"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="1"/><!--击退强度-->
+			<li Kind="TailLenght" Addp="1"/><!--拖尾长度-->
+			<li Kind="Scale" Addp="1"/><!--体积-->
+			<li Kind="AttackRate" Addp="1"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="ZWWX_N"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="1"/><!--法宝威力-->
+			<li Kind="LingRecover" Addp="0.5"/><!--回灵速度-->
+			<li Kind="MaxLing" Addp="0.8"/><!--灵气容量-->
+			<li Kind="FlySpeed" Addp="1"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="1"/><!--转弯速度-->
+			<li Kind="KnockBackResistance" Addp="1"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="1"/><!--击退强度-->
+			<li Kind="TailLenght" Addp="0.5"/><!--拖尾长度-->
+			<li Kind="Scale" Addp="0.5"/><!--体积-->
+			<li Kind="AttackRate" Addp="2"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="ZWWX_J"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="1.5"/><!--法宝威力-->
+			<li Kind="KnockBackAddition" Addp="1"/><!--击退强度-->
+		</Effects>
+	</Lable>
+	<Lable Name="ZWWX_M"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="MaxLing" Addp="1.5"/><!--灵气容量-->
+			<li Kind="KnockBackResistance" Addp="1"/><!--击退抵抗-->
+		</Effects>
+	</Lable>
+	<Lable Name="ZWWX_S"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="LingRecover" Addp="1.5"/><!--回灵速度-->
+			<li Kind="FlySpeed" Addp="1"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="1"/><!--转弯速度-->
+		</Effects>
+	</Lable>
+	<Lable Name="ZWWX_H"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="1"/><!--法宝威力-->
+			<li Kind="Scale" Addp="1.5"/><!--体积-->
+			<li Kind="AttackRate" Addp="1"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="ZWWX_T"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="KnockBackResistance" Addp="1.5"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="1.5"/><!--击退强度-->
+			<li Kind="Scale" Addp="1"/><!--体积-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB_N"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="2"/><!--法宝威力-->
+			<li Kind="LingRecover" Addp="1.5"/><!--回灵速度-->
+			<li Kind="MaxLing" Addp="1.8"/><!--灵气容量-->
+			<li Kind="FlySpeed" Addp="2"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="2"/><!--转弯速度-->
+			<li Kind="KnockBackResistance" Addp="2"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="2"/><!--击退强度-->
+			<li Kind="TailLenght" Addp="1.5"/><!--拖尾长度-->
+			<li Kind="Scale" Addp="1.5"/><!--体积-->
+			<li Kind="AttackRate" Addp="1.5"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB_J"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="2.5"/><!--法宝威力-->
+			<li Kind="KnockBackAddition" Addp="2"/><!--击退强度-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB_M"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="MaxLing" Addp="2.5"/><!--灵气容量-->
+			<li Kind="KnockBackResistance" Addp="2"/><!--击退抵抗-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB_S"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="LingRecover" Addp="2.5"/><!--回灵速度-->
+			<li Kind="FlySpeed" Addp="2"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="2"/><!--转弯速度-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB_H"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="2"/><!--法宝威力-->
+			<li Kind="Scale" Addp="2.5"/><!--体积-->
+			<li Kind="AttackRate" Addp="2"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB_T"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="KnockBackResistance" Addp="2.5"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="2.5"/><!--击退强度-->
+			<li Kind="Scale" Addp="2"/><!--体积-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB2_N"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="4"/><!--法宝威力-->
+			<li Kind="LingRecover" Addp="3"/><!--回灵速度-->
+			<li Kind="MaxLing" Addp="3.6"/><!--灵气容量-->
+			<li Kind="FlySpeed" Addp="3"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="3"/><!--转弯速度-->
+			<li Kind="KnockBackResistance" Addp="3"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="3"/><!--击退强度-->
+			<li Kind="TailLenght" Addp="3"/><!--拖尾长度-->
+			<li Kind="Scale" Addp="1"/><!--体积-->
+			<li Kind="AttackRate" Addp="1"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB2_J"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="5"/><!--法宝威力-->
+			<li Kind="KnockBackAddition" Addp="4"/><!--击退强度-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB2_M"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="MaxLing" Addp="5"/><!--灵气容量-->
+			<li Kind="KnockBackResistance" Addp="4"/><!--击退抵抗-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB2_S"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="LingRecover" Addp="5"/><!--回灵速度-->
+			<li Kind="FlySpeed" Addp="4"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="4"/><!--转弯速度-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB2_H"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="4"/><!--法宝威力-->
+			<li Kind="Scale" Addp="1"/><!--体积-->
+			<li Kind="AttackRate" Addp="1"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB2_T"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="KnockBackResistance" Addp="5"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="5"/><!--击退强度-->
+			<li Kind="Scale" Addp="1"/><!--体积-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB3_N"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="7"/><!--法宝威力-->
+			<li Kind="LingRecover" Addp="4"/><!--回灵速度-->
+			<li Kind="MaxLing" Addp="6.6"/><!--灵气容量-->
+			<li Kind="FlySpeed" Addp="5"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="5"/><!--转弯速度-->
+			<li Kind="KnockBackResistance" Addp="5"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="5"/><!--击退强度-->
+			<li Kind="TailLenght" Addp="4"/><!--拖尾长度-->
+			<li Kind="Scale" Addp="1"/><!--体积-->
+			<li Kind="AttackRate" Addp="0.8"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB3_J"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="8"/><!--法宝威力-->
+			<li Kind="KnockBackAddition" Addp="7"/><!--击退强度-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB3_M"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="MaxLing" Addp="8"/><!--灵气容量-->
+			<li Kind="KnockBackResistance" Addp="7"/><!--击退抵抗-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB3_S"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="LingRecover" Addp="7"/><!--回灵速度-->
+			<li Kind="FlySpeed" Addp="6"/><!--飞行速度-->
+			<li Kind="RotSpeed" Addp="6"/><!--转弯速度-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB3_H"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="AttackPower" Addp="7"/><!--法宝威力-->
+			<li Kind="Scale" Addp="1"/><!--体积-->
+			<li Kind="AttackRate" Addp="0.4"/><!--攻击间隔-->
+		</Effects>
+	</Lable>
+	<Lable Name="FB3_T"> <!--主神金币（普通级别）-->
+		<Effects>
+			<li Kind="KnockBackResistance" Addp="9"/><!--击退抵抗-->
+			<li Kind="KnockBackAddition" Addp="9"/><!--击退强度-->
+			<li Kind="Scale" Addp="2"/><!--体积-->
+		</Effects>
+	</Lable>
+</List></PhysicalLables> 

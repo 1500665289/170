@@ -1,0 +1,1439 @@
+<ModifierDefs><List>
+	<Modifier Name="WX_XMJX" Type="Normal">
+		<DisplayName>血脉觉醒</DisplayName>
+		<Desc>被激活的血脉之力</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+	</Modifier>
+	<Modifier Name="XT_QLAR" Type="Normal">
+		<DisplayName>丘陵矮人（稀薄）</DisplayName>
+		<Desc>深居深山的锻造大师，常年在洞穴之中挖掘财宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_QLAR</LuaClassName>
+		<Skills>
+				<li Name="DanQi" LevelOver="5"/><!-- 丹器 30-->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+				<li Name="Manual" LevelOver="10"/><!-- 制造 -->
+				<li Name="Qi" LevelOver="-5"/><!-- 气感 20-->
+			</Skills>
+			<Properties>
+				<li Name="NpcFight_ZhenEnginePower" AddV="20"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_QLAR1" Type="Normal">
+		<DisplayName>丘陵矮人（高等）</DisplayName>
+		<Desc>深居深山的锻造大师，常年在洞穴之中挖掘财宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_QLAR1</LuaClassName>
+		<Skills>
+				<li Name="DanQi" LevelOver="9"/><!-- 丹器 30-->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+				<li Name="Manual" LevelOver="15"/><!-- 制造 -->
+				<li Name="Qi" LevelOver="-5"/><!-- 气感 20-->
+			</Skills>
+			<Properties>
+				<li Name="NpcFight_ZhenEnginePower" AddV="30"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_QLAR2" Type="Normal">
+		<DisplayName>丘陵矮人（纯血）</DisplayName>
+		<Desc>深居深山的锻造大师，常年在洞穴之中挖掘财宝。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_QLAR2</LuaClassName>
+		<Skills>
+				<li Name="DanQi" LevelOver="14"/><!-- 丹器 30-->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+				<li Name="Manual" LevelOver="20"/><!-- 制造 -->
+				<li Name="Qi" LevelOver="-8"/><!-- 气感 20-->
+			</Skills>
+			<Properties>
+				<li Name="NpcFight_ZhenEnginePower" AddV="50"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="ARDS" Type="Normal">
+		<DisplayName>矮人打手）</DisplayName>
+		<Desc>召唤出来的矮人打手。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>120</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EndModifier>ARDS1</EndModifier>
+		<Skills>
+				<li Name="DanQi" LevelOver="5"/><!-- 丹器 30-->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+				<li Name="Manual" LevelOver="10"/><!-- 制造 -->
+				<li Name="Qi" LevelOver="-5"/><!-- 气感 20-->
+			</Skills>
+			
+	</Modifier>
+	<Modifier Name="ARDS1" Type="Normal">
+		<DisplayName>矮人打手）</DisplayName>
+		<Desc>召唤出来的矮人打手。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>ARDS1</LuaClassName>
+		<Skills>
+				<li Name="DanQi" LevelOver="5"/><!-- 丹器 30-->
+				<li Name="Manual" Level="110"/><!-- 制造 -->
+				<li Name="Manual" LevelOver="10"/><!-- 制造 -->
+				<li Name="Qi" LevelOver="-5"/><!-- 气感 20-->
+			</Skills>
+			
+	</Modifier>
+	<Modifier Name="XT_KXSR" Type="Normal">
+		<DisplayName>狂血兽人（稀薄）</DisplayName>
+		<Desc>战斗即吾命！。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Skills>
+				<li Name="Fight" LevelOver="5"/><!--战斗-->
+				<li Name="Barrier" LevelOver="-2"/><!--战斗-->
+			</Skills>
+			<Properties>
+				<li Name="MindStateBaseValue" AddV="-30"/>
+				<li Name="BodyPratice_BodyStrong" AddV="4"/>
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="1"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_KXSR1" Type="Normal">
+		<DisplayName>狂血兽人（高等）</DisplayName>
+		<Desc>战斗即吾命！。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_KXSR1</LuaClassName>
+		<Skills>
+				<li Name="Fight" LevelOver="8"/><!--战斗-->
+				<li Name="Barrier" LevelOver="-3"/><!--战斗-->
+			</Skills>
+			<Properties>
+				<li Name="MindStateBaseValue" AddV="-50"/>
+				<li Name="BodyPratice_BodyStrong" AddV="8"/>
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="2"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_KXSR1_X" Type="Normal">
+		<DisplayName>血怒</DisplayName>
+		<Desc>血怒：增加疼痛忍耐50，增加秘体全体攻击百分25.持续20s，冷却50s使用消耗100寿元（受寿元流逝倍率影响可能会更快）</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_KXSR1_X</LuaClassName>
+			<Properties>
+				<li Name="PainTolerance" AddV="50"/><!--疼痛忍耐 6-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_KXSR2" Type="Normal">
+		<DisplayName>狂血兽人（纯血）</DisplayName>
+		<Desc>纯血：高等：战斗技能上限加15，秘体穿透能力加4，身体强大系数加15，护盾等级上限减4，心境基础值减80.解锁秘体：狂血之心附带战技：穿膛一击。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_KXSR2</LuaClassName>
+		<Skills>
+				<li Name="Fight" LevelOver="15"/><!--战斗-->
+				<li Name="Barrier" LevelOver="-4"/><!--战斗-->
+			</Skills>
+			<Properties>
+				<li Name="MindStateBaseValue" AddV="-80"/>
+				<li Name="BodyPratice_BodyStrong" AddV="15"/>
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="4"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="KXZX" Type="Normal">
+		<DisplayName>狂血之心加成1</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+
+			<Properties>
+				<li Name="MoveSpeed" AddV="10"/>
+				<li Name="BodyPractice_AngerFireDuration" AddV="10"/>
+				<li Name="BodyPractice_AngerFireEffectAddp" AddV="1.5"/>
+				<li Name="PainTolerance" AddV="20"/><!--疼痛忍耐 6-->
+				<li Name="BodyPractice_MaxFoodAddtion" AddV="1"/><!--食量-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="KXZX1" Type="Normal">
+		<DisplayName>狂血之心加成1</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KXZX1</LuaClassName>
+			<Properties>
+				<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="3000"/>
+				
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_XXGXT_X" Type="Normal">
+		<DisplayName>灼烧</DisplayName>
+		<Desc>啊，天亮了，要睡觉了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="XT_XXGXT2_X" Type="Normal">
+		<DisplayName>暗夜君王</DisplayName>
+		<Desc>获得灵力上限加成百分百，灵力恢复增加100，攻击带有百分五灵力上限或真气上限额外真实伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="LingAbsorbSpeed" AddV="100"/>
+				<li Name="NpcLingMaxValue" AddP="1"/>
+		</Properties>
+		<EffectBind>
+			<li Path="Effect/gsq/Prefab/zhulong/Fx_zhulong_zuinie01" />
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="XT_XXGXT" Type="Normal">
+		<DisplayName>吸血鬼血统（稀薄）</DisplayName>
+		<Desc>夜魅，迟早会吞噬这片宇宙。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_XXGXT</LuaClassName>
+			<Properties>
+				<li Name="NpcLingMaxValue" AddV="5000"/><!--基础灵气最大值-->
+				<li Name="NpcFight_SpellCastTimeAddP" AddV="-0.4"/>
+				<li Name="NpcFight_SpellPowerAddP" AddP="0.8"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_XXGXT1" Type="Normal">
+		<DisplayName>吸血鬼血统（高等）</DisplayName>
+		<Desc>夜魅，迟早会吞噬这片宇宙。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_XXGXT1</LuaClassName>
+			<Properties>
+				<li Name="NpcLingMaxValue" AddV="150000"/><!--基础灵气最大值-->
+				<li Name="NpcFight_SpellCastTimeAddP" AddV="-0.4"/>
+				<li Name="NpcFight_SpellPowerAddP" AddP="1.5"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_XXGXT2" Type="Normal">
+		<DisplayName>吸血鬼血统（纯血）</DisplayName>
+		<Desc>夜魅，迟早会吞噬这片宇宙。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_XXGXT2</LuaClassName>
+			<Properties>
+				<li Name="NpcLingMaxValue" AddV="1000000"/><!--基础灵气最大值-->
+				<li Name="NpcFight_SpellCastTimeAddP" AddV="-0.8"/>
+				<li Name="NpcFight_SpellPowerAddP" AddP="2"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_BSJRXT" Type="Normal">
+		<DisplayName>冰原巨人（稀薄）</DisplayName>
+		<Desc>冰神，伟大的冰神！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_BSJRXT</LuaClassName>
+		
+			<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="2"/><!--护盾强度加值2-->
+				<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="3000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="3000"/><!--坚韧百分比加成 -50000 50000-->
+				<li Name="MoveSpeed" AddP="-10"/><!--移动速度-->
+				<li Name="BodyPractice_MaxFoodAddtion" AddV="10"/><!--食量-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_BSJRXT1" Type="Normal">
+		<DisplayName>冰原巨人（高等）</DisplayName>
+		<Desc>冰神，伟大的冰神！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_BSJRXT1</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="2"/><!--护盾强度加值2-->
+				<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="8000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="8000"/><!--坚韧百分比加成 -50000 50000-->
+				<li Name="MoveSpeed" AddP="-10"/><!--移动速度-->
+				<li Name="BodyPractice_MaxFoodAddtion" AddV="20"/><!--食量-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_BSJRXT1_X" Type="Normal">
+		<DisplayName>冰源</DisplayName>
+		<Desc>被冻结，无敌状态（无法对火属性伤害免疫）</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>15</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<SpecialFlags>
+			<li>FLAG_FLYGAWALY</li>
+			<li>FLAG_NONEED</li>
+			
+		</SpecialFlags>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+			
+		</Damages>
+		<Properties>
+				<li Name="LingAbsorbSpeed" AddV="200"/><!--护盾强度加值2-->
+				<li Name="BodyPratice_RecoverZhenQi" AddV="200"/><!--真炁恢复速度基础值 2 5-->
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="9999"/>		
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="9999"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_BSJRXT2" Type="Normal">
+		<DisplayName>冰原巨人（纯血）</DisplayName>
+		<Desc>冰神，伟大的冰神！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_BSJRXT2</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="3"/><!--护盾强度加值2-->
+				<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="20000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="20000"/><!--坚韧百分比加成 -50000 50000-->
+				<li Name="MoveSpeed" AddP="-20"/><!--移动速度-->
+				<li Name="BodyPractice_MaxFoodAddtion" AddV="30"/><!--食量-->
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_DTSXT" Type="Normal">
+		<DisplayName>堕天使（稀薄）</DisplayName>
+		<Desc>邪恶，并不是唯一的错误。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+			<Properties>
+			
+			<li Name="BodyPractice_AngerFireEffectAddp" AddP="2"/><!--移动速度-->
+				<li Name="MoveSpeed" AddP="10"/><!--移动速度-->
+				<li Name="NpcLingMaxValue" AddV="-5000"/><!--食量-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="-2000"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.2"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="0.2"/><!--食量-->
+				
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_DTSXT1" Type="Normal">
+		<DisplayName>堕天使（高等）</DisplayName>
+		<Desc>邪恶，并不是唯一的错误。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_DTSXT1</LuaClassName>
+		<Properties>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddP="3"/><!--移动速度-->
+				<li Name="MoveSpeed" AddP="20"/><!--移动速度-->
+				<li Name="NpcLingMaxValue" AddV="-100000"/><!--食量-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="-10000"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.4"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="0.4"/><!--食量-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_DTSXT1_Z" Type="Normal">
+		<DisplayName>堕天使（暂时加成）</DisplayName>
+		<Desc>邪恶，并不是唯一的错误。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>60</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddP="3"/><!--移动速度-->
+				<li Name="MoveSpeed" AddP="20"/><!--移动速度-->
+				<li Name="NpcLingMaxValue" AddV="-100000"/><!--食量-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="-10000"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.4"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="0.4"/><!--食量-->
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_DTSXT2" Type="Normal">
+	<DisplayName>堕天使（纯血）</DisplayName>
+		<Desc>邪恶，并不是唯一的错误。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_DTSXT2</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_AngerFireEffectAddp" AddP="4"/><!--移动速度-->
+				<li Name="MoveSpeed" AddP="30"/><!--移动速度-->
+				<li Name="NpcLingMaxValue" AddV="-1000000"/><!--食量-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="-100000"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.6"/><!--食量-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="0.6"/><!--食量-->
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_DTSXT2_X" Type="Normal">
+	<DisplayName>闇染</DisplayName>
+		<Desc>灵力上限减百分15，永久效果</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_DTSXT2_x</LuaClassName>
+		
+	</Modifier>
+	
+	<Modifier Name="XT_STSXT" Type="Normal">
+		<DisplayName>圣天使（稀薄）</DisplayName>
+		<Desc>圣洁，会救赎一切。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Skills>
+				<li Name="Qi" LevelOver="-8"/><!--战斗-->
+			</Skills>
+			<Properties>
+			<li Name="MindStateBaseValue" AddV="30"/><!--移动速度-->
+				<li Name="GodCity_MaxCoreBeliever" AddV="2"/><!--移动速度-->
+				<li Name="GodCity_PracticeEffect" AddV="1"/><!--食量-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="-8000"/><!--食量-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_STSXT1" Type="Normal">
+		<DisplayName>圣天使（高等）</DisplayName>
+		<Desc>圣洁，会救赎一切。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_STSXT1</LuaClassName>
+		<Skills>
+				<li Name="Qi" LevelOver="-9"/><!--战斗-->
+			</Skills>
+			<Properties>
+			<li Name="MindStateBaseValue" AddV="60"/><!--移动速度-->
+				<li Name="GodCity_MaxCoreBeliever" AddV="3"/><!--移动速度-->
+				<li Name="GodCity_PracticeEffect" AddV="2"/><!--食量-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="-100000"/><!--食量-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_STSXT1_X" Type="Normal">
+		<DisplayName>圣心</DisplayName>
+		<Desc>圣洁，会救赎一切。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Beams/Impact/LightBeamImpact" />
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="WX_HF_STS2" Type="Normal">
+		<DisplayName>智天使</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+	</Modifier>
+	<Modifier Name="WX_HF_STS1" Type="Normal">
+		<DisplayName>炽天使</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+	</Modifier>
+	<Modifier Name="WX_HF_STS3" Type="Normal">
+		<DisplayName>座天使</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+	</Modifier>
+	<Modifier Name="WX_HF_STS3_X" Type="Normal">
+		<DisplayName>座天使</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>36</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="10"/><!--移动速度-->
+				<li Name="NpcFight_SpellPowerAddP" AddV="0.1"/><!--移动速度-->
+				<li Name="NpcFight_FabaoPowerAddP" AddV="0.1"/><!--移动速度-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_STSXT2" Type="Normal">
+	<DisplayName>圣天使（纯血）</DisplayName>
+		<Desc>圣洁，会救赎一切</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_STSXT2</LuaClassName>
+		<Skills>
+				<li Name="Qi" LevelOver="-12"/><!--战斗-->
+			</Skills>
+			<Properties>
+			<li Name="MindStateBaseValue" AddV="90"/><!--移动速度-->
+				<li Name="GodCity_MaxCoreBeliever" AddV="5"/><!--移动速度-->
+				<li Name="GodCity_PracticeEffect" AddV="3"/><!--食量-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="-1000000"/><!--食量-->
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_XTXT" Type="Normal">
+		<DisplayName>刑天（稀薄）</DisplayName>
+		<Desc>昊天，你个虚伪之徒，即使这天道容你，我也不容你！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+			<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="0.1"/><!--移动速度-->
+			<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="100"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_XTXT_X" Type="Normal">
+		<DisplayName>刑天极意</DisplayName>
+		<Desc>现在！轮到我了！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>60</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<SpecialFlags>
+			<li>FLAG_GODMODE</li>
+			
+		</SpecialFlags>
+	</Modifier>
+	<Modifier Name="XT_XTXT1" Type="Normal">
+		<DisplayName>刑天（高等）</DisplayName>
+		<Desc>昊天，你个虚伪之徒，即使这天道容你，我也不容你！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_XTXT1</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="XT_XTXT2" Type="Normal">
+		<DisplayName>刑天（纯血）</DisplayName>
+		<Desc>昊天，你个虚伪之徒，即使这天道容你，我也不容你！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="BodyPratice_BodyRecover" AddV="5"/><!--移动速度-->
+				<li Name="BodyPratice_BodyStrong" AddV="15"/><!--移动速度-->
+				<li Name="RecoveryPower" AddV="99"/><!--移动速度-->
+				<li Name="PainTolerance" AddV="99"/><!--移动速度-->
+				<li Name="MagicDamageRecoveryPowerAddV" AddV="15"/><!--移动速度-->
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_LYJLXT" Type="Normal">
+		<DisplayName>烈焰精灵（稀薄）</DisplayName>
+		<Desc>世界不过是烈火后的余烬</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+			<Properties>
+			<li Name="GongMatch_HuoAddV" AddV="1"/><!--移动速度-->
+			<li Name="NpcFight_BaseDodgeChance" AddV="0.2"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_LYJLXT1_X" Type="Normal">
+		<DisplayName>烈焰之御</DisplayName>
+		<Desc>烧啊！烧啊！</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_LYJLXT1" Type="Normal">
+		<DisplayName>烈焰精灵（高等）</DisplayName>
+		<Desc>世界不过是烈火后的余烬！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	</Modifier>
+	<Modifier Name="XT_LYJLXT2" Type="Normal">
+		<DisplayName>烈焰精灵（纯血）</DisplayName>
+		<Desc>世界不过是烈火后的余烬？</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_LYJLXT2</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="XT_JLXT" Type="Normal">
+		<DisplayName>九黎（稀薄）</DisplayName>
+		<Desc>为了部族，哪怕天高海阔也不曾畏惧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+			<Properties>
+			<li Name="NpcLingMaxValue" AddV="1000"/><!--移动速度-->
+			<li Name="BodyPratice_BodyStrong" AddV="3"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="0.5"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="AbilityLvAddV" AddV="10"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_JLXT_X" Type="Normal">
+		<DisplayName>九黎无双</DisplayName>
+		<Desc>嗷呜！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>30</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	</Modifier>
+	<Modifier Name="XT_JLXT_X1" Type="Normal">
+		<DisplayName>九黎之祖</DisplayName>
+		<Desc>获得法术伤害，法宝伤害加成500%,获得护盾等级上限10级。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>90</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Skills>
+				<li Name="Barrier" LevelOver="10"/><!--战斗-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddV="5"/><!--移动速度-->
+			<li Name="NpcFight_SpellPowerAddP" AddV="3"/><!--伤害百分比加成 -50000 50000-->
+			
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_JLXT1" Type="Normal">
+		<DisplayName>九黎（高等）</DisplayName>
+		<Desc>为了部族，哪怕天高海阔也不曾畏惧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_JLXT1</LuaClassName>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="50000"/><!--移动速度-->
+			<li Name="BodyPratice_BodyStrong" AddV="6"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="1.5"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="AbilityLvAddV" AddV="20"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_JLXT2" Type="Normal">
+		<DisplayName>九黎（纯血）</DisplayName>
+		<Desc>为了部族，哪怕天高海阔也不曾畏惧。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_JLXT2</LuaClassName>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="1000000"/><!--移动速度-->
+			<li Name="BodyPratice_BodyStrong" AddV="9"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="4"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="AbilityLvAddV" AddV="40"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_PXXT" Type="Normal">
+		<DisplayName>破晓血统（稀薄）</DisplayName>
+		<Desc>白昼将至，吾心！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+			<Skills>
+				<li Name="Qi" LevelOver="4"/><!-- 气感 20-->
+			</Skills>
+			<Properties>
+			<li Name="SLD_Q" AddV="50"/><!--移动速度-->
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="5"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_PX" Type="Normal">
+		<DisplayName>破晓血统（稀薄）</DisplayName>
+		<Desc>白昼将至，吾心！</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>	
+			<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddV="1"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="XT_PXXT1" Type="Normal">
+		<DisplayName>破晓血统（高等）</DisplayName>
+		<Desc>白昼将至，吾心！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_PXXT1</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_MGB_1" Type="Normal">
+		<DisplayName>1</DisplayName>
+		<Desc>1</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>WX_MGB_1</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_MGB_2" Type="Normal">
+		<DisplayName>2</DisplayName>
+		<Desc>2</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>WX_MGB_2</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_MGB_3" Type="Normal">
+		<DisplayName>3</DisplayName>
+		<Desc>3</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>WX_MGB_3</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_MGB_4" Type="Normal">
+		<DisplayName>4</DisplayName>
+		<Desc>4</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>WX_MGB_4</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="XT_PXXT2" Type="Normal">
+		<DisplayName>破晓（纯血）</DisplayName>
+		<Desc>>白昼将至，吾心！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_PXXT2</LuaClassName>
+		<Skills>
+				<li Name="Qi" LevelOver="10"/><!-- 气感 20-->
+			</Skills>
+		
+	</Modifier>
+	
+	<Modifier Name="XT_YTXT" Type="Normal">
+		<DisplayName>银霆</DisplayName>
+		<Desc>雷电法王！我不信杨！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YTXT</LuaClassName>
+	</Modifier>
+	<Modifier Name="XT_YTXT1" Type="Normal">
+		<DisplayName>银霆</DisplayName>
+		<Desc>雷电法王！我不信杨！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+	</Modifier>
+	<Modifier Name="XT_YTXT2" Type="Normal">
+		<DisplayName>银霆</DisplayName>
+		<Desc>雷电法王！我不信杨！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YTXT2</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="XT_YYXT" Type="Normal">
+		<DisplayName>夜渊</DisplayName>
+		<Desc>小蝙蝠，这世界就剩下你们和我就够了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YYXT</LuaClassName>
+		<Skills>
+				<li Name="FightSkill" LevelOver="10"/><!-- 气感 20-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddP="1"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="MaxAge" AddV="-500"/>
+			</Properties>	
+	</Modifier>
+	<Modifier Name="XT_YYXT1" Type="Normal">
+		<DisplayName>夜渊</DisplayName>
+		<Desc>小蝙蝠，这世界就剩下你们和我就够了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YYXT1</LuaClassName>
+		<Skills>
+				<li Name="FightSkill" LevelOver="15"/><!-- 气感 20-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddP="2"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="MaxAge" AddV="-1500"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_YYXT2" Type="Normal">
+		<DisplayName>夜渊</DisplayName>
+		<Desc>小蝙蝠，这世界就剩下你们和我就够了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YYXT2</LuaClassName>
+		<Skills>
+				<li Name="FightSkill" LevelOver="25"/><!-- 气感 20-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddP="4"/><!--伤害百分比加成 -50000 50000-->
+			<li Name="MaxAge" AddV="-3500"/><!--伤害百分比加成 -50000 50000-->
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_PSXT" Type="Normal">
+		<DisplayName>磐石</DisplayName>
+		<Desc>我身不动，当为磐石。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="500"/>
+			</Properties>
+		
+	</Modifier>
+	<Modifier Name="XT_PSXT_X" Type="Normal">
+		<DisplayName>磐石印</DisplayName>
+		<Desc>接下来三次攻击造成额外伤害。</Desc>
+		<MaxStack>3</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	</Modifier>
+	<Modifier Name="XT_PSXT1_X" Type="Normal">
+		<DisplayName>磐石印</DisplayName>
+		<Desc>接下来三次攻击造成额外伤害。</Desc>
+		<MaxStack>3</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	</Modifier>
+	<Modifier Name="XT_PSXT2_X" Type="Normal">
+		<DisplayName>磐石印</DisplayName>
+		<Desc>接下来三次攻击造成额外伤害。</Desc>
+		<MaxStack>3</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	</Modifier>
+	<Modifier Name="XT_PSXT1" Type="Normal">
+		<DisplayName>磐石</DisplayName>
+		<Desc>我身不动，当为磐石。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="5000"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_PSXT2" Type="Normal">
+		<DisplayName>磐石</DisplayName>
+		<Desc>我身不动，当为磐石。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_PSXT2</LuaClassName>
+		
+	</Modifier>
+	
+	<Modifier Name="XT_BDEXT" Type="Normal">
+		<DisplayName>巴德尔</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_BDEXT</LuaClassName>
+	</Modifier>
+		<Modifier Name="XT_BDEXTD" Type="Normal">
+		<DisplayName>巴德尔（昼）</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Skills>
+				<li Name="Qi" LevelOver="10"/><!-- 气感 20-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="3"/>
+			</Properties>
+	</Modifier>
+		<Modifier Name="XT_BDEXTN" Type="Normal">
+		<DisplayName>巴德尔（夜）</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Skills>
+				<li Name="Qi" LevelOver="-10"/><!-- 气感 20-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="-2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-3"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_BDEXT1" Type="Normal">
+		<DisplayName>巴德尔</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_BDEXT1</LuaClassName>
+	</Modifier>
+	<Modifier Name="XT_BDEXT1D" Type="Normal">
+		<DisplayName>巴德尔（昼）</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Skills>
+				<li Name="Qi" LevelOver="15"/><!-- 气感 20-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="4"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="6"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_BDEXT1N" Type="Normal">
+		<DisplayName>巴德尔（夜）</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Skills>
+				<li Name="Qi" LevelOver="-7"/><!-- 气感 20-->
+			</Skills>
+		<Properties>
+			<li Name="NpcFight_SpellPowerAddP" AddP="-2"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-3"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_BDEXT2" Type="Normal">
+		<DisplayName>巴德尔</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_BDEXT2</LuaClassName>
+		
+	</Modifier>
+	
+	<Modifier Name="XT_BDEXT2_X" Type="Normal">
+		<DisplayName>万物言</DisplayName>
+		<Desc>光明已经在这个世界了、</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-1"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="-1"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddP="-1"/>
+			</Properties>
+		
+	</Modifier>
+	<Modifier Name="XT_XLXT" Type="Normal">
+		<DisplayName>星灵</DisplayName>
+		<Desc>星空的秩序，需要重建。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	</Modifier>
+	<Modifier Name="XT_XLXT1" Type="Normal">
+		<DisplayName>星灵</DisplayName>
+		<Desc>星空的秩序，需要重建。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+	</Modifier>
+	
+	<Modifier Name="XT_XLXT2" Type="Normal">
+		<DisplayName>星灵</DisplayName>
+		<Desc>星空的秩序，需要重建。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+			<LuaClassName>XT_XLXT2</LuaClassName>
+	</Modifier>
+	
+	
+	<Modifier Name="XT_DXXT" Type="Normal">
+		<DisplayName>喋血系统</DisplayName>
+		<Desc>哔哔。吡。</Desc>
+		<MaxStack>5</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_DXXT</LuaClassName>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="2"/>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="1"/>
+			<li Name="BodyPratice_BodyStrong" AddV="2"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_DXXT_X" Type="Normal">
+		<DisplayName>喋血系统</DisplayName>
+		<Desc>共100层，每四分一阶段获得一次额外加成，护盾值加成，获得御器威力加成，获得身体强大系数加成。携带技能：空天炮：灵力或真气值低于40%时，每秒发射出一枚单体飞弹造成300*层数伤害对真气伤害减半。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_DXXT_X</LuaClassName>
+	</Modifier>
+	<Modifier Name="XT_YLXT" Type="Normal">
+		<DisplayName>言灵血统</DisplayName>
+		<Desc>闭嘴，我还没说完。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YLXT</LuaClassName>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="8000"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="4"/>
+			<li Name="MindStateBaseValue" AddV="25"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_YLXT1" Type="Normal">
+		<DisplayName>言灵血统</DisplayName>
+		<Desc>闭嘴，我还没说完。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YLXT1</LuaClassName>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="500000"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="4"/>
+			<li Name="MindStateBaseValue" AddV="25"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_YLXT2" Type="Normal">
+		<DisplayName>言灵血统</DisplayName>
+		<Desc>闭嘴，我还没说完。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YLXT2</LuaClassName>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="5000000"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="4"/>
+			<li Name="MindStateBaseValue" AddV="25"/>
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_RMXT" Type="Normal">
+		<DisplayName>日冕血统</DisplayName>
+		<Desc>最强的温度，也不过如此。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_RMXT</LuaClassName>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="90"/>
+			
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_RMXTX" Type="Normal">
+		<DisplayName>灼烧</DisplayName>
+		<Desc>每秒造成额外，1500/500伤害,持续时间与自身等级有关,最高持续50s</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_RMXTX</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="XT_RMXT1" Type="Normal">
+		<DisplayName>日冕血统</DisplayName>
+		<Desc>最强的温度，也不过如此。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_RMXT1</LuaClassName>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="180"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_RMXT1X" Type="Normal">
+		<DisplayName>灼烧</DisplayName>
+		<Desc>每秒造成额外，3000/1000伤害,持续时间与自身等级有关,最高持续80s</Desc>
+		<MaxStack>80</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_RMXT1X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="XT_RMXT2" Type="Normal">
+		<DisplayName>日冕血统</DisplayName>
+		<Desc>最强的温度，也不过如此。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_RMXT2</LuaClassName>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="300"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_RMXT2X" Type="Normal">
+		<DisplayName>灼烧</DisplayName>
+		<Desc>每秒造成额外，9000/3000伤害,持续时间与自身等级有关,最高持续120s</Desc>
+		<MaxStack>120</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_RMXT2X</LuaClassName>
+		
+	</Modifier>
+	
+	
+	<Modifier Name="XT_YGXT" Type="Normal">
+		<DisplayName>月冠血统</DisplayName>
+		<Desc>极度的冷却。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YGXT</LuaClassName>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="15"/>
+			
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_YGXT1" Type="Normal">
+		<DisplayName>月冠血统</DisplayName>
+		<Desc>极度的冷却。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YGXT1</LuaClassName>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="60"/>
+			
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_YGXT2" Type="Normal">
+		<DisplayName>月冠血统</DisplayName>
+		<Desc>极度的冷却。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YGXT2</LuaClassName>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="300"/>
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_YGXTX" Type="Normal">
+		<DisplayName>冻结</DisplayName>
+		<Desc>冻结期间，无法使用法宝、秘体、术法，同时受到额外伤害加成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>15</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YGXTX</LuaClassName>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="15"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_BODY_FORCE_DEF</li>
+			<li>FLAG_FORBID_SKILL</li>
+			<li>FLAG_FORBID_FABAO</li>
+		</SpecialFlags>
+	</Modifier>
+	<Modifier Name="XT_YGXT1X" Type="Normal">
+		<DisplayName>冻结</DisplayName>
+		<Desc>冻结期间，无法使用法宝、秘体、术法，同时受到额外伤害加成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>30</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YGXTX</LuaClassName>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="15"/>
+		</Properties>
+		<SpecialFlags>
+			<li>FLAG_BODY_FORCE_DEF</li>
+			<li>FLAG_FORBID_SKILL</li>
+			<li>FLAG_FORBID_FABAO</li>
+		</SpecialFlags>
+	</Modifier>
+	<Modifier Name="XT_YGXT2X" Type="Normal">
+		<DisplayName>冻结</DisplayName>
+		<Desc>冻结期间，无法使用法宝、秘体、术法，同时受到额外伤害加成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>60</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_YGXTX</LuaClassName>
+		<Properties>
+			<li Name="AgeCostSpeed" AddV="15"/>
+		</Properties>
+			<SpecialFlags>
+			<li>FLAG_BODY_FORCE_DEF</li>
+			<li>FLAG_FORBID_SKILL</li>
+			<li>FLAG_FORBID_FABAO</li>
+		</SpecialFlags>
+	</Modifier>
+	
+	<Modifier Name="XT_RYJB" Type="Normal">
+		<DisplayName>日月之耀</DisplayName>
+		<Desc>当日冕与月冠同时存在时，双方获得该加成</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_RYJB</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/System/Shield/LightningShield" />
+		</EffectBind>
+	</Modifier>
+	
+		<Modifier Name="XT_TMXT" Type="Normal">
+		<DisplayName>屠魔血统</DisplayName>
+		<Desc>重修武道时，便是世间再无这般人</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_TMXT</LuaClassName>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" AddV="5000"/>
+			<li Name="BodyPratice_BodyStrong" AddV="6"/>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="1"/>
+			<li Name="MaxAge" AddV="-200"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_TMXT1" Type="Normal">
+		<DisplayName>屠魔血统</DisplayName>
+		<Desc>重修武道时，便是世间再无这般人</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" AddV="20000"/>
+			<li Name="BodyPratice_BodyStrong" AddV="12"/>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="3"/>
+			<li Name="MaxAge" AddV="-1600"/>
+			</Properties>
+	</Modifier>
+	<Modifier Name="XT_TMXT2" Type="Normal">
+		<DisplayName>屠魔血统</DisplayName>
+		<Desc>重修武道时，便是世间再无这般人</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_TMXT2</LuaClassName>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" AddV="500000"/>
+			<li Name="BodyPratice_BodyStrong" AddV="36"/>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="9"/>
+			<li Name="MaxAge" AddV="-3000"/>
+			</Properties>
+	</Modifier>
+	
+	<Modifier Name="XT_TMXTX" Type="Normal">
+		<DisplayName>屠魔</DisplayName>
+		<Desc>每层buff加成，寿元5年，身体强大系数加1</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>XT_TMXT</LuaClassName>
+		<Properties>
+			<li Name="BodyPratice_BodyStrong" AddV="1"/>
+			<li Name="MaxAge" AddV="10"/>
+			</Properties>
+	</Modifier>
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

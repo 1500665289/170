@@ -1,0 +1,28 @@
+<ModifierDefs><List>
+	<Modifier Name="MS_XZZX" Type="Normal">
+		<DisplayName>腥燥之气</DisplayName>
+		<Desc>这只金刚可能太久没洗澡了。护盾值扣除百分1000，灵力回复扣除百分500</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="-5"/>
+			<li Name="NpcFight_ShieldConversionRate" AddP="-10"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

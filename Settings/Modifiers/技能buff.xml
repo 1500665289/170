@@ -1,0 +1,27 @@
+<ModifierDefs><List>
+	
+
+	<Modifier Name="WX_JN_1_1" Type="Normal">
+		<DisplayName>太阳金经——尘归尘</DisplayName>
+		<Desc>习得太阳金经中的一个秘术。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_MNYJ_1</LuaClassName>
+	</Modifier>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

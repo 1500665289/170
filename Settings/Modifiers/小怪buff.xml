@@ -1,0 +1,427 @@
+<ModifierDefs><List>
+	<Modifier Name="WX_BSR" Type="Normal">
+		<DisplayName>蛮荒</DisplayName>
+		<Desc>受到任何部位伤害都削弱百分75效果。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>
+				<li Name="Barrier" LevelOver="10"/><!-- 丹器 30-->
+				<li Name="Fight" LevelOver="15"/><!-- 丹器 30-->
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_MNYJ" Type="Normal">
+		<DisplayName>魂息</DisplayName>
+		<Desc>当灵力值到达55/30时，会进行2次的魂息，吸取随机一名npc 2000灵力/每秒，恢复至每个阶段的值即可停止，可被打断。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_MNYJ</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_MNYJ1" Type="Normal">
+		<DisplayName>魂息</DisplayName>
+		<Desc>当灵力值到达75/40/10时，会进行三次的魂息，吸取随机一名npc 2000灵力/每秒，恢复至每个阶段的值即可停止，可被打断。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_MNYJ2" Type="Normal">
+		<DisplayName>魂息</DisplayName>
+		<Desc>当灵力值到达75/40/10时，会进行三次的魂息，吸取随机一名npc 2000灵力/每秒，恢复至每个阶段的值即可停止，可被打断。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_MNYJ_1" Type="Normal">
+		<DisplayName>法老侍卫</DisplayName>
+		<Desc>灵力值达到百分五十时，释放一次对所有单位的伤害技能，清空灵力值与真气值，可被阻止释放。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_MNYJ_1</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_MNYJ_1_0" Type="Normal">
+		<DisplayName>法老侍卫</DisplayName>
+		<Desc>灵力值达到百分五十时，释放一次对所有单位的伤害技能，清空灵力值与真气值，可被阻止释放。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_MNYJ_1</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_MNY1" Type="Normal">
+		<DisplayName>沙漠死神</DisplayName>
+		<Desc>对木属性拥有额外伤害,200/800/3000，对土属性功法免疫程度分别为1000/5000/9999</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="1000"/>
+		</Properties>
+	</Modifier>
+		<Modifier Name="WX_MNYJ_2" Type="Normal">
+		<DisplayName>法老禁军</DisplayName>
+		<Desc>给予全场施加一个降低术法等级上限15级的debuff。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_MNYJ_2</LuaClassName>
+		<Skills>
+				<li Name="FightSkill" LevelOver="-15"/><!--战斗-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_MNYJ_3" Type="Normal">
+		<DisplayName>法老王</DisplayName>
+		<Desc>灵力低于百分五十时，免疫体修攻击。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_MNYJ_3</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_MNYJ_2_0" Type="Normal">
+		<DisplayName>法老禁军</DisplayName>
+		<Desc>给予全场施加一个降低术法等级上限15级的debuff。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>
+				<li Name="FightSkill" LevelOver="-15"/><!--战斗-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_MNY2" Type="Normal">
+		<DisplayName>沙漠死神</DisplayName>
+		<Desc>对木属性拥有额外伤害，对土属性功法免疫程度分别为1000/5000/9999</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="5000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_MNY3" Type="Normal">
+		<DisplayName>沙漠死神</DisplayName>
+		<Desc>对木属性拥有额外伤害，对土属性功法免疫程度分别为1000/5000/9999</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="9999"/>
+		</Properties>
+	</Modifier>
+	
+	
+	
+	
+	
+	<Modifier Name="SSW_WZ1" Type="Normal">
+		<DisplayName>王者丧尸</DisplayName>
+		<Desc>真气处于75,50,25时分别召唤3阶2只，2阶2只，1阶6只（一次性）</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>SSW_WZ</LuaClassName>
+	</Modifier>
+	<Modifier Name="SSW_WZ1_x" Type="Normal">
+		<DisplayName>王者丧尸</DisplayName>
+		<Desc>真气处于75,50,25时分别召唤3阶4只，2阶4只，1阶12只（一次性）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="SSW_WZ2_x" Type="Normal">
+		<DisplayName>王者丧尸</DisplayName>
+		<Desc>真气处于75,50,25时分别召唤3阶4只，2阶4只，1阶12只（一次性）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="SSW_WZ3_x" Type="Normal">
+		<DisplayName>王者丧尸</DisplayName>
+		<Desc>真气处于75,50,25时分别召唤3阶4只，2阶4只，1阶12只（一次性）</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="SSW_SX1" Type="Normal">
+		<DisplayName>屠戮</DisplayName>
+		<Desc>地图全局，每有一名玩家死亡单位尸体，每秒最大真气值提高15，获得攻速加成0.01，攻击力防御加成百分0.05，疼痛忍耐加0.05，身体强大系数加0.08。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>SSW_SX</LuaClassName>
+	</Modifier>
+	<Modifier Name="SSW_SX2" Type="Normal">
+		<DisplayName>屠戮</DisplayName>
+		<Desc>地图全局，每有一名玩家死亡单位尸体，每秒最大真气值提高25，获得攻速加成0.02，攻击力防御加成百分0.15，疼痛忍耐加0.15，身体强大系数加0.12。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>SSW_SX</LuaClassName>
+	</Modifier>
+	<Modifier Name="SSW_SX3" Type="Normal">
+		<DisplayName>屠戮</DisplayName>
+		<Desc>地图全局，每有一名玩家死亡单位尸体，每秒最大真气值提高50，获得攻速加成0.05，攻击力防御加成百分0.5，疼痛忍耐加0.5，身体强大系数加0.8。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>SSW_SX</LuaClassName>
+	</Modifier>
+	<Modifier Name="SSW_DX" Type="Normal">
+		<DisplayName>丧尸王毒之心</DisplayName>
+		<Desc>携带三阶病毒</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>			
+			<li Name="BodyPratice_BodyStrong" AddV="200"/>
+		</Properties>
+		
+	</Modifier>
+	<Modifier Name="WX_SD_1" Type="Normal">
+		<DisplayName>尸毒（一阶）</DisplayName>
+		<Desc>携带尸毒</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SD_2" Type="Normal">
+		<DisplayName>尸毒（二阶）</DisplayName>
+		<Desc>携带尸毒</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SD_3" Type="Normal">
+		<DisplayName>尸毒（三阶）</DisplayName>
+		<Desc>携带尸毒</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	
+	<Modifier Name="WX_XMX" Type="Normal">
+		<DisplayName>邪眸</DisplayName>
+		<Desc>被一眼忘穿。</Desc>
+		<MaxStack>6</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="WX_XMBJ" Type="Normal">
+		<DisplayName>邪眸</DisplayName>
+		<Desc>被一眼忘穿。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_XM" Type="Normal">
+		<DisplayName>邪眸</DisplayName>
+		<Desc>携带技能邪眸使随机一名角色昏迷，.持续时间分别为10,20,30.对注射T病毒血清者减半持续时间。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>XM</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_XM1" Type="Normal">
+		<DisplayName>邪眸</DisplayName>
+		<Desc>携带技能邪眸使随机一名角色昏迷，.持续时间分别为10,20,30.对注射T病毒血清者减半持续时间。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>XM</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_XM2" Type="Normal">
+		<DisplayName>邪眸</DisplayName>
+		<Desc>携带技能邪眸使随机一名角色昏迷，.持续时间分别为10,20,30.对注射T病毒血清者减半持续时间。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>XM</LuaClassName>
+	</Modifier>
+
+	<Modifier Name="SS_BM1" Type="Normal">
+		<DisplayName>boom</DisplayName>
+		<Desc>死后对范围100以内所有玩家单位，造成50000灵力值或真气值真实伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>BM</LuaClassName>
+	</Modifier>
+	<Modifier Name="SS_BM2" Type="Normal">
+		<DisplayName>boom</DisplayName>
+		<Desc>死后对范围10以内所有玩家单位，造成100000灵力值或真气值真实伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>BM</LuaClassName>
+	</Modifier>
+	<Modifier Name="SS_BM3" Type="Normal">
+		<DisplayName>boom</DisplayName>
+		<Desc>死后对范围10以内所有玩家单位，造成300000灵力值或真气值真实伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>BM</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="SS_GT" Type="Normal">
+		<DisplayName>邪眸</DisplayName>
+		<Desc>被暂时控制了。</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>XMK</LuaClassName>
+		<EndModifier>XMK_J</EndModifier>
+	</Modifier>	
+	<Modifier Name="WX_GT" Type="Normal">
+		<DisplayName>鬼瞳</DisplayName>
+		<Desc>携带技能鬼瞳使随机一名角色被控制，持续时间分别为10.对注射T病毒血清者减半持续时间。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>GT</LuaClassName>
+	</Modifier>	
+	<Modifier Name="XMK_J" Type="Normal">
+		<DisplayName>解除控制</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<LuaClassName>XMK_J</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="JP" Type="Normal">
+		<DisplayName>疾跑</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+				
+				<li Name="MoveSpeed" AddP="10"/><!--移动速度-->
+
+			</Properties>
+	</Modifier>
+	<Modifier Name="FH" Type="Normal">
+		<DisplayName>缝合</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>
+				
+				<li Name="NpcFight_ShieldConversionRate" AddV="1"/><!--护盾强度加值2-->
+				<li Name="BodyPratice_BodyRecover" AddV="10"/><!--护盾强度加值2-->
+				<li Name="BodyPratice_BodyStrong" AddV="0.5"/><!--护盾强度加值2-->
+
+			</Properties>
+	</Modifier>
+
+	<Modifier Name="WX_SD_X1" Type="Normal">
+		<DisplayName>感染（一阶）</DisplayName>
+		<Desc>受到感染</Desc>
+		<MaxStack>20000</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXSD</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Projectiles/Life/LifeImpactMega" />
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="WX_SD_X2" Type="Normal">
+		<DisplayName>感染（二阶）</DisplayName>
+		<Desc>受到感染</Desc>
+		<MaxStack>10000</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXSD</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Projectiles/Life/LifeImpactMega" />
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="WX_SD_X3" Type="Normal">
+		<DisplayName>感染（三阶）</DisplayName>
+		<Desc>受到感染</Desc>
+		<MaxStack>5000</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXSD</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/A/Prefabs/Projectiles/Life/LifeImpactMega" />
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="WX_SD_T" Type="Normal">
+		<DisplayName>感染</DisplayName>
+		<Desc>受到感染</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

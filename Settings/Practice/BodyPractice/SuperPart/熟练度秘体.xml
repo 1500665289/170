@@ -1,0 +1,226 @@
+<BPSuperPartDefs><List>
+	<Def Name="WX_SLDDJ3X2"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>剑</Prefix>
+		<Suffix>骨</Suffix>
+		<Desc>。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Muzzleflash/Normal/FireMuzzleNormal</AtkEffect>
+		<DefEffect>Effect\gsq\Prefab\fx_fz_guangzhu</DefEffect>
+		<Parts>
+			<li Name="Skull"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="3,5,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftForeFinger"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_JiaoLongYuanJing" Levels="0,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftMiddleFinger"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_JieMieJingHua" Levels="1,1,1"/>
+				</Labels>
+			</li>
+				
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1111\n提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.6"/>
+					<li Name="DefRate" AddV="0.6"/>
+					<li Name="AtkPower" BAddV="1111"/>
+
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高防御力5000。</Desc>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="5000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25，每次受到攻击时，反馈该伤害百分15给对手。</Desc>
+				<Modifier>WX_SLDDJ3X2</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="WX_SLDC2X3"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>奔雷</Prefix>
+		<Suffix>之躯</Suffix>
+		<Desc>三阶解锁，奔雷体免疫金属性伤害。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<Parts>
+			<li Name="Body"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_A01_Jin" Levels="4,8,16"/>
+				</Labels>
+			</li>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_EXJin" Levels="1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="RightHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_JiaoLongYuanJing" Levels="1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="Heart"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_JiaoLongYuanJing" Levels="1,2,4"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高对金属性伤害的抗性百分30，提高秘体法宝镇压能力，提高秘体防御成功率</Desc>
+				<Modifier>WX_SLDC2X31</Modifier>
+				<SuperPartProperties>
+					<li Name="DefRate" AddV="0.1"/>
+					<li Name="CatchFabao" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高对金属性伤害的抗性百分30，提高秘体激狂之怒倍率，提高激狂之怒持续时间，提高秘体基础攻击力500</Desc>
+				<Modifier>WX_SLDC2X32</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkPower" BAddV="500"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>免疫金属性伤害，增加食量，增加移动速度，提高秘体全局攻击力加成，全局防御力加成。</Desc>
+				<Modifier>WX_SLDC2X33</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	<Def Name="WX_SLDC2X3"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>狂战</Prefix>
+		<Suffix>之躯</Suffix>
+		<Desc>解锁姿态：狂战士，获得大量疼痛忍耐提升,获得大量秘体攻击力提升，寿元流逝速度加快。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<Parts>
+			<li Name="Body"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_EXHuo" Levels="1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_EXJin" Levels="1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="RightHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_ZhuLongYuanJing" Levels="1,2,4"/>
+				</Labels>
+			</li>
+			<li Name="Heart"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A02_XuanTianZiQi" Levels="0,0,1"/>
+				</Labels>
+			</li>	
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体根本攻击力5000\n减少秘体防御力10000</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" AddV="-10000"/>
+					<li Name="AtkPower" BAddV="5000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高秘体回气能力，提高秘体镇压法宝能力。</Desc>
+				<SuperPartProperties>
+					<li Name="RecoverQi" BAddV="2"/>
+					<li Name="CatchFabao" AddV="0.2"/>
+				</SuperPartProperties>
+			</li>
+			
+			<li>
+				<Title>第三重</Title>
+				<Desc>解锁姿态狂战士，增加食量，增加移动速度，提高秘体全局攻击力加成，提高火属性抗性。</Desc>
+				<Modifier>WX_SLDF2X31</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+				<UnLockAttitude>
+					<li>WX_SLDF2X3</li>
+				</UnLockAttitude>
+			</li>
+		</Levels>
+	</Def>
+		
+		<Def Name="WX_SLDP2X3"><!--测试秘体-->
+		<EquptAdvise>Defense</EquptAdvise>
+		<Prefix>轮回</Prefix>
+		<Suffix>眼</Suffix>
+		<Desc>解锁姿态：轮回开，开启期间获得大量真气恢复速度，同时每秒减少1年寿元。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<Parts>
+			<li Name="LeftEye"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A03_TaiXuJingHua" Levels="1"/>
+				</Labels>
+			</li>
+			<li Name="RightEye"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A02_TaiXuJingHua" Levels="1"/>
+				</Labels>
+			</li>
+			
+		</Parts>
+		
+		<Levels>
+			
+			<li>
+				<Title>第一重</Title>
+				<Desc>解锁姿态：轮回开，增加秘体防御，防御成功率，穿透能力。</Desc>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="DefPower" BAddV="3000"/>
+					<li Name="DefRate" BAddV="0.4"/>
+				</SuperPartProperties>
+				<UnLockAttitude>
+					<li>WX_SLDP2X3</li>
+				</UnLockAttitude>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	
+</List></BPSuperPartDefs>

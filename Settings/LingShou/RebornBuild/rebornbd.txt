@@ -1,0 +1,2 @@
+race	bdtag	desc
+WX_QL	WX_QLStone	..。

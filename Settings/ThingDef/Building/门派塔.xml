@@ -1,0 +1,106 @@
+﻿<ThingDefs><List>
+	
+	<ThingDef Type="Building" Name="WX_XMPT1" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\HZ.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>褐祖</ThingName>
+	<Desc>褐狙，星象峰？代弟子，红发褐瞳，狼族红魔狼，被星象峰？+1代弟子收服带回星象峰，吸收星斗之力化为人形拜入星象峰门下，一手钺法出神入化。单体攻击塔伤害5000/3000，进阶后转为群攻塔，范围25</Desc>
+	<ClassName>XXFT1</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "800"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="WX_XMPT2" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\MH.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>明浩</ThingName>
+	<Desc>明浩本名木柠溪，一千五百年前，一名星象峰天才弟子木柠溪，为解其爱人苏明浩中的葬渊阁秘法—陨落黄泉（死者灵魂进入阿鼻地狱，每日每夜承受刀刮油炸之苦），而使用了星象峰禁法：法罗星咒，其代价便是灵魂消散不入轮回。星象塔塔灵为其爱情所感动，发动星象之力留下木柠溪之魂，但因禁法太强而导致木柠溪神志混乱，只在每年的七月七，单体攻击塔，伤害2000灵力/500真气，解锁科技后转为弹射塔。</Desc>
+	<ClassName>XXFT2</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "1400"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="WX_XMPT3" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\ML.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>墨灵</ThingName>
+	<Desc>法墨灵，星象峰内门二师兄，不会术法但有着门派内无人能比的剑术造诣，将门派的入门剑法使得出神入化，曾一剑刺中敌对门派的护山大阵阵眼将之击破，虽然其早年修炼资质极差不被任何人所看好，但他仍然日服一日年复一年，反复的练习着门派内最低价的剑法，终于在十年之后的门派大比中得到了优胜，用入门剑法在三招内击破当时大会的种子选手取得优胜，掌门亲自赋予其称号“一心剑”，一生一世一心剑，单体攻击塔每次命中造成护盾值下降，解锁科技后获得额外攻击能力每二十次攻击降低其1级护盾等级</Desc>
+	<ClassName>XXFT3</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "600"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	</ThingDef>	
+	
+</List></ThingDefs>

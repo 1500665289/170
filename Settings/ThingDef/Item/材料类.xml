@@ -1,0 +1,3611 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_YJWSXT" Parent="MaterialBase">
+	<ThingName>一阶无属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\WT.PNG</TexPath> 
+	<Desc>一阶无属性铁矿，用于制作一阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>6</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>一阶混元</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>一阶混元</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>50</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>50</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>50</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>6</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_EJWSXT" Parent="MaterialBase">
+	<ThingName>二阶无属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\WT.PNG</TexPath> 
+	<Desc>二阶无属性铁矿，用于制作二阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>9</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>二阶混元</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB2_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>二阶混元</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>500</BluntDamageMultiplier>
+			<LingDamageMultiplier>500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>250</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>250</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>250</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SJWSXT" Parent="MaterialBase">
+	<ThingName>三阶无属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\WT.PNG</TexPath> 
+	<Desc>三阶无属性铁矿，用于制作三阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>三阶混元</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>三阶混元</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>1500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1500</BluntDamageMultiplier>
+			<LingDamageMultiplier>1500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_WSXT" Parent="MaterialBase">
+	<ThingName>日月神铁</ThingName> 
+	<TexPath>Spr\Object\CL\WT.PNG</TexPath> 
+	<Desc>四阶无属性铁矿，用于制作四阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>日月</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_N</li>
+			<li>FB3_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>四阶混元</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>5500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>5500</BluntDamageMultiplier>
+			<LingDamageMultiplier>5500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>2750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>2750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>2750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>20</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_YJJSXT" Parent="MaterialBase">
+	<ThingName>一阶金属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\JT.PNG</TexPath> 
+	<Desc>一阶金属性铁矿，用于制作一阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>6</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>一阶庚金</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_J</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>一阶庚金</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>200</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>50</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>50</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>50</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Jin</Kind>   五行属性
+		<Value>6</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_EJJSXT" Parent="MaterialBase">
+	<ThingName>二阶金属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\JT.PNG</TexPath> 
+	<Desc>二阶金属性铁矿，用于制作二阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>9</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>二阶庚金</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB2_J</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>二阶庚金</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>1000</SharpDamageMultiplier>
+			<BluntDamageMultiplier>500</BluntDamageMultiplier>
+			<LingDamageMultiplier>500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>250</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>250</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>250</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Jin</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SJJSXT" Parent="MaterialBase">
+	<ThingName>三阶金属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\JT.PNG</TexPath> 
+	<Desc>三阶金属性铁矿，用于制作三阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>三阶庚金</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_J</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>三阶庚金</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>3000</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1500</BluntDamageMultiplier>
+			<LingDamageMultiplier>1500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Jin</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSXT" Parent="MaterialBase">
+	<ThingName>万刃精铁</ThingName> 
+	<TexPath>Spr\Object\CL\JT.PNG</TexPath> 
+	<Desc>四阶金属性铁矿，用于制作四阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>万刃</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_J</li>
+			<li>FB3_J</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>四阶庚金</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>11000</SharpDamageMultiplier>
+			<BluntDamageMultiplier>5500</BluntDamageMultiplier>
+			<LingDamageMultiplier>5500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>2750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>2750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>2750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>20</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Jin</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_YJMSXT" Parent="MaterialBase">
+	<ThingName>一阶木属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\MT.PNG</TexPath> 
+	<Desc>一阶木属性铁矿，用于制作一阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>6</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Mu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>一阶青殇</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_M</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>一阶青殇</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>200</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>50</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>50</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>50</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>   五行属性
+		<Value>6</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_EJMSXT" Parent="MaterialBase">
+	<ThingName>二阶木属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\MT.PNG</TexPath> 
+	<Desc>二阶木属性铁矿，用于制作二阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>9</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Mu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>二阶青殇</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB2_M</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>二阶青殇</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1000</BluntDamageMultiplier>
+			<LingDamageMultiplier>500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>250</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>250</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>250</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SJMSXT" Parent="MaterialBase">
+	<ThingName>三阶木属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\MT.PNG</TexPath> 
+	<Desc>三阶木属性铁矿，用于制作三阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Mu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>三阶青殇</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_M</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>三阶青殇</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>1500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>3000</BluntDamageMultiplier>
+			<LingDamageMultiplier>1500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_MSXT" Parent="MaterialBase">
+	<ThingName>青云秘铁</ThingName> 
+	<TexPath>Spr\Object\CL\MT.PNG</TexPath> 
+	<Desc>四阶木属性铁矿，用于制作四阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Mu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>青云</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_M</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>四阶青殇</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>5500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>11000</BluntDamageMultiplier>
+			<LingDamageMultiplier>5500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>2750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>2750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>2750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>20</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_YJSSXT" Parent="MaterialBase">
+	<ThingName>一阶水属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\ST.PNG</TexPath> 
+	<Desc>一阶水属性铁矿，用于制作一阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>6</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Shui</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>一阶碧波</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_S</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>一阶碧波</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>200</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>50</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>50</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>50</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>   五行属性
+		<Value>6</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_EJSSXT" Parent="MaterialBase">
+	<ThingName>二阶水属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\ST.PNG</TexPath> 
+	<Desc>二阶水属性铁矿，用于制作二阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>9</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Shui</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>二阶碧波</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB2_S</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>二阶碧波</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>500</BluntDamageMultiplier>
+			<LingDamageMultiplier>1000</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>250</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>250</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>250</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SJSSXT" Parent="MaterialBase">
+	<ThingName>三阶水属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\ST.PNG</TexPath> 
+	<Desc>三阶水属性铁矿，用于制作三阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Shui</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>三阶碧波</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_S</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>三阶碧波</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>1500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1500</BluntDamageMultiplier>
+			<LingDamageMultiplier>3000</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SSXT" Parent="MaterialBase">
+	<ThingName>青云秘铁</ThingName> 
+	<TexPath>Spr\Object\CL\ST.PNG</TexPath> 
+	<Desc>四阶水属性铁矿，用于制作四阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Shui</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>青云</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_S</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>四阶碧波</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>5500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>5500</BluntDamageMultiplier>
+			<LingDamageMultiplier>11000</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>2750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>2750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>2750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>20</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_YJHSXT" Parent="MaterialBase">
+	<ThingName>一阶火属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\HT.PNG</TexPath> 
+	<Desc>一阶火属性铁矿，用于制作一阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>6</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Huo</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>一阶烈炎</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_H</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>一阶烈炎</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>150</SharpDamageMultiplier>
+			<BluntDamageMultiplier>150</BluntDamageMultiplier>
+			<LingDamageMultiplier>150</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>50</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>50</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>50</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Huo</Kind>   五行属性
+		<Value>6</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_EJHSXT" Parent="MaterialBase">
+	<ThingName>二阶火属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\HT.PNG</TexPath> 
+	<Desc>二阶火属性铁矿，用于制作二阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>9</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Huo</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>二阶烈炎</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB2_H</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>二阶烈炎</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>750</SharpDamageMultiplier>
+			<BluntDamageMultiplier>750</BluntDamageMultiplier>
+			<LingDamageMultiplier>750</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>250</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>250</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>250</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Huo</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SJHSXT" Parent="MaterialBase">
+	<ThingName>三阶火属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\HT.PNG</TexPath> 
+	<Desc>三阶火属性铁矿，用于制作三阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Huo</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>三阶烈炎</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_H</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>三阶烈炎</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>2750</SharpDamageMultiplier>
+			<BluntDamageMultiplier>2750</BluntDamageMultiplier>
+			<LingDamageMultiplier>2750</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Huo</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_HSXT" Parent="MaterialBase">
+	<ThingName>赤虹仙铁</ThingName> 
+	<TexPath>Spr\Object\CL\HT.PNG</TexPath> 
+	<Desc>四阶火属性铁矿，用于制作四阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Huo</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>赤虹</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_H</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>四阶烈炎</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>8000</SharpDamageMultiplier>
+			<BluntDamageMultiplier>8000</BluntDamageMultiplier>
+			<LingDamageMultiplier>8000</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>2750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>2750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>2750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>20</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Huo</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_YJTSXT" Parent="MaterialBase">
+	<ThingName>一阶土属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\TT.PNG</TexPath> 
+	<Desc>一阶土属性铁矿，用于制作一阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>6</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Tu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>一阶源土</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_T</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>一阶源土</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>   五行属性
+		<Value>6</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_EJTSXT" Parent="MaterialBase">
+	<ThingName>二阶土属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\TT.PNG</TexPath> 
+	<Desc>二阶土属性铁矿，用于制作二阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>9</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Tu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>二阶源土</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB2_T</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>二阶源土</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>500</BluntDamageMultiplier>
+			<LingDamageMultiplier>500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SJTSXT" Parent="MaterialBase">
+	<ThingName>三阶土属性铁矿</ThingName> 
+	<TexPath>Spr\Object\CL\TT.PNG</TexPath> 
+	<Desc>三阶土属性铁矿，用于制作三阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Tu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>三阶源土</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_T</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>三阶源土</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>1500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>1500</BluntDamageMultiplier>
+			<LingDamageMultiplier>1500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>1750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>1750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>1750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>12</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_TSXT" Parent="MaterialBase">
+	<ThingName>狂沙秘铁</ThingName> 
+	<TexPath>Spr\Object\CL\TT.PNG</TexPath> 
+	<Desc>四阶土属性铁矿，用于制作四阶武器。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Tu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>狂沙</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB3_T</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>四阶源土</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>5500</SharpDamageMultiplier>
+			<BluntDamageMultiplier>5500</BluntDamageMultiplier>
+			<LingDamageMultiplier>5500</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>6750</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>6750</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>6750</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>20</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_JSXJ" Parent="MaterialBase">
+	<ThingName>稀金</ThingName> 
+	<TexPath>Spr\Object\CL\XJ.PNG</TexPath> 
+	<Desc>昂贵而稀少的金属，是制作高科技的材料之一。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Jin</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>稀金</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_J</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>稀金</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Jin</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSTSJ" Parent="MaterialBase">
+	<ThingName>T—水晶</ThingName> 
+	<TexPath>Spr\Object\CL\TSJ.PNG</TexPath> 
+	<Desc>昂贵而稀少的金属，是制作高科技的材料之一。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Mu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>T—水晶</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_M</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>T—水晶</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Mu</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSSY" Parent="MaterialBase">
+	<ThingName>水银</ThingName> 
+	<TexPath>Spr\Object\CL\SY.PNG</TexPath> 
+	<Desc>昂贵而稀少的金属，是制作高科技的材料之一。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Jin</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>水银</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_S</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>水银</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Shui</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSZJ" Parent="MaterialBase">
+	<ThingName>紫晶</ThingName> 
+	<TexPath>Spr\Object\CL\ZJ.PNG</TexPath> 
+	<Desc>昂贵而稀少的金属，是制作高科技的材料之一。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>Tu</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>紫晶</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_T</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>紫晶</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>Tu</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSHJ" Parent="MaterialBase">
+	<ThingName>深海-Pb</ThingName> 
+	<TexPath>Spr\Object\CL\HJ.PNG</TexPath> 
+	<Desc>昂贵而稀少的金属，是制作高科技的材料之一。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>深海-Pb</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix>深海-Pb</NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSADM" Parent="MaterialBase">
+	<ThingName>艾德玛金属</ThingName> 
+	<TexPath>Spr\Object\CL\HJ.PNG</TexPath> 
+	<Desc>制作什么都很强的金属。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>艾德玛金属</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_N</li>
+			<li>FB_N</li>
+			<li>FB_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix><li>FB_N</li></NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSMY" Parent="MaterialBase">
+	<ThingName>密银</ThingName> 
+	<TexPath>Spr\Object\CL\MY.PNG</TexPath> 
+	<Desc>制作什么都很强的金属。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>密银</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_N</li>
+			<li>FB_N</li>
+			<li>FB_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix><li>FB_N</li></NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JSMB" Parent="MaterialBase">
+	<ThingName>滅钯铁</ThingName> 
+	<TexPath>Spr\Object\CL\MBJS.PNG</TexPath> 
+	<Desc>制作什么都很强的金属。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>20</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item Lable="Metal">
+		<FabaoSuffix>滅钯铁</FabaoSuffix>   法宝前缀
+		<PhysicalLables>
+			<li>FB_N</li>
+			<li>FB_N</li>
+			<li>FB_N</li>
+		</PhysicalLables>
+		<BeMaterial>    
+			<NamePrefix><li>FB_N</li></NamePrefix>
+			<MaxHitPointsPerNum>1000</MaxHitPointsPerNum>   
+			<AttackSpeedWhenBeMain>1</AttackSpeedWhenBeMain>
+			<SharpDamageMultiplier>100</SharpDamageMultiplier>
+			<BluntDamageMultiplier>100</BluntDamageMultiplier>
+			<LingDamageMultiplier>100</LingDamageMultiplier>
+
+			<SharpDefenceMultiplier>150</SharpDefenceMultiplier>
+			<BluntDefenceMultiplier>150</BluntDefenceMultiplier>
+			<LingDefenceMultiplier>150</LingDefenceMultiplier>
+			<LingNumberRate>0.1</LingNumberRate> 
+			<FlammabilityWhenBeMain>-1</FlammabilityWhenBeMain>
+			<BeautyWhenBeMain>15</BeautyWhenBeMain> 
+			<ElementPowerWhenBeMain>6</ElementPowerWhenBeMain>
+			<RateWhenBeMain>3</RateWhenBeMain>
+			<WorktoMakeRate>3</WorktoMakeRate>
+			<WorktoBuildRate>3</WorktoBuildRate>
+		</BeMaterial>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>3</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!--无-->
+	<ThingDef Type="Item" Name="Item_AL" Parent="DrugBase">
+	<ThingName>闇莲</ThingName>
+	<TexPath>Spr\Object\CL\AL.PNG</TexPath>	
+	<Desc>极北冰寒处有一秘境终年飞雪，常人行不足百米便化为一座冰雕，然早年有一大能为探冰原之秘于其中遁行七日。源力将尽之时在冰原中探到一处不冻池，池水漆黑如墨却带一缕清香，以五行之力探之却入泥牛入海悄无声息。池中生有数朵黑色莲花，大能为补充源力无奈摘取一朵而食，黑色莲花入口仿如一股寒流却转瞬而逝，再入风雪竟不觉寒意。大能将数颗莲子带出秘境，因其色为黑，故称闇莲。</Desc>
+	<Rate>8</Rate>
+	<Tags>
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>None</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="3500" />
+					<SalePrice Value="1000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3500" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_N</li>
+		</PhysicalLables>
+		<FabaoSuffix>闇莲,闇,莲</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_AL</Modifier>
+			<Fesistance>0.6</Fesistance>
+		</Elixir>
+		<Food>
+			<Ling>10000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>30</Nutrition>
+			<FunAddion>25</FunAddion>
+			<PracticeNutrition>-5000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMax>10</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>-600</Value>
+		<Radius>5</Radius>
+		<RoomValue>-850</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>None</Kind>
+	</Element>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_YYC" Parent="DrugBase">
+	<ThingName>阴阳草</ThingName>
+	<TexPath>Spr\Object\CL\YYC.PNG</TexPath>	
+	<Desc>西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。山中树木常受衔烛之力侵染故阴阳之力随环境而变，当天地阴阳平衡之时，叶片饱含阴阳交融催生大道，食之修行当以事半功倍。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>None</ElementKind>
+	<Item>
+	<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="9500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="5500" />
+					<SalePrice Value="1000" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_N</li>
+		</PhysicalLables>
+		<FabaoSuffix>阴阳草,阴草,阳草</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_YYC</Modifier>
+		</Elixir>
+		<Food>
+			<Ling>40000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>-100</Nutrition>
+			<FunAddion>10</FunAddion>
+			<PracticeNutrition>3000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-30</TempMin>
+			<TempMax>30</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>10</Value>
+		<Radius>5</Radius>
+		<RoomValue>20</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>None</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SYC" Parent="DrugBase">
+	<ThingName>三阳春</ThingName>
+	<TexPath>Spr\Object\CL\SYC.PNG</TexPath>	
+	<Desc>一阳生，二阳长，三阳开泰，冬去春来阴消阳长，有吉亨兴盛之象。药者入冬时分取三味阳气之药逐一而制，历三月，新春而成神药。色如珍珠，璀璨夺目，献于贵客以贺新春，食之功力大增。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>None</ElementKind>
+	
+	<Item>
+	<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_N</li>
+		</PhysicalLables>
+		<FabaoSuffix>三阳春,三阳,阳春</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_SYC</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>10</Nutrition>
+			<FunAddion>20</FunAddion>
+			<PracticeNutrition>3000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-30</TempMin>
+			<TempMax>40</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>100</Value>
+		<Radius>5</Radius>
+		<RoomValue>150</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>None</Kind>
+	</Element>
+	</ThingDef>	
+	<ThingDef Type="Item" Name="Item_JMY" Parent="DrugBase">
+	<ThingName>境明叶</ThingName>
+	<TexPath>Spr\Object\CL\JMY.PNG</TexPath>	
+	<Desc>境明，境明，相传上古时期，仙界与凡界相通之时，境明叶因浓郁的灵气，而在叶片上能够显现奇妙的道纹，能够让人心爽气清，参悟透便可悟道突破。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>None</ElementKind>
+	
+	<Item>
+	<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3000"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_N</li>
+		</PhysicalLables>
+		<FabaoSuffix>境明叶</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_JMY</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>10</Nutrition>
+			<FunAddion>20</FunAddion>
+			<PracticeNutrition>2000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>20</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>15</Value>
+		<Radius>5</Radius>
+		<RoomValue>15</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>None</Kind>
+	</Element>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.2</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		
+	</Light>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SMG" Parent="DrugBase">
+	<ThingName>双明果</ThingName>
+	<TexPath>Spr\Object\CL\SMG.PNG</TexPath>	
+	<Desc>生于极特殊之地的双明果，吃下后持续一段时间内，能让人减低100点道行，持续时间过后因受激烈的阴阳冲击而导致昏迷十日。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>None</ElementKind>
+	
+	<Item>
+	<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5000"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="5000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_N</li>
+		</PhysicalLables>
+		<FabaoSuffix>双明,双明果</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_SMG</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>10</Nutrition>
+			<FunAddion>20</FunAddion>
+			<PracticeNutrition>2000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>20</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>15</Value>
+		<Radius>5</Radius>
+		<RoomValue>15</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>None</Kind>
+	</Element>
+	<Light>
+		<Value>15</Value>
+		<Failing>0.2</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>1</Radius>
+		
+	</Light>
+	</ThingDef>
+<!--金-->
+		
+	<ThingDef Type="Item" Name="Item_JC" Parent="DrugBase">
+	<ThingName>剑簇</ThingName>
+	<TexPath>Spr\Object\CL\JC.PNG</TexPath>	
+	<Desc>一颗草可斩星辰，一簇草则可破界。剑簇本为仙域神草，却因坠落凡间而失去灵性，状若普通草药。此草锋利无匹，是为无上炼器灵胎，非半步大能不可摘下，若是直接服用，则会被剑气所伤，造成无法治愈的伤口，但会从根本上大幅增加法宝威力。。</Desc>
+	<Rate>10</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Jin</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="9500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="9500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="19500" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_J</li>
+		</PhysicalLables>
+		<FabaoSuffix>剑簇</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_JC</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>-50</Nutrition>
+			<FunAddion>20</FunAddion>
+			<PracticeNutrition>-2500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-30</TempMin>
+			<TempMax>40</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>30</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Jin</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_SJG" Parent="DrugBase">
+	<ThingName>死劫根</ThingName>
+	<TexPath>Spr\Object\CL\SJG.PNG</TexPath>	
+	<Desc>于荒芜之地被修行者发现的神秘草药，此药状若半截人参，却平平无奇灵性全无，寻常人服下有延年益寿加速筑基之效，但若是修行之人炼化则会立刻引来威力无比强大的天谴。若是能侥幸度过，则会洗涤全身，以身合道，降低一定数值的道行并永久大幅增加修炼速度。。</Desc>
+	<Rate>11</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Jin</ElementKind>
+	
+	<Item>
+	<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="12500"/>
+					<SalePrice Value="1000" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="12500" />
+					<SalePrice Value="1000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="12500" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_J</li>
+		</PhysicalLables>
+		<FabaoSuffix>死劫根,死劫,劫根</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_SJG</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>-35</Nutrition>
+			<FunAddion>-20</FunAddion>
+			<PracticeNutrition>-5000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>35</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>0</Value>
+		<Radius>5</Radius>
+		<RoomValue>0</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Jin</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SLS" Parent="DrugBase">
+	<ThingName>三戾笋</ThingName>
+	<TexPath>Spr\Object\CL\SLS.PNG</TexPath>	
+	<Desc>三戾笋本不存在于人间，乃是上界一禁忌级别存在的道教道统镇派存在，由仙人下界所遗留之物。此药以道教斩三尸之意寻求登仙之路，炼化后服用者会沉寂3日并叫来一堆大神。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Jin</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="7500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="7500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="15500" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_J</li>
+		</PhysicalLables>
+		<FabaoSuffix>三戾笋,戾笋</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_SLS</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>100</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>3000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-20</TempMin>
+			<TempMax>55</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>0</Value>
+		<Radius>5</Radius>
+		<RoomValue>0</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Jin</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_DCC" Parent="DrugBase">
+	<ThingName>笪簇草</ThingName>
+	<TexPath>Spr\Object\CL\DCC.PNG</TexPath>	
+	<Desc>笪簇草，是遮天世界满地都是的一种灵草，但是却因为某代大帝喜欢，而做成了帽子放头上，因此名遍遮天。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Jin</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="7500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="7500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="15500" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_J</li>
+		</PhysicalLables>
+		<FabaoSuffix>笪簇草,笪簇</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_DCC</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>1</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<TempMax>5</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>0</Value>
+		<Radius>5</Radius>
+		<RoomValue>0</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Jin</Kind>
+	</Element>
+	
+	</ThingDef>
+		<ThingDef Type="Item" Name="Item_TSZG" Parent="DrugBase">
+	<ThingName>铁树枝干</ThingName>
+	<TexPath>Spr\Object\CL\TSZG.PNG</TexPath>	
+	<Desc>六树枝出门，强无敌老哥。一根看起来很普通的树枝，它如铁般坚硬的品质赋予持有者好运，食用后增强0.1点护盾值，副作用修炼速度减低0.5 。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Jin</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="7500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="7500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="15500" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_J</li>
+		</PhysicalLables>
+		<FabaoSuffix>铁树枝干</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_TSZG</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>1</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-20</TempMin>
+			<TempMax>55</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>0</Value>
+		<Radius>5</Radius>
+		<RoomValue>0</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Jin</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+<!--木-->	
+	<ThingDef Type="Item" Name="Item_GJZ" Parent="DrugBase">
+	<ThingName>诡节竹</ThingName>
+	<TexPath>Spr\Object\CL\GJZ.PNG</TexPath>	
+	<Desc>号称可以沟通黄泉的神秘竹节，通体碧绿，顶端呈诡异的节支状，故称为诡节竹。有传言服用此药可以灵魂脱离肉身进入黄泉，重修轮回，亦有传言服用此药则会永寂，魂魄永归地府。若是有缘寻到将其炼化，可以掌握冥府之力，获得一次规避死亡的机会。</Desc>
+	<Rate>12</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	
+	<Item>
+		<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="12500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="12500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="22500" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_M</li>
+		</PhysicalLables>
+		<FabaoSuffix>诡节竹,诡竹</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_GJZ</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>20</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>2000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-50</TempMin>
+			<TempMax>0</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+		<Fabao>
+			<ActiveCondition>
+			    <Condition eventid = "RefiningDan" des = "携带胚胎炼制8炉丹药" needcount = "81" fParam = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+			     <Ability Kind="Sync_AddFlag" sParam1="FLAG_ITEM_RESURRECTION" nParam1 = "1" Desc="以破碎为代价，抵挡一次死亡并恢复所有伤害。" />
+			</SpecialAbility>
+		</Fabao>
+	</Item>
+	<Heat>
+		<Value>-75</Value>
+		<Radius>5</Radius>
+		<RoomValue>-100</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Mu</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ZWX" Parent="DrugBase">
+	<ThingName>紫薇星</ThingName>
+	<TexPath>Spr\Object\CL\CLX.PNG</TexPath>	
+	<Desc>以葬帝星命名的神秘草药，通体呈现诡异的紫色，有传闻为老子紫气东来所化，亦有人言此物自葬帝星诞生之日起便存在，与葬帝星一同长存于时间。曾有一弱小道统在濒临灭门的危机关头献祭此物，竟意外使得古之大帝投影降临，并得到了大帝的传承，从此一跃成为大教。</Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="37500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="37500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="35500" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_M</li>
+		</PhysicalLables>
+		<FabaoSuffix>紫薇星</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_ZWX</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>	
+			<Ling>200000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>20</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>-500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>35</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>30</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Mu</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_SXM" Parent="DrugBase">
+	<ThingName>神血木</ThingName>
+	<TexPath>Spr\Object\CL\SXM.PNG</TexPath>	
+	<Desc>沾染着不知名血液的神木，有传闻只有浸染帝血的土地方能诞生出此药。此药蕴有无上帝意。</Desc>
+	<Rate>12</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="12500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="12500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="30000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_M</li>
+		</PhysicalLables>
+		<FabaoSuffix>神血木</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_SXM</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<Ling>150000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>3500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>35</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>30</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Mu</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_HYC" Parent="DrugBase">
+	<ThingName>厚源草</ThingName>
+	<TexPath>Spr\Object\CL\HYC.PNG</TexPath>	
+	<Desc>厚源，乃是南岭以东的一块风景秀丽之地，然而成也厚源，败也厚源，因此厚源草能够使普通人短时间内获得大量的筑基值，并且洗精伐髓，因而引发各大圣地的争夺，现在已经难产于世了。</Desc>
+	<Rate>12</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="12500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="12500" />
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="30000" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_M</li>
+		</PhysicalLables>
+		<FabaoSuffix>厚源</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_HYC</Modifier>
+			<ZhuJi>20000</ZhuJi>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<Ling>150000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>3500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>35</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>30</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Mu</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JY" Parent="DrugBase">
+	<ThingName>九叶</ThingName>
+	<TexPath>Spr\Object\CL\JY.PNG</TexPath>	
+	<Desc>九妙不死药，据传一开始是一株普通的九叶，经过无尽岁月的修行而后称帝，血脉的提升使其从此不再受天地制约，而成为不死药，但是你手上这个不是据传里的那个。</Desc>
+	<Rate>12</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Mu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="12500"/>
+					<SalePrice Value="900" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="12500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="30000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_M</li>
+		</PhysicalLables>
+		<FabaoSuffix>九叶</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_JY</Modifier>
+		</Elixir>
+		<Food>
+			<Ling>150000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>3500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>35</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>30</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Mu</Kind>
+	</Element>
+	
+	</ThingDef>
+
+<!--水-->
+	<ThingDef Type="Item" Name="Item_YMY" Parent="DrugBase">
+	<ThingName>阴瞑叶</ThingName>
+	<TexPath>Spr\Object\CL\YMC.PNG</TexPath>	
+	<Desc>西北海之外，赤水之北，有章尾山。有神，人面蛇身而赤，直目正乘，其瞑乃晦，其视乃明，不食不寝不息，风雨是谒。山中树木常受衔烛之力侵染故阴阳之力随环境而变，冬日子时阴气强盛，叶片饱含阴力，食用可平添道行。坊间亦有传言用此叶磨粉调和浸养头发可以滋养黑发防止脱发。。</Desc>
+	<Rate>6</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="1000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="3000" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_S</li>
+		</PhysicalLables>
+		<FabaoSuffix>阴瞑叶,阴叶,瞑叶</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_YMC</Modifier>
+		</Elixir>
+		<Food>
+			<Ling>5000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>-100</Nutrition>
+			<FunAddion>10</FunAddion>
+			<PracticeNutrition>3000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-90</TempMin>
+			<TempMax>20</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>-100</Value>
+		<Radius>5</Radius>
+		<RoomValue>-150</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Shui</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_JHZ" Parent="DrugBase">
+	<ThingName>净魂枝</ThingName>
+	<TexPath>Spr\Object\CL\JHZ.PNG</TexPath>	
+	<Desc>散发着诡异蓝色的神秘树枝，其上有两片摇摇欲坠的嫩绿树叶，曾有圣人被其气息所引，但仅是一呼一吸便几乎就此化道，更是使得大帝将其镇封千年。时隔千年，净魂枝再次出世，若是有缘得之，。</Desc>
+	<Rate>10</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_S</li>
+		</PhysicalLables>
+		<FabaoSuffix>净魂枝</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_JHZ</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<Ling>20000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>5</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>-5000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-200</TempMin>
+			<TempMax>30</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>30000</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Shui</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_LYC" Parent="DrugBase">
+	<ThingName>蓝焰草</ThingName>
+	<TexPath>Spr\Object\CL\LYC.PNG</TexPath>	
+	<Desc>火域独有的草药，草叶散发着蓝色的火焰，入口却清凉无比，食用可为恢复些许灵力。</Desc>
+	<Rate>6</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_S</li>
+		</PhysicalLables>
+		<FabaoSuffix>蓝焰,草</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Ling>50000</Ling>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>5</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>-5000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<TempMax>900</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>10000</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Shui</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_LYBX" Parent="DrugBase">
+	<ThingName>六叶白须</ThingName>
+	<TexPath>Spr\Object\CL\LYBX.PNG</TexPath>	
+	<Desc>佛门寺院常见草药，色泽花白如老僧长须，叶分六瓣如莲花宝座。食用后增加心境稳定性，持续4天。</Desc>
+	<Rate>6</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_S</li>
+		</PhysicalLables>
+		<FabaoSuffix>六叶白须,白须</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_LYBX</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>5</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>1000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>30</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>30</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Shui</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_LHY" Parent="DrugBase">
+	<ThingName>麟寒叶</ThingName>
+	<TexPath>Spr\Object\CL\LHY.PNG</TexPath>	
+	<Desc>传言冰原有一秘境中生有一片寒叶森林，林中有麒麟族群出没。有人机缘入此秘境见麒麟以树叶为食，姑而摘叶试尝，味甘甜，法术威力有所增强，不过数日而散。</Desc>
+	<Rate>11</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Shui</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="3500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="3500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="6000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_S</li>
+		</PhysicalLables>
+		<FabaoSuffix>麟寒叶,麟寒</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_LHY</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>5</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>1000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-20</TempMin>
+			<TempMax>0</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>-30</Value>
+		<Radius>5</Radius>
+		<RoomValue>-100</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Shui</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+<!--火-->	
+	<ThingDef Type="Item" Name="Item_HYY" Parent="DrugBase">
+	<ThingName>混元叶</ThingName>
+	<TexPath>Spr\Object\CL\YMC.PNG</TexPath>	
+	<Desc>混元者，元气未分，混沌为一，元气之始。传闻混元叶诞生于天地初开，与天地同辉，与日月同寿，囊括万法。数千万年来仅有一人寻到并炼化，从此那人便万法不侵，一度成为世间神话。若是能有缘寻到炼化，想必也能同那人一般，免疫所有伤害。</Desc>
+	<Rate>6</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item>
+	<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="1000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="3000" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_H</li>
+		</PhysicalLables>
+		<FabaoSuffix>混元叶,混叶,元叶</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_HYY</Modifier>
+		</Elixir>
+		<Food>
+			<Ling>5000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>-10</Nutrition>
+			<FunAddion>10</FunAddion>
+			<PracticeNutrition>3500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-10</TempMin>
+			<TempMax>90</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>100</Value>
+		<Radius>5</Radius>
+		<RoomValue>150</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Huo</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_CL" Parent="DrugBase">
+	<ThingName>赤莲</ThingName>
+	<TexPath>Spr\Object\CL\CL.PNG</TexPath>	
+	<Desc>自火域中诞生的黑暗莲花，非但没有水属性的气息，反而在莲花顶端流淌着仙火气息。。</Desc>
+	<Rate>12</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_S</li>
+		</PhysicalLables>
+		<FabaoSuffix>赤莲</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_CL</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<Ling>5000000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>20</Nutrition>
+			<FunAddion>0</FunAddion>
+			<PracticeNutrition>1500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>500</TempMin>
+			<TempMax>5000</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>1200</Value>
+		<Radius>5</Radius>
+		<RoomValue>30</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Huo</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_FXC" Parent="DrugBase">
+	<ThingName>焚仙草</ThingName>
+	<TexPath>Spr\Object\CL\FXC.PNG</TexPath>	
+	<Desc>状若凤羽的神秘草药，流淌着丝丝真火气息，有淡淡的火焰流淌在枝叶顶端。有传闻乱古时代曾有人道顶端高手将其炼化，并借助此力一举打入仙域。</Desc>
+	<Rate>11</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="2500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="2500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_H</li>
+		</PhysicalLables>
+		<FabaoSuffix>焚仙</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_FX</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<Ling>5000000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<FunAddion>50</FunAddion>
+			<PracticeNutrition>-10000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>100</TempMin>
+			<TempMax>15000</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>15000</Value>
+		<Radius>5</Radius>
+		<RoomValue>50</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Huo</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_XYC" Parent="DrugBase">
+	<ThingName>薪叶草</ThingName>
+	<TexPath>Spr\Object\CL\XYC.PNG</TexPath>	
+	<Desc>薪薪之火，可以燎原。薪叶草，本是仙界的薪火树的一片叶，因仙魔之争时，被打散至凡间，化作神草。</Desc>
+	<Rate>11</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_H</li>
+		</PhysicalLables>
+		<FabaoSuffix>薪叶草</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_XYC</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<FunAddion>50</FunAddion>
+			<PracticeNutrition>-2000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>100</TempMin>
+			<TempMax>15000</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>1000</Value>
+		<Radius>5</Radius>
+		<RoomValue>50</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Huo</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_FXY" Parent="DrugBase">
+	<ThingName>凤曦叶</ThingName>
+	<TexPath>Spr\Object\CL\FXY.PNG</TexPath>	
+	<Desc>凤舞九天，凤曦与叶。曾经有一凤族大能，凭此叶，获得无上法力。</Desc>
+	<Rate>11</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Huo</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="5500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="5500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_H</li>
+		</PhysicalLables>
+		<FabaoSuffix>凤曦叶</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_FXY</Modifier>
+			<Fesistance>0.5</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<FunAddion>50</FunAddion>
+			<PracticeNutrition>1000</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>10</TempMin>
+			<TempMax>15000</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>1000</Value>
+		<Radius>5</Radius>
+		<RoomValue>50</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Huo</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+<!--土-->
+	<ThingDef Type="Item" Name="Item_LX" Parent="DrugBase">
+	<ThingName>老须</ThingName>
+	<TexPath>Spr\Object\CL\LX.PNG</TexPath>	
+	<Desc>状若普通的人参的洁白老参，实则为上苍眷顾的神药。传言有至强者在寿元将尽时将其炼化，竟变得气血充沛，硬是又活了千年，但因疑似触怒上苍，在其渡劫时死于一次空前强大的雷劫。曾有上古圣人推测，若是与幽参一同炼制成丹，多半可抵消其副作用。</Desc>
+	<Rate>8</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="4500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="4500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="9000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_T</li>
+		</PhysicalLables>
+		<FabaoSuffix>老须</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_LX</Modifier>
+		</Elixir>
+		<Food>
+			<Ling>50000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>50</Nutrition>
+			<FunAddion>50</FunAddion>
+			<PracticeNutrition>5500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-100</TempMin>
+			<TempMax>100</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>15</Value>
+		<Radius>5</Radius>
+		<RoomValue>5</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Tu</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_YS" Parent="DrugBase">
+	<ThingName>幽参</ThingName>
+	<TexPath>Spr\Object\CL\YS.PNG</TexPath>	
+	<Desc>被幽冥气息沾染的半截老参，紫色的参体上束缚着青色的大道规则，据说可以屏蔽上苍。传言有妖族大能将其炼化，一瞬间便气血干枯，仿佛苍老了上千岁，但后来此大妖寿元将尽渡劫时，雷劫却几乎孱弱到没有，使得大妖几乎不费吹灰之力跨过了死关。曾有上古圣人推测，若是与老参一同炼制成丹，多半可以抵消其副作用。。</Desc>
+	<Rate>8</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="4500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="4500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="9000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_T</li>
+		</PhysicalLables>
+		<FabaoSuffix>幽参</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_YS</Modifier>
+		</Elixir>
+		<Food>
+			<Ling>50000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>25</Nutrition>
+			<FunAddion>50</FunAddion>
+			<PracticeNutrition>-2500</PracticeNutrition>
+		</Food>
+		<Rot>
+			<RotSpeed>0.15</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>-100</TempMin>
+			<TempMax>100</TempMax>
+			<LingMax>0</LingMax>
+		</Rot>
+	</Item>
+	<Heat>
+		<Value>-15</Value>
+		<Radius>5</Radius>
+		<RoomValue>-5</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Tu</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_HG" Parent="DrugBase">
+	<ThingName>幻菇</ThingName>
+	<TexPath>Spr\Object\CL\HG.PNG</TexPath>	
+	<Desc>形似普通蘑菇的不知来历的神秘蘑菇，唯一不同的一点便是散发着淡淡的紫色光芒，据说有使人进入梦境之用。曾有大能炼丹时误食，竟就地一梦万古，直升一个大境界。</Desc>
+	<Rate>8</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="9500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="9500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="9000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_T</li>
+		</PhysicalLables>
+		<FabaoSuffix>幻菇</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_HG</Modifier>
+			<Fesistance>1</Fesistance>
+		</Elixir>
+		<Food>
+			<Ling>20000</Ling>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>15</Nutrition>
+			<FunAddion>-50</FunAddion>
+			<PracticeNutrition>-500</PracticeNutrition>
+		</Food>
+		
+	</Item>
+	<Heat>
+		<Value>15</Value>
+		<Radius>5</Radius>
+		<RoomValue>10</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Tu</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_ZRH" Parent="DrugBase">
+	<ThingName>紫绒花</ThingName>
+	<TexPath>Spr\Object\CL\ZRH.PNG</TexPath>	
+	<Desc>在传说中，紫绒花象征着勇敢，因为野生的紫绒花生长在环境艰苦的高山上，常人难以得见其美丽容颜，所以见过紫绒花的人都是英雄。许多年轻人冒着生命危险，攀上陡峭的山崖，只为摘下一朵紫绒花献给自己的心上人，因为只有紫绒花才能代表为爱牺牲一切的决心。。</Desc>
+	<Rate>8</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="9500"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="9500" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="9000" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_T</li>
+		</PhysicalLables>
+		<FabaoSuffix>紫绒花</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_ZRH</Modifier>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>15</Nutrition>
+			<FunAddion>-50</FunAddion>
+			<PracticeNutrition>-500</PracticeNutrition>
+		</Food>
+		
+	</Item>
+	<Heat>
+		<Value>15</Value>
+		<Radius>5</Radius>
+		<RoomValue>10</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Tu</Kind>
+	</Element>
+	
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_CBS" Parent="DrugBase">
+	<ThingName>长白参</ThingName>
+	<TexPath>Spr\Object\CL\CBS.PNG</TexPath>	
+	<Desc>九九八！九九八强势登场，对高价说再见，不要三四千，不要一两千，只要九九八，长白山老山参带回家！时间有限，速来万界通识抢购吧！最先下单的一百位道友有惊喜，过时就没了。九九八！九九八！长白山老山参只要九九八灵石！食用后提高300寿元，抗药性60 </Desc>
+	<Rate>9</Rate>
+	<Tags>
+		
+		
+		<Tag Name="Tame" Level="35"/>
+		<Tag Name="TameVeg" Level="1"/>
+	</Tags>
+	<MaxStack>50</MaxStack>
+	<ElementKind>Tu</ElementKind>
+	
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="9980"/>
+					<SalePrice Value="500" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="9980" />
+					<SalePrice Value="200" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="9980" />
+					<SalePrice Value="200" />
+				</li>
+			</Prices>
+		<PhysicalLables>
+			<li>ZW_T</li>
+		</PhysicalLables>
+		<FabaoSuffix>长白参</FabaoSuffix>
+		<BeMaterial>
+			<CostMultiplier>1</CostMultiplier>
+		</BeMaterial>
+		<Elixir>
+			<Modifier>ZTDrug_CBS</Modifier>
+			<Fesistance>0.6</Fesistance>
+		</Elixir>
+		<Food>
+			<EatDirectable>1</EatDirectable>
+			<Nutrition>15</Nutrition>
+			<FunAddion>-50</FunAddion>
+			<PracticeNutrition>-500</PracticeNutrition>
+		</Food>
+		
+	</Item>
+	<Heat>
+		<Value>-15</Value>
+		<Radius>5</Radius>
+		<RoomValue>-100</RoomValue>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+	</Heat>
+	<Element>
+			<Kind>Tu</Kind>
+	</Element>
+	
+	</ThingDef>
+	
+	
+</List></ThingDefs>

@@ -1,0 +1,325 @@
+<ThingDefs><List>
+	
+	<ThingDef Type="Item" Name="Item_XFXS" Parent="MaterialBase">   Name=模板代码
+	<ThingName>星石</ThingName>
+	<TexPath>Spr\Object\MP\XF_XS.PNG</TexPath>
+	<Desc>产于洗星池，是天星峰门人修行必不可缺的材料，不知法门之人无法有效利用。</Desc>
+	<MaxStack>9999</MaxStack>
+	<Rate>9</Rate>
+	<Beauty>360</Beauty>
+	<MaxHitPoints>10000</MaxHitPoints>  生命值
+	<ElementKind>None</ElementKind>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	<Item>   所属类型 木材
+		<NotRandom>1</NotRandom>
+		
+		<FabaoSuffix>星石</FabaoSuffix>   法宝前缀
+		<PhysicalLables>   炼宝加成
+			<li>ZSJB</li>
+		</PhysicalLables>	
+	</Item>
+	<Ling>
+		<AddionLing>15</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>500</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>1</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	<Light>
+		<Value>6</Value>    发光强度
+		<Failing>0</Failing>
+		<FailRadius>2</FailRadius>
+		<Radius>5</Radius>
+		<Color>#81FFA5</Color>   光颜色
+	</Light>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_XFYS" Parent="MaterialBase">   Name=模板代码
+	<ThingName>月石</ThingName>
+	<TexPath>Spr\Object\MP\XF_YS.PNG</TexPath>
+	<Desc>摘星楼的三层中，天星峰老祖与此设置了一特殊阵法，将无数星石炼化每逢月圆之夜时，凝练其中神力，化作的月石。</Desc>
+	<MaxStack>9999</MaxStack>
+	<Rate>26</Rate>
+	<Beauty>360</Beauty>
+	<MaxHitPoints>10000</MaxHitPoints>  生命值
+	<ElementKind>None</ElementKind>
+	<Flammability>
+		<Flammability>0</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	<Item>   所属类型 木材
+
+	<NotRandom>1</NotRandom>
+		
+		<FabaoSuffix>月石</FabaoSuffix>   法宝前缀
+		<PhysicalLables>   炼宝加成
+			<li>ZSJB</li>
+			<li>ZSJB</li>
+		</PhysicalLables>	
+	</Item>
+	<Ling>
+		<AddionLing>45</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>500</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>9</Value>         五行强度
+		<Radius>1</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	<Light>
+		<Value>6</Value>    发光强度
+		<Failing>0</Failing>
+		<FailRadius>2</FailRadius>
+		<Radius>5</Radius>
+		<Color>#81FFA5</Color>   光颜色
+	</Light>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="TXFXY" Parent="TrousersBase">
+	<ThingName>星尘战甲</ThingName>
+	<TexPath>res\Sprs\object\object_weapondao01</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>12</Rate> 
+	<Desc>天星峰的制式服装</Desc>
+	<Item Lable="Trousers">
+		<NotRandom>1</NotRandom>	
+		<Equip>
+			<ModelID>7</ModelID>
+			<ToolModifier>WX_XMPXY</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="TXFXD" Parent="WeaponBase">
+	<ThingName>星刀</ThingName>
+	<TexPath>res\Sprs\object\object_weapondao01</TexPath>
+	<FabaoTexPath>Spr\Object\WQ\TXFXD.png</FabaoTexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>12</Rate> 
+	<Desc>天星峰的制式兵器</Desc>
+	<Item Lable="Weapon">
+		<NotRandom>1</NotRandom>	
+		<PhysicalLables>
+			<li>FB2_N</li>
+		</PhysicalLables>
+		<Equip>
+			<Damage>1000</Damage>
+			<AttackSpeed>2.1</AttackSpeed>
+			<AttackRange>2.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.4"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.4"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.3"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="110"/>
+				<li Name="LJpugong2" HitPoint="90"/>
+				<li Name="LJpugong3" HitPoint="150"/>
+				<li Name="LJpugong4" HitPoint="90"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<ModPath>Mod\WQ\XMPKJWQ\TXFXD.FBX</ModPath>
+			 <ToolModifier>WX_XMPXD</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="TXFYL" Parent="WeaponBase">
+	<ThingName>月轮</ThingName>
+	<TexPath>res\Sprs\object\object_weaponhuan01</TexPath>
+	<FabaoTexPath>Spr\Object\WQ\TXFYL.png</FabaoTexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>26</Rate> 
+	<Desc>天星峰的无上秘宝</Desc>
+	<Item Lable="Weapon">
+		<NotRandom>1</NotRandom>	
+		<PhysicalLables>
+			<li>FB2_N</li>
+		</PhysicalLables>
+		<Equip>
+			<Damage>1000</Damage>
+			<AttackSpeed>2.1</AttackSpeed>
+			<AttackRange>2.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Flesh" Name="Cut2" Rate="0.3"/>
+				<li PartKind="Flesh" Name="Cut3" Rate="0.4"/>
+				<li PartKind="Organ" Name="VisceralCut" Rate="0.4"/>
+				<li PartKind="Bone" Name="Fracture1" Rate="0.3"/>
+				<li PartKind="Bone" Name="Fracture2" Rate="0.3"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="LJpugong1" HitPoint="110"/>
+				<li Name="LJpugong2" HitPoint="90"/>
+				<li Name="LJpugong3" HitPoint="150"/>
+				<li Name="LJpugong4" HitPoint="90"/>
+			</AtkAnis>
+			<WeaponKind>Sword</WeaponKind>
+			<Fabao>
+		    <ActiveCondition>
+			    <Condition eventid = "Other" des = "以精血喂养宝物18次" needcount = "18"/>
+			</ActiveCondition>
+			<SpecialAbility>
+				 <Ability Kind="HitCountAddMirror" nParam1="1" nParam2="7" fParam1="1" Desc="每次攻击，产生7道剑光分化，持续1秒"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FeedSelf()</UseLua>
+			<ModPath>Mod\WQ\XMPKJWQ\TXFYL.FBX</ModPath>
+			 <ToolModifier>WX_SLDL</ToolModifier>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+	<ThingDef Type="Item" Name="Item_WXLS" Parent="DrugBase">
+	<TexPath>Spr\Object\CL\WX_LS.PNG</TexPath>
+	<ThingName>灵枢</ThingName>	
+	<Desc>灵力经过不断压缩形成的高强度灵力源服用后恢复一半灵力体修恢复一半真气</Desc>
+	<Rate>12</Rate>
+	<Beauty>99</Beauty>
+	<ElementKind>None</ElementKind>
+	<MaxStack>9999</MaxStack>
+	<Item Lable="LingStone">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="100000"/>
+					<SalePrice Value="90000" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="100000"/>
+					<SalePrice Value="90000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>	
+		<PhysicalLables>
+			<li>Hard2</li>
+			<li>HighDensity2</li>
+			<li>PhysicalLables_None</li>
+			<li>Hard2</li>
+			<li>HighDensity2</li>
+			<li>PhysicalLables_None</li>
+		</PhysicalLables>
+		<NamePrefix>气，液，源</NamePrefix>
+		<Elixir>
+			<Modifier>WX_LS</Modifier>
+		</Elixir>
+		
+	</Item>
+	<Ling>
+		<AddionLing>60</AddionLing>
+		<AddionRadius>3</AddionRadius>
+		<AddionFailing>0.2</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>5</Absorption>
+		<Accommodate>6000</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>10</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>EEE8AA</Color>
+	</Light>
+	</ThingDef>
+	<ThingDef Type="Item" Name="Item_WXLM" Parent="DrugBase">
+	<TexPath>Spr\Object\CL\WX_LM.PNG</TexPath>
+	<ThingName>灵脉</ThingName>	
+	<Desc>灵力经过极致压缩形成的高强度灵力源服用后恢复全部灵力体修恢复全部真气</Desc>
+	<Rate>24</Rate>
+	<Beauty>99</Beauty>
+	<ElementKind>None</ElementKind>
+	<MaxStack>9999</MaxStack>
+	<Item Lable="LingStone">
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="10000000"/>
+					<SalePrice Value="9000000" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="10000000"/>
+					<SalePrice Value="9000000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="3000" />
+					<SalePrice Value="0" />
+				</li>
+			</Prices>	
+		<PhysicalLables>
+			<li>Hard2</li>
+			<li>HighDensity2</li>
+			<li>PhysicalLables_None</li>
+			<li>Hard2</li>
+			<li>HighDensity2</li>
+			<li>PhysicalLables_None</li>
+		</PhysicalLables>
+		<NamePrefix>气，液，源</NamePrefix>
+		<Elixir>
+			<Modifier>WX_LS</Modifier>
+		</Elixir>
+		
+	</Item>
+	<Ling>
+		<AddionLing>120</AddionLing>
+		<AddionRadius>6</AddionRadius>
+		<AddionFailing>0.2</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>5</Absorption>
+		<Accommodate>6000</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>
+		<Value>12</Value>         
+		<Radius>3</Radius>
+		<Failing>0.9</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	<Light>
+		<Value>10</Value>
+		<Failing>0.6</Failing>
+		<FailRadius>1</FailRadius>
+		<Radius>2</Radius>
+		<Color>EEE8AA</Color>
+	</Light>
+	</ThingDef>
+</List></ThingDefs>

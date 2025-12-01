@@ -1,0 +1,337 @@
+<FightSkills><List>	
+	<Skill Name="MS_QLZXY"><!--同时具备加强版天妖化血的效果，建议吟唱时间长点（我设置的6s），可被打断-->
+		<DisplayName>千里诛仙印</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>9999</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_QLZXY</ClassName>
+		<Shape>Missile</Shape>
+		<SelectCount>18</SelectCount>
+		<SelectType>Random</SelectType>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>
+	<!--三个常驻技能-->
+	<Skill Name="MS_DT_1">
+		<DisplayName>威压</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>450</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_DT_1</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>		
+	<Skill Name="MS_DT_2">
+		<DisplayName>威慑</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>600</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_DT_1</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>		
+	<Skill Name="MS_DC_1">
+		<DisplayName>震颤</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>300</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_DC_1</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Random</SelectType>
+		<SelectCount>9</SelectCount>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>		
+	<!--特殊技能-->
+	<Skill Name="DJG_PX"><!--单体减法宝-->
+		<DisplayName>咆哮</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>800</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>DJG_PX</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Allnpc</SelectType>
+		<MissileEffect>11</MissileEffect>
+		<BombEffect>54</BombEffect>
+		<HitEffect>54</HitEffect>
+		<Radius>5</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>8</BombRadius>
+		</Missile>	
+	</Skill>
+	<Skill Name="MS_QTCM"><!--群体沉默-->
+		<DisplayName>万法烬</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>900</Value>
+		<SelectType>Random</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>6</SelectCount>
+		<ClassName>MS_QTCM</ClassName>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>	
+	<Skill Name="MS_BXY"><!--标记-->
+		<DisplayName>百仙印</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>300</Value>
+		<SelectType>Allnpc</SelectType>
+		<Shape>Missile</Shape>
+		<ClassName>MS_BXY</ClassName>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>	
+	
+	<Skill Name="MS_HTQD"><!--使所有npc灵力恢复降到极限，同时恢复boss百分10灵力-->
+		<DisplayName>荒天穷地</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>600</Value>
+		<SelectType>Allnpc</SelectType>
+		<Shape>Missile</Shape>
+		<ClassName>MS_HTQD</ClassName>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>
+		<Radius>10</Radius>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>	
+	
+	<Skill Name="MS_JTXCR"><!--随机对九名角色使用，若九名角色处于阵中，则被打落阵眼-->
+		<DisplayName>九天星辰落</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>500</CD>
+		<LingCost>5000</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>550</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_JTXCR</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Random</SelectType>
+		<SelectCount>9</SelectCount>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>64</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>1</p1>
+			<p2>0</p2>
+			<p3>1</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="MS_XZJS"><!--三秒后使随机3名npc直接死亡-->
+		<DisplayName>仙尊降世</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>9000</CD>
+		<LingCost>5000</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>550</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_JTXCR</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Random</SelectType>
+		<SelectCount>3</SelectCount>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>64</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>1</p1>
+			<p2>0</p2>
+			<p3>1</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="MS_WJGZ"><!--群体减法宝栏10，技能冷却+99999无伤害，持续时间300s-->
+		<DisplayName>万剑归藏</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<LingCost>5000</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>0</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_WJGZ</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>ALLnpc</SelectType>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>64</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>1</p1>
+			<p2>0</p2>
+			<p3>1</p3>
+			<p4>0</p4>
+		</Missile>
+	</Skill>
+	
+	<Skill Name="MS_DTQL"><!--单体强力伤害，减术法和法宝威力3000百分比-->
+		<DisplayName>絶仙指</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>3</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>9999</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>MS_DTQL</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>200001</MissileEffect>
+		<BombEffect>200002</BombEffect>
+		<HitEffect>200000</HitEffect>	
+	</Skill>
+	<Skill Name="MS_WXHCX"><!--单体强力伤害，减术法和法宝威力3000百分比-->
+		<DisplayName>万象红尘仙</DisplayName>
+		<IsTemplate>0</IsTemplate>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>4</SingTime>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>5000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		<ClassName>MS_WXHCX</ClassName>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>48</HitEffect>
+	</Skill>
+	<!--技能特效我没选，可以先看看能不能用再说-->
+	
+</List></FightSkills>

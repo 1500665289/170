@@ -1,0 +1,129 @@
+<Stories><List>
+	<Story Name="WX_XLC"  Parent="BaseFillingStory">
+		<DisplayName>修理阵</DisplayName>
+		<Desc>[NAME]走进了阵中。</Desc>
+		<Selections>
+			<li>
+				<Display>补充能源（每点能源50积分）</Display>
+				<Condition><![CDATA[	me:GetProperty("SLD_JJ") >= 150 ]]></Condition>
+				<OKResult>	
+				<![CDATA[
+					local m = me.npcObj.PropertyMgr:FindModifier("WX_JJNY")
+					local m1 = me.npcObj.PropertyMgr:FindModifier("WX_JJNY_1")
+					local m2 = me.npcObj.PropertyMgr:FindModifier("WX_JJNY_2")
+					local m3 = me.npcObj.PropertyMgr:FindModifier("WX_JJNY_3")
+					local XQJF = m.Stack * 50 
+					local XQNY = 1000 - m.Stack
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= XQJF then
+							me.npcObj.PropertyMgr:AddModifier("WX_JJNY",1,false,XQNY,false,-1)
+							me:RemoveModifier("WX_JJNY_1");me:RemoveModifier("WX_JJNY_2");me:RemoveModifier("WX_JJNY_3");
+							me.npcObj.PropertyMgr:AddModifier("MY_SkillAttack",1,false,30,false,-1)
+							me.npcObj.PropertyMgr:AddModifier("MY_NormalAttack",1,false,30,false,-1)
+							me.npcObj.PropertyMgr:AddModifier("MY_FabaoAttack",1,false,30,false,-1)
+							me:AddMsg("能源补充完毕");
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",XQJF)
+					me:AddMsg(XT("[NAME]消耗积分"..XQJF.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg("机甲熟练度未达150");</NOResult>
+			</li>
+			<li>
+				<Display>修理四肢（500积分，B级支线）</Display>
+				<Condition><![CDATA[	me:GetProperty("SLD_JJ") >= 300 ]]></Condition>
+				<OKResult>	
+				<![CDATA[
+					local m = me.npcObj.PropertyMgr:FindModifier("WX_JJS_SJ")
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 500 and JQB >= 1 then
+							local M = m.Stack
+							me.npcObj.PropertyMgr:AddModifier("MY_NormalAttack",1,false,M,false,-1)
+							me:RemoveModifier("WX_JJS_SJ");
+							world:SetWorldFlag(4446,JQB-1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+					me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg("机甲熟练度未达300");</NOResult>
+			</li>
+			<li>
+				<Display>补充能量罩(500积分，B级支线）</Display>
+				<Condition><![CDATA[	me:GetProperty("SLD_JJ") >= 500 ]]></Condition>
+				<OKResult>	
+				<![CDATA[
+					local m = me.npcObj.PropertyMgr:FindModifier("WX_JJS_NLD")
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 500 and JQB >= 1 then
+							local M = m.Stack
+							me.npcObj.PropertyMgr:AddModifier("MY_SkillAttack",1,false,M,false,-1)
+							me:RemoveModifier("WX_JJS_NLD");
+							world:SetWorldFlag(4446,JQB-1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+					me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg("机甲熟练度未达500");</NOResult>
+			</li>
+			<li>
+				<Display>修复能核（1000积分，B级支线）</Display>
+				<Condition><![CDATA[	me:GetProperty("SLD_JJ") >= 800 ]]></Condition>
+				<OKResult>	
+				<![CDATA[
+					local m = me.npcObj.PropertyMgr:FindModifier("WX_JJS_H")
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 1000 and JQB >= 1 then
+							local M = m.Stack
+							me.npcObj.PropertyMgr:AddModifier("MY_FabaoAttack",1,false,M,false,-1)
+							me:RemoveModifier("WX_JJS_H");
+							world:SetWorldFlag(4446,JQB-1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+					me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg("机甲熟练度未达800");</NOResult>
+			</li>
+			
+			<li>
+				<Display>离开修理阵</Display> 
+				<OKResult><![CDATA[
+				me:AddMsg("[NAME]离开了修理阵阵");
+				]]>
+				</OKResult>
+			
+			</li>
+			
+		</Selections>
+	</Story>
+</List></Stories>

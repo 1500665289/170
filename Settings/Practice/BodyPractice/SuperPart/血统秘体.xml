@@ -1,0 +1,78 @@
+<BPSuperPartDefs><List>
+	<Def Name="KXZX"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>狂血</Prefix>
+		<Suffix>之心</Suffix>
+		<Desc>狂血之心，附带战技穿膛一击。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Muzzleflash/Normal/FireMuzzleNormal</AtkEffect>
+		<DefEffect>Effect\gsq\Prefab\fx_fz_guangzhu</DefEffect>
+		<Parts>
+			<li Name="Skull"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="3,5,9"/>
+				</Labels>
+			</li>
+			<li Name="Heart"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Special3" Levels="0,1,1"/>
+				</Labels>
+			</li>
+			<li Name="Stomach"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_O01_JiaoLongYuanJing" Levels="1,4,4"/>
+				</Labels>
+			</li>
+				<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="4,9,16"/>
+				</Labels>
+			</li>
+			<li Name="RightPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1111\n提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.6"/>
+					<li Name="DefRate" AddV="0.6"/>
+					<li Name="AtkPower" BAddV="1111"/>
+
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高10点移动速度，提高激狂之怒伤害倍率1.5，提高激狂之怒持续时间10s，提高食量1，提高疼痛忍耐20。</Desc>
+				<Modifier>KXZX</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="999"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25\n提高秘体全局攻击加成3000，习得战技：穿膛一击。</Desc>
+				<Modifier>KXZX1</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	
+	
+	
+	
+	
+</List></BPSuperPartDefs>

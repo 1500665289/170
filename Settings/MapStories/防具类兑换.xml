@@ -1,0 +1,288 @@
+<Stories><List>
+	<Story Name="WX_HJL" Parent="BaseFillingStory">
+		<DisplayName>万织楼（一阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/WZL.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>防护服</Display>
+				<OKResult>
+				me:TriggerStory("HJL_FHF");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想回到了上一层。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_HJL2" Parent="BaseFillingStory">
+		<DisplayName>万织楼（二阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/WZL.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+				<li>
+				<Display>防护服</Display>
+				<OKResult>
+				me:TriggerStory("HJL_FHF");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想回到了上一层。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_HJL3" Parent="BaseFillingStory">
+		<DisplayName>万织楼（三阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/WZL.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+				<li>
+				<Display>防护服</Display>
+				<OKResult>
+				me:TriggerStory("HJL_FHF");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想回到了上一层。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="HJL_FHF" Parent="BaseFillingStory">
+		<DisplayName>防护服</DisplayName>
+		<Desc>一阶防护服，凡人崛起必备。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>体修防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>剑修防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>法修防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>无属性防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF4",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>金属性防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF5",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>木属性防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF6",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>水属性防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF7",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>火属性防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF8",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>土属性防护服（1000积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_HFF9",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他防具</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想回到了上一层"))
+				me:TriggerStory("WX_HJL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想回到了上一层"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	
+</List></Stories>

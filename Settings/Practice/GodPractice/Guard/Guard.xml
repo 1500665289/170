@@ -1,0 +1,27 @@
+<GodGuardDefs><List>	
+	<Def Name="WX_HF_STS1">，，
+		<DisplayName>炽天使</DisplayName>
+		<Rate>12</Rate>
+		<Names>撒拉弗</Names>
+		<Icon>Spr\Building\SX\STS1.png</Icon>
+		<Desc>爱和想像力的精灵,增加圣宝法宝威力属性百分10.同时获得“炽魂”：每攻击9次分裂18道，持续6s</Desc>
+		<Modifier>WX_HF_STS1</Modifier>
+	</Def>	
+	<Def Name="WX_HF_STS2">
+		<DisplayName>智天使</DisplayName>
+		<Rate>12</Rate>
+		<Names>基路伯</Names>
+		<Icon>Spr\Building\SX\STS2.png</Icon>
+		<Desc>超自然的物体。习得神迹：信仰之息：造成神民上限属性额外加成伤害系数</Desc>
+		<Modifier>WX_HF_STS2</Modifier>
+	</Def>	
+	<Def Name="WX_HF_STS3">
+		<DisplayName>座天使</DisplayName>
+		<Rate>12</Rate>
+		<Names>托罗努斯</Names>
+		<Icon>Spr\Building\SX\STS3.png</Icon>
+		<Desc>它们毫无激情和对物质的关怀而完全适宜于接受神圣的巡视，门派内每有一名弟子，获得10点心境，获得百分10术法威力加成，获得百分十法宝威力加成。</Desc>
+		<Modifier>WX_HF_STS3</Modifier>
+	</Def>	
+	
+</List></GodGuardDefs>

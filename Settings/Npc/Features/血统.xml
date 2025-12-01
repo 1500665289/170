@@ -1,0 +1,932 @@
+﻿<FeatureDefs><List>
+	<Feature Name="XT_SMXT" Type="Normal">
+		<DisplayName>双脉者</DisplayName>
+		<Desc>一种特殊的体质，能够兼容两条血统。</Desc>
+		
+		<ModifierDef>
+			<BaseFive>1,1,1,1,1</BaseFive>
+			
+		</ModifierDef>
+	</Feature>	
+	<Feature Name="XT_YMXT" Type="Normal">
+		<DisplayName>异脉者</DisplayName>
+		<Desc>无法融入任何一种血统，但似乎有在主神空间中有解决办法。</Desc>
+		<ModifierDef>
+			<BaseFive>-1,-1,-1,-1,-1</BaseFive>
+			
+		</ModifierDef>
+		<Mutex>
+			<li>XT_QLAR</li>
+			<li>XT_QLAR1</li>
+			<li>XT_QLAR2</li>
+			<li>XT_KXSR</li>
+			<li>XT_KXSR1</li>
+			<li>XT_KXSR2</li>
+			<li>XT_XXGXT</li>
+			<li>XT_XXGXT1</li>
+			<li>XT_XXGXT2</li>
+			<li>XT_BSJRXT</li>
+			<li>XT_BSJRXT1</li>
+			<li>XT_BSJRXT2</li>
+			<li>XT_DTSXT</li>
+			<li>XT_DTSXT1</li>
+			<li>XT_DTSXT2</li>
+			<li>XT_STSXT</li>
+			<li>XT_STSXT1</li>
+			<li>XT_STSXT2</li>
+			<li>XT_XTXT</li>
+			<li>XT_XTXT1</li>
+			<li>XT_XTXT2</li>
+			<li>XT_LYJLXT</li>
+			<li>XT_LYJLXT1</li>
+			<li>XT_LYJLXT2</li>
+			<li>XT_PXXT</li>
+			<li>XT_PXXT1</li>
+			<li>XT_PXXT2</li>
+			<li>XT_YTXT</li>
+			<li>XT_YTXT1</li>
+			<li>XT_YTXT2</li>
+			<li>XT_YYXT</li>
+			<li>XT_YYXT1</li>
+			<li>XT_YYXT2</li>
+		</Mutex>
+	</Feature>		
+	<Feature Name="XT_QLAR" Type="Normal">
+		<DisplayName>丘陵矮人血统（稀薄）</DisplayName>
+		<Desc>丘陵矮人，异界中一种奇特的生物，嗜酒如命，是天生的挖掘大师，也是天生的锻造大师，寰宇中前百的神器过半皆出自矮人之手。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_QLAR</li>
+			<li>XT_QLAR1</li>
+			<li>XT_QLAR2</li>
+		</Close>
+		<Mutex>
+			<li>XT_QLAR1</li>
+			<li>XT_QLAR2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_QLAR1" Type="Normal">
+		<DisplayName>丘陵矮人血统（高等）</DisplayName>
+		<Desc>丘陵矮人，异界中一种奇特的生物，嗜酒如命，是天生的挖掘大师，也是天生的锻造大师，寰宇中前百的神器过半皆出自矮人之手。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_QLAR</li>
+			<li>XT_QLAR1</li>
+			<li>XT_QLAR2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_QLAR</li>
+			<li>XT_QLAR2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_QLAR2" Type="Normal">
+		<DisplayName>丘陵矮人血统（纯血）</DisplayName>
+		<Desc>丘陵矮人，异界中一种奇特的生物，嗜酒如命，是天生的挖掘大师，也是天生的锻造大师，寰宇中前百的神器过半皆出自矮人之手。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_QLAR</li>
+			<li>XT_QLAR1</li>
+			<li>XT_QLAR2</li>
+		</Close>
+		<Mutex>
+			<li>XT_QLAR</li>
+			<li>XT_QLAR1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+	<Feature Name="XT_KXSR" Type="Normal">
+		<DisplayName>狂血兽人血统（稀薄）</DisplayName>
+		<Desc>狂血兽人，异界大陆上一种特殊的文明种族，虽然拥有不低的智慧，但却更倾向于用战斗解决一切，掌握激化自身血液的能力。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_KXSR</li>
+			<li>XT_KXSR1</li>
+			<li>XT_KXSR2</li>
+		</Close>
+		<Mutex>
+			<li>XT_KXSR1</li>
+			<li>XT_KXSR2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_KXSR1" Type="Normal">
+		<DisplayName>狂血兽人血统（高等）</DisplayName>
+		<Desc>狂血兽人，异界大陆上一种特殊的文明种族，虽然拥有不低的智慧，但却更倾向于用战斗解决一切，掌握激化自身血液的能力。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_KXSR</li>
+			<li>XT_KXSR1</li>
+			<li>XT_KXSR2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_KXSR</li>
+			<li>XT_KXSR2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_KXSR2" Type="Normal">
+		<DisplayName>狂血兽人血统（纯血）</DisplayName>
+		<Desc>狂血兽人，异界大陆上一种特殊的文明种族，虽然拥有不低的智慧，但却更倾向于用战斗解决一切，掌握激化自身血液的能力。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_KXSR</li>
+			<li>XT_KXSR1</li>
+			<li>XT_KXSR2</li>
+		</Close>
+		<Mutex>
+			<li>XT_KXSR</li>
+			<li>XT_KXSR1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+	<Feature Name="XT_XXGXT" Type="Normal">
+		<DisplayName>吸血鬼血统（稀薄）</DisplayName>
+		<Desc>吸血鬼，寰宇中一种奇特的生灵，天生受到世界规则的诅咒，畏惧阳光，但纯血吸血鬼的存在，便真如暗夜君王一般。。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_XXGXT</li>
+			<li>XT_XXGXT1</li>
+			<li>XT_XXGXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_XXGXT1</li>
+			<li>XT_XXGXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_XXGXT1" Type="Normal">
+		<DisplayName>吸血鬼血统（高等）</DisplayName>
+		<Desc>吸血鬼，寰宇中一种奇特的生灵，天生受到世界规则的诅咒，畏惧阳光，但纯血吸血鬼的存在，便真如暗夜君王一般。。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_XXGXT</li>
+			<li>XT_XXGXT1</li>
+			<li>XT_XXGXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_XXGXT</li>
+			<li>XT_XXGXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_XXGXT2" Type="Normal">
+		<DisplayName>吸血鬼血统（纯血）</DisplayName>
+		<Desc>吸血鬼，寰宇中一种奇特的生灵，天生受到世界规则的诅咒，畏惧阳光，但纯血吸血鬼的存在，便真如暗夜君王一般。。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_XXGXT</li>
+			<li>XT_XXGXT1</li>
+			<li>XT_XXGXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_XXGXT</li>
+			<li>XT_XXGXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+	<Feature Name="XT_BSJRXT" Type="Normal">
+		<DisplayName>冰原巨人血统（稀薄）</DisplayName>
+		<Desc>冰原巨人，生活在寄北之地，那里终日严寒，其他地区来此的生灵都难以活过三天。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_BSJRXT</li>
+			<li>XT_BSJRXT1</li>
+			<li>XT_BSJRXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_BSJRXT1</li>
+			<li>XT_BSJRXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_BSJRXT1" Type="Normal">
+		<DisplayName>冰原巨人血统（高等）</DisplayName>
+		<Desc>冰原巨人，生活在寄北之地，那里终日严寒，其他地区来此的生灵都难以活过三天。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_BSJRXT</li>
+			<li>XT_BSJRXT1</li>
+			<li>XT_BSJRXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_BSJRXT</li>
+			<li>XT_BSJRXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_BSJRXT2" Type="Normal">
+		<DisplayName>冰原巨人血统（纯血）</DisplayName>
+		<Desc>冰原巨人，生活在寄北之地，那里终日严寒，其他地区来此的生灵都难以活过三天。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_BSJRXT</li>
+			<li>XT_BSJRXT1</li>
+			<li>XT_BSJRXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_BSJRXT</li>
+			<li>XT_BSJRXT1</li>
+		</Mutex>
+			
+	</Feature>	
+
+	<Feature Name="XT_DTSXT" Type="Normal">
+		<DisplayName>堕天使血统（稀薄）</DisplayName>
+		<Desc>堕天使，原是万灵殿中，天使一脉的存在，其中路西法是当代最强的天使，在一次与堕落使魔的战斗中，受到污染，纯白的天使四翼折断，时刻被混乱之神所影响。而这种污染如同瘟疫一般，感染了大半族人，最终路西法带着一众感染者离开了万灵殿。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_DTSXT</li>
+			<li>XT_DTSXT1</li>
+			<li>XT_DTSXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_DTSXT1</li>
+			<li>XT_DTSXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_DTSXT1" Type="Normal">
+		<DisplayName>堕天使血统（高等）</DisplayName>
+		<Desc>堕天使，原是万灵殿中，天使一脉的存在，其中路西法是当代最强的天使，在一次与堕落使魔的战斗中，受到污染，纯白的天使四翼折断，时刻被混乱之神所影响。而这种污染如同瘟疫一般，感染了大半族人，最终路西法带着一众感染者离开了万灵殿。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_DTSXT</li>
+			<li>XT_DTSXT1</li>
+			<li>XT_DTSXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_DTSXT</li>
+			<li>XT_DTSXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_DTSXT2" Type="Normal">
+		<DisplayName>堕天使血统（纯血）</DisplayName>
+		<Desc>堕天使，原是万灵殿中，天使一脉的存在，其中路西法是当代最强的天使，在一次与堕落使魔的战斗中，受到污染，纯白的天使四翼折断，时刻被混乱之神所影响。而这种污染如同瘟疫一般，感染了大半族人，最终路西法带着一众感染者离开了万灵殿。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_DTSXT</li>
+			<li>XT_DTSXT1</li>
+			<li>XT_DTSXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_DTSXT</li>
+			<li>XT_DTSXT1</li>
+		</Mutex>
+			
+	</Feature>
+<Feature Name="XT_STSXT" Type="Normal">
+		<DisplayName>圣天使血统（稀薄）</DisplayName>
+		<Desc>圣天使，万灵殿中的至高神圣的种族，当代领袖是米迦勒。。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_STSXT</li>
+			<li>XT_STSXT1</li>
+			<li>XT_STSXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_STSXT1</li>
+			<li>XT_STSXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_STSXT1" Type="Normal">
+		<DisplayName>圣天使血统（高等）</DisplayName>
+		<Desc>圣天使，万灵殿中的至高神圣的种族，当代领袖是米迦勒。。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_STSXT</li>
+			<li>XT_STSXT1</li>
+			<li>XT_STSXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_STSXT</li>
+			<li>XT_STSXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_STSXT2" Type="Normal">
+		<DisplayName>圣天使血统（纯血）</DisplayName>
+		<Desc>圣天使，万灵殿中的至高神圣的种族，当代领袖是米迦勒。。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_STSXT</li>
+			<li>XT_STSXT1</li>
+			<li>XT_STSXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_STSXT</li>
+			<li>XT_STSXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+	<Feature Name="XT_XTXT" Type="Normal">
+		<DisplayName>刑天血统（稀薄）</DisplayName>
+		<Desc>相传有一个以古神话战神刑天为信仰的一个种族，他们以战斗而生，每个族人从出生开始就进行挑选、培养成各种类型的战斗机器。他们当中的一位先祖将战神刑天的战斗之法融入血脉，觉醒后后提供强大的战斗增益的，大成血脉者激发大半就已经能以一敌百，有着极强的回复能力和精力，不死不休。        </Desc>
+		<Close><!--亲近特性-->
+			<li>XT_XTXT</li>
+			<li>XT_XTXT1</li>
+			<li>XT_XTXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_XTXT1</li>
+			<li>XT_XTXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_XTXT1" Type="Normal">
+		<DisplayName>刑天血统（高等）</DisplayName>
+		<Desc>相传有一个以古神话战神刑天为信仰的一个种族，他们以战斗而生，每个族人从出生开始就进行挑选、培养成各种类型的战斗机器。他们当中的一位先祖将战神刑天的战斗之法融入血脉，觉醒后后提供强大的战斗增益的，大成血脉者激发大半就已经能以一敌百，有着极强的回复能力和精力，不死不休。        </Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_XTXT</li>
+			<li>XT_XTXT1</li>
+			<li>XT_XTXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_XTXT</li>
+			<li>XT_XTXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_XTXT2" Type="Normal">
+		<DisplayName>刑天血统（纯血）</DisplayName>
+		<Desc>相传有一个以古神话战神刑天为信仰的一个种族，他们以战斗而生，每个族人从出生开始就进行挑选、培养成各种类型的战斗机器。他们当中的一位先祖将战神刑天的战斗之法融入血脉，觉醒后后提供强大的战斗增益的，大成血脉者激发大半就已经能以一敌百，有着极强的回复能力和精力，不死不休。        </Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_XTXT</li>
+			<li>XT_XTXT1</li>
+			<li>XT_XTXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_XTXT</li>
+			<li>XT_XTXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+	<Feature Name="XT_LYJLXT" Type="Normal">
+		<DisplayName>烈焰精灵血统（稀薄）</DisplayName>
+		<Desc>烈焰精灵是自然六子之一，有着无与伦比的术法威能，一指之下毁天灭地不过尔尔</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_LYJLXT</li>
+			<li>XT_LYJLXT1</li>
+			<li>XT_LYJLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_LYJLXT1</li>
+			<li>XT_LYJLXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_LYJLXT1" Type="Normal">
+		<DisplayName>烈焰精灵血统（高等）</DisplayName>
+		<Desc>烈焰精灵是自然六子之一，有着无与伦比的术法威能，一指之下毁天灭地不过尔尔</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_LYJLXT</li>
+			<li>XT_LYJLXT1</li>
+			<li>XT_LYJLXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_LYJLXT</li>
+			<li>XT_LYJLXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_LYJLXT2" Type="Normal">
+		<DisplayName>烈焰精灵血统（纯血）</DisplayName>
+		<Desc>烈焰精灵是自然六子之一，有着无与伦比的术法威能，一指之下毁天灭地不过尔尔</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_LYJLXT</li>
+			<li>XT_LYJLXT1</li>
+			<li>XT_LYJLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_LYJLXT</li>
+			<li>XT_LYJLXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+	<Feature Name="XT_JLXT" Type="Normal">
+		<DisplayName>九黎血统（稀薄）</DisplayName>
+		<Desc>天河大陆衮青州黎家先祖黎贪与其胞弟八人尝试将九人血脉融为一体，唯黎贪一人成功，号九黎血脉</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_JLXT</li>
+			<li>XT_JLXT1</li>
+			<li>XT_JLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_JLXT1</li>
+			<li>XT_JLXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_JLXT1" Type="Normal">
+		<DisplayName>九黎血统（高等）</DisplayName>
+		<Desc>天河大陆衮青州黎家先祖黎贪与其胞弟八人尝试将九人血脉融为一体，唯黎贪一人成功，号九黎血脉</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_JLXT</li>
+			<li>XT_JLXT1</li>
+			<li>XT_JLXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_JLXT</li>
+			<li>XT_JLXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_JLXT2" Type="Normal">
+		<DisplayName>九黎血统（纯血）</DisplayName>
+		<Desc>天河大陆衮青州黎家先祖黎贪与其胞弟八人尝试将九人血脉融为一体，唯黎贪一人成功，号九黎血脉</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_JLXT</li>
+			<li>XT_JLXT1</li>
+			<li>XT_JLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_JLXT</li>
+			<li>XT_JLXT1</li>
+		</Mutex>
+			
+	</Feature>		
+		
+	<Feature Name="XT_PXXT" Type="Normal">
+		<DisplayName>破晓血统（稀薄）</DisplayName>
+		<Desc>晨曦谷位于大陆最东方，破晓族生活其中但却从来没有人找到过，每当大陆有邪族作祟便有破晓族强者平息动乱，曾恶鬼族五大圣者祸害一方被两名破晓族击杀，五大恶鬼拼死也不过将两名破晓族重伤，后恶鬼族灭。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_PXXT</li>
+			<li>XT_PXXT1</li>
+			<li>XT_PXXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_PXXT1</li>
+			<li>XT_PXXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_PXXT1" Type="Normal">
+		<DisplayName>破晓血统（高等）</DisplayName>
+		<Desc>晨曦谷位于大陆最东方，破晓族生活其中但却从来没有人找到过，每当大陆有邪族作祟便有破晓族强者平息动乱，曾恶鬼族五大圣者祸害一方被两名破晓族击杀，五大恶鬼拼死也不过将两名破晓族重伤，后恶鬼族灭。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_PXXT</li>
+			<li>XT_PXXT1</li>
+			<li>XT_PXXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_PXXT</li>
+			<li>XT_PXXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_PXXT2" Type="Normal">
+		<DisplayName>破晓血统（纯血）</DisplayName>
+		<Desc>晨曦谷位于大陆最东方，破晓族生活其中但却从来没有人找到过，每当大陆有邪族作祟便有破晓族强者平息动乱，曾恶鬼族五大圣者祸害一方被两名破晓族击杀，五大恶鬼拼死也不过将两名破晓族重伤，后恶鬼族灭。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_PXXT</li>
+			<li>XT_PXXT1</li>
+			<li>XT_PXXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_PXXT</li>
+			<li>XT_PXXT1</li>
+		</Mutex>
+			
+	</Feature>	
+
+	<Feature Name="XT_YTXT" Type="Normal">
+		<DisplayName>银霆血统（稀薄）</DisplayName>
+		<Desc>凡天地雷属血脉所属极尽升华是为银霆血脉，只需完全吸收震雷山天雷池银霆心便可成功，震雷山天雷滚滚，山腰以上更是神雷闪烁，即便大成圣者也有可能含恨于此，拥有银霆血脉之人无不是功参造化之辈。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_YTXT</li>
+			<li>XT_YTXT1</li>
+			<li>XT_YTXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YTXT1</li>
+			<li>XT_YTXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_YTXT1" Type="Normal">
+		<DisplayName>银霆血统（高等）</DisplayName>
+		<Desc>凡天地雷属血脉所属极尽升华是为银霆血脉，只需完全吸收震雷山天雷池银霆心便可成功，震雷山天雷滚滚，山腰以上更是神雷闪烁，即便大成圣者也有可能含恨于此，拥有银霆血脉之人无不是功参造化之辈。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YTXT</li>
+			<li>XT_YTXT1</li>
+			<li>XT_YTXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_YTXT</li>
+			<li>XT_YTXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_YTXT2" Type="Normal">
+		<DisplayName>银霆血统（纯血）</DisplayName>
+		<Desc>凡天地雷属血脉所属极尽升华是为银霆血脉，只需完全吸收震雷山天雷池银霆心便可成功，震雷山天雷滚滚，山腰以上更是神雷闪烁，即便大成圣者也有可能含恨于此，拥有银霆血脉之人无不是功参造化之辈。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YTXT</li>
+			<li>XT_YTXT1</li>
+			<li>XT_YTXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YTXT</li>
+			<li>XT_YTXT1</li>
+		</Mutex>
+			
+	</Feature>	
+
+	<Feature Name="XT_YYXT" Type="Normal">
+		<DisplayName>夜渊血统（稀薄）</DisplayName>
+		<Desc>夜噤深渊特有种族夜渊族血脉，夜噤深渊终年暗无天日，传闻曾有太阳星熄灭于此，引不少人前往探索，皆死于暗影之中，人族逸尘圣者曾将一夜渊族带出夜噤深渊，夜渊半年内衰弱而死</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_YYXT</li>
+			<li>XT_YYXT1</li>
+			<li>XT_YYXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YYXT1</li>
+			<li>XT_YYXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_YYXT1" Type="Normal">
+		<DisplayName>夜渊血统（高等）</DisplayName>
+		<Desc>夜噤深渊特有种族夜渊族血脉，夜噤深渊终年暗无天日，传闻曾有太阳星熄灭于此，引不少人前往探索，皆死于暗影之中，人族逸尘圣者曾将一夜渊族带出夜噤深渊，夜渊半年内衰弱而死</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YYXT</li>
+			<li>XT_YYXT1</li>
+			<li>XT_YYXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_YYXT</li>
+			<li>XT_YYXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_YYXT2" Type="Normal">
+		<DisplayName>夜渊血统（纯血）</DisplayName>
+		<Desc>夜噤深渊特有种族夜渊族血脉，夜噤深渊终年暗无天日，传闻曾有太阳星熄灭于此，引不少人前往探索，皆死于暗影之中，人族逸尘圣者曾将一夜渊族带出夜噤深渊，夜渊半年内衰弱而死</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YYXT</li>
+			<li>XT_YYXT1</li>
+			<li>XT_YYXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YYXT</li>
+			<li>XT_YYXT1</li>
+		</Mutex>
+			
+	</Feature>	
+		<Feature Name="XT_PSXT" Type="Normal">
+		<DisplayName>磐石血统（稀薄）</DisplayName>
+		<Desc>我身不动，当为磐石，拥有大地一般的厚重，只要在地面上就可源源不断的从大地中吸取能量，不一定擅长防御哦。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_PSXT</li>
+			<li>XT_PSXT1</li>
+			<li>XT_PSXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_PSXT1</li>
+			<li>XT_PSXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_PSXT1" Type="Normal">
+		<DisplayName>磐石血统（高等）</DisplayName>
+		<Desc>我身不动，当为磐石，拥有大地一般的厚重，只要在地面上就可源源不断的从大地中吸取能量，不一定擅长防御哦。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_PSXT</li>
+			<li>XT_PSXT1</li>
+			<li>XT_PSXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_PSXT</li>
+			<li>XT_PSXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_PSXT2" Type="Normal">
+		<DisplayName>磐石血统（纯血）</DisplayName>
+		<Desc>我身不动，当为磐石，拥有大地一般的厚重，只要在地面上就可源源不断的从大地中吸取能量，不一定擅长防御哦。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_PSXT</li>
+			<li>XT_PSXT1</li>
+			<li>XT_PSXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_PSXT</li>
+			<li>XT_PSXT1</li>
+		</Mutex>
+			
+	</Feature>	
+
+	<Feature Name="XT_BDEXT" Type="Normal">
+		<DisplayName>巴德尔血统（稀薄）</DisplayName>
+		<Desc>传说中的光明之神，春季之神，万物都不愿伤害的存在。传说巴德尔死亡之时，天地陷入昏暗，神血落于大地之上，导致了血脉的扩散</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_BDEXT</li>
+			<li>XT_BDEXT1</li>
+			<li>XT_BDEXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_BDEXT1</li>
+			<li>XT_BDEXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_BDEXT1" Type="Normal">
+		<DisplayName>巴德尔血统（高等）</DisplayName>
+		<Desc>传说中的光明之神，春季之神，万物都不愿伤害的存在。传说巴德尔死亡之时，天地陷入昏暗，神血落于大地之上，导致了血脉的扩散</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_BDEXT</li>
+			<li>XT_BDEXT1</li>
+			<li>XT_BDEXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_BDEXT</li>
+			<li>XT_BDEXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_BDEXT2" Type="Normal">
+		<DisplayName>巴德尔血统（纯血）</DisplayName>
+		<Desc>传说中的光明之神，春季之神，万物都不愿伤害的存在。传说巴德尔死亡之时，天地陷入昏暗，神血落于大地之上，导致了血脉的扩散</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_BDEXT</li>
+			<li>XT_BDEXT1</li>
+			<li>XT_BDEXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_BDEXT</li>
+			<li>XT_BDEXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_XLXT" Type="Normal">
+		<DisplayName>星灵血统（稀薄）</DisplayName>
+		<Desc>星灵是宇宙中古老而神秘的种族，他们拥有宇宙中最高的科技水平，并借以维持宇宙的秩序。星灵利用星空的力量进行折跃与毁灭，他们极为擅长利用族内的各种神器，顶阶的星灵甚至可以直接将大片的敌人化作虚空，血脉的拥有者皆冷酷无情，他们的最终的目的是超脱这个世界！</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_XLXT</li>
+			<li>XT_XLXT1</li>
+			<li>XT_XLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_XLXT1</li>
+			<li>XT_XLXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_XLXT1" Type="Normal">
+		<DisplayName>星灵血统（高等）</DisplayName>
+		<Desc>星灵是宇宙中古老而神秘的种族，他们拥有宇宙中最高的科技水平，并借以维持宇宙的秩序。星灵利用星空的力量进行折跃与毁灭，他们极为擅长利用族内的各种神器，顶阶的星灵甚至可以直接将大片的敌人化作虚空，血脉的拥有者皆冷酷无情，他们的最终的目的是超脱这个世界！</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_XLXT</li>
+			<li>XT_XLXT1</li>
+			<li>XT_XLXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_XLXT</li>
+			<li>XT_XLXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_XLXT2" Type="Normal">
+		<DisplayName>星灵血统（纯血）</DisplayName>
+		<Desc>星灵是宇宙中古老而神秘的种族，他们拥有宇宙中最高的科技水平，并借以维持宇宙的秩序。星灵利用星空的力量进行折跃与毁灭，他们极为擅长利用族内的各种神器，顶阶的星灵甚至可以直接将大片的敌人化作虚空，血脉的拥有者皆冷酷无情，他们的最终的目的是超脱这个世界！</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_XLXT</li>
+			<li>XT_XLXT1</li>
+			<li>XT_XLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_XLXT</li>
+			<li>XT_XLXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_DXXT" Type="Normal">
+		<DisplayName>喋血系统（稀薄）</DisplayName>
+		<Desc>在未来科技的极速发展和各国的军备竞赛中，某一科技大国成功研制出一种纳米机器人，将大量的纳米机器人注入血液当中后，它能通过繁密的计算和极快的运算速度来对士兵的身体进行一系列的增强，包括提高战士的力量、分析能力、身体修复能力。但此项科技昂贵，尤其是想要将战士的全身血液全部换成带纳米机器人的血液系统。若成功了，那威力无法想象。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_DXXT</li>	
+		</Close>	
+	</Feature>	
+		<Feature Name="XT_YLXT" Type="Normal">
+		<DisplayName>言灵血统</DisplayName>
+		<Desc>只存在于灵界的稀有物种，由于远古神话生物的馈赠，拥有着运用语言的能力，但由于某些能力过于强大，使用能力时会减少寿命。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_YLXT</li>
+			<li>XT_YLXT1</li>
+			<li>XT_YLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YLXT1</li>
+			<li>XT_YLXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_YLXT1" Type="Normal">
+		<DisplayName>言灵血统（高等）</DisplayName>
+		<Desc>只存在于灵界的稀有物种，由于远古神话生物的馈赠，拥有着运用语言的能力，但由于某些能力过于强大，使用能力时会减少寿命。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YLXT</li>
+			<li>XT_YLXT1</li>
+			<li>XT_YLXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_YLXT</li>
+			<li>XT_YLXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_YLXT2" Type="Normal">
+		<DisplayName>言灵血统（纯血）</DisplayName>
+		<Desc>只存在于灵界的稀有物种，由于远古神话生物的馈赠，拥有着运用语言的能力，但由于某些能力过于强大，使用能力时会减少寿命。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YLXT</li>
+			<li>XT_YLXT1</li>
+			<li>XT_YLXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YLXT</li>
+			<li>XT_YLXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+			<Feature Name="XT_RMXT" Type="Normal">
+		<DisplayName>日冕血统</DisplayName>
+		<Desc>宇宙中，最强大最耀眼的白矮星中诞生的一种特异种族，自身拥有极强的高温，似乎只有在和另外一个种族在一起时，才能抑制其体内的力量不至于失控。</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_RMXT</li>
+			<li>XT_RMXT1</li>
+			<li>XT_RMXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_RMXT1</li>
+			<li>XT_RMXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_RMXT1" Type="Normal">
+		<DisplayName>日冕血统（高等）</DisplayName>
+		<Desc>宇宙中，最强大最耀眼的白矮星中诞生的一种特异种族，自身拥有极强的高温，似乎只有在和另外一个种族在一起时，才能抑制其体内的力量不至于失控。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_RMXT</li>
+			<li>XT_RMXT1</li>
+			<li>XT_RMXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_RMXT</li>
+			<li>XT_RMXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_RMXT2" Type="Normal">
+		<DisplayName>日冕血统（纯血）</DisplayName>
+		<Desc>宇宙中，最强大最耀眼的白矮星中诞生的一种特异种族，自身拥有极强的高温，似乎只有在和另外一个种族在一起时，才能抑制其体内的力量不至于失控。</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_RMXT</li>
+			<li>XT_RMXT1</li>
+			<li>XT_RMXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_RMXT</li>
+			<li>XT_RMXT1</li>
+		</Mutex>
+			
+	</Feature>	
+
+
+		<Feature Name="XT_YGXT" Type="Normal">
+		<DisplayName>月冠血统</DisplayName>
+		<Desc>白矮星，最强温度后，则是极致地寒冷，在这样极端天气下诞生的奇异物种，似乎和另一种族有某种羁绊</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_YGXT</li>
+			<li>XT_YGXT1</li>
+			<li>XT_YGXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YGXT1</li>
+			<li>XT_YGXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_YGXT1" Type="Normal">
+		<DisplayName>月冠血统（高等）</DisplayName>
+		<Desc>白矮星，最强温度后，则是极致地寒冷，在这样极端天气下诞生的奇异物种，似乎和另一种族有某种羁绊</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YGXT</li>
+			<li>XT_YGXT1</li>
+			<li>XT_YGXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_YGXT</li>
+			<li>XT_YGXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_YGXT2" Type="Normal">
+		<DisplayName>月冠血统（纯血）</DisplayName>
+		<Desc>白矮星，最强温度后，则是极致地寒冷，在这样极端天气下诞生的奇异物种，似乎和另一种族有某种羁绊</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_YGXT</li>
+			<li>XT_YGXT1</li>
+			<li>XT_YGXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_YGXT</li>
+			<li>XT_YGXT1</li>
+		</Mutex>
+			
+	</Feature>	
+
+	<Feature Name="XT_TMXT" Type="Normal">
+		<DisplayName>屠魔血统</DisplayName>
+		<Desc>屠魔一族天赋武神之力，一生追求武道巅峰</Desc>
+		<Close><!--亲近特性-->
+			<li>XT_TMXT</li>
+			<li>XT_TMXT1</li>
+			<li>XT_TMXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_TMXT1</li>
+			<li>XT_TMXT2</li>
+		</Mutex>
+		
+	</Feature>	
+	<Feature Name="XT_TMXT1" Type="Normal">
+		<DisplayName>屠魔血统（高等）</DisplayName>
+		<Desc>屠魔一族天赋武神之力，一生追求武道巅峰</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_TMXT</li>
+			<li>XT_TMXT1</li>
+			<li>XT_TMXT2</li>
+		</Close>
+		
+		<Mutex>
+			<li>XT_TMXT</li>
+			<li>XT_TMXT2</li>
+		</Mutex>
+			
+	</Feature>	
+	<Feature Name="XT_TMXT2" Type="Normal">
+		<DisplayName>屠魔血统（纯血）</DisplayName>
+		<Desc>屠魔一族天赋武神之力，一生追求武道巅峰</Desc>
+
+		<Close><!--亲近特性-->
+			<li>XT_TMXT</li>
+			<li>XT_TMXT1</li>
+			<li>XT_TMXT2</li>
+		</Close>
+		<Mutex>
+			<li>XT_TMXT</li>
+			<li>XT_TMXT1</li>
+		</Mutex>
+			
+	</Feature>	
+	
+</List></FeatureDefs>

@@ -1,0 +1,29 @@
+<Defs><List>
+	<Def Name="WX_QL">
+		<Icon>Spr\Object\LC\QL.png</Icon>
+		<Buildings>
+			<li>LingShouShitPlace</li>
+			<li>LSEnemyCarryPlace</li>
+			<li>LSWaiCarryPlace</li>
+			<li>LSVistorCarryPlace</li>
+			<li>LSNeiCarryPlace</li>
+			<li>LSIncomingCarryPlace</li>
+			<li>LSEnemyBodyCarryPlace</li>
+			<li>LSWaiBodyCarryPlace</li>
+			<li>LSNeiBodyCarryPlace</li>
+			<li>LSVistorBodyCarryPlace</li>
+			<li>LSIncomingBodyCarryPlace</li>
+			<li>LSMortalBodyCarryPlace</li>
+			<li>LSMortalCarryPlace</li>
+			<li>LsDogHouse</li>
+			<li>LsDog_Carve</li>
+		</Buildings>
+		<PossibleMagic>
+			
+		</PossibleMagic>
+		<PossibleSkill>
+			
+		</PossibleSkill>
+	</Def>
+	
+</List></Defs>

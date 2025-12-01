@@ -1,0 +1,431 @@
+<Stories><List>
+	<Story Name="WX_XTRH" Parent="BaseFillingStory">
+		<DisplayName>血统水晶</DisplayName>
+		<Desc>准备炼化这颗血统水晶，但是没想好是直接吃，还是煮了吃。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>融合血统（70成功率10致死率）</Display>
+				<OKResult>
+				<![CDATA[	
+						local nR = me:RandomInt(1, 101);
+						local npcmgr = me.npcObj.PropertyMgr;
+						if nR <= 20 then
+						me:AddMsg(XT("[NAME]被矮人血统拒绝了，可能嫌弃你太矮。建议去融合侏儒血统"));
+						else
+						me:AddMsg(XT("[NAME]成功融合了该血统"));
+						npcmgr:AddFeature("XTAR");
+						story:RemoveBindItem();
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，留给其他人融合吧。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_ZSYJY" Parent="BaseFillingStory">
+		<DisplayName>主神研究院</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/YJY.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>查看各科技树</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_ZSYJY1");
+						world:PlayBGM("Spr/Music/BGM/1007.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>查看科技点</Display>
+				<OKResult>
+				<![CDATA[	
+					local JF = World:GetFlag(99999)
+						me:AddMsg(XT("拥有"..JF.."科技点数"))
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>查看试炼殿堂</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_ZSYJY0");
+						world:PlayBGM("Spr/Music/BGM/1007.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>获取初始科技点</Display>
+				<DisplayCondition>World:GetFlag(999999) == 0</DisplayCondition> 
+				<OKResult>
+				<![CDATA[	
+						local SL1 = SchoolMgr:GetSchoolData(CS.XiaWorld.g_emSchoolData.NumDisciple)
+						local SL2 = SchoolMgr:GetSchoolData(CS.XiaWorld.g_emSchoolData.NumWorker)
+						World:AddFlag(99999,SL1*50+SL2*10)
+						World:AddFlag(999999,1)
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]啥也不想"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_ZSYJY1" Parent="BaseFillingStory">
+		<DisplayName>主神研究院</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/YJY.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>了不起的修仙科技树</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("ZKJ0");
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>星象峰大殿</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("XXFKJ0");
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[
+				me:TriggerStory("WX_ZSYJY");
+				]]>
+				</OKResult>
+			
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]啥也不想"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_ZSKJ" Parent="BaseFillingStory">
+		<DisplayName>主神空间</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/ZJM.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>积分查询</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>清洗debuff（100积分）</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						
+						if JF >= 100 then
+							me:RemoveModifier("WX_SD_X1")
+							me:RemoveModifier("WX_SD_X2")
+							me:RemoveModifier("WX_SD_X3")
+							me:RemoveModifier("WX_MNYJ_2_0")
+
+
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+							me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>血统类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_XTL");
+						world:PlayBGM("Spr/Music/BGM/1001.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>武器类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_WQL");
+						world:PlayBGM("Spr/Music/BGM/1002.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>法宝类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_FBL");
+						world:PlayBGM("Spr/Music/BGM/1003.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>秘体类兑换（未开启）</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_MTL");
+						world:PlayBGM("Spr/Music/BGM/1005.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>护法类兑换（未开启）</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_HFL");
+						world:PlayBGM("Spr/Music/BGM/1006.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>技能类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_JNL");
+						world:PlayBGM("Spr/Music/BGM/1007.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>机甲类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_JJL");
+						world:PlayBGM("Spr/Music/BGM/1008.OGG",false);
+				]]>		
+				</OKResult>
+			</li>				
+			<li>
+				<Display>防具类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_HJL");
+						world:PlayBGM("Spr/Music/BGM/1009.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>灵宠类兑换（未开启）</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_LCL");
+						world:PlayBGM("Spr/Music/BGM/1010.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>造人类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_ZRL");
+						world:PlayBGM("Spr/Music/BGM/1011.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>图纸类兑换（未开启）</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_TZL");
+						world:PlayBGM("Spr/Music/BGM/1012.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>枪械类兑换（未开启）</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_QXL");
+						world:PlayBGM("Spr/Music/BGM/XG.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>材料类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_CLL");
+						world:PlayBGM("Spr/Music/BGM/DSF.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>草药类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_CYL");
+						world:PlayBGM("Spr/Music/BGM/MDTX.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>抽奖类兑换（未开启）</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_CJL");
+						world:PlayBGM("Spr/Music/BGM/PTCL.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>无限战令（未开启）</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_ZL");
+						world:PlayBGM("Spr/Music/BGM/QSFBJ.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>无事退朝</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]退出了主神空间。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_ZSKJ2" Parent="BaseFillingStory">
+		<DisplayName>主神空间（二阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/ZJM.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+		<li>
+				<Display>积分查询</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>血统类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_XTL2");
+						world:PlayBGM("Spr/Music/BGM/1001.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>武器类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_WQL2");
+						world:PlayBGM("Spr/Music/BGM/1002.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>材料类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_CLL2");
+						world:PlayBGM("Spr/Music/BGM/DSF.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			
+			
+			<li>
+				<Display>无事退朝</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]退出了主神空间。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_ZSKJ3" Parent="BaseFillingStory">
+		<DisplayName>主神空间（三阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/ZJM2.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>积分查询</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>血统类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_XTL3");
+						world:PlayBGM("Spr/Music/BGM/1001.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>武器类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_WQL3");
+						world:PlayBGM("Spr/Music/BGM/1002.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>材料类兑换</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_CLL3");
+						world:PlayBGM("Spr/Music/BGM/DSF.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>无事退朝</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]退出了主神空间。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

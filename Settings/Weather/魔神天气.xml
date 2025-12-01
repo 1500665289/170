@@ -1,0 +1,45 @@
+﻿<Weathers><List>
+	<Weather Name="MS_XZZX">
+		<DisplayName>腥燥之息</DisplayName>
+		<Kind>Type1</Kind>
+		<ClassName></ClassName>
+		<Modifier>XZZX</Modifier>
+		<DurationMin>1</DurationMin>
+		<DurationMax>5</DurationMax>
+		<SunColor>FF0000FF</SunColor>			
+	
+		<Thunder>0.3</Thunder>
+		<ShowKind>Rain</ShowKind>
+		<ShowWeight>0.2</ShowWeight>
+		<Season>
+			<li>Spring</li>
+			<li>Summer</li>
+			<li>Autumn</li>
+			<li>Winter</li>
+		</Season>		
+		
+		<MapEffect>
+			<li Name="IntensityOfFire" Value="-1"/>
+			<li Name="LightAddP" Value="-0.2"/>
+			<li Name="TempAddV" Value="20"/>
+			
+			<li Name="FertilityAddP" Value="0"/>
+			<li Name="LingAddtionAddV" Value="-1000"/>
+			
+			<li Name="JinAddP" Value="0"/>	
+			<li Name="MuAddP" Value="0"/>	
+			<li Name="ShuiAddP" Value="0"/>	
+			<li Name="HuoAddP" Value="0"/>	
+			<li Name="TuAddP" Value="0"/>
+			<li Name="NoneBroken" Value="0"/>
+			<li Name="JinBroken" Value="0.2"/>
+			<li Name="MuBroken" Value="0.2"/>	
+			<li Name="ShuiBroken" Value="0.2"/>	
+			<li Name="HuoBroken" Value="0.2"/>
+			<li Name="TuBroken" Value="0.2"/>			
+		</MapEffect>
+	</Weather>
+	
+	
+	
+</List></Weathers>

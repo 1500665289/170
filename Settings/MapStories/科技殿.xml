@@ -1,0 +1,318 @@
+<Stories><List>
+	<Story Name="WX_ZSYJY0"  Parent="BaseFillingStory">
+		<DisplayName>试炼殿堂</DisplayName>
+		<Desc>[NAME]走进了试炼殿堂。</Desc>
+		<Selections>
+			<li>
+				<Display>精英弟子</Display>
+				<OKResult>	
+				<![CDATA[
+					if World:GetFlag(1100001) == 6 then
+							me:AddMsg("门派中供奉数量已经达到上限");
+					else
+						if me.npcObj.PropertyMgr:HasModifier("KJCH1") then
+						me:AddMsg("[NAME]已拥有该职位");
+						else
+						if me:GetGLevel() == 3 then
+							if me:GetProperty("NpcLingMaxValue") ~= nil and me:GetProperty("NpcLingMaxValue") >= 12000 then
+							me:AddTitle("精英弟子","实力远超寻常弟子", 4);
+							me:AddModifier("KJCH1")
+							World:AddFlag(1100001,1)
+							elseif me:GetProperty("BodyPratice_MaxZhenQi") >= 3000 then
+							me:AddTitle("精英弟子","实力远超寻常弟子", 4);
+							me:AddModifier("KJCH1")
+							World:AddFlag(1100001,1)
+							else
+							me:AddMsg("能力不足，需炼气期同时灵力值达到2w以上");
+							end
+						else
+						me:AddMsg("能力不足，需炼气期同时灵力值达到1.2w以上");
+						end
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>供奉</Display>
+				<OKResult>	
+				<![CDATA[
+				local GF1 = {"幽幻供奉","天雷供奉","不败供奉","洗髓供奉","神鹰供奉","火凤供奉","南斗供奉","凄煌供奉","邪光供奉","半月供奉","八歧供奉","摧山供奉","乾天供奉","圆通供奉","蛤蟆供奉","凄煌供奉"}
+				local GF2 = {"神圣供奉","千鹤供奉","惊虹供奉","摩诃供奉","龙虎供奉","情痴供奉","水云供奉","狂风供奉","斩日供奉","封神供奉","百炼供奉","惊雷供奉","天空供奉","变幻供奉","五行供奉","翠羽供奉"}
+				local GFR = me:RandomInt(0,#GF1+1)
+				if World:GetFlag(1100002) == 9 then
+							me:AddMsg("门派中供奉数量已经达到上限");
+				else
+					if me.npcObj.PropertyMgr:HasModifier("KJCH2") then
+					me:AddMsg("[NAME]已拥有该职位");
+					else
+						if me:GetGLevel() == 6 then
+							if me:GetSkillLevel("FightSkill") ~= nil and me:GetSkillLevel("FightSkill") >= 30 then
+							me:AddTitle(""..GF1[GFR].."","一派之中辛辛苦苦勤勤恳恳之人", 4);
+							me:AddModifier("KJCH2")
+							me:RemoveModifier("KJCH1")
+							World:AddFlag(1100002,1)
+							elseif me:GetSkillLevel("Fight") >= 30 then
+							me:AddTitle(""..GF2[GFR].."","一派之中辛辛苦苦勤勤恳恳之人", 4);
+							me:AddModifier("KJCH2")
+							me:RemoveModifier("KJCH1")
+							World:AddFlag(1100002,1)
+							else
+							me:AddMsg("能力不足，需结丹期,，术法达30，体修战斗达30");
+							end
+						else
+						me:AddMsg("境界未达到要求");
+						end
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>大能</Display>
+				<OKResult>	
+				<![CDATA[
+					local GF1 = {"奇木大能","飞鹤大能","凶冥大能","枯禅大能","世尊大能","凶虎大能","天照大能","天地大能","金胎大能","点星大能","紫雾大能",
+		"金蝉大能","屠妖大能","狂沙大能","准提大能","绝命大能","兑泽大能","究极大能","惊虹大能","螳螂大能","创世大能","妖灵大能",
+		"凶牙大能","桃花大能","乾坤大能","至高大能","千里大能","爆炎大能","易筋大能","巨灵大能","鱼龙大能","轩辕大能"}
+		
+					local GFR = me:RandomInt(0,#GF1+1)	
+				if World:GetFlag(1100003) == 6 then
+							me:AddMsg("门派中大能数量已经达到上限");
+				else
+					if me.npcObj.PropertyMgr:HasModifier("KJCH3") then
+					me:AddMsg("[NAME]已拥有该职位");
+					else
+					if me:GetGLevel() == 6 then
+							if me:GetProperty("NpcFight_FabaoNum") ~= nil and me:GetProperty("NpcFight_SpellPowerAddP") >= 8 then
+							me:AddTitle(""..GF1[GFR].."","能力越大，责任越大", 4);
+							me:AddModifier("KJCH3")
+							me:RemoveModifier("KJCH1")
+							me:RemoveModifier("KJCH2")
+							World:AddFlag(1100003,1)
+							elseif me:GetProperty("BodyPractice_SuperPartAddv_AtkPower") >= 50000 then
+							me:AddTitle(""..GF1[GFR].."","能力越大，责任越大", 4);
+							me:AddModifier("KJCH3")
+							me:RemoveModifier("KJCH1")
+							me:RemoveModifier("KJCH2")
+							World:AddFlag(1100003,1)
+							else
+							me:AddMsg("能力不足，需结丹期,术法伤害达800%，体修攻击达5W，");
+							end
+						else
+						me:AddMsg("能力不足，需结丹期,术法伤害达800%，体修攻击达5W，");
+						end
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>长老</Display>
+				<OKResult>	
+				<![CDATA[
+					local GF1 = {"鬼哭长老","雨霖长老","梁尘长老","天地长老","夺魂长老","斩日长老","释迦长老","碧云长老","问心长老","千仞长老","龙吟长老","飞虎长老","千鸟长老","龙爪长老","丧魂长老","苍雷长老",
+"琉焰长老","无极长老","封穴长老","无悔长老","玄霜长老","凶魔长老","御虚长老","阳炎长老","圣龙长老","百丈长老","紫电长老","钢骨长老","闼婆长老","碎星长老","紫炎长老","青霜长老",
+"情痴长老","玄阳长老","雷音长老","毒蝶长老","花雨长老","摧心长老","龙王长老","七星长老","皇极长老","赤云长老","蚀魂长老","飞云长老","天仙长老","暗影长老","太虚长老","醉梦长老",
+"蟠龙长老","天道长老","碎骨长老","龙王长老","紫雾长老","大悲长老","焚野长老","狂龙长老","如意长老","先天长老","惊龙长老","皇极长老","圣儒长老","影月长老","夺命长老","神圣长老"}
+		
+					local GFR = me:RandomInt(0,#GF1+1)
+				if World:GetFlag(1100004) == 4 then
+							me:AddMsg("门派中长老数量已经达到上限");
+				else
+					if me.npcObj.PropertyMgr:HasModifier("KJCH4") then
+					me:AddMsg("[NAME]已拥有该职位");
+					else
+					if me:GetGLevel() == 9 then
+							if me:GetGoldValue() ~= nil and me:GetGoldValue() >= 1000000 then
+							me:AddTitle(""..GF1[GFR].."","一派之长，一门支柱", 4);
+							me:AddModifier("KJCH4")
+							me:RemoveModifier("KJCH1")
+							me:RemoveModifier("KJCH2")
+							me:RemoveModifier("KJCH3")
+							World:AddFlag(1100004,1)
+							elseif me:GetProperty("BodyPratice_BodyStrong") >= 35 then
+							me:AddTitle(""..GF1[GFR].."","一派之长，一门支柱", 4);
+							me:AddModifier("KJCH4")
+							me:RemoveModifier("KJCH1")
+							me:RemoveModifier("KJCH2")
+							me:RemoveModifier("KJCH3")
+							World:AddFlag(1100004,1)
+							else
+							me:AddMsg("能力不足，需金丹期,金丹值达100w，身体强大系数达35以上");
+							end
+						else
+						me:AddMsg("能力不足，需金丹期,金丹值达100w，身体强大系数达35以上");
+						end
+					end
+				end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>宿老</Display>
+				<OKResult>	
+				<![CDATA[
+					local GF1 = {"闇云宿老","水仙宿老","腾蛇宿老","先天宿老","无量宿老","半月宿老","紫云宿老","虎狼宿老","太乙宿老","斩龙宿老","勾陈宿老","天蚕宿老","银羽宿老","疾风宿老","战神宿老","闇炎宿老","无极宿老","兽王宿老","凶虎宿老","血云宿老","风刃宿老","紫焰宿老","追魂宿老","梨花宿老","洗髓宿老","白焰宿老","星月宿老","青阳宿老","灭神宿老","斩铁宿老","赤炎宿老","玄阴宿老","阿鼻宿老","天罡宿老","狂龙宿老","青炎宿老","无悔宿老","碧落宿老","摩诃宿老","如意宿老","轩辕宿老","真元宿老","无妄宿老","无上宿老","紫阳宿老","鹰宿老","龙捲宿老","昇龙宿老","解脱宿老","琉光宿老","紫虹宿老","绝叫宿老","神鹰宿老","斩龙宿老","噬魂宿老","幽灵宿老","无定宿老","真元宿老","无踪宿老","玄冰宿老","同悲宿老","蚀骨宿老","红莲宿老","影月宿老","天雷宿老","紫羽宿老","龙凰宿老","紫雷宿老","准提宿老","幽冥宿老","洗髓宿老","赤月宿老","创世宿老","腾蛇宿老","天日宿老","罗汉宿老","虎豹宿老","无定宿老","琉焰宿老","狂沙宿老"
+}
+		
+					local GFR = me:RandomInt(0,#GF1+1)
+					if World:GetFlag(1100005) == 6 then
+							me:AddMsg("门派中宿老数量已经达到上限");
+					else
+						if me.npcObj.PropertyMgr:HasModifier("KJCH5") then
+					me:AddMsg("[NAME]已拥有该职位");
+					else
+						if me:GetGLevel() == 9 then
+								if me:GetProperty("NpcFight_FabaoPowerAddP") ~= nil and me:GetProperty("NpcFight_FabaoPowerAddP") >= 10 then
+								me:AddTitle(""..GF1[GFR].."","玄功盖世，内功深厚", 4);
+								me:AddModifier("KJCH5")
+								me:RemoveModifier("KJCH1")
+								me:RemoveModifier("KJCH2")
+								me:RemoveModifier("KJCH3")
+								me:RemoveModifier("KJCH4")
+								World:AddFlag(1100005,1)
+								elseif me:GetProperty("BodyPractice_RollAddtion_Cache4") >= 0.8 then
+								me:AddTitle(""..GF1[GFR].."","玄功盖世，内功深厚", 4);
+								me:AddModifier("KJCH5")
+								me:RemoveModifier("KJCH1")
+								me:RemoveModifier("KJCH2")
+								me:RemoveModifier("KJCH3")
+								me:RemoveModifier("KJCH4")
+								World:AddFlag(1100005,1)
+								else
+								me:AddMsg("能力不足，需金丹期,法宝威力加成大于10，体修淬炼史诗进化概率0.8");
+								end
+							else
+							me:AddMsg("能力不足，需金丹期,法宝威力加成大于10，体修淬炼史诗进化概率0.8");
+							end
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>掌门</Display>
+				<OKResult>	
+				<![CDATA[
+					local GF1 = {"封穴掌门","战龙掌门","紫霄掌门","不二掌门","惊雷掌门","暴风掌门","空蝉掌门","无相掌门","真武掌门","铁翼掌门","大海掌门","千里掌门","极上掌门","断空掌门","血雾掌门","闇影掌门","无涯掌门","白骨掌门","虎豹掌门","鬼神掌门","如来掌门","青虹掌门","花蝶掌门","金虹掌门","昇阳掌门","紫炎掌门","遮那掌门","狮子掌门","风火掌门","暗黑掌门","摩诃掌门","千山掌门","转日掌门","迴旋掌门","冰蚕掌门","穿日掌门","龙牙掌门","玄光掌门","渡生掌门","龙宫掌门","白阳掌门","百里掌门","不败掌门","金涛掌门","洗髓掌门","生死掌门","暗黑掌门","蚀魂掌门","凶虎掌门","千鹤掌门","天日掌门","童子掌门","阴阳掌门","苍雷掌门","大蛇掌门","无量掌门","风云掌门","仁王掌门","星象掌门","凶神掌门","魔灵掌门","虎豹掌门","琉璃掌门","炎龙掌门","血涛掌门","赤霞掌门","天翔掌门","元始掌门","暴风掌门","元始掌门","鹰掌门","芙蓉掌门","战狼掌门","天蝎掌门","紫云掌门","大海掌门","惊虹掌门","昇阳掌门","战虎掌门","斩龙掌门","战龙掌门","碧羽掌门","鱼龙掌门","血炎掌门","傲世掌门","北斗掌门","血海掌门","虎王掌门","霸王掌门","直传掌门","紫阳掌门","天翔掌门","金光掌门","曦和掌门","连环掌门","无敌掌门","白凤掌门","虎啸掌门","天仙掌门","天浪掌门"}
+		
+					local GFR = me:RandomInt(0,#GF1+1)
+					if World:GetFlag(1100006) == 3 then
+							me:AddMsg("门派中掌门数量已经达到上限");
+					else
+						if me.npcObj.PropertyMgr:HasModifier("KJCH6") then
+					me:AddMsg("[NAME]已拥有该职位");
+					else
+						if me:GetGLevel() == 9 then
+								if me:GetProperty("AbilityLvAddV") ~= nil and me:GetProperty("AbilityLvAddV") >= 300 then
+								me:AddTitle(""..GF1[GFR].."","门中两人之下，万人之上", 4);
+								me:AddModifier("KJCH6")
+								me:RemoveModifier("KJCH1")
+								me:RemoveModifier("KJCH2")
+								me:RemoveModifier("KJCH3")
+								me:RemoveModifier("KJCH4")
+								me:RemoveModifier("KJCH5")
+								World:AddFlag(1100006,1)
+								elseif me:GetProperty("BodyPractice_AngerFireEffectAddp") >= 5 then
+								me:AddTitle(""..GF1[GFR].."","门中两人之下，万人之上", 4);
+								me:AddModifier("KJCH6")
+								me:RemoveModifier("KJCH1")
+								me:RemoveModifier("KJCH2")
+								me:RemoveModifier("KJCH3")
+								me:RemoveModifier("KJCH4")
+								me:RemoveModifier("KJCH5")
+								World:AddFlag(1100006,1)
+								else
+								me:AddMsg("能力不足，需金丹期,道行300，激狂之怒倍率5倍以上");
+								end
+							else
+							me:AddMsg("能力不足，需金丹期,道行300，激狂之怒倍率5倍以上");
+							end
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>地仙</Display>
+				<OKResult>	
+				<![CDATA[
+					local GF1 = {彝河地仙","白峰地仙","清福地仙","连丰地仙","获长地仙","朝首地仙","泽惠地仙","句富地仙","华太地仙","赤丘地仙","兴获地仙","淀泉地仙","力巨地仙","六松地仙","泽清地仙","永延地仙","勐树地仙","寨化地仙","乌川地仙","赣水地仙","潜洱地仙","田光地仙","南阳地仙","富当地仙","武丰地仙","信锦地仙","平柘地仙","大大地仙","东九地仙","平宇地仙","施西地仙","泉开地仙","州开地仙","州宁地仙","阳丰地仙","居辽地仙","阳莘地仙","临国地仙","库南地仙","关甘地仙","南荣地仙","江翔地仙","洪宕地仙","涿甸地仙","通新地仙","门南地仙","通樟地仙","利水地仙","丹掖地仙","衡阳地仙","郸彰地仙","洞淳地仙","川城地仙","井上地仙","高治地仙","家曲地仙","港河地仙","化石地仙","肥福地仙","宁东地仙","安北地仙","璧南地仙","安修地仙","沟平地仙","民嘉地仙","德逊地仙","侯西地仙","福城地仙","万乡地仙","临源地仙","祁河地仙","丘池地仙","阳海地仙","顺岛地仙","氏常地仙","鸡宜地仙","通城地仙","南磐地仙","湖拜地仙","繁福地仙","唐口地仙","宁州地仙","平周地仙","朐崇地仙","遂义地仙","原吴地仙","江和地仙","安钟地仙","林巴地仙","沂敦地仙","沧海地仙","宗灵地仙","尧清地仙","宝万地仙","阳阳地仙","昌镇地仙","河平地仙","彝河地仙","白峰地仙","清福地仙","连丰地仙","获长地仙","朝首地仙","泽惠地仙","句富地仙","华太地仙","赤丘地仙","兴获地仙","淀泉地仙","力巨地仙","六松地仙","泽清地仙","永延地仙","勐树地仙","寨化地仙","乌川地仙","赣水地仙","潜洱地仙","田光地仙","南阳地仙","富当地仙","武丰地仙","信锦地仙","平柘地仙","大大地仙","东九地仙","平宇地仙","施西地仙","泉开地仙","州开地仙","州宁地仙","阳丰地仙","居辽地仙","阳莘地仙","临国地仙","库南地仙","关甘地仙","南荣地仙","江翔地仙","洪宕地仙","涿甸地仙","通新地仙","门南地仙","通樟地仙","利水地仙","丹掖地仙","衡阳地仙","郸彰地仙","洞淳地仙","川城地仙","井上地仙","高治地仙","家曲地仙","港河地仙","化石地仙","肥福地仙","宁东地仙","安北地仙","璧南地仙","安修地仙","沟平地仙","民嘉地仙","德逊地仙","侯西地仙","福城地仙","万乡地仙","临源地仙","祁河地仙","丘池地仙","阳海地仙","顺岛地仙","氏常地仙","鸡宜地仙","通城地仙","南磐地仙","湖拜地仙","繁福地仙","唐口地仙","宁州地仙","平周地仙","朐崇地仙","遂义地仙","原吴地仙","江和地仙","安钟地仙","林巴地仙","沂敦地仙","沧海地仙","宗灵地仙","尧清地仙","宝万地仙","阳阳地仙","昌镇地仙","河平地仙"}	
+					local GFR = me:RandomInt(0,#GF1+1)
+					if World:GetFlag(1100007) == 1 then
+							me:AddMsg("门派中掌门数量已经达到上限");
+					else
+						if me.npcObj.PropertyMgr:HasModifier("KJCH7") then
+					me:AddMsg("[NAME]已拥有该职位");
+					else
+						if me:GetGLevel() == 12 then
+								if me:GetProperty("NpcFight_ShieldConversionRate") ~= nil and me:GetProperty("NpcFight_ShieldConversionRate") >= 20 then
+								me:AddTitle(""..GF1[GFR].."","成仙做祖，红尘至高", 4);
+								me:AddModifier("KJCH7")
+								me:RemoveModifier("KJCH1")
+								me:RemoveModifier("KJCH2")
+								me:RemoveModifier("KJCH3")
+								me:RemoveModifier("KJCH4")
+								me:RemoveModifier("KJCH5")
+								me:RemoveModifier("KJCH6")
+								World:AddFlag(1100007,1)
+								else
+								me:AddMsg("能力不足，需护盾值达到20");
+								end
+						else
+						me:AddMsg("能力不足，需护盾值达到20");
+						end
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>仙</Display>
+				<OKResult>	
+				<![CDATA[
+					local GF1 = {"清宁火乌仙","溷元净魂仙","风火绝对仙","天外鬼魅仙","倒海大衍仙","链铠残枫仙","天梁星夜仙","透骨飞龙仙","太极同悲仙","四象紫虚仙","本莲翠锦仙","凭虚破天仙","龙王弄雨仙","血龙逝川仙","锦云巫罗仙","钢翼残质仙","罗候惊魂仙","岚曦狂浪仙","生死闶然仙","纱罗明心仙","逝川天元仙","
+							流光穿山仙","玄晶破空仙","断龙绿灵仙","飞狼化清仙","阴风碎玉仙","金童蛇蝎仙","夺命蚀泪仙","仁风火云仙","白雾鹿纹仙","绮星双极仙","浅草屠魔仙","幽蚕白鹤仙","圣神天道仙","巫盼双燕仙","金雕旋怀仙","玄布旬空仙","域霆金涛仙","清风修罗仙","霸皇破炎仙","天魔锈尘仙","巨龙旧珠仙","归元妖岩仙","骁勇神浪仙","神风新绸仙","天幻蛊皇仙","勐虎秘焰仙","幽灵幽鳞仙","紫焰佛皇仙","绣金破灵仙","天仙","纯血仙","环纹宽韵仙","穿心轻爪仙","寰宇利啸仙","平纹广藤仙","黄铜神石仙","弄雨旧金仙","虎啸宝魔仙","丹青魔草仙","残枫旧音仙","蝉翼硬蕴仙","烟罗妖影仙","轻舞破帝仙","荡旋粗阙仙","飞虹粗璃仙","夺心梦空仙","千红影凰仙","毒蛇明霞仙","梵玄影仙","柔棉弯天仙","暮云冥琉仙","青霞广王仙","方士灵乐仙","紫穆短玉仙","天傲佛鳞仙","渡法狭波仙","勾陈幻魄仙","毕义大根仙","仙","蝶新花仙","醉梦仙","绝叫仙","鱼龙仙","迅蛇仙","芙蓉仙","天元仙","坎水仙","真龙仙","狂沙仙","日月仙","青霞仙","幽冥仙","焚月仙","毒蝶仙","极乐仙","无涯仙","流离仙","潇湘仙","同悲仙","千鹤仙","龙王仙","天雷仙","无上仙","追日仙","圣光仙","仁王仙","离魂仙","血云仙","皇极仙","明心仙","焚月仙","狂尸仙","活杀仙","摧山仙","绝代仙","龙虎仙","青炎仙","涅槃仙","血炎仙","兽王仙","青虹仙","涡卷仙","陨星仙","碎肉仙","归一仙","紫雾仙","蟠龙仙","翠羽仙","血涛仙","天煞仙","夜叉仙","缠丝仙","无念仙","冲霄仙","天照仙","虎牙仙","青羽仙","清静仙","风雷仙","飞仙","仙","浑天仙","天命仙","赤龙仙","战豹仙","绝地仙","太极仙","无双仙","飞烟仙","圣兽仙","贯清仙","紫云仙","闇黑仙","灭魔仙","兽皇仙","天悲仙","惊虹仙","天魔仙","极上仙","阴风仙","苍焰仙","万里仙","赤炎仙","无妄仙","追风仙","尊胜仙","六壬仙","大日仙","苍雷仙","断魂仙","九鼎仙","潇湘仙","万丈仙","倒海仙","穿空仙","赤雷仙","四方仙","青霞仙","万里仙","飞云仙","白羽仙"
+					local GFR = me:RandomInt(0,#GF1+1)
+					if World:GetFlag(1100008) == 1 then
+							me:AddMsg("门派中掌门数量已经达到上限");
+					else
+						if me.npcObj.PropertyMgr:HasModifier("KJCH8") then
+					me:AddMsg("[NAME]已拥有该职位");
+					else
+						if me:GetGLevel() == 12 then
+								if me:GetProperty("MaxAge") ~= nil and me:GetProperty("MaxAge") >= 20 and world.DayCount > 200 then
+								me:AddTitle(""..GF1[GFR].."","万界至尊", 4);
+								me:AddModifier("KJCH8")
+								me:RemoveModifier("KJCH1")
+								me:RemoveModifier("KJCH2")
+								me:RemoveModifier("KJCH3")
+								me:RemoveModifier("KJCH4")
+								me:RemoveModifier("KJCH5")
+								me:RemoveModifier("KJCH6")
+								me:RemoveModifier("KJCH7")
+								World:AddFlag(1100007,1)
+								else
+								me:AddMsg("能力不足，需最大年龄达9999同时200天游戏时间以上");
+								end
+						else
+						me:AddMsg("能力不足，需最大年龄达9999同时200天游戏时间以上");
+						end
+						end
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开科技殿</Display> 
+				<OKResult><![CDATA[
+				me:AddMsg("[NAME]离开了星象峰星阵");
+				]]>
+				</OKResult>
+			
+			</li>
+			
+		</Selections>
+	</Story>
+</List></Stories>

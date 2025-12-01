@@ -1,0 +1,29 @@
+﻿<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="QLGJ" Parent="NormalAttackBase">
+	<ThingName>仙芝</ThingName>
+	<Rate>12</Rate>		
+	<ElementKind>Tu</ElementKind>
+	<TexPath>Spr\Object\WQ\QLGJ.png</TexPath>	
+	<Item>		
+		<Equip>
+			<Damage>1000</Damage>
+			<AttackSpeed>5</AttackSpeed>
+			<AttackRange>3.5</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="GCCD" Rate="0.15" DescTags="穿心击"/>
+				<li PartKind="Organ" Name="CH" Rate="0.45" DescTags="嗤魂"/>
+				<li PartKind="Flesh" Name="LSZ" Rate="0.9" DescTags="裂山爪"/>
+				<li PartKind="Bone" Name="LGB" Rate="0.2" DescTags="烈光波"/>
+				<li PartKind="Meridian" Name="HX" Rate="0.1" DescTags="虎啸"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="89"/>
+				<li Name="Atk2" HitPoint="90"/>
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

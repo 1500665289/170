@@ -1,0 +1,194 @@
+﻿<ThingDefs><List>
+	
+	<ThingDef Type="Building" Name="WX_KJT" Parent="OrnamentBase">
+	<TexPath>Spr\Building\XMP\ZSYJD.png</TexPath>
+	<TexScale>1.5</TexScale>
+	<ThingName>研究殿</ThingName>
+	<Desc>解锁门派后，可研究一条主神科技，以及十个分支门派中的其中一条科技树</Desc>
+	<Tags>
+	</Tags>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>1</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "1000"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="开启研究" Desc="打开研究院" Cost="1" Appoint="3" Scope="0"  Story="WX_ZSYJY"/>
+		
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Building" Name="WX_QXGC" Parent="OrnamentBase">
+	<TexPath>Spr\Building\ZKJ\QXGC.png</TexPath>
+	<TexScale>1.5</TexScale>
+	<ThingName>枪械工厂</ThingName>
+	<Desc>可与其中制造枪械。</Desc>
+	<ClassName>WX_QXGC</ClassName>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>1</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "800"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="开启研究" Desc="打开研究院" Cost="1" Appoint="3" Scope="0"  Story="WX_ZSYJY"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Building" Name="WX_KMDJ" Parent="OrnamentBase">
+	<TexPath>Spr\Building\ZKJ\KMDJ.png</TexPath>
+	<TexScale>1.5</TexScale>
+	<ThingName>矿脉地井</ThingName>
+	<Desc>每日定点生产随机矿料，维修费白天8点-6点每秒2科技点。</Desc>
+	<ClassName>WX_KMDJ</ClassName>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>1</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>300</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_JSXJ" count = "10"/>
+						<Item name = "Item_YJWSXT" count = "30"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="开启研究" Desc="打开研究院" Cost="1" Appoint="3" Scope="0"  Story="WX_ZSYJY"/>
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Building" Name="WX_XMPXG" Parent="OrnamentBase">
+	<TexPath>Spr\Building\TXF\XG.png</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>星宫</ThingName>
+	<Desc>星象峰中的一座宫殿，宫殿的建造按着七星之形排布，难以言喻的玄妙。</Desc>
+	<Tags>
+	</Tags>
+	<Collider>
+	<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,3,0],
+		[0,1,0],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>1</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_XFXS" count = "50"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<Ling>
+			<AddionLing>50</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.01</AddionFailing>
+			<AddionFailRadius>14</AddionFailRadius>
+							
+			<Attenuation>0.1</Attenuation>
+			<Absorption>1</Absorption>
+			
+		</Ling>
+	<StoryBnts>
+		<li Name="进入星宫" Desc="打开星宫" Cost="1" Appoint="3" Scope="0"  Story="XXFXG"/>
+	</StoryBnts>
+	</ThingDef>
+	
+	<ThingDef Type="Building" Name="WX_XMPXZ" Parent="OrnamentBase">
+	<TexPath>Spr\Building\TXF\XZ.png</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>星阵</ThingName>
+	<Desc>每日可生产星石，同时可在此习得星象峰的武技。</Desc>
+	<ClassName>XXFXZ</ClassName>
+	<Tags>
+	</Tags>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,3,0],
+		[0,1,0],
+		</Data>
+		<Offset>
+			<y>-0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>10</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_XFXS" count = "100"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="进入星阵" Desc="进入星阵中心" Cost="1" Appoint="3" Scope="0"  Story="XXFXZ"/>
+	</StoryBnts>
+	</ThingDef>
+	
+</List></ThingDefs>

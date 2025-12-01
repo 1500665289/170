@@ -1,0 +1,27 @@
+﻿<ThingDefs><List>
+
+	<ThingDef Type="Item" Name="WXLQ1" Parent="NormalAttackBase">
+	<ThingName>骨枪</ThingName>
+	<Rate>12</Rate>		
+	<ElementKind>None</ElementKind>
+	<Item>		
+		<Equip>
+			<Damage>200</Damage>
+			<AttackSpeed>2</AttackSpeed>
+			<AttackRange>0.8</AttackRange>
+			<AtkDamage>
+				<li PartKind="Organ" Name="ZJSH14" Rate="0.15" DescTags="贯穿"/>
+				<li PartKind="Flesh" Name="ZJSH14" Rate="0.9" DescTags="贯穿"/>
+				<li PartKind="Bone" Name="ZJSH14" Rate="0.2" DescTags="贯穿"/>
+				<li PartKind="Meridian" Name="ZJSH14" Rate="0.1" DescTags="贯穿"/>
+			</AtkDamage>
+			<AtkAnis>
+				<li Name="Atk" HitPoint="52"/>
+				<li Name="Atk2" HitPoint="44"/>
+
+			</AtkAnis>
+		</Equip>
+	</Item>
+	</ThingDef>
+	
+</List></ThingDefs>

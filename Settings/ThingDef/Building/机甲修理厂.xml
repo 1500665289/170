@@ -1,0 +1,42 @@
+﻿<ThingDefs><List>
+	
+	<ThingDef Type="Building" Name="WX_JJXL" Parent="OrnamentBase">
+	<TexPath>Spr\Building\KJXLZ.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>机甲修理阵</ThingName>
+	<Desc>可对机甲进行维修。</Desc>
+	<Tags>
+	</Tags>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>1</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "2000"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="进入修理" Desc="进入修理厂" Cost="1" Appoint="3" Scope="0"  Story="WX_XLC"/>
+		
+		</StoryBnts>
+	</ThingDef>
+
+	
+</List></ThingDefs>

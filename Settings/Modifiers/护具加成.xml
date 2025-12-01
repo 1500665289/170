@@ -1,0 +1,22 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="WXFJ_HF" Type="Normal">
+		<DisplayName>防护服</DisplayName>
+		<Desc>免疫对应伤害。</Desc>
+		<MaxStack>5000</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+		<LuaClassName>WXFJ_HF</LuaClassName>
+		<EffectBind>
+			<li Path="Effect/System/Shield/FrostShield" />
+		</EffectBind>
+	</Modifier>
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

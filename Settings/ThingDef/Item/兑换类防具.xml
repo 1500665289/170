@@ -1,0 +1,157 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="WXQX_HFF1" Parent="Item_SP_Clothes1">
+	<ThingName>体修防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF1.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF2" Parent="Item_SP_Clothes1">
+	<ThingName>剑修防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF2.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF3" Parent="Item_SP_Clothes1">
+	<ThingName>法修防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF3.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF4" Parent="Item_SP_Clothes1">
+	<ThingName>无属性防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF4.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF5" Parent="Item_SP_Clothes1">
+	<ThingName>火属性防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF5.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF6" Parent="Item_SP_Clothes1">
+	<ThingName>金属性防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF6.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF7" Parent="Item_SP_Clothes1">
+	<ThingName>木属性防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF7.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF8" Parent="Item_SP_Clothes1">
+	<ThingName>水属性防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF8.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXQX_HFF9" Parent="Item_SP_Clothes1">
+	<ThingName>土属性防护服</ThingName>
+	<TexPath>Spr\Object\HJ\HF9.png</TexPath>
+	<MaxStack>1</MaxStack>
+	<Rate>20</Rate> 
+	<ElementKind>None</ElementKind>
+	<Desc>仅限凡人穿戴。</Desc>
+	<Item Lable="Clothes">
+		<NotRandom>1</NotRandom>
+		<Equip>
+			<ModelID>5</ModelID>
+			<ToolModifier>WXFJ_HF</ToolModifier>
+		</Equip> 
+	</Item>
+	</ThingDef>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</List></ThingDefs>

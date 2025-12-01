@@ -1,0 +1,1799 @@
+<ModifierDefs><List>
+	<Modifier Name="WX_SLDDJ" Type="Normal">
+		<DisplayName>大剑类熟练度（人级）</DisplayName>
+		<Desc>大剑类武器熟练度，每层获得坚韧加成1000，提高法宝伤害百分20，提高疼痛忍耐0.1，移动速度减0.001，上限50层</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="1000"/>
+				<li Name="MoveSpeed" AddP="-0.001"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="PainTolerance" AddV="0.1"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_FabaoPowerAddP" AddP="0.2"/><!--身体强大系数。 1 9-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDDJ2" Type="Normal">
+		<DisplayName>大剑类熟练度（地级）</DisplayName>
+		<Desc>大剑类武器熟练度，每层获得坚韧加成1000，提高法宝伤害百分30，提高疼痛忍耐0.5，移动速度减0.003，上限100层</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ2</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="1000"/>
+				<li Name="MoveSpeed" AddP="-0.003"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="PainTolerance" AddV="0.5"/><!--疼痛忍耐 6-->
+				
+				<li Name="NpcFight_FabaoPowerAddP" AddP="0.3"/><!--身体强大系数。 1 9-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDDJ2X" Type="Normal">
+		<DisplayName>蓄力斩（地阶）</DisplayName>
+		<Desc>伤害计算，战斗等级*100*3</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ2X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDDJ2X2" Type="Normal">
+		<DisplayName>大剑环绕</DisplayName>
+		<Desc>提高护盾等级上限10级</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ2X</LuaClassName>
+		<Skills>
+				<li Name="Barrier" LevelOver="10"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDDJ2X3" Type="Normal">
+		<DisplayName>剑连剑</DisplayName>
+		<Desc>百分30概率，重复上次造成的伤害</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDDJ3X" Type="Normal">
+		<DisplayName>蓄力斩（天阶）</DisplayName>
+		<Desc>伤害计算，战斗等级*100*9</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ3X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDDJ3X2" Type="Normal">
+		<DisplayName>剑骨</DisplayName>
+		<Desc>每次受到攻击时，反馈该伤害百分15给对手</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ3X</LuaClassName>
+		<Skills>
+				<li Name="Barrier" LevelOver="10"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDDJ3X3" Type="Normal">
+		<DisplayName>万山裂</DisplayName>
+		<Desc>超高单体伤害技能</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDDJ3" Type="Normal">
+		<DisplayName>大剑类熟练度（天级）</DisplayName>
+		<Desc>大剑类武器熟练度，每层获得坚韧加成1500，提高法宝伤害百分40，提高疼痛忍耐1，移动速度减0.5，上限300层</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDDJ3</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="1500"/>
+				<li Name="MoveSpeed" AddP="-0.005"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="PainTolerance" AddV="1"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_FabaoPowerAddP" AddP="0.4"/><!--身体强大系数。 1 9-->
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDF" Type="Normal">
+		<DisplayName>斧类熟练度（人级）</DisplayName>
+		<Desc>斧类武器熟练度，每层增加0.2御器等级上限，增加全局秘体镇压0.08，减低神性0.5，减少心境基础值1点，至高50级。</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.08"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodPractice_GodPowerAddV" AddV="-0.5"/><!--疼痛忍耐 6-->
+				<li Name="MindStateBaseValue" AddV="-1"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Fabao" LevelOver="0.2"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDF2" Type="Normal">
+		<DisplayName>斧类熟练度（地级）</DisplayName>
+		<Desc>斧类武器熟练度，每层增加0.3御器等级上限，增加全局秘体镇压0.1，减低神性0.7，减少心境基础值1.5点，至高150级。</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF2</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.1"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodPractice_GodPowerAddV" AddV="-0.7"/><!--疼痛忍耐 6-->
+				<li Name="MindStateBaseValue" AddV="-1.5"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Fabao" LevelOver="0.3"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDF2X" Type="Normal">
+		<DisplayName>屠戮</DisplayName>
+		<Desc>使敌人每次受到额外的神圣伤害（固定值仙修20000，体修1000，持续30s）。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDF2X1" Type="Normal">
+		<DisplayName>屠戮</DisplayName>
+		<Desc>使敌人每次受到额外的神圣伤害（固定值仙修20000，体修1000，持续30s）。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>30</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SLDF2X2" Type="Normal">
+		<DisplayName>杀戮之心</DisplayName>
+		<Desc>健康值越低，造成伤害越高，并获得大量生命恢复。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDF2X3" Type="Normal">
+		<DisplayName>狂战之躯</DisplayName>
+		<Desc>狂战士，嗷呜！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDF2X31" Type="Normal">
+		<DisplayName>铁血</DisplayName>
+		<Desc>获得移动速度，食量，火属性抗性，全局秘体攻击提高。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+			<Properties>
+				<li Name="MoveSpeed" AddV="5"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_BodyStrong" AddV="5"/><!--疼痛忍耐 6-->
+				<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="2"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="10"/><!--身体强大系数。 1 9-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDF2X32" Type="Normal">
+		<DisplayName>血涌</DisplayName>
+		<Desc>瞬间激发，获得高额疼痛忍耐加成，获得高额秘体全局攻击力加成，获得高额身体强度提高，同时寿元流逝速度增加。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<Properties>
+				<li Name="PainTolerance" AddV="99"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_BodyStrong" AddV="200"/><!--疼痛忍耐 6-->
+				<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="5"/>
+				<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="50000"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="AgeCostSpeed" AddV="20"/><!--身体强大系数。 1 9-->
+		</Properties>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDF3" Type="Normal">
+		<DisplayName>斧类熟练度（天级）</DisplayName>
+		<Desc>斧类武器熟练度，每层增加0.5御器等级上限，增加全局秘体镇压0.2，减低神性1，减少心境基础值2点，至高300级。</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF3</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.2"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodPractice_GodPowerAddV" AddV="-1"/><!--疼痛忍耐 6-->
+				<li Name="MindStateBaseValue" AddV="-2"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Fabao" LevelOver="0.5"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDF3X" Type="Normal">
+		<DisplayName>神陨</DisplayName>
+		<Desc>每次受到所有伤害系数百分三百。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDF3X1" Type="Normal">
+		<DisplayName>神陨</DisplayName>
+		<Desc>每次受到所有伤害系数百分三百。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>30</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SLDF3X2" Type="Normal">
+		<DisplayName>杀为证</DisplayName>
+		<Desc>每杀一人获得一层buff，每层提高1等级上限提高，最高100层。成功杀人前会不断掉落心境。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF3X</LuaClassName>
+		<Skills>
+				<li Name="Fabao" LevelOver="1"/><!-- 丹器 30-->
+				<li Name="Fight" LevelOver="1"/><!-- 丹器 30-->
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDF3X3" Type="Normal">
+		<DisplayName>红眼</DisplayName>
+		<Desc>造成3倍系数伤害加成受到3倍系数伤害加成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDF3X</LuaClassName>
+	
+	</Modifier>
+	
+	<Modifier Name="WX_SLDJ" Type="Normal">
+		<DisplayName>剑类熟练度（人级）</DisplayName>
+		<Desc>剑类武器熟练度，心境基础值提升1，移动速度提升0.002，神国护法数值增幅系数0.01,减低术法威力1</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ</LuaClassName>
+		<Properties>
+				<li Name="MindStateBaseValue" AddV="1"/>
+				<li Name="GodCity_GuardEffect" AddV="0.01"/><!--疼痛忍耐 6-->
+				<li Name="MoveSpeed" AddV="0.002"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="SLD_J" AddV="0.5"/><!--身体强大系数。 1 9-->
+				<li Name="NpcFight_SpellPowerAddP" AddV="-1"/><!--身体强大系数。 1 9-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDJ2" Type="Normal">
+		<DisplayName>剑类熟练度（地级）</DisplayName>
+		<Desc>剑类武器熟练度，心境基础值提升1.5，移动速度提升0.005，神国护法数值增幅系数0.1,减低术法威力2</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ</LuaClassName>
+		<Properties>
+				<li Name="MindStateBaseValue" AddV="1.5"/>
+				<li Name="GodCity_GuardEffect" AddV="0.1"/><!--疼痛忍耐 6-->
+				<li Name="MoveSpeed" AddV="0.5"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="SLD_J" AddV="1"/><!--身体强大系数。 1 9-->
+				<li Name="NpcFight_SpellPowerAddP" AddV="-2"/><!--身体强大系数。 1 9-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDJ2X" Type="Normal">
+		<DisplayName>心剑诀</DisplayName>
+		<Desc>提高技能伤害，获得心境系数*1w伤害加成</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJ2X2" Type="Normal">
+		<DisplayName>养剑</DisplayName>
+		<Desc>提高法宝技能等级上限</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ2X</LuaClassName>
+		<Skills>
+				<li Name="Fabao" LevelOver="15"/><!-- 丹器 30-->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDJ2X3" Type="Normal">
+		<DisplayName>剑甲</DisplayName>
+		<Desc>每次受到超过5w的灵力伤害时，百分50概率免疫该次伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJ3" Type="Normal">
+		<DisplayName>剑类熟练度（天级）</DisplayName>
+		<Desc>剑类武器熟练度，心境基础值提升2，移动速度提升0.01，神国护法数值增幅系数0.2,减低术法威力4</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ3</LuaClassName>
+		<Properties>
+				<li Name="MindStateBaseValue" AddV="2"/>
+				<li Name="GodCity_GuardEffect" AddV="0.2"/><!--疼痛忍耐 6-->
+				<li Name="MoveSpeed" AddV="0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="SLD_J" AddV="2"/><!--身体强大系数。 1 9-->
+				<li Name="NpcFight_SpellPowerAddP" AddV="-4"/><!--身体强大系数。 1 9-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDJ3X" Type="Normal">
+		<DisplayName>绝心剑</DisplayName>
+		<Desc>提高技能伤害，自身心境高于对方心境上限值8倍时，造成5s昏迷效果</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJ3X2" Type="Normal">
+		<DisplayName>万剑窟</DisplayName>
+		<Desc>获得随机一把圣剑</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJ3X21" Type="Normal">
+		<DisplayName>空雲剑</DisplayName>
+		<Desc>空雲护体，提高五行抗性30</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ3X21</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDJ3X3" Type="Normal">
+		<DisplayName>逸剑术</DisplayName>
+		<Desc>战斗中不断获得闪避能力提高，达到峰值时，获得一段时间无敌的buff，并清空闪避能力的提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJ3X</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDG" Type="Normal">
+		<DisplayName>弓类熟练度（人级）</DisplayName>
+		<Desc>弓类武器熟练度，提高真气恢复速度0.2，提高术法威力百分15，提高神民上限200，减少秘体坚韧1000</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="-1500"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_RecoverZhenQi" AddV="0.2"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="GodCity_MaxResident" AddV="200"/>
+				<li Name="NpcFight_SpellPowerAddP" AddP="0.15"/>
+				
+		</Properties>
+	</Modifier>	
+	<Modifier Name="WX_SLDG2" Type="Normal">
+		<DisplayName>弓类熟练度（地级）</DisplayName>
+		<Desc>弓类武器熟练度，提高真气恢复速度0.4，提高术法威力百分25，提高神民上限2000，减少秘体坚韧1000</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG2</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="-1500"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_RecoverZhenQi" AddV="0.4"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="GodCity_MaxResident" AddV="2000"/>
+				<li Name="NpcFight_SpellPowerAddP" AddP="0.25"/>
+		</Properties>
+	</Modifier>	
+	<Modifier Name="WX_SLDG2X" Type="Normal">
+		<DisplayName>进阶响澜</DisplayName>
+		<Desc>提高响灵箭每次削弱灵力与真气上限</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG2X</LuaClassName>
+
+	</Modifier>	
+	<Modifier Name="WX_SLDG2X2" Type="Normal">
+		<DisplayName>风行</DisplayName>
+		<Desc>习得技能风行，使用后60s百分百闪避</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG2X</LuaClassName>
+
+	</Modifier>	
+	<Modifier Name="WX_SLDG2X21" Type="Normal">
+		<DisplayName>风行</DisplayName>
+		<Desc>百分百闪避持续60s</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>60</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcFight_BaseDodgeChance" AddV="999"/><!--伤害百分比加成 -50000 50000-->
+				
+		</Properties>
+	</Modifier>	
+	<Modifier Name="WX_SLDG3X2" Type="Normal">
+		<DisplayName>破甲</DisplayName>
+		<Desc>每次攻击造成额外护盾值的减少</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG2X</LuaClassName>
+
+	</Modifier>	
+	<Modifier Name="WX_SLDG3" Type="Normal">
+		<DisplayName>弓类熟练度（天级）</DisplayName>
+		<Desc>弓类武器熟练度，提高真气恢复速度1，提高术法威力百分50，提高神民上限4000，减少秘体坚韧1000</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG3</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="-1500"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_RecoverZhenQi" AddV="1"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="GodCity_MaxResident" AddV="4000"/>
+				<li Name="NpcFight_SpellPowerAddP" AddP="0.5"/>
+
+		</Properties>
+	</Modifier>	
+	<Modifier Name="WX_SLDG3X" Type="Normal">
+		<DisplayName>进阶响麟</DisplayName>
+		<Desc>提高响灵箭每次削弱灵力与真气上限</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG3X</LuaClassName>
+
+	</Modifier>	
+	<Modifier Name="WX_SLDG3X2" Type="Normal">
+		<DisplayName>集中火力</DisplayName>
+		<Desc>对一个敌方进行标记，30s内造成大量伤害</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG3X</LuaClassName>
+
+	</Modifier>	
+	<Modifier Name="WX_SLDG3X21" Type="Normal">
+		<DisplayName>集中火力</DisplayName>
+		<Desc>对一个敌方进行标记，30s内造成大量伤害</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>50</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SLDG3X3" Type="Normal">
+		<DisplayName>心眼</DisplayName>
+		<Desc>每次造成伤害，概率造成百分600暴击</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDG3X</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDQ" Type="Normal">
+		<DisplayName>长枪类熟练度（人级）</DisplayName>
+		<Desc>长枪类武器熟练度，达到最高层熟练度时提高第一件法宝威力20，提高秘体全局穿透0.08，提高核心信徒上限0.02，护盾值减0.02，上限50</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ</LuaLuaClassName>
+		<Properties>
+				<li Name="BodyPractice_AngerFireDuration" AddV="0.08"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodCity_MaxCoreBeliever" AddV="0.02"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_ShieldConversionRate" AddP="-0.02"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDQ2" Type="Normal">
+		<DisplayName>长枪类熟练度（地级）</DisplayName>
+		<Desc>长枪类武器熟练度，达到最高层熟练度时提高第一件法宝威力30，提高秘体全局穿透0.1，提高核心信徒上限0.04，护盾值减0.03，上限150</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ2</LuaLuaClassName>
+		<Properties>
+				<li Name="BodyPractice_AngerFireDuration" AddV="0.1"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodCity_MaxCoreBeliever" AddV="0.04"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_ShieldConversionRate" AddP="-0.03"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDQ2X" Type="Normal">
+		<DisplayName>痛击肠穿</DisplayName>
+		<Desc>提高穿肠的概率至40</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ2X</LuaLuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDQ2X2" Type="Normal">
+		<DisplayName>浑身是胆</DisplayName>
+		<Desc>受到穿透伤害时可转移至五脏</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ2X</LuaLuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDQ2X3" Type="Normal">
+		<DisplayName>枪出如龙</DisplayName>
+		<Desc>一枪在手，天下我有</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ2X</LuaLuaClassName>
+		<Skills>
+				<li Name="Fight" LevelOver="10"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDQ3" Type="Normal">
+		<DisplayName>长枪类熟练度（天级）</DisplayName>
+		<Desc>长枪类武器熟练度，达到最高层熟练度时提高第一件法宝威力50，提高秘体全局穿透0.2，提高核心信徒上限0.1，护盾值减0.05，上限300</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ3</LuaLuaClassName>
+		<Properties>
+				<li Name="BodyPractice_AngerFireDuration" AddV="0.2"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodCity_MaxCoreBeliever" AddV="0.1"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_ShieldConversionRate" AddP="-0.05"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDQ3X" Type="Normal">
+		<DisplayName>天下霸唱</DisplayName>
+		<Desc>提高肠穿概率至70</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ3X</LuaLuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDQ3X2" Type="Normal">
+		<DisplayName>流光</DisplayName>
+		<Desc>投掷出第一个法宝，造成其法宝威力数值*3000的真实伤害，该伤害不至死</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ3X</LuaLuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDQ3X" Type="Normal">
+		<DisplayName>灵契</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaLuaClassName>WX_SLDQ3X</LuaLuaClassName>
+		
+	</Modifier>
+	
+	<Modifier Name="WX_SLDFZ" Type="Normal">
+		<DisplayName>法杖类熟练度</DisplayName>
+		<Desc>法杖类武器熟练度，提高术法等级上限0.2，提高护盾值0.01，加信仰转灵气系数0.5，减少身体强大系数0.01</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ</LuaClassName>
+		<Properties>
+				<li Name="BodyPratice_BodyStrong" AddV="-0.01"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodPractice_LingConvert" AddV="0.5"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_ShieldConversionRate" AddV="0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="FightSkill" LevelOver="0.2"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ2" Type="Normal">
+		<DisplayName>法杖类熟练度</DisplayName>
+		<Desc>法杖类武器熟练度，提高术法等级上限0.2，提高护盾值0.01，加信仰转灵气系数1，减少身体强大系数0.01</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ2</LuaClassName>
+		<Properties>
+				<li Name="BodyPratice_BodyStrong" AddV="-0.01"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodPractice_LingConvert" AddV="1"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_ShieldConversionRate" AddV="0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="FightSkill" LevelOver="0.2"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ2X" Type="Normal">
+		<DisplayName>域灭：陨</DisplayName>
+		<Desc>对群体敌人造成高额伤害，并沉默，缴械（对体修）30s。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ2X2" Type="Normal">
+		<DisplayName>奥术天球</DisplayName>
+		<Desc>检测到周遭敌人会自动进行攻击，伤害为灵力上限/真气上限*0.00005/*0.0005*术法等级/格物等级，消耗为1w/1000</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ2X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDFZ2X3" Type="Normal">
+		<DisplayName>气海波涛</DisplayName>
+		<Desc>提高气海等级上限</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ2X</LuaClassName>
+		<Skills>
+				<li Name="Qi" LevelOver="15"/><!-- 丹器 30-->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ3" Type="Normal">
+		<DisplayName>法杖类熟练度</DisplayName>
+		<Desc>法杖类武器熟练度，提高术法等级上限0.2，提高护盾值0.01，加信仰转灵气系数2，减少身体强大系数0.01</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ3</LuaClassName>
+		<Properties>
+				<li Name="BodyPratice_BodyStrong" AddV="-0.01"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="GodPractice_LingConvert" AddV="2"/><!--疼痛忍耐 6-->
+				<li Name="NpcFight_ShieldConversionRate" AddV="0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="FightSkill" LevelOver="0.2"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ3X" Type="Normal">
+		<DisplayName>域灭：默</DisplayName>
+		<Desc>对群体敌人造成高额伤害，并沉默，缴械（对体修）30s。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ3X2" Type="Normal">
+		<DisplayName>奥术至尊</DisplayName>
+		<Desc>百分30概率将高于10w的灵力伤害，暴击提高百分800。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ3X3" Type="Normal">
+		<DisplayName>灵虚咒术</DisplayName>
+		<Desc>使敌人法宝失效，体修无法攻击，持续15s，同时受到灵力伤害提高20倍。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ3X3</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDFZ3X31" Type="Normal">
+		<DisplayName>灵虚咒术</DisplayName>
+		<Desc>使敌人法宝失效，体修无法攻击，持续15s，同时受到灵力伤害提高20倍。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDFZ3X31</LuaClassName>
+	</Modifier>
+
+	<Modifier Name="WX_SLDBS" Type="Normal">
+		<DisplayName>匕首类熟练度（人级）</DisplayName>
+		<Desc>匕首类武器熟练度，提高潜行值0.05，更加不容易疲惫与饥渴，提高秘体全局穿透0.001,提高法宝回灵倍率0.01，减少护盾值0.01</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_SneakValue" AddV="0.05"/>
+				<li Name="NpcFight_FabaoLingRecoverK" AddV="0.01"/>
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.001"/>
+				<li Name="NutritionConsumeConstant" AddV="-0.05"/>
+				<li Name="WaterConsumeConstant" AddV="-0.05"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="FatigueConsumeConstant" AddV="-0.05"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_ShieldConversionRate" AddV="-0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDBS2" Type="Normal">
+		<DisplayName>匕首类熟练度（地级）</DisplayName>
+		<Desc>匕首类武器熟练度，提高潜行值0.2，更加不容易疲惫与饥渴，提高秘体全局穿透0.001,提高法宝回灵倍率0.01，减少护盾值0.01</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS2</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_SneakValue" AddV="0.2"/>
+				<li Name="NpcFight_FabaoLingRecoverK" AddV="0.01"/>
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.001"/>
+				<li Name="NutritionConsumeConstant" AddV="-0.1"/>
+				<li Name="WaterConsumeConstant" AddV="-0.1"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="FatigueConsumeConstant" AddV="-0.1"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_ShieldConversionRate" AddV="-0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDBS2X" Type="Normal">
+		<DisplayName>刺杀精通</DisplayName>
+		<Desc>提高暗刺造成部位伤害时的上限。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDBS2X2" Type="Normal">
+		<DisplayName>背刺</DisplayName>
+		<Desc>对敌方造成敌方当前灵力值/真气值百分10的额外伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDBS2X3" Type="Normal">
+		<DisplayName>暗杀</DisplayName>
+		<Desc>对落单的敌人造成5倍伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDBS3" Type="Normal">
+		<DisplayName>匕首类熟练度（天级）</DisplayName>
+		<Desc>匕首类武器熟练度，提高潜行值0.2，更加不容易疲惫与饥渴，提高秘体全局穿透0.001,提高法宝回灵倍率0.01，减少护盾值0.01</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS3</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_SneakValue" AddV="0.2"/>
+				<li Name="NpcFight_FabaoLingRecoverK" AddV="0.01"/>
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="0.001"/>
+				<li Name="NutritionConsumeConstant" AddV="-0.1"/>
+				<li Name="WaterConsumeConstant" AddV="-0.1"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="FatigueConsumeConstant" AddV="-0.1"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_ShieldConversionRate" AddV="-0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDBS3X" Type="Normal">
+		<DisplayName>绝命暗刺</DisplayName>
+		<Desc>提高暗刺对核心部位造成伤害的概率。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDBS3X2" Type="Normal">
+		<DisplayName>嗜血</DisplayName>
+		<Desc>恢复百分15伤害值的灵气或真气。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDBS3X3" Type="Normal">
+		<DisplayName>惑幻</DisplayName>
+		<Desc>制造一个幻境。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDBS3X31" Type="Normal">
+		<DisplayName>惑幻</DisplayName>
+		<Desc>制造一个幻境。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>30</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDBS3X31</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDJJ" Type="Normal">
+		<DisplayName>巨型武器类熟练度（人级）</DisplayName>
+		<Desc>巨型武器类武器熟练度，提高激狂之怒倍率0.02，减低天谴值0.5，提高0.04阵法负荷，增加食物水的消耗</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.02"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="NutritionConsumeConstant" AddV="0.01"/>
+				<li Name="GodPenaltyAddV" AddV="-0.5"/>
+				<li Name="WaterConsumeConstant" AddV="0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_ZhenEnginePower" AddV="0.04"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDJJ2" Type="Normal">
+		<DisplayName>巨型武器类熟练度（地级）</DisplayName>
+		<Desc>巨型武器类武器熟练度，提高激狂之怒倍率0.1，减低天谴值1，提高0.08阵法负荷，增加食物水的消耗</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ2</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.1"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="NutritionConsumeConstant" AddV="0.05"/>
+				<li Name="GodPenaltyAddV" AddV="-1"/>
+				<li Name="WaterConsumeConstant" AddV="0.05"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_ZhenEnginePower" AddV="0.08"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDJJ2X" Type="Normal">
+		<DisplayName>巨星</DisplayName>
+		<Desc>提高巨食效果，同时获得战斗等级与御器等级上限提高每层1级。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ2X2" Type="Normal">
+		<DisplayName>横扫</DisplayName>
+		<Desc>习得群体伤害技能：对敌方单位造成随机debuff。沉默、缴械、眩晕、威力降低。。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ2X3" Type="Normal">
+		<DisplayName>巨型</DisplayName>
+		<Desc>体型变大，同时获得伤害减免，灵力伤害减免40%，部位伤害减免40%。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ2X2" Type="Normal">
+		<DisplayName>横扫</DisplayName>
+		<Desc>习得群体伤害技能：对敌方单位造成随机debuff。沉默、缴械、眩晕、威力降低。。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ2X</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDJJ3" Type="Normal">
+		<DisplayName>巨型武器类熟练度（天级）</DisplayName>
+		<Desc>巨型武器类武器熟练度，提高激狂之怒倍率0.2，减低天谴值2，提高0.1阵法负荷，增加食物水的消耗</Desc>
+		<MaxStack>30</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ3</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_AngerFireEffectAddp" AddV="0.2"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="NutritionConsumeConstant" AddV="0.1"/>
+				<li Name="GodPenaltyAddV" AddV="-2"/>
+				<li Name="WaterConsumeConstant" AddV="0.1"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_ZhenEnginePower" AddV="0.1"/><!--炼体者肉体自愈率 0.005 0.02-->
+				
+		</Properties>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDJJ3X" Type="Normal">
+		<DisplayName>超巨星</DisplayName>
+		<Desc>提高横戟效果，战斗中不断瓦解对手的护盾值。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ3X2" Type="Normal">
+		<DisplayName>以命相抵</DisplayName>
+		<Desc>天崩地裂。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ3X" Type="Normal">
+		<DisplayName>超巨星</DisplayName>
+		<Desc>提高横戟效果，战斗中不断瓦解对手的护盾值。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ3X3" Type="Normal">
+		<DisplayName>天下无双</DisplayName>
+		<Desc>降低其他技能等级上限，体修获得战斗等级上限9999提高，仙修获得御器战斗等级9999提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDJJ3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ3X31" Type="Normal">
+		<DisplayName>天下无双</DisplayName>
+		<Desc>降低其他技能等级上限，体修获得战斗等级上限9999提高，仙修获得御器战斗等级9999提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>
+				<li Name="Fight" LevelOver="9999"/>
+				<li Name="Fabao" LevelOver="-9999"/>
+				<li Name="Medicine" LevelOver="-9999"/>
+				<li Name="Manual" LevelOver="-9999"/>
+				<li Name="FightSkill" LevelOver="-9999"/>
+				<li Name="Barrier" LevelOver="-9999"/>
+				<li Name="Mining" LevelOver="-9999"/>
+				<li Name="Qi" LevelOver="-9999"/>
+				<li Name="SocialContact" LevelOver="-9999"/>
+				<li Name="Medicine" LevelOver="-9999"/>
+				<li Name="Cooking" LevelOver="-9999"/>
+				<li Name="Building" LevelOver="-9999"/>
+				<li Name="Farming" LevelOver="-9999"/>
+				<li Name="Manual" LevelOver="-9999"/>
+				<li Name="Art" LevelOver="-9999"/>
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ3X32" Type="Normal">
+		<DisplayName>天下无双</DisplayName>
+		<Desc>降低其他技能等级上限，体修获得战斗等级上限9999提高，仙修获得御器战斗等级9999提高。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>
+
+				<li Name="Fabao" LevelOver="9999"/>
+				<li Name="Medicine" LevelOver="-9999"/>
+				<li Name="Manual" LevelOver="-9999"/>
+				<li Name="FightSkill" LevelOver="-9999"/>
+				<li Name="Barrier" LevelOver="-9999"/>
+				<li Name="Mining" LevelOver="-9999"/>
+				<li Name="Qi" LevelOver="-9999"/>
+				<li Name="SocialContact" LevelOver="-9999"/>
+				<li Name="Fight" LevelOver="-9999"/>
+				<li Name="Medicine" LevelOver="-9999"/>
+				<li Name="Cooking" LevelOver="-9999"/>
+				<li Name="Building" LevelOver="-9999"/>
+				<li Name="Farming" LevelOver="-9999"/>
+				<li Name="Manual" LevelOver="-9999"/>
+				<li Name="Art" LevelOver="-9999"/>
+			</Skills>
+	</Modifier>
+	
+	
+	
+	
+	
+	
+	
+	<Modifier Name="WX_SLDJJ_X" Type="Normal">
+		<DisplayName>巨食</DisplayName>
+		<Desc>增加1w灵力上限，增加5k真气上限</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcLingMaxValue" AddV="10000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="5000"/>
+
+		</Properties>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDJJ_X2" Type="Normal">
+		<DisplayName>巨食</DisplayName>
+		<Desc>增加1w灵力上限，增加5k真气上限，提高战斗等级上限2，御器等级上限2</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcLingMaxValue" AddV="10000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="5000"/>
+		</Properties>
+		<Skills>
+				<li Name="Fight" LevelOver="2"/><!-- 丹器 30-->
+				<li Name="Fabao" LevelOver="2"/><!-- 丹器 30-->
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDJJ_X3" Type="Normal">
+		<DisplayName>瓦解</DisplayName>
+		<Desc>减少护盾值强度0.5</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>10</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="-0.5"/><!--伤害百分比加成 -50000 50000-->
+		</Properties>
+	</Modifier>
+	
+	
+	<Modifier Name="WX_SLDP" Type="Normal">
+		<DisplayName>战刃类熟练度</DisplayName>
+		<Desc>战刃类武器熟练度，提高炼器等级上限0.2，提高灵力上限500，提高真气上限500，历练探索速度减少0.02</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP</LuaClassName>
+		<Properties>
+				<li Name="NpcLingMaxValue" AddV="500"/>
+				<li Name="ExperienceFindSpeedAddV" AddV="-0.02"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="100"/>
+				
+		</Properties>
+		<Skills>
+				<li Name="Manual" LevelOver="0.2"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDPX1" Type="Normal">
+		<DisplayName>护</DisplayName>
+		<Desc>受到对手体修功法的影响，获得部位伤害减免百分0.5.每层最高50层</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SLDPX2" Type="Normal">
+		<DisplayName>神</DisplayName>
+		<Desc>受到对手神修功法的影响，获得护盾值提高0.1，最高50层</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDPX3" Type="Normal">
+		<DisplayName>仙</DisplayName>
+		<Desc>受到对手仙修功法的影响，获得灵力或真气恢复速度1，最高50层</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="LingAbsorbSpeed" AddV="1"/>
+				<li Name="BodyPratice_RecoverZhenQi" AddV="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDPX11" Type="Normal">
+		<DisplayName>护</DisplayName>
+		<Desc>受到对手体修功法的影响，获得部位伤害减免百分0.4.每层最高150层</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SLDPX22" Type="Normal">
+		<DisplayName>神</DisplayName>
+		<Desc>受到对手神修功法的影响，获得护盾值提高0.1，最高150层</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDPX33" Type="Normal">
+		<DisplayName>仙</DisplayName>
+		<Desc>受到对手仙修功法的影响，获得灵力或真气恢复速度1，最高150层</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="LingAbsorbSpeed" AddV="1"/>
+				<li Name="BodyPratice_RecoverZhenQi" AddV="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDPX11F" Type="Normal">
+		<DisplayName>护</DisplayName>
+		<Desc>受到对手体修功法的影响，获得部位伤害增加0.4.每层最高150层</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SLDPX22F" Type="Normal">
+		<DisplayName>神</DisplayName>
+		<Desc>受到对手神修功法的影响，获得护盾值减少0.1，最高150层</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="-0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDPX33F" Type="Normal">
+		<DisplayName>仙</DisplayName>
+		<Desc>受到对手仙修功法的影响，获得灵力或真气恢复速度1减少，最高150层</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="LingAbsorbSpeed" AddV="-1"/>
+				<li Name="BodyPratice_RecoverZhenQi" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDP2" Type="Normal">
+		<DisplayName>战刃类熟练度</DisplayName>
+		<Desc>战刃类武器熟练度，提高炼器等级上限0.4，提高灵力上限1000，提高真气上限500，历练探索速度减少0.1</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP2</LuaClassName>
+		<Properties>
+				<li Name="NpcLingMaxValue" AddV="1000"/>
+				<li Name="ExperienceFindSpeedAddV" AddV="-0.1"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="500"/>
+				
+		</Properties>
+		<Skills>
+				<li Name="Manual" LevelOver="0.4"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDP2X" Type="Normal">
+		<DisplayName>轮转</DisplayName>
+		<Desc>提高获得的加成上限层数</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDP2X2" Type="Normal">
+		<DisplayName>圣者之心</DisplayName>
+		<Desc>当自身灵力或真气为零时，可获得180s无敌状态buff</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDP2X3" Type="Normal">
+		<DisplayName>轮回眼</DisplayName>
+		<Desc>/</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDP2X31" Type="Normal">
+		<DisplayName>轮回眼</DisplayName>
+		<Desc>获得大量真气恢复能力提升</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP2X</LuaClassName>
+		<Properties>		
+				<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="999"/>
+				<li Name="BodyPratice_RecoverZhenQi" AddV="999"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDP3" Type="Normal">
+		<DisplayName>战刃类熟练度</DisplayName>
+		<Desc>战刃类武器熟练度，提高炼器等级上限0.8，提高灵力上限5000，提高真气上限800，历练探索速度减少0.2</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP3</LuaClassName>
+		<Properties>
+				<li Name="NpcLingMaxValue" AddV="5000"/>
+				<li Name="ExperienceFindSpeedAddV" AddV="-0.2"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="800"/>
+				
+		</Properties>
+		<Skills>
+				<li Name="Manual" LevelOver="0.8"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDP3X" Type="Normal">
+		<DisplayName>轮转</DisplayName>
+		<Desc>是对手获得减益</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDP3X2" Type="Normal">
+		<DisplayName>五行淬炼</DisplayName>
+		<Desc>根据自身功法加成法宝属性（仅限仙修有效）</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP3X2</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDP3X3" Type="Normal">
+		<DisplayName>圣性</DisplayName>
+		<Desc>自身神性越高，则获得护盾值提高越高。（仅限神修有效）</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDP3X3</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDL" Type="Normal">
+		<DisplayName>拳套类熟练度</DisplayName>
+		<Desc>拳套类武器熟练度，提高修炼速度百分10，提高五行属性减伤0.1，减少术法等级上限0.2</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL</LuaClassName>
+		<Properties>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="0.1"/>
+				
+		</Properties>
+		<Skills>
+				<li Name="FightSkill" LevelOver="-0.2"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDL2" Type="Normal">
+		<DisplayName>拳套类熟练度</DisplayName>
+		<Desc>拳套类武器熟练度，提高修炼速度百分50，提高五行属性减伤0.4，减少术法等级上限0.4</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL2</LuaClassName>
+		<Properties>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5"/>
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="0.4"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="0.4"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="0.4"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.4"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="0.4"/>
+				
+		</Properties>
+		<Skills>
+				<li Name="FightSkill" LevelOver="-0.4"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDL2X" Type="Normal">
+		<DisplayName>轮转</DisplayName>
+		<Desc>提高神轮的伤害加成。乘上雅艺等级。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDL2X2" Type="Normal">
+		<DisplayName>圣职</DisplayName>
+		<Desc>每次战斗使全图友方获得恢复加成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDL2X3" Type="Normal">
+		<DisplayName>神职</DisplayName>
+		<Desc>（仅限神修）每次攻击时直接恢复全体友方灵力值/真气值，数值为神民数量*处世等级。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDL2X21" Type="Normal">
+		<DisplayName>圣职</DisplayName>
+		<Desc>每次战斗使全图友方获得恢复加成。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>10</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="LingAbsorbSpeed" AddP="1"/>
+				<li Name="BodyPratice_RecoverZhenQi" AddP="1"/>
+		</Properties>
+		<EffectBind>
+			<li Path="Effect/System/Shield/FrostShield" />
+		</EffectBind>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDL3" Type="Normal">
+		<DisplayName>拳套类熟练度</DisplayName>
+		<Desc>拳套类武器熟练度，提高修炼速度百分100，提高五行属性减伤0.8，减少术法等级上限1</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL3</LuaClassName>
+		<Properties>
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/>
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="0.8"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="0.8"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="0.8"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.8"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="0.8"/>
+		</Properties>
+		<Skills>
+				<li Name="FightSkill" LevelOver="-1"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDL3X" Type="Normal">
+		<DisplayName>圣轮</DisplayName>
+		<Desc>提高神轮的基础伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDL3X2" Type="Normal">
+		<DisplayName>天陨</DisplayName>
+		<Desc>牺牲自我，赋予全队一天的无敌时间。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDL3X3" Type="Normal">
+		<DisplayName>身守</DisplayName>
+		<Desc>受到超过10w的灵力攻击伤害时全队获得护盾值加成持续10s。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDL3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDL3X31" Type="Normal">
+		<DisplayName>身守</DisplayName>
+		<Desc>护盾值加1。</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>10</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NpcFight_ShieldConversionRate" AddV="1"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDC" Type="Normal">
+		<DisplayName>锤类熟练度（人级）</DisplayName>
+		<Desc>锤类武器熟练度，提高战斗技能等级上限0.2，提高阵法负荷能力0.05，提高灵力吸收速度0.1，减少真气回气速度0.1.</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_ZhenEnginePower" AddV="0.05"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="-0.1"/><!--疼痛忍耐 6-->
+				<li Name="LingAbsorbSpeed" AddV="0.1"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Fight" LevelOver="0.2"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDC2" Type="Normal">
+		<DisplayName>锤类熟练度（地级）</DisplayName>
+		<Desc>锤类武器熟练度，提高战斗技能等级上限0.5，提高阵法负荷能力0.1，提高灵力吸收速度0.5，减少真气回气速度0.5.</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC2</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_ZhenEnginePower" AddV="0.1"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="-0.5"/><!--疼痛忍耐 6-->
+				<li Name="LingAbsorbSpeed" AddV="0.5"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Fight" LevelOver="0.5"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDC2X" Type="Normal">
+		<DisplayName>真雷</DisplayName>
+		<Desc>提高地动星辰伤害至5w.</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDC2X2" Type="Normal">
+		<DisplayName>震爆</DisplayName>
+		<Desc>每次攻击受战斗等级影响，战斗等级/500的概率造成一次眩晕昏迷伤害</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDC2X3" Type="Normal">
+		<DisplayName>雷躯</DisplayName>
+		<Desc>免疫金属性伤害</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC2X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDC2X31" Type="Normal">
+		<DisplayName>雷</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>  
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="30"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDC2X32" Type="Normal">
+		<DisplayName>雷</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>  
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="30"/>
+				<li Name="BodyPractice_AngerFireDuration" AddV="30"/>
+				<li Name="BodyPractice_AngerFireEffectAddp" AddV="5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDC2X33" Type="Normal">
+		<DisplayName>雷</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<Properties>  
+				<li Name="MoveSpeed" AddV="50"/>
+				<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="3000"/><!--伤害百分比加成 -500000 500000-->
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="3000"/><!--坚韧百分比加成 -500000 500000-->
+				<li Name="BodyPractice_MaxFoodAddtion" AddV="5"/><!--食量-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDC3" Type="Normal">
+		<DisplayName>锤类熟练度（天级）</DisplayName>
+		<Desc>锤类武器熟练度，提高战斗技能等级上限0.2，提高阵法负荷能力0.5，提高灵力吸收速度2，减少真气回气速度2.</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC3</LuaClassName>
+		<Properties>
+				<li Name="NpcFight_ZhenEnginePower" AddV="0.5"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPratice_DefenseRecoverZhenQi" AddV="-2"/><!--疼痛忍耐 6-->
+				<li Name="LingAbsorbSpeed" AddV="2"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Fight" LevelOver="1"/><!-- 丹器 30-->
+				
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDC3X" Type="Normal">
+		<DisplayName>真雷</DisplayName>
+		<Desc>提高地动星辰伤害至5w.</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDC3X2" Type="Normal">
+		<DisplayName>雷之子</DisplayName>
+		<Desc>引动对手的雷劫.</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC3X</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_SLDC3X21" Type="Normal">
+		<DisplayName>雷之子</DisplayName>
+		<Desc>引动对手的雷劫.</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+				<li Name="NeckCountdownAddV" AddV="-200"/><!--伤害百分比加成 -50000 50000-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SLDC3X3" Type="Normal">
+		<DisplayName>信仰直拳</DisplayName>
+		<Desc>附加神民数的伤害加成.</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDC3X</LuaClassName>
+	</Modifier>
+	
+	<Modifier Name="WX_SLDD" Type="Normal">
+		<DisplayName>刀类熟练度（人级）</DisplayName>
+		<Desc>刀类武器熟练度，提高秘体全局攻击力1000，提高法宝击退与攻击间隔能力0.025，提高巧匠、岐黄、处世三个技能的等级上限，减少灵力最大值2000.</Desc>
+		<MaxStack>50</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="1000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="0.025"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_FabaoCoolDownAddP" AddV="-0.025"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcLingMaxValue" AddV="-2000"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Medicine" LevelOver="0.1"/><!-- 岐黄 -->
+				<li Name="Art" LevelOver="0.1"/><!-- 巧匠 -->
+				<li Name="SocialContact" LevelOver="0.1"/><!-- 处世 -->
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDD2" Type="Normal">
+		<DisplayName>刀类熟练度（地级）</DisplayName>
+		<Desc>刀类武器熟练度，提高秘体全局攻击力2000，提高法宝击退与攻击间隔能力0.05，提高巧匠、岐黄、处世三个技能的等级上限，减少灵力最大值3000.</Desc>
+		<MaxStack>150</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD2</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="2000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="0.05"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_FabaoCoolDownAddP" AddV="-0.05"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcLingMaxValue" AddV="-3000"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Medicine" LevelOver="0.2"/><!-- 岐黄 -->
+				<li Name="Art" LevelOver="0.2"/><!-- 巧匠 -->
+				<li Name="SocialContact" LevelOver="0.2"/><!-- 处世 -->
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDD2X" Type="Normal">
+		<DisplayName>钻心</DisplayName>
+		<Desc>提高每次割裂造成的标记.</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD2X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDD2X2" Type="Normal">
+		<DisplayName>刀刀烈火</DisplayName>
+		<Desc>每次攻击附带火属性额外伤害，伤害系数为术法等级/雅艺等级*500，持续10s.</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD2X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDD2X21" Type="Normal">
+		<DisplayName>灼烧</DisplayName>
+		<Desc>每次攻击附带火属性额外伤害，伤害系数为术法等级/雅艺等级*500，持续10s.</Desc>
+		<MaxStack>10</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD2X21</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDD2X3" Type="Normal">
+		<DisplayName>刀意</DisplayName>
+		<Desc>获得护盾值等级上限提高15.</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD2X</LuaClassName>
+		<Skills>
+				<li Name="Barrier" LevelOver="15"/><!-- 处世 -->
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDD3" Type="Normal">
+		<DisplayName>刀类熟练度（天级）</DisplayName>
+		<Desc>刀类武器熟练度，提高秘体全局攻击力4000，提高法宝击退与攻击间隔能力0.2，提高巧匠、岐黄、处世三个技能的等级上限，减少灵力最大值5000.</Desc>
+		<MaxStack>300</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD3</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="4000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="0.2"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcFight_FabaoCoolDownAddP" AddV="-0.2"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="NpcLingMaxValue" AddV="-5000"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+		<Skills>
+				<li Name="Medicine" LevelOver="0.5"/><!-- 岐黄 -->
+				<li Name="Art" LevelOver="0.5"/><!-- 巧匠 -->
+				<li Name="SocialContact" LevelOver="0.5"/><!-- 处世 -->
+			</Skills>
+	</Modifier>
+	<Modifier Name="WX_SLDD3X" Type="Normal">
+		<DisplayName>力斩</DisplayName>
+		<Desc>每次攻击造成割裂效果额外增加至6层</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD3X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDD3X2" Type="Normal">
+		<DisplayName>霸气</DisplayName>
+		<Desc>每2w真气/200w灵气化为一层霸气缠绕，缠绕期间受到一切伤害降低百分八十。并免疫部位伤害。受到灵力消耗一层霸气层数，部位伤害消耗三层霸气，当霸气被打散时，可重新凝聚。</Desc>
+		<MaxStack>9999999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD3X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="WX_SLDD3X21" Type="Normal">
+		<DisplayName>霸气缠绕</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD3X21</LuaClassName>
+		<Skills>
+				<li Name="Zhen" LevelOver="5"/>
+				<li Name="Fabao" LevelOver="5"/>
+				<li Name="Fight" LevelOver="5"/>
+				<li Name="FightSkill" LevelOver="5"/>
+			</Skills>
+			<EffectBind>
+			<li Path="Effect/A/Prefabs/Beams/Start/ShadowBeamStart" />
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="WX_SLDD3X22" Type="Normal">
+		<DisplayName>霸气恢复</DisplayName>
+		<Desc>受到强烈攻击后，霸气暂时被打破，时间结束后可重新凝聚</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>6000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<EndModifier>WX_SLDD3X2</EndModifier>
+		<Skills>
+				<li Name="Zhen" LevelOver="-50"/>
+				<li Name="Fabao" LevelOver="-50"/>
+				<li Name="Fight" LevelOver="-50"/>
+				<li Name="FightSkill" LevelOver="-50"/>
+			</Skills>
+			
+	</Modifier>
+	<Modifier Name="WX_SLDD3X3" Type="Normal">
+		<DisplayName>空灵斩</DisplayName>
+		<Desc>一刀可破界。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_SLDD3X</LuaClassName>
+		
+	</Modifier>
+	<Modifier Name="SLD_D_X" Type="Normal">
+		<DisplayName>割裂</DisplayName>
+		<Desc>被标记</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	
+</List></ModifierDefs>

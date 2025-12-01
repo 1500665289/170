@@ -1,0 +1,220 @@
+﻿<ThingDefs><List>
+	
+	<ThingDef Type="Building" Name="WX_T1" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\T1.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>关二爷</ThingName>
+	<Desc>攻击消耗10积分。红面长髯的关公原名关羽，字云长，是三国时代的名将，主神空间将其从时空中请来做防御塔，技能青龙斩：每次攻击一名单位，对真气修行者与灵力修行者造成混沌伤害，每次攻击造成300/900真气/灵气伤害，不至死，会眩晕，需要积分800，（可进阶）</Desc>
+	<ClassName>T1</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>9</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "800"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="提升" Desc="提升防御塔" Cost="1" Appoint="3" Scope="0"  Story="WX_FYT"/>
+		
+		</StoryBnts>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Type="Building" Name="WX_T2" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\GJY.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>盖九幽</ThingName>
+	<Desc>小说《遮天》中人物，曾经的一位盖世神人，几乎算是成道的盖世强者。虽然他的身体老迈，早已跌落巅峰状态，但依然身处准帝境界。在快结局时复活失败(让人很遗憾一代人族守护者就此落幕不能和叶凡一起到仙域看看也没能真正成大帝):天庭前3座宏伟的神庙消失。神源裂开，只走出来2个人，盖九幽终究散去未能彻底复活。姬子、姜太虚再现，再相逢，感慨无尽，本应生死相隔，但是却于这一世又相见。，技能渡劫仙曲：群体攻击能力，每次对30范围内敌人造成10000引劫伤害，攻击间隔9s，攻击距离10，需要积分1400</Desc>
+	<ClassName>T2</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "1400"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="提升" Desc="提升防御塔" Cost="1" Appoint="3" Scope="0"  Story="WX_FYT"/>
+		
+		</StoryBnts>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="WX_T3" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\WL.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>王林</ThingName>
+	<Desc>王林，耳根所著仙侠小说《仙逆》的主角。一个平庸的少年，偶然踏入仙途，经过艰苦磨难，一步一步走向巅峰，凭一己之力，扬名修真界。技能：逆天珠，在8范围内提高npc修炼速度</Desc>
+	<ClassName>T3</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "600"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	</ThingDef>	
+	<ThingDef Type="Building" Name="WX_T4" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\HL.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>韩立</ThingName>
+	<Desc>天南越国镜州青牛镇五里沟人氏，小名二愣子，天南地域燕族人。相貌普通，皮肤黝黑，家中排行老四。童年被三叔介绍到七玄门，因身具灵根可修炼长春功而被墨大夫收为弟子，后来凭借升仙令牌加入修仙门派黄枫谷，正式踏上修仙之路。一路坚苦修炼，修炼化神初期后通过空间节点偷渡灵界，最终修炼至大乘期后渡劫飞升北寒仙域。技能：天南第一剑修：每次攻击造成对随机部位造成伤害。</Desc>
+	<ClassName>T4</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "800"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	</ThingDef>	
+	
+	<ThingDef Type="Building" Name="WX_T5" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\YQW.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>伊轻舞</ThingName>
+	<Desc>紫微古帝星第一美女,最有可能成帝的人之一,尹天志的未婚妻.仙台二层天强者,离八禁只有一步的距离。技能：紫薇轻舞：每次恢复100灵力。10范围内</Desc>
+	<ClassName>T5</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "800"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	</ThingDef>
+	<ThingDef Type="Building" Name="WX_T6" Parent="OrnamentBase">
+	<TexPath>Spr\Building\T\ZXF.png</TexPath>
+	<TexScale>0.5</TexScale>
+	<ThingName>张小凡</ThingName>
+	<Desc>张小凡是仙侠小说《诛仙》的男主人公和《诛仙二》的重要角色。性格倔强坚定，重情重义，身怀大梵般若功法和噬血珠，因缘际会之下习得天下第一武功天书，是当世唯一一个佛、道、魔三修的人。技能：噬血珠：每次攻击造成全场地方单位护甲减一，效果不叠加范围10</Desc>
+	<ClassName>T6</ClassName>
+	<Tags>
+	</Tags>
+	
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "800"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	</ThingDef>
+</List></ThingDefs>

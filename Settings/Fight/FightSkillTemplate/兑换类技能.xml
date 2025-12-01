@@ -1,0 +1,32 @@
+<FightSkills><List>
+
+		<Skill Name="WX_JN_1_1"><!--护体真强基础模板 -->
+		<DisplayName>太阳金经——尘归尘</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\CGC.png</Icon>
+		<Desc>给对手释放一个沉默技能，可打断一些特殊技能。</Desc>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>15</SingTime>
+		<SelectFight>1</SelectFight>
+		<Value>100</Value>
+		<LingCost>1000</LingCost>
+		<SelectType>Target</SelectType>
+		<Shape>Missile</Shape>
+		<SelectCount>1</SelectCount>
+		<ClassName>WX_JN_1_1</ClassName>
+		<MissileEffect>6</MissileEffect>
+		<BombEffect>44</BombEffect>
+		<HitEffect>77</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>5</p2>
+			<p3>5</p3>
+			<p4>0</p4>
+			<Speed>30</Speed>
+			<Shake>1</Shake>
+			<BombRadius>3</BombRadius>
+		</Missile>
+	</Skill>	
+		
+</List></FightSkills>

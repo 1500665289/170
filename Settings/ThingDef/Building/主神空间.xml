@@ -1,0 +1,237 @@
+﻿<ThingDefs><List>
+	<ThingDef Type="Building" Name="YJZS1" Parent="BuildingBase">
+	<ThingName>主神空间（一阶）</ThingName>
+	<TexPath>Spr\Building\ZSKJ\YJZS1.png</TexPath>
+	<Desc>最普通的主神空间，可以兑换少量东西。</Desc>
+	<TexScale>1.5</TexScale>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,1,1,0],
+		[0,1,1,1,0],
+		[1,1,2,1,1],
+		[0,4,4,4,0],
+		</Data>
+		<Offset>
+			<y>0</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+		<Building>
+			
+			<BeMade>
+				<WorkToMake>300</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "100"/>
+				</CostItems>
+			</BeMade>
+			<ProduceKind>Smithing</ProduceKind>
+			<Produces>
+			<Produce>
+				<ThingDef>WX_BS1</ThingDef>
+				<Display>军用匕首</Display>
+				<Count>1</Count>
+			</Produce>
+			<Produce>
+				<ThingDef>WX_BS2</ThingDef>
+				<Display>军用匕首（猩红）</Display>
+				<Count>1</Count>
+			</Produce>
+			
+		</Produces>
+		</Building>
+		<StoryBnts>
+		<li Name="开启空间" Desc="兑换主神空间内物资" Cost="1" Appoint="3" Scope="0"  Story="WX_ZSKJ"/>
+		
+		</StoryBnts>
+		<Ling>
+			<AddionLing>10</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.01</AddionFailing>
+			<AddionFailRadius>14</AddionFailRadius>
+							
+			<Attenuation>0.1</Attenuation>
+			<Absorption>1</Absorption>
+			<Accommodate>160000</Accommodate>
+			<LingSource>40000</LingSource>
+
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>12</Value>
+			<Radius>5</Radius>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Building" Name="YJZS2" Parent="BuildingBase">
+	<ThingName>主神空间（二阶）</ThingName>
+	<TexPath>Spr\Building\ZSKJ\YJZS2.png</TexPath>
+	<Desc>最普通的主神空间，可以兑换少量东西。</Desc>
+	<TexScale>1.5</TexScale>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,1,1,0],
+		[0,1,1,1,0],
+		[1,1,2,1,1],
+		[0,4,4,4,0],
+		</Data>
+		<Offset>
+			<y>0</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+		<Building>
+			
+			<BeMade>
+				<WorkToMake>1500</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "1000"/>
+				</CostItems>
+			</BeMade>
+			<ProduceKind>Smithing</ProduceKind>
+
+			
+		</Building>
+		<StoryBnts>
+		<li Name="开启空间" Desc="兑换主神空间内物资" Cost="1" Appoint="3" Scope="0"  Story="WX_ZSKJ2"/>
+		
+		</StoryBnts>
+		<Ling>
+			<AddionLing>30</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.01</AddionFailing>
+			<AddionFailRadius>14</AddionFailRadius>
+							
+			<Attenuation>0.1</Attenuation>
+			<Absorption>1</Absorption>
+			<Accommodate>160000</Accommodate>
+			<LingSource>40000</LingSource>
+
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>12</Value>
+			<Radius>5</Radius>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Building" Name="YJZS3" Parent="BuildingBase">
+	<ThingName>主神空间（三阶）</ThingName>
+	<TexPath>Spr\Building\ZSKJ\YJZS3.png</TexPath>
+	<Desc>最普通的主神空间，可以兑换少量东西。</Desc>
+	<TexScale>1.5</TexScale>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,1,1,0],
+		[0,1,1,1,0],
+		[1,1,2,1,1],
+		[0,4,4,4,0],
+		</Data>
+		<Offset>
+			<y>0</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+		<Building>
+			
+			<BeMade>
+				<WorkToMake>3000</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "3000"/>
+				</CostItems>
+			</BeMade>
+			<ProduceKind>Smithing</ProduceKind>
+
+		
+		</Building>
+		<StoryBnts>
+		<li Name="开启空间" Desc="兑换主神空间内物资" Cost="1" Appoint="3" Scope="0"  Story="WX_ZSKJ3"/>
+		
+		</StoryBnts>
+		<Ling>
+			<AddionLing>50</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.01</AddionFailing>
+			<AddionFailRadius>14</AddionFailRadius>
+							
+			<Attenuation>0.1</Attenuation>
+			<Absorption>1</Absorption>
+			<Accommodate>160000</Accommodate>
+			<LingSource>40000</LingSource>
+
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>12</Value>
+			<Radius>5</Radius>
+		</Element>
+	</ThingDef>
+	<ThingDef Type="Building" Name="YJZS_RW" Parent="BuildingBase">
+	<ThingName>主神空间（支线任务处）</ThingName>
+	<TexPath>Spr\Building\ZSKJ\ZXRW.png</TexPath>
+	<Desc>主神空间来到修仙模拟器中的器灵。</Desc>
+	<TexScale>0.5</TexScale>
+	<ColliderKind>NoPass</ColliderKind>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,1,1,0],
+		[0,1,1,1,0],
+		[1,1,2,1,1],
+		[0,4,4,4,0],
+		</Data>
+		<Offset>
+			<y>0</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+		<Building>
+			
+			<BeMade>
+				<WorkToMake>3000</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "200"/>
+				</CostItems>
+			</BeMade>
+			<ProduceKind>Smithing</ProduceKind>
+
+		
+		</Building>
+		<StoryBnts>
+		<li Name="开启空间" Desc="查看任务" Cost="1" Appoint="3" Scope="0"  Story="WX_ZXRW"/>
+		
+		</StoryBnts>
+		<Ling>
+			<AddionLing>10</AddionLing>
+			<AddionRadius>4</AddionRadius>
+			<AddionFailing>0.01</AddionFailing>
+			<AddionFailRadius>14</AddionFailRadius>
+							
+			<Attenuation>0.1</Attenuation>
+			<Absorption>1</Absorption>
+			<Accommodate>160000</Accommodate>
+			<LingSource>40000</LingSource>
+
+		</Ling>
+		<Element>
+			<Kind>None</Kind>
+			<Value>12</Value>
+			<Radius>5</Radius>
+		</Element>
+	</ThingDef>
+</List></ThingDefs>

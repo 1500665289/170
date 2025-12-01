@@ -1,0 +1,150 @@
+<BPSuperPartDefs><List>
+	<Def Name="XXFZXS"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>摘星</Prefix>
+		<Suffix>手</Suffix>
+		<Desc>只手摘星，日月可摘。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Lightning/LightningImpactMega</AtkEffect>
+		<DefEffect>Effect\gsq\Prefab\fx_fz_guangzhu</DefEffect>
+		<Parts>
+			<li Name="LeftScapula"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B02_DaYaoYuanJing" Levels="3,5,9"/>
+				</Labels>
+			</li>
+			<li Name="Heart"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Special3" Levels="0,1,1"/>
+				</Labels>
+			</li>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_All" Levels="1,4,4"/>
+				</Labels>
+			</li>
+				<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="4,9,16"/>
+				</Labels>
+			</li>
+			<li Name="LeftHand"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力5555\n提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.3"/>
+					<li Name="DefRate" AddV="0.3"/>
+					<li Name="AtkPower" BAddV="5555"/>
+
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高镇压能力1，提高疼痛忍耐，提高全局秘体攻击力1w,提高身体强大系数5，提高真气最大值5w。</Desc>
+				<Modifier>XXFKJ6_4</Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>\n提高秘体灵气护盾穿透率0.5\n提高秘体全局防御加成1w，习得战技：摘星手。</Desc>
+				<Modifier>XXFKJ6_4_1</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.5"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+		<Def Name="XXFZXXZT"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>星玄</Prefix>
+		<Suffix>之体</Suffix>
+		<Desc>星融身躯，化万星之道。</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Lightning/LightningImpactMega</AtkEffect>
+		<DefEffect>Effect\gsq\Prefab\fx_fz_guangzhu</DefEffect>
+		<Parts>
+			<li Name="Spine"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_JieMieJingHua" Levels="0,1,1"/>
+				</Labels>
+			</li>
+			<li Name="Body"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_A01_XuanTianZiQi" Levels="0,0,1"/>
+				</Labels>
+			</li>
+			<li Name="LeftThigh"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv4_F01_All" Levels="0,1,1"/>
+				</Labels>
+			</li>
+				<li Name="RightCrus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv1_F01_All" Levels="4,9,16"/>
+				</Labels>
+			</li>
+			<li Name="RightScapula"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_SiHunZhiXi" Levels="2,3,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftScapula"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="2,3,9"/>
+				</Labels>
+			</li>
+		</Parts>
+		
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>\n根本上提高攻击力8000\n提高防御力8000</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.3"/>
+					<li Name="DefRate" AddV="0.3"/>
+					<li Name="AtkPower" BAddV="8000"/>
+					<li Name="DefPower" BAddV="8000"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>提高镇压能力0.6，穿透0.6，提高疼痛忍耐，提高全局秘体攻击力2w,提高激狂之怒效率2倍，提高真气最大值10w。</Desc>
+				<Modifier>XXFKJ7_3</Modifier>
+				<SuperPartProperties>
+					<li Name="CatchFabao" AddV="0.6"/>
+					<li Name="ArmorPenetration" AddV="0.6"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高食量，提高五行减伤100。</Desc>
+				<Modifier>XXFKJ7_3_1</Modifier>
+				<SuperPartProperties>
+
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	
+	
+	
+</List></BPSuperPartDefs>

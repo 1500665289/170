@@ -1,0 +1,104 @@
+<ModifierDefs><List> 
+	
+  <Modifier Name="QLZXY" Type="Normal">
+		<DisplayName>千里诛仙</DisplayName>
+		<Desc>每层将不断加深伤害！同时削弱一点护盾值。</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>9000</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="DTJFB" Type="Normal">
+		<DisplayName>剑断</DisplayName>
+		<Desc>扣除一个法宝栏，持续900s</Desc>
+		<MaxStack>5</MaxStack>
+		<Duration>900</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="-1"/><!--法宝数量6-->
+			<li Name="NpcFight_SpellCoolDownAddP" AddP="99999"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="MS_WJGZ" Type="Normal">
+		<DisplayName>万剑归藏</DisplayName>
+		<Desc>扣除十个法宝栏，增加999999术法冷却。持续600s</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoNum" AddV="-1"/><!--法宝数量6-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="MS_DT_1" Type="Normal">
+		<DisplayName>魔威</DisplayName>
+		<Desc>每次伤害扣除对手100寿元</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MaxAge" AddV="-100"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="MS_DC_1" Type="Normal">
+		<DisplayName>山河破碎</DisplayName>
+		<Desc>每次伤害扣除对手10点心境，持续50s</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>50</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="MindStateBaseValue" AddV="-20"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="MS_QTCM" Type="Normal">
+		<DisplayName>法术沉默</DisplayName>
+		<Desc>被沉默了，持续600s</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_SpellLingCostAddP" AddP="99999"/>
+			<li Name="NpcFight_SpellCoolDownAddP" AddP="99999"/>
+			<li Name="NpcFight_SpellCastTimeAddP" AddP="99999"/><!--术法吟唱时间加成 -1-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="MS_HTQD" Type="Normal">
+		<DisplayName>荒天穷地</DisplayName>
+		<Desc>使天地灵气短时间内真空</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddP="-99999999"/>
+			
+		</Properties>
+	</Modifier>
+	<Modifier Name="MS_DTQL" Type="Normal">
+		<DisplayName>絶仙</DisplayName>
+		<Desc>12。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-30"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="-30"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="MS_WXHCX" Type="Normal">
+		<DisplayName>万象红尘仙</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="9999"/>
+			<li Name="NpcFight_ShieldConversionRate" AddV="9999"/>
+		</Properties>
+	</Modifier>
+	
+</List></ModifierDefs>

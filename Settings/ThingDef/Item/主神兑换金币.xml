@@ -1,0 +1,53 @@
+<ThingDefs><List>
+	
+	<ThingDef Type="Item" Name="Item_PTJB" Parent="MaterialBase">   Name=模板代码
+	<ThingName>主神积分</ThingName> 名称
+	<TexPath>Spr\Object\JB\PTJB.PNG</TexPath>  素材图片位置
+	<Desc>主神系统的硬通货，价值比1:1。</Desc>  说明
+	<MaxStack>9999</MaxStack>  最大堆叠
+	<Rate>12</Rate>   品质
+	<Beauty>360</Beauty>   美观
+	<MaxHitPoints>12000</MaxHitPoints>  生命值
+	<ElementKind>None</ElementKind>   五行属性
+	<Flammability>   燃烧性
+		<Flammability>0</Flammability>   易燃几率
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>   燃点
+	</Flammability>
+	<Item>   所属类型 木材
+		<NotRandom>1</NotRandom>
+		
+		<FabaoSuffix>主神金币</FabaoSuffix>   法宝前缀
+		<PhysicalLables>   炼宝加成
+			<li>ZSJB</li>
+		</PhysicalLables>	
+	</Item>
+	<Ling>
+		<AddionLing>5</AddionLing>    聚灵除以十
+		<AddionRadius>4</AddionRadius>  聚灵范围
+		<AddionFailing>0.8</AddionFailing>
+		<AddionFailRadius>2</AddionFailRadius>
+		
+		<Attenuation>0.06</Attenuation>
+		<Absorption>0.8</Absorption>
+		<Accommodate>500</Accommodate>
+	</Ling>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>12</Value>         五行强度
+		<Radius>1</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	<Light>
+		<Value>6</Value>    发光强度
+		<Failing>0</Failing>
+		<FailRadius>2</FailRadius>
+		<Radius>5</Radius>
+		<Color>EEEE00</Color>   光颜色
+	</Light>
+	</ThingDef>
+
+	
+</List></ThingDefs>

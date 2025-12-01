@@ -1,0 +1,2020 @@
+<Stories><List>
+	<Story Name="WX_WQL" Parent="BaseFillingStory">
+		<DisplayName>器窟（一阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/QY.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>刀类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_D");
+				</OKResult>
+			</li>
+			<li>
+				<Display>剑类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_J");
+				</OKResult>
+			</li>
+			<li>
+				<Display>长枪类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_CQ");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>斧类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_F");
+				</OKResult>
+			</li>
+			<li>
+				<Display>锤类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_C");
+				</OKResult>
+			</li>
+			<li>
+				<Display>巨型武器类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_JJ");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>匕首类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_BS");
+				</OKResult>
+			</li>
+			<li>
+				<Display>战刃类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_ZR");
+				</OKResult>
+			</li>
+			<li>
+				<Display>拳套类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_QT");
+				</OKResult>
+			</li>
+			<li>
+				<Display>法杖类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_FZ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>弓类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_G");
+				</OKResult>
+			</li>
+			<li>
+				<Display>大剑类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_DJ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，让其他人融合吧。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_WQL2" Parent="BaseFillingStory">
+		<DisplayName>器窟（二阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/QY.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>刀类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_D2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>剑类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_J2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>长枪类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_CQ2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>斧类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_F2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>锤类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_C2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>巨型武器类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_JJ2");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>匕首类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_BS2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>战刃类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_ZR2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>拳套类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_QT2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>法杖类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_FZ2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>弓类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_G2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>大剑类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_DJ2");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，让其他人融合吧。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_WQL3" Parent="BaseFillingStory">
+		<DisplayName>器窟（三阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/QY.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>刀类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_D3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>剑类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_J3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>长枪类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_CQ3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>斧类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_F3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>锤类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_C3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>巨型武器类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_JJ3");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>匕首类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_BS3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>战刃类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_ZR3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>拳套类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_QT3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>法杖类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_FZ3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>弓类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_G3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>大剑类武器</Display>
+				<OKResult>
+				me:TriggerStory("WQL_DJ3");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，让其他人融合吧。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_D" Parent="BaseFillingStory">
+		<DisplayName>刀类武器</DisplayName>
+		<Desc>一阶刀类武器。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>罗喉利炎刀（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_D1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_D2" Parent="BaseFillingStory">
+		<DisplayName>刀类兑换</DisplayName>
+		<Desc>二阶刀类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>卷云刃（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_D2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_D3" Parent="BaseFillingStory">
+		<DisplayName>刀类兑换</DisplayName>
+		<Desc>三阶阶刀类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>龙牙暗布刃（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_D3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_J" Parent="BaseFillingStory">
+		<DisplayName>剑类兑换</DisplayName>
+		<Desc>一阶剑类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>罗纹锐之剑（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_J1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_J2" Parent="BaseFillingStory">
+		<DisplayName>剑类兑换</DisplayName>
+		<Desc>二阶剑类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>金蛟剑（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_J2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_J3" Parent="BaseFillingStory">
+		<DisplayName>剑类兑换</DisplayName>
+		<Desc>三阶阶剑类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>蓝凌剑（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_J3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_F" Parent="BaseFillingStory">
+		<DisplayName>斧类兑换</DisplayName>
+		<Desc>一阶斧类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>灭世闇缕斧（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_F1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_F2" Parent="BaseFillingStory">
+		<DisplayName>斧类兑换</DisplayName>
+		<Desc>二阶斧类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>霜晶斧（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_F2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_F3" Parent="BaseFillingStory">
+		<DisplayName>斧类兑换</DisplayName>
+		<Desc>三阶阶斧类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>融界斧（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_F3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_C" Parent="BaseFillingStory">
+		<DisplayName>锤类武器</DisplayName>
+		<Desc>一阶锤类武器。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>尸骨妖锤（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_C1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_C2" Parent="BaseFillingStory">
+		<DisplayName>锤类兑换</DisplayName>
+		<Desc>二阶锤类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>拳头（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_C2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_C3" Parent="BaseFillingStory">
+		<DisplayName>锤类兑换</DisplayName>
+		<Desc>三阶阶锤类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>乌魔铜锤（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_C3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_CQ" Parent="BaseFillingStory">
+		<DisplayName>枪类兑换</DisplayName>
+		<Desc>一阶枪类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>无情名枪（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_Q1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_CQ2" Parent="BaseFillingStory">
+		<DisplayName>枪类兑换</DisplayName>
+		<Desc>二阶枪类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>钢澜枪（3500积分兑换,C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_Q2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_CQ3" Parent="BaseFillingStory">
+		<DisplayName>枪类兑换</DisplayName>
+		<Desc>三阶枪类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>紫云枪（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_Q3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_FZ" Parent="BaseFillingStory">
+		<DisplayName>法杖类兑换</DisplayName>
+		<Desc>一阶法杖类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>流影仙阴瞳（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_FZ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_FZ2" Parent="BaseFillingStory">
+		<DisplayName>法杖类兑换</DisplayName>
+		<Desc>二阶法杖类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>硬玉杖（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_FZ2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_FZ3" Parent="BaseFillingStory">
+		<DisplayName>法杖类兑换</DisplayName>
+		<Desc>三阶阶法杖类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>御虚幽冰杖（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_FZ3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_JJ" Parent="BaseFillingStory">
+		<DisplayName>巨型武器类兑换</DisplayName>
+		<Desc>一阶巨型武器类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>霜之巨戟（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_JJ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>			
+	<Story Name="WQL_JJ2" Parent="BaseFillingStory">
+		<DisplayName>巨型武器类兑换</DisplayName>
+		<Desc>二阶巨型武器类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>鳌之戟（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_JJ2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_JJ3" Parent="BaseFillingStory">
+		<DisplayName>巨型武器类兑换</DisplayName>
+		<Desc>三阶阶巨型武器类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>弑杀之镰（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_JJ3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_ZR" Parent="BaseFillingStory">
+		<DisplayName>戰刃类兑换</DisplayName>
+		<Desc>一阶戰刃类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>幽泉刃（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_ZR1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<!--<Story Name="WQL_ZR2" Parent="BaseFillingStory">
+		<DisplayName>战刃类兑换</DisplayName>
+		<Desc>二阶战刃类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>冥芝（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_ZR2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_ZR3" Parent="BaseFillingStory">
+		<DisplayName>战刃类兑换</DisplayName>
+		<Desc>三阶阶战刃类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>犹金（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_ZR3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>-->
+	
+	
+	<Story Name="WQL_QT" Parent="BaseFillingStory">
+		<DisplayName>拳套类兑换</DisplayName>
+		<Desc>一阶拳套类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>融爪（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_QT1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_QT2" Parent="BaseFillingStory">
+		<DisplayName>拳套类兑换</DisplayName>
+		<Desc>二阶拳套类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>合木爪（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_QT2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_QT3" Parent="BaseFillingStory">
+		<DisplayName>拳套类兑换</DisplayName>
+		<Desc>三阶阶拳套类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>寒霜爪（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_QT3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="WQL_G" Parent="BaseFillingStory">
+		<DisplayName>弓类兑换</DisplayName>
+		<Desc>一阶弓类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>霸皇利氤弓（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_G1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_G2" Parent="BaseFillingStory">
+		<DisplayName>弓类兑换</DisplayName>
+		<Desc>二阶弓类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>鈤利弓（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_G2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_G3" Parent="BaseFillingStory">
+		<DisplayName>弓类兑换</DisplayName>
+		<Desc>三阶阶弓类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>铭炎（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_G3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="WQL_DJ" Parent="BaseFillingStory">
+		<DisplayName>大剑类兑换</DisplayName>
+		<Desc>一阶大剑类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>兑泽大剑（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_DJ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_DJ2" Parent="BaseFillingStory">
+		<DisplayName>大剑类兑换</DisplayName>
+		<Desc>二阶大剑类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>青峰大剑（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_DJ2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_DJ3" Parent="BaseFillingStory">
+		<DisplayName>大剑类兑换</DisplayName>
+		<Desc>三阶阶大剑类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>晏阳大剑（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_DJ3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_BS" Parent="BaseFillingStory">
+		<DisplayName>匕首类兑换</DisplayName>
+		<Desc>一阶匕首类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>锐王匕（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_BS1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>			
+	<Story Name="WQL_BS2" Parent="BaseFillingStory">
+		<DisplayName>刀类兑换</DisplayName>
+		<Desc>二阶刀类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>老阴匕（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_BS2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_BS3" Parent="BaseFillingStory">
+		<DisplayName>刀类兑换</DisplayName>
+		<Desc>三阶阶刀类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>紫虚（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_BS3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="WQL_QT" Parent="BaseFillingStory">
+		<DisplayName>拳套、环类兑换</DisplayName>
+		<Desc>一阶拳套、环类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>融爪（1500积分兑换）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1500 then
+							me:DropAwardItem("WXWQ_QT1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1500)
+							me:AddMsg(XT("[NAME]消耗积分1500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>			
+	<Story Name="WQL_QT2" Parent="BaseFillingStory">
+		<DisplayName>拳套、环类兑换</DisplayName>
+		<Desc>二阶拳套、环类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>合木爪（3500积分兑换，C级支线2）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQC >= 2 then
+							me:DropAwardItem("WXWQ_QT2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4445,JQC-2);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WQL_QT3" Parent="BaseFillingStory">
+		<DisplayName>拳套、环类兑换</DisplayName>
+		<Desc>三阶阶拳套、环类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>寒霜爪（9500积分兑换，A级支线1）</Display>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 9500 and JQA >= 1 then
+							me:DropAwardItem("WXWQ_QT3",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",9500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分9500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_WQL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]想了想，还是算了。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

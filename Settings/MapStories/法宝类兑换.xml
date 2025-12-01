@@ -1,0 +1,119 @@
+<Stories><List>
+	<Story Name="WX_FBL" Parent="BaseFillingStory">
+		<DisplayName>临渊池</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/LYC.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>换取1-3阶法宝（10积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 10 then
+					me:DropRandomItem("FightFabao", 1, 3);
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",10)
+					me:AddMsg(XT("[NAME]消耗积分10，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>换取4-6阶法宝（50积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 50 then
+					me:DropRandomItem("FightFabao", 4, 6);
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",50)
+					me:AddMsg(XT("[NAME]消耗积分50，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>换取6-9阶法宝（100积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 100 then
+					me:DropRandomItem("FightFabao", 6, 9);
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+					me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>换取9-12阶法宝（100积分D级支线剧情）</Display>
+				<OKResult>
+				<![CDATA[	
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 100 and JQD >= 1 then
+					me:DropRandomItem("FightFabao", 9, 12);
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+					world:SetWorldFlag(4444,JQD-1);
+					me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>换取12-20阶法宝（200积分B级支线剧情）</Display>
+				<OKResult>
+				<![CDATA[	
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 200 and JQB >= 1 then
+					me:DropRandomItem("FightFabao", 9, 12);
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",200)
+					world:SetWorldFlag(4444,JQB-1);
+					me:AddMsg(XT("[NAME]消耗积分200，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

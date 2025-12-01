@@ -1,0 +1,27 @@
+<Magics><List>
+	<Magic Name="WX_SLDBS3X3" Type="Class">
+		<DisplayName>惑幻</DisplayName>
+		<Desc>对一名敌方单位使用，可将其迷惑至己方队伍持续30s</Desc>
+		<Icon>Spr\Object\JNTB\SLDBS.png</Icon>
+		<Kind>None</Kind>
+		<Param1>15</Param1><!--消耗时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>WX_SLDBS3X3</ClassName>
+		
+	</Magic>
+	
+	<Magic Name="WX_SLDL3X3" Type="Class">
+		<DisplayName>天陨</DisplayName>
+		<Desc>牺牲自我为全队提供一天无敌的buff</Desc>
+		<Icon>Spr\Object\JNTB\SLDL.png</Icon>
+		<Kind>None</Kind>
+		<Param1>15</Param1><!--消耗时间-->
+
+		<SelectMode>None</SelectMode>
+		<Ani>dazuo</Ani>
+		<ClassName>WX_SLDL3X3</ClassName>
+		
+	</Magic>
+</List></Magics>

@@ -1,0 +1,39 @@
+<ModifierDefs><List>
+	<Modifier Name="WXLQM_1" Type="Normal">
+		<DisplayName>骷髅</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,0,-2</BaseFive>
+		<Properties>  
+				<li Name="WorldMapFlySpeedAddP" AddV="6"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="WXLQM_2" Type="Normal">
+		<DisplayName>骷髅</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,-2</BaseFive>
+		<Skills>
+				<li Name="Barrier" Level="-20"/><!-- 气感 -->
+		</Skills>
+		<Properties>  
+				<li Name="MoveSpeed" AddV="60"/>
+		</Properties>
+	</Modifier> 
+	<Modifier Name="WXLQM_3" Type="Normal">
+		<DisplayName>骷髅</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,0,-2</BaseFive>
+		<Properties>  
+				<li Name="NpcFight_ShieldConversionRate" BAddV="-4"/><!--穿透百分比加成 -50000 50000-->
+				<li Name="MindStateBaseValue" AddV="200"/><!--心境 0.005 0.02-->
+				<li Name="PainTolerance" AddV="400"/><!--疼痛忍耐 6-->
+		</Properties>
+	</Modifier> 
+	
+</List></ModifierDefs>

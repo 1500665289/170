@@ -1,0 +1,72 @@
+<RaceDefs><List>
+
+	<RaceDef Name="WXLQ1" Parent="JYBase">
+	<DisplayName>骷髅枪盾</DisplayName>
+	<Desc>背景故事没想好，有想法的群友可以找我聊聊</Desc>
+	<Mod>Mod/GW/LQ/LQ1.Fbx</Mod>
+	<NameGeneratorPrefix>JYAnimal/Prefix_Wolf.txt</NameGeneratorPrefix>
+	<RaceType>Animal</RaceType>
+	<Revive>0</Revive>
+	<MaleName>公</MaleName>
+	<FemaleName>母</FemaleName>
+	<NormalAttack>WXLQ1</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<FreeAnis>
+		<li Name="Free" Length="1.8"/>
+		<li Name="Free2" Length="3.2"/>
+	</FreeAnis> 
+	<HasGenders>1</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>5</AdultAge>
+	<StrikeBack>1</StrikeBack>
+	<WarningRange>0</WarningRange>
+
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+		[0,1,0],
+		[1,3,1],
+		[0,1,0],
+		</Data>
+	</Collider>
+	<IllustratedHandLabel>JYAnimal</IllustratedHandLabel>
+	<TexPath>tex://Spr\Npc\LQ\LQ1.png</TexPath>
+	<Rolepaint>Spr\Npc\LQ\LQ1.png</Rolepaint>
+	<HorseItem>WXWFT_LQ1</HorseItem>      
+	<HorseData>
+		<Mod>Mod/GW/LQ/LQ1.Fbx</Mod>
+		<RideBip>Bone01(mirrored)</RideBip>
+		<Scale>1.5</Scale>
+		<OffsetX>0</OffsetX>
+		<OffsetY>-0.1</OffsetY>
+		<OffsetZ>0</OffsetZ>
+	</HorseData>	
+
+	
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>5,3,1,3,2</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>4,2,1,4,2</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>2,1,1,1,2</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>5,3,1,3,2</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>4,2,1,4,2</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="MammalToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="MammalToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	</RaceDef>
+	
+	
+	
+</List></RaceDefs>

@@ -1,0 +1,97 @@
+<RaceDefs><List>
+	
+	<RaceDef Name="WX_QL">
+	<DisplayName>碧玉麒麟</DisplayName>
+	<Desc>。。</Desc>
+	<Mod>Mod/GW/QL/QL.FBX</Mod>
+	<RaceType>Animal</RaceType>
+	<AnimalType>2</AnimalType>
+	<Revive>1</Revive>
+	<NormalAttack>QLGJ</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<LingShouMove>1</LingShouMove>
+	<GenerateMinAge>0.5</GenerateMinAge>
+	<GenerateMaxAge>12</GenerateMaxAge>
+	<AdultAge>3</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>0.2</StrikeBack>
+	<TalkBefore>。</TalkBefore>
+	<TalkAfter>。</TalkAfter>
+	<LcHand>Bip01 R Hand</LcHand>
+	<!-- 
+	<Products>
+		<li>
+			<ProductTime>17</ProductTime>			
+			<ProductItems>
+				<li>
+					<ThingDef>Item_WolfLeather</ThingDef>
+					<Count>40</Count>
+					<Rate>1</Rate>
+				</li>
+			</ProductItems>
+		</li>
+	</Products> 
+	-->
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+		<li Sex="Male" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+		<li Sex="Male" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+		<li Sex="Female" 	 AgeMin="0" 	AgeMax="2"	>0,0,0,0,0</li> 
+		<li Sex="Female" 	 AgeMin="3" 	AgeMax="9"	>0,0,0,0,0</li> 
+		<li Sex="Female" 	 AgeMin="10" 	AgeMax="12"	>0,0,0,0,0</li> 
+	</BaseFive>
+	
+	<ReplaceAni>
+		<li Name="EatSmall" Value="Eat" />
+		<li Name="assemble" Value="Atk2" />
+		<li Name="PlayItem" Value="Atk2" />
+		<li Name="PlayBuild" Value="Free" />
+		<li Name="Pee" Value="Free" />
+		<li Name="PlayNpc" Value="Atk2" />
+		<li Name="Lay" Value="Free" />
+		<li Name="kszdpugong4" Value="Atk2" />
+		<li Name="TrainLingZhi" Value="weiqu01" />
+		<li Name="TrainHuTi" Value="weiqu01" />
+		<li Name="TrainQiGan" Value="weiqu01" />
+		<li Name="TrainNeiDan" Value="Atk1" />
+		<li Name="TrainShuFa" Value="Atk2" />
+		<li Name="Drink" Value="Eat" />
+		<li Name="gain" Value="Eat" />
+	</ReplaceAni>
+	
+	<BaseP>
+		<li Name="RaceMaxAge" Value="MammalMaxAge_15"/>
+		<li Name="RaceMoveSpeed" Value="LsMoveSpeed"/>
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="MammalComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="MammalComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="LingShouToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="LingShouToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+
+	<ReplaceP>
+		<li Name="NpcLingMaxValue" Value="LsLingMaxValue"/>
+		<li Name="NpcFight_FabaoPowerAddP" Value="LsFabaoPowerAddP"/>
+		<li Name="NpcFight_FabaoLingRecoverAddP" Value="LsFabaoLingRecoverAddP"/>
+		<li Name="NpcFight_FabaoCoolDownAddP" Value="LsFabaoCoolDownAddP"/>
+		<li Name="NpcFight_FabaoMaxLingAddP" Value="LsFabaoMaxLingAddP"/>
+		<li Name="NpcFight_FabaoFlySpeedAddP" Value="LsFabaoFlySpeedAddP"/>
+		<li Name="NpcFight_FabaoTurnSpeedAddP" Value="LsFabaoTurnSpeedAddP"/>
+		<li Name="NpcFight_SpellLingCostAddP" Value="LsSpellLingCostAddP"/>
+		<li Name="NpcFight_SpellPowerAddP" Value="LsSpellPowerAddP"/>
+		<li Name="NpcFight_ShieldConversionRateAddP" Value="LsDogShieldConversionRateAddP"/>
+		<li Name="NpcFight_SpellCoolDownAddP" Value="LsSpellCoolDownAddP"/>
+	</ReplaceP>
+	<IllustratedHandLabel>LsAnimal</IllustratedHandLabel>
+	<TexPath>tex://Spr\Object\LC\QL.png</TexPath>
+</RaceDef>
+	
+
+
+</List></RaceDefs>

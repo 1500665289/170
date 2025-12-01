@@ -1,0 +1,103 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="Boss_MSPartFight" Type="Normal">
+		<DisplayName>BOSS魔神通用部位战斗属性</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="500"/>
+			<li Name="LingAbsorbSpeed" AddP="50"/><!--灵气吸收速度5-->
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_MS1" Type="Normal">
+		<DisplayName>金刚</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_FLYGAWALY</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_CANTBEMAGIC</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="55000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="500"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="500"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="600"/>
+		
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="6"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="6"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="55"/>
+			
+			<li Name="ToleranceTMin" AddV="-2270"/>
+			<li Name="ToleranceTMax" AddV="3200"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="1"/>	
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="1"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="1"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="1"/>		
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="1"/>	
+			<li Name="LingAbsorbSpeed" AddP="100"/><!--灵气吸收速度5-->			
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_MSFight" Type="Normal">
+		<DisplayName>魔神战斗属性</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="15000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="900"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="900"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="400"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="1200"/>
+			
+		</Properties>
+	</Modifier> 
+	
+	
+	<Modifier Name="Boss_MS_Part" Type="Normal">
+		<DisplayName>魔神部位</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="125"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddP="1.5"/>
+			<li Name="LingAbsorbSpeed" AddP="20"/><!--灵气吸收速度5-->
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_MS_Part1" Type="Normal">
+		<DisplayName>魔神部位虚弱</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-50"/>
+			<li Name="NpcFight_ShieldConversionRateAddP" AddP="5"/>
+		</Properties>
+	</Modifier> 
+
+
+	<Modifier Name="MS_JiSiGongYang" Type="Normal">
+		<DisplayName>成长</DisplayName>
+		<Desc>妖龙从祭品中获取力量，灵气变得更浑厚了。</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="20"/>
+		</Properties>
+	</Modifier> 
+
+	
+</List></ModifierDefs>

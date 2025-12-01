@@ -1,0 +1,849 @@
+<Stories><List>
+	<Story Name="WX_QXL" Parent="BaseFillingStory">
+		<DisplayName>地窖</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/DJ.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>手枪类武器</Display>
+				<OKResult>
+				me:TriggerStory("QXL_SQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>步枪类武器</Display>
+				<OKResult>
+				me:TriggerStory("QXL_BQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>冲锋类武器</Display>
+				<OKResult>
+				me:TriggerStory("QXL_CFQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>狙击枪类武器</Display>
+				<OKResult>
+				me:TriggerStory("QXL_JJQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>重机枪类武器</Display>
+				<OKResult>
+				me:TriggerStory("QXL_ZJQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>子弹类兑换</Display>
+				<OKResult>
+				me:TriggerStory("QXL_ZD");
+				</OKResult>
+			</li>
+			<li>
+				<Display>弹匣类兑换</Display>
+				<OKResult>
+				me:TriggerStory("QXL_DJ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>配件类兑换</Display>
+				<OKResult>
+				me:TriggerStory("QXL_PJ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>防护类兑换</Display>
+				<OKResult>
+				me:TriggerStory("QXL_HF");
+				</OKResult>
+			</li>
+			<li>
+				<Display>卖出枪械</Display>
+				<DisplayCondition>World:GetFlag(100000023) == 1</DisplayCondition>
+				<OKResult>
+				me:TriggerStory("QXL_MC");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，让其他人融合吧。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="QXL_SQ" Parent="BaseFillingStory">
+		<DisplayName>手枪类武器</DisplayName>
+		<Desc>手枪类武器。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>P-90（1400积分兑换）</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1400 then
+							me:DropAwardItem("WXQX_SQ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1400)
+							me:AddMsg(XT("[NAME]消耗积分1400，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>P-92（2400积分兑换）</Display>
+				<DisplayCondition>World:GetFlag(100000044) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 2400 then
+							me:DropAwardItem("WXQX_SQ2",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2400)
+							me:AddMsg(XT("[NAME]消耗积分2400，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看无限子弹类手枪</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_SQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_SQ" Parent="BaseFillingStory">
+		<DisplayName>手枪——无限子弹类</DisplayName>
+		<Desc>无限子弹手枪</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>P-90（2500积分兑换D级支线）</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 2500 and JQD >= 1 then
+							me:DropAwardItem("WXQX_SQ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2500)
+							world:SetWorldFlag(4444,JQD-1);
+							me:AddMsg(XT("[NAME]消耗积分2500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>P-92（3500积分兑换A级支线）</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1 and World:GetFlag(100000044) == 1 </DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3500 and JQA >= 1 then
+							me:DropAwardItem("WXQX_SQ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3500)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分3500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="QXL_BQ" Parent="BaseFillingStory">
+		<DisplayName>步枪类武器</DisplayName>
+		<Desc>步枪类武器。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>AG-28（3000积分兑换）</Display>
+				<DisplayCondition>World:GetFlag(100000024) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1400 then
+							me:DropAwardItem("WXQX_BQ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3000)
+							me:AddMsg(XT("[NAME]消耗积分3000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看无限子弹类步枪</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_BQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_BQ" Parent="BaseFillingStory">
+		<DisplayName>步枪——无限子弹类</DisplayName>
+		<Desc>无限子弹步枪</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>AG-28（6000积分兑换2D级支线）</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 6000 and JQD >= 2 then
+							me:DropAwardItem("WXQX_BQ1_W",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",6000)
+							world:SetWorldFlag(4444,JQD-2);
+							me:AddMsg(XT("[NAME]消耗积分6000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="QXL_CFQ" Parent="BaseFillingStory">
+		<DisplayName>冲锋枪类武器</DisplayName>
+		<Desc>冲锋枪类武器。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>KL-00（2200积分兑换）</Display>
+				<DisplayCondition>World:GetFlag(100000025) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 2200 then
+							me:DropAwardItem("WXQX_CFQ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2200)
+							me:AddMsg(XT("[NAME]消耗积分2400，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看无限子弹类冲锋枪</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_CFQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_CFQ" Parent="BaseFillingStory">
+		<DisplayName>冲锋枪——无限子弹类</DisplayName>
+		<Desc>无限子弹冲锋枪</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>KL-00（4000积分兑换2D级支线）</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 4000 and JQD >= 2 then
+							me:DropAwardItem("WXQX_CFQ1_W",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							world:SetWorldFlag(4444,JQD-2);
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	<Story Name="QXL_JJQ" Parent="BaseFillingStory">
+		<DisplayName>狙击枪类武器</DisplayName>
+		<Desc>狙击枪类武器。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>YM-45（3000积分兑换）</Display>
+				<DisplayCondition>World:GetFlag(100000039) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3000 then
+							me:DropAwardItem("WXQX_JJQ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3000)
+							me:AddMsg(XT("[NAME]消耗积分3000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看无限子弹类狙击枪</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_JJQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_JJQ" Parent="BaseFillingStory">
+		<DisplayName>狙击枪——无限子弹类</DisplayName>
+		<Desc>无限子弹狙击枪</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>YM-45（4000积分兑换A级支线）</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 4000 and JQA >= 1 then
+							me:DropAwardItem("WXQX_JJQ1_W",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",4000)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分4000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="QXL_ZJQ" Parent="BaseFillingStory">
+		<DisplayName>重机枪类武器</DisplayName>
+		<Desc>重机枪类武器。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>BP-25（3800积分兑换）</Display>
+				<DisplayCondition>World:GetFlag(100000039) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 3800 then
+							me:DropAwardItem("WXQX_ZJQ1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",3800)
+							me:AddMsg(XT("[NAME]消耗积分3800，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看无限子弹类狙击枪</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_JJQ");
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_ZJQ" Parent="BaseFillingStory">
+		<DisplayName>重机枪——无限子弹类</DisplayName>
+		<Desc>无限子弹狙击枪</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>BP-25（5000积分兑换A级支线）</Display>
+				<DisplayCondition>World:GetFlag(100000012) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 5000 and JQA >= 1 then
+							me:DropAwardItem("WXQX_ZJQ1_W",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",5000)
+							world:SetWorldFlag(4447,JQA-1);
+							me:AddMsg(XT("[NAME]消耗积分5000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="QXL_ZD" Parent="BaseFillingStory">
+		<DisplayName>子弹类兑换</DisplayName>
+		<Desc>子弹兑换</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>通用子弹，（适用所有枪型，不包括火箭筒，1000积分兑50发）</Display>
+				<DisplayCondition>World:GetFlag(100000013) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+							me:DropAwardItem("WXQX_TYZD",50);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>高精度子弹（提高所有枪械伤害200.适用所有枪型，不包括火箭筒，2000积分兑50发）</Display>
+				<DisplayCondition>World:GetFlag(100000027) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 2000 then
+							me:DropAwardItem("WXQX_TYZD_1",50);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",2000)
+							me:AddMsg(XT("[NAME]消耗积分2000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="QXL_DJ" Parent="BaseFillingStory">
+		<DisplayName>弹匣类兑换</DisplayName>
+		<Desc>弹匣类武器</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>通用子弹弹匣（800积分兑换1弹匣）</Display>
+				<DisplayCondition>World:GetFlag(100000014) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 800 then
+							me:DropAwardItem("WXQX_TYDJ",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",800)
+							me:AddMsg(XT("[NAME]消耗积分800，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>高精度子弹弹匣（1800积分兑换1弹匣）</Display>
+				<DisplayCondition>World:GetFlag(100000027) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 800 then
+							me:DropAwardItem("WXQX_TYDJ_1",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1800)
+							me:AddMsg(XT("[NAME]消耗积分1800，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他内容</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="QXL_PJ" Parent="BaseFillingStory">
+		<DisplayName>配件兑换</DisplayName>
+		<Desc>一阶配件</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>红点瞄准镜（800积分兑换）</Display>
+				<DisplayCondition>World:GetFlag(100000022) == 1</DisplayCondition>
+				<OKResult>
+				<![CDATA[	
+						local npc = me.npcObj;
+						local npcmgr = me.npcObj.PropertyMgr;
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 800 then
+							me:DropAwardItem("WXQX_PJHD",1);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",800)
+							me:AddMsg(XT("[NAME]消耗积分800，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="QXL_MC" Parent="BaseFillingStory">
+		<DisplayName>卖出手中的枪械</DisplayName>
+		<Desc>卖出换取积分，原先买入价格的百分80.（不包括支线剧情点）</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			
+			<li>
+				<Display>卖出P-90(地图与乾坤界中的物品)</Display>
+				<OKResult>
+				<![CDATA[	
+						local T1 = GameMain:GetMod("ZTWP"):GetItemCount("WXQX_SQ1")
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if T1 ~= nil then
+							me:DropAwardItem("Item_PTJB",1130);
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",T1)
+							me:AddMsg(XT("[NAME]获得积分1130，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>		
+				</OKResult>
+			</li>
+				<li>
+				<Display>看看其他武器</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_QXL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是想看看其他内容。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	
+	
+</List></Stories>

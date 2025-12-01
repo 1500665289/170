@@ -1,0 +1,144 @@
+<ThingDefs><List>	
+	<ThingDef Type="Item" Name="MiBaoBase" Parent="ItemBase">
+	
+	<ThingName></ThingName>
+	<MaxStack>1</MaxStack>
+	<TexPath></TexPath>
+	<Desc>Desc.</Desc>
+	<SelectAble>1</SelectAble>
+	<VisualAble>1</VisualAble>
+
+	<Beauty>100</Beauty>
+	<Rate>25</Rate>
+	
+	<Flammability>
+		<Flammability>-10</Flammability>
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>0</BurningPoint>
+	</Flammability>
+	
+	<Item Kind="Equipment" Lable="Treasure">
+		<NotRandom>1</NotRandom>
+		<NotFengshuiItem>1</NotFengshuiItem>
+		<FuelMultiplier>1</FuelMultiplier>
+		<BeMade>
+			<Quality>100</Quality>
+			<WorkToMake>3000</WorkToMake>
+		</BeMade> 
+		<Rot>
+			<RotSpeed>0</RotSpeed>
+			<DaysToRotStart>0</DaysToRotStart>
+			<TempMin>0</TempMin>
+			<LingMax>0</LingMax>
+		</Rot>
+		
+		<!-- 
+		<Equip>
+			<ToolModifier>Modifier_Item_BossFeng_HuoYu</ToolModifier>
+		</Equip> 
+		-->
+		<DevourDatas>
+			<li Name="Item_BodyPractice_XianDaoJingHua" Count="1" Rate="1"/>
+		</DevourDatas> 
+	</Item>
+	
+	<Ling>
+		<AddionLing>0</AddionLing>
+		<AddionRadius>1</AddionRadius>
+		<AddionFailing>0</AddionFailing>
+		<AddionFailRadius>0</AddionFailRadius>
+		
+		<Attenuation>0</Attenuation>
+		<Absorption>0</Absorption>
+		<Accommodate>0</Accommodate>
+	</Ling>
+	
+	<Element>
+		<Kind>Jin</Kind>
+		<Value>15</Value>         
+		<Radius>3</Radius>
+		<Failing>1</Failing>
+		<FailRadius>1</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	<ThingDef Type="Item" Name="Item_MiBao_beihongjian" Parent="MiBaoBase">
+	<ThingName>北虹剑</ThingName>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>	
+	<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>	
+	<Desc>一鞘六剑，需鲜血灌之魂魄神念孕养。经多次吞噬珍材，纪宁注入永恒终极剑道本源后，已成长为宇宙之宝。</Desc>
+	<ElementKind>Jin</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>Smooth2</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_ParasolWood" count = "9"/>
+				<Item name = "Item_MonsterBlood" count = "36"/>
+			</CostItems>
+		</BeMade> 
+		<Fabao>
+		    <ActiveCondition>
+			     <Condition eventid = "Other" des = "以精血喂养宝物1次" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+			    <Ability Kind="HitCountAddDamage" nParam1="1" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每1次攻击修行者本体，会穿透护盾造成额外伤害。"/>
+				<Ability Kind="AtkRateDamageAddp" fParam1="0.01" fParam2="100" nParam1="0" Desc="造成伤害时，有100%的几率造成10倍伤害。"/>
+				<Ability Kind="HitCountAddMirror" nParam1="1" nParam2="6" fParam1="0.5" Desc="每攻击1次，产生6道神剑的虚影，持续0.5秒。"/>
+				<Ability Kind="FristHitPowerUp" fParam1="1000" Desc="第一击威力增加1000%，法宝补充灵气重置。"/>
+				<Ability Kind="HitCountCostSkill" nParam1="2"  sParam1="DamageSkill_4" Desc="每3次攻击会对目标敌人发动一次法术"/>
+				<Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="1" nParam1="0" sParam1="Mu" Desc="对木属性目标伤害加深100%"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FeedSelf()</UseLua>
+	</Item>
+	<Element>
+		<Kind>Jin</Kind>
+	</Element>
+	</ThingDef>
+
+	<ThingDef Type="Item" Name="Item_MiBao_beiyuejian" Parent="MiBaoBase">
+	<ThingName>北月剑</ThingName>
+	<TexPath>res\Sprs\object_zhengfatianxia\object_PTjian01</TexPath>
+	<FabaoTexPath>res\Sprs\object_zhengfatianxia\object_MBjian01</FabaoTexPath>
+	<Desc>一鞘六剑，纪宁成就终极剑道帝君后为金衣法身炼制的宇宙之宝级别的宝剑，耗时五万余年，用材用料皆强于北虹剑，由于不能随纪宁一起成长，威力略逊于北虹剑，但也远远超过一般宇宙之宝。</Desc>
+	<ElementKind>Jin</ElementKind>
+	<Item Kind="Equipment">
+		<PhysicalLables>
+			<li>Sharp</li>
+			<li>Heavy1</li>
+			<li>Hard2</li>
+			<li>GreatThing_Ling</li>
+		</PhysicalLables>
+		<BeMade>
+			<CostItems>
+				<Item name = "Item_LingCrystal" count = "10"/>
+				<Item name = "Item_SoulPearl" count = "1"/>
+			</CostItems>
+		</BeMade>
+		<Fabao>
+		    <ActiveCondition>
+			     <Condition eventid = "Other" des = "以精血喂养宝物1次" needcount = "1"/>
+			</ActiveCondition>
+			<SpecialAbility>
+				<Ability Kind="HitCountAddDamage" nParam1="5" sParam1="TheWholeBody" sParam2="FivePoison" Desc="每5次攻击修行者本体，会穿透护盾造成额外伤害。"/>
+				<Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="1" nParam1="6.5" Desc="与法宝拼斗时，造成10倍伤害。"/>
+				<Ability Kind="HitSameFabaoAndEffect" nParam1="2" nParam2="1" Desc="每攻击同一个法宝2次，可使其失效，持续时间与其品阶有关。"/>
+				<Ability Kind="Sync_AddFlag" sParam1="Item_MiBao_beiyuejian" nParam1 = "1" Desc="以破碎为代价，抵挡一次死亡并恢复所有伤害。" />
+				<Ability Kind="AgeAddPowerUp" fParam1="5" fParam2="1" Desc="使用者越接近寿命极限法宝威力大" />
+				<Ability Kind="AtkRateDamageAddp" fParam1="1" fParam2="1" nParam1="0" sParam1="Mu" Desc="对木属性目标伤害加深100%"/>
+			</SpecialAbility>
+		</Fabao>
+		<UseLua>GameMain:GetMod('_FabaoHelper'):FeedSelf()</UseLua>
+	</Item>
+	<Element>
+		<Kind>Jin</Kind>
+	</Element>
+	</ThingDef>
+
+</List></ThingDefs>

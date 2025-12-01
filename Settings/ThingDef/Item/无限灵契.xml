@@ -1,0 +1,80 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_WXHorseBase" Parent="EquipmentBase">	
+		<ThingName></ThingName>
+		<TexPath>Spr\Npc\SJT.png</TexPath>	
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Beauty>12</Beauty>
+		<Rate>24</Rate>
+		<ElementKind>None</ElementKind>	
+		<IllustratedHandLabel>Equip</IllustratedHandLabel>
+		<NotDoTongLing>1</NotDoTongLing>
+		<Item Lable="Horse">			
+			<NotFengshuiItem>0</NotFengshuiItem>
+			<FabaoSuffix>卷,图,契</FabaoSuffix>
+			<PhysicalLables>
+				<li>Light1</li>
+				<li>Soft2</li>
+			</PhysicalLables>
+			<NotRandom>1</NotRandom>
+			
+			<Equip>
+				
+			<!--<HorseData>
+				<Mod>Mod/Npc/Panda/Base</Mod>
+				<RideBip>Bip001 Spine1</RideBip>
+				<Scale>1</Scale>
+				<OffsetX>0</OffsetX>
+				<OffsetY>-0.32</OffsetY>
+				<OffsetZ>0</OffsetZ>
+				<HRate>3</HRate>
+			</HorseData>-->
+				<HorseData>
+					<Speed>8</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>
+		<Ling>
+			<AddionLing>20</AddionLing>
+			<AddionRadius>1</AddionRadius>
+			<AddionFailing>0</AddionFailing>
+			<AddionFailRadius>0</AddionFailRadius>
+			
+			<Attenuation>0.05</Attenuation>
+			<Absorption>0.6</Absorption>
+			<Accommodate>40</Accommodate>
+		</Ling>
+		<Light>
+			<Value>110</Value>
+			<Failing>0.8</Failing>
+			<FailRadius>3</FailRadius>
+			<Radius>12</Radius>
+			<Color>FFDF58FF</Color>
+		</Light>
+	</ThingDef>
+	<ThingDef Type="Item" Name="WXWFT_LQ1" Parent="Item_WXHorseBase">	
+		<ThingName>五方图:骷髅枪盾</ThingName>
+		<Beauty>15</Beauty>
+		<Item Lable="Horse">	
+			<NoHelian>1</NoHelian>
+			<Equip>
+				<EquptData>
+					<!-- <li NeedLogicLevel="5" modifier="FeatureModifier_DongShiZhang1" />
+					<li name="NpcFight_BaseHitChance" addv="1" NeedLogicLevel="5" ValueScaleType="1" />
+					<li name="MaxAge" addv="99999" NeedLogicLevel="13" ValueScaleType="0" /> -->
+					<li modifier="WXLQM_1" ValueScaleType="1"/>
+					<li NeedLogicLevel="7" modifier="WXLQM_2" ValueScaleType="1"/>
+					<li NeedLogicLevel="10" modifier="WXLQM_3" ValueScaleType="1"/>
+				</EquptData>
+				<HorseData>
+					<FromRace>WXLQ1</FromRace>
+					<Speed>24</Speed>
+					<HRate>3</HRate>
+				</HorseData>
+			</Equip>
+		</Item>	
+	</ThingDef>
+	
+	
+</List></ThingDefs>

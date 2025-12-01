@@ -1,0 +1,326 @@
+<Stories><List>
+	<Story Name="SHWJ1" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第一幕，你到了地方后，被一股神秘力量笼罩，醒来发现自身在一座浴缸之中，身体不受控制，随着视线向前走去，来到了一座地下室，这时候主神机械般的声音响起，现在这些一阶丧尸就是你的敌人。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D1();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ2" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第二幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D2G();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ3" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第三幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D3G();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ4" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第四幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D4();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ5" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第五幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D5();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ6" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第五幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D6();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ7" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第五幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D7();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ8" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第五幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D8();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="SHWJ9" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>第五幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D9();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL1" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D10();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL2" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D11();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL3" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D12();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL4" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D13();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL5" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D14();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL6" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D15();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL7" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D16();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL8" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D17();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="MNYGL9" Parent="BaseFillingStory">
+		<DisplayName>木乃伊归来</DisplayName>
+		<Desc>第不知道几幕，剧情没想好。。先活下去吧。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D18();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="ZTSJ1" Parent="BaseFillingStory">
+		<DisplayName>中土世界</DisplayName>
+		<Desc>兽人海。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>进行任务</Display>
+				<OKResult>
+				<![CDATA[	
+						GameMain:GetMod("WXXX"):D19();
+						story:FinishSecret();
+				]]>		
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	
+</List></Stories>

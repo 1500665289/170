@@ -1,0 +1,70 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="DJG_PX" Type="Normal">
+		<DisplayName>打不中，打不中。</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>15</Duration>
+		<Display>0</Display>
+		<Properties>
+			<li Name="NpcFight_BaseHitChance" AddP="-999"/>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddP="-999"/><!--灵气吸收速度5-->
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_HZL" Type="Normal">
+		<DisplayName>韩长老</DisplayName>
+		<Desc>灵墟洞天韩长老，一心想把圣体炼成丹药。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Properties>			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="6"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="2"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="1"/> 
+			<li Name="NpcFight_SpellPowerAddP" AddP="6"/>
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="6"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="6"/> 
+			<li Name="NpcFight_ShieldConversionRate" AddV="5"/>
+			<li Name="ToleranceTMin" AddV="-2270"/>
+			<li Name="ToleranceTMax" AddV="3200"/>
+			<li Name="LingAbsorbSpeed" AddP="-1"/><!--灵气吸收速度5-->			
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="Boss_HZL" Type="Normal">
+		<DisplayName>韩长老</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<SpecialFlags>
+			<li>FLAG_FLYGAWALY</li>
+			<li>FLAG_NONEED</li>
+			<li>FLAG_CANTBEMAGIC</li>
+		</SpecialFlags>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="55000"/>
+			
+			<li Name="NpcFight_FabaoPowerAddP" AddP="500"/>
+			<li Name="NpcFight_FabaoMaxLingAddP" AddP="500"/>
+			<li Name="NpcFight_FabaoLingRecoverAddP" AddP="100"/> 
+			
+			<li Name="NpcFight_SpellPowerAddP" AddP="600"/>
+		
+			<li Name="NpcFight_FabaoFlySpeedAddP" AddP="6"/>
+			<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="6"/> 
+			
+			<li Name="NpcFight_ShieldConversionRate" AddV="55"/>
+			
+			<li Name="ToleranceTMin" AddV="-2270"/>
+			<li Name="ToleranceTMax" AddV="3200"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="1"/>	
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="1"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="1"/>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="1"/>		
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="1"/>	
+			<li Name="LingAbsorbSpeed" AddP="100"/><!--灵气吸收速度5-->			
+		</Properties>
+	</Modifier> 
+
+	
+</List></ModifierDefs>

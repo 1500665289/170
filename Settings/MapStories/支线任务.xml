@@ -1,0 +1,174 @@
+<Stories><List>
+	<Story Name="WX_ZXRW" Parent="BaseFillingStory">
+		<DisplayName>支线任务</DisplayName>
+		<Desc>由于还是测试阶段，因此任务现在很少。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>生化危机</Display>
+				<OKResult>
+				<![CDATA[	
+						me:TriggerStory("WX_ZXRW_SHWJ");
+						world:PlayBGM("Spr/Music/BGM/SHWJ.OGG",false);
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]还是决定放弃融合血统，留给其他人融合吧。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="WX_ZXRW_SHWJ" Parent="BaseFillingStory">
+		<DisplayName>生化危机</DisplayName>
+		<Desc>由于还是测试阶段，因此任务现在很少。</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>D级支线任务</Display><!--积分，真气上限，回气，攻击，防御，境界，人数-->
+				<OKResult>
+				<![CDATA[	
+				local JF = me:RandomInt(400,800);
+				local ZQ = me:RandomInt(500,1000);
+				local HQ = me:RandomInt(20,100);
+				local GJ = me:RandomInt(200,1000);
+				local FY = me:RandomInt(200,1000);
+				local JJ = me:RandomInt(0,1);
+				local RS = me:RandomInt(5,10);
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local N1 = world.DayCount
+				if N1 >= 150 then
+				me:AddMsg("超过150天无法接取任务。");
+				else
+				world:SetWorldFlag(4444,JQD+1)
+				me:AddMsg("获得D级支线剧情1,剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个");
+				GameMain:GetMod("ZXRW"):SHWJ(JF,ZQ,HQ,GJ,FY,JJ,RS);
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>C级支线任务</Display>
+				<OKResult>
+				<![CDATA[	
+				local JF = me:RandomInt(500,1200);
+				local ZQ = me:RandomInt(2500,4000);
+				local HQ = me:RandomInt(30,150);
+				local GJ = me:RandomInt(2500,3200);
+				local FY = me:RandomInt(2200,3200);
+				local JJ = me:RandomInt(0,3);
+				local RS = me:RandomInt(5,10);
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local N1 = world.DayCount
+				if N1 >= 250 then
+				me:AddMsg("超过250天无法接取任务。");
+				else
+				world:SetWorldFlag(4445,JQC+1)
+				me:AddMsg("获得C级支线剧情1,剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个");
+				GameMain:GetMod("ZXRW"):SHWJ(JF,ZQ,HQ,GJ,FY,JJ,RS);
+				end
+				]]>	
+				</OKResult>
+			</li>
+			<li>
+				<Display>B级支线任务</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = me:RandomInt(800,1500);
+						local ZQ = me:RandomInt(14500,16000);
+						local HQ = me:RandomInt(80,200);
+						local GJ = me:RandomInt(10000,22000);
+						local FY = me:RandomInt(8000,32000);
+						local JJ = me:RandomInt(3,6);
+						local RS = me:RandomInt(10,15);
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local N1 = world.DayCount
+				if N1 >= 350 then
+				me:AddMsg("超过350天无法接取任务。");
+				else
+				world:SetWorldFlag(4446,JQB+1)
+				me:AddMsg("获得B级支线剧情1,剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个");
+				GameMain:GetMod("ZXRW"):SHWJ(JF,ZQ,HQ,GJ,FY,JJ,RS);
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>A级支线任务</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = me:RandomInt(1500,2000);
+						local ZQ = me:RandomInt(145000,160000);
+						local HQ = me:RandomInt(180,300);
+						local GJ = me:RandomInt(100000,220000);
+						local FY = me:RandomInt(80000,320000);
+						local JJ = me:RandomInt(6,9);
+						local RS = me:RandomInt(10,20);
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local N1 = world.DayCount
+				if N1 >= 550 then
+				me:AddMsg("超过550天无法接取任务。");
+				else
+				world:SetWorldFlag(4447,JQA+1)
+				me:AddMsg("获得A级支线剧情1,剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个");
+				GameMain:GetMod("ZXRW"):SHWJ(JF,ZQ,HQ,GJ,FY,JJ,RS);
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>S级支线任务</Display>
+				<OKResult>
+				<![CDATA[	
+						local JF = me:RandomInt(2000,4000);
+						local ZQ = me:RandomInt(1000000,1500000);
+						local HQ = me:RandomInt(300,500);
+						local GJ = me:RandomInt(20000000,30000000);
+						local FY = me:RandomInt(1000000,5000000);
+						local JJ = me:RandomInt(0,3);
+						local RS = me:RandomInt(15,25);
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local N1 = world.DayCount
+				if N1 >= 550 then
+				me:AddMsg("超过750天无法接取任务。");
+				else
+				world:SetWorldFlag(4448,JQS+1)
+				me:AddMsg("获得S级支线剧情1,剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个");
+				GameMain:GetMod("ZXRW"):SHWJ(JF,ZQ,HQ,GJ,FY,12,10);
+				end
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]觉得自己接不起任务。"))
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+</List></Stories>

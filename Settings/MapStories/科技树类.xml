@@ -1,0 +1,226 @@
+<Stories><List>
+	<Story Name="Story_MPDZ"  Parent="BaseFillingStory">
+		<DisplayName>历练世间</DisplayName>
+		<Desc>[NAME]似乎在附近探听到一些隐世门派的消息。</Desc>
+		<Selections>
+			<li>
+				<Display>询问凡人</Display>
+
+				<Condition></Condition>
+
+				<OKResult>
+				<![CDATA[
+					local A = me:RandomInt(0,100)
+					if A >= 80 then
+						me:AddMsg(XT("[NAME]四处探听，但是运气似乎不大好，只遇到了一个小老头，聋的。啥也打听不到"));
+					elseif A >= 60 then
+						me:AddMsg("[NAME]打听到了一个神妙的地方")me:AddSchoolScore(20,200);
+						if me:GetGLevel() >= 9 then
+								local nR = me:GetPhysique() 
+								local nX = me:GetPerception()
+								local nb = me:GetCharisma()
+								local na = me:GetIntelligence()
+								local nd = me:GetLuck()
+								if nR >= 8 then
+								me:UnLockPlace("WXP_XMP3")
+								elseif nX >= 8 and nd >= 8 then
+								me:UnLockPlace("WXP_XMP2")
+								else
+								me:UnLockPlace("WXP_XMP1")
+								end
+						else
+							me:UnLockPlace("WXP_XMP6")
+						end
+					elseif A >= 30 then
+						me:UnLockPlace("WXP_XMP4")
+					me:AddMsg("[NAME]打听到了一个神妙的地方")me:AddSchoolScore(20,200);
+					me:AddEnemy(world:RandomInt(3,9),world:RandomFloat(0,1));
+					me:AddMsg("没想到居然是一邪派，引来一些敌人")
+					else
+					me:AddMsg("[NAME]打听到了一个神妙的地方")me:AddSchoolScore(200,500);
+								local nR = me:GetPhysique() 
+								local nX = me:GetPerception()
+								local nb = me:GetCharisma()
+								local na = me:GetIntelligence()
+								local nd = me:GetLuck()
+								if nR >= 8 then
+								me:UnLockPlace("WXP_XMP3")
+								elseif nX >= 8 and nd >= 8 then
+								me:UnLockPlace("WXP_XMP2")
+								else
+								me:UnLockPlace("WXP_XMP1")
+								end
+					me:AddMsg("但是因为这些门派的位置实在偏僻，在寻找的路上引了不少的妖兽青睐")
+					me:AddManyYaoShou(nil,world:RandomInt(3,9),0,1);
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>询问修仙者</Display>  <!--邪派-->
+				<Condition></Condition>
+				<OKResult><![CDATA[
+				if me:GetSkillLevel("Fabao") >= 20 then
+					me:UnLockPlace("WXP_XMP5")
+				else
+					me:UnLockPlace("WXP_XMP7")
+				end
+				if me:GetSkillLevel("FightSkill") >= 20 then
+					me:UnLockPlace("WXP_XMP8")
+				else
+					me:UnLockPlace("WXP_XMP9")
+				end
+					
+					me:AddMsg("打听到不少地儿好像")
+				]]></OKResult>
+			</li>
+			<li>
+				<Display>没兴趣</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]对这种事一点兴趣没有。结果还是不小心解锁了一个地点。"));me:UnLockPlace("WXP_XMP10")
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="MP_XXF"  Parent="BaseFillingStory">
+		<DisplayName>星象峰</DisplayName>
+		<Desc>星象有言，万象无声。观天可知天道。日月新星辰如人，亦有思维。亦有规律</Desc>
+		<Selections>
+			<li>
+				<Display>拜访</Display>
+				<OKResult>
+				me:TriggerStory("XXFBF_0");
+						world:PlayBGM("Spr/Music/BGM/1008.OGG",false);
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>没兴趣</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]对这种事一点兴趣没有。结果还是不小心解锁了一个地点。"));me:UnLockPlace("WXP_XMP10")
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="XXFBF_0"  Parent="BaseFillingStory">
+		<DisplayName>拜访</DisplayName>
+		<Desc>[NAME]走进星象峰大殿</Desc>
+		<Selections>
+			<li>
+				<Display>拜访掌门</Display>
+
+				<Condition>World:GetFlag(1000000) >= 5</Condition>
+
+				<OKResult>
+				<![CDATA[
+					local N1 = world.DayCount
+					if N1 <= 300 then
+						me:AddMsg("[NAME]来到殿前，看到一个道骨仙风的老头，正是星象峰第74代掌门。上前微微作揖。");
+						me:TriggerStory("XXFBF_01_1");
+					elseif N1 <= me:RandomInt(350,700) then
+						me:AddMsg("[NAME]来到殿前，当任掌门，微微一愣，居然已经不是上次见到的那个掌门了？不知门中发生了什么。");
+						me:TriggerStory("XXFBF_01_1");
+					elseif N1 <= 1000 then
+						me:AddMsg("[NAME]来到殿前，看到一名奇伟男子，双目绽放着炯炯神光，一身紫色长袍修饰着其身躯。");
+						me:TriggerStory("XXFBF_01_1");
+					end
+				]]>
+				</OKResult>
+				<NOResult>me:AddMsg("和该门派未有如此高的香火情。");</NOResult>
+			</li>
+			<li>
+				<Display>拜访长老们</Display>  <!--邪派-->
+				<Condition>World:GetFlag(1000000) >= 3</Condition>
+				<OKResult><![CDATA[
+				local N1 = world.DayCount
+					if N1 <= 300 then
+						me:AddMsg("[NAME]来到侧殿，看到几个长老似乎在讨论什么事儿，见到[NAME]进来后，纷纷露出皮笑肉不笑的诡异表情。");
+						me:TriggerStory("XXFBF_02_1");
+					elseif N1 <= me:RandomInt(350,700) then
+						me:AddMsg("[NAME]来到侧殿，发现这些长老似乎比之前那些人更年轻些，只不过修为参差不齐。");
+						me:TriggerStory("XXFBF_02_2");
+					elseif N1 <= 1000 then
+						me:AddMsg("[NAME]来到侧殿，侧殿中的长老们各个闭目养神，眼观鼻，鼻观心。对[NAME]的到来并不是很理会。");
+						me:TriggerStory("XXFBF_02_1");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("和该门派未有如此高的香火情。");</NOResult>
+			</li>
+			<li>
+				<Display>与弟子闲聊</Display>  <!--邪派-->
+				<Condition></Condition>
+				<OKResult><![CDATA[
+					local N1 = me:RandomInt(0,100)
+					if N1 <= 70 then
+						me:AddMsg("[NAME]来到星象峰的练武场，弟子们正在操练着星玄之术，只不过现在的天道，对于该术法要求越来越高，炼成的寥寥无几。");
+						me:TriggerStory("XXFBF_03_1");
+					elseif N1 <= 50 then
+						me:AddMsg("[NAME]来到星象峰洗星池边上，远远便听到咿咿呀呀的痛苦叫喊，甚至听到了个别弟子痛哭。");
+						me:TriggerStory("XXFBF_03_1");
+					elseif N1 <= 30 then
+						me:AddMsg("[NAME]来到蕴星洞前，这里的弟子围着洞口正在打量着什么。");
+						me:TriggerStory("XXFBF_03_1");
+					elseif N1 <= 10 then
+						me:AddMsg("[NAME]来到星门前，有几名弟子正在扫着落叶。");
+						me:TriggerStory("XXFBF_03_1");
+					else
+						me:AddMsg("[NAME]似乎运气不好，四下空无一人，吃了个闭门羹。");
+					end
+				]]></OKResult>
+			</li>
+			<li>
+				<Display>没兴趣</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]对这种事一点兴趣没有。结果还是不小心解锁了一个地点。"));me:UnLockPlace("WXP_XMP10")
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></Stories>

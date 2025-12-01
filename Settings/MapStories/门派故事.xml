@@ -1,0 +1,394 @@
+<Stories><List>
+	<Story Name="XXFXG"  Parent="BaseFillingStory">
+		<DisplayName>星象峰星宫</DisplayName>
+
+		<Desc>[NAME]走进了星宫。</Desc>
+
+		<Selections>
+			<li>
+				<Display>摘星阁</Display>
+				<Tip>启用后全体获得无敌buff持续10s，消耗1枚月石</Tip>
+				<DisplayCondition>World:GetFlag(10000063) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_XFYS")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1 then
+						me:AddModifier("XXFKJ6_3")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_XFYS",1)
+						me:AddMsg(XT("[NAME]消耗月石1，剩余星石"..JF..""));
+						else
+							me:AddMsg(XT("月石不足。"));
+						end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>唤星阵</Display>
+				<Tip>使用消耗星石200</Tip>
+				<DisplayCondition>World:GetFlag(10000042) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_XFXS")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 200 then
+						GameMain:GetMod("WXXXF"):QH(me);
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_XFXS",200)
+						me:AddMsg(XT("[NAME]消耗星石200，剩余星石"..JF..""));
+						else
+							me:AddMsg(XT("星石不足。"));
+						end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>星门</Display>
+				<Tip>使用消耗星石20</Tip>
+				<DisplayCondition>World:GetFlag(10000042) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_XFXS")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 20 then
+						me:TriggerStory("XXF0")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_XFXS",20)
+						me:AddMsg(XT("[NAME]消耗星石20，剩余星石"..JF..""));
+						else
+							me:AddMsg(XT("星石不足。"));
+						end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>星空之路</Display>
+				<Tip>使用消耗星石2000，每次进入探索百分50概率获得1500-6000星石，百分二十概率获得术法威力百分200提升，每个角色最多三次，百分二十概率获得全体术法等级10上限提升，百分十死亡，若解锁摘星阁科技，有概率获得月石。</Tip>
+				<DisplayCondition>World:GetFlag(10000042) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_XFXS")
+				local SJ = me:RandomInt(0,100)
+						if JF >= 2000 then
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_XFXS",2000)
+						me:AddMsg(XT("[NAME]消耗星石2000，剩余星石"..JF..""));
+							if SJ >= 50 then
+								me:DropAwardItem("Item_XFXS",me:RandomInt(1500,6000));
+							elseif SJ >= 30 then
+								local STm = me.npcObj.PropertyMgr:FindModifier("XXFKJ5_1_1");
+								if STm.Stack == 3 then
+								me:AddMsg(XT("[NAME]已经无法再获得加成了，只能作罢。"));
+								else
+								me:AddModifier("XXFKJ5_1_1")
+								end
+							elseif SJ >= 10 then
+								local STm1 = me.npcObj.PropertyMgr:FindModifier("XXFKJ5_1_2");
+								if STm1.Stack == 1 then
+								me:AddMsg(XT("[NAME]已经无法再获得加成了，只能作罢。"));
+								else
+								me:AddModifier("XXFKJ5_1_2")
+								end
+							else
+								me:DoDeath("空间风暴")
+							end
+						else
+							me:AddMsg(XT("星石不足。"));
+						end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>洗星池</Display>
+				<Tip>使用消耗积分100，提高百分100自愈能力</Tip>
+				<DisplayCondition>World:GetFlag(10000026) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				if me:GetGLevel() <= 9 then
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 100 then
+						me:AddModifier("XXFKJ2_6")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+						me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				else
+							me:AddMsg(XT("境界过高。"));	
+					end
+				
+				else
+				me:AddMsg("[NAME]离开了星象峰大殿");
+				end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>星刀</Display>
+				<Tip>使用消耗星石50，每次兑换一把</Tip>
+				<DisplayCondition>World:GetFlag(10000035) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_XFXS")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 50 then
+						me:DropAwardItem("TXFXD",1);
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_XFXS",50)
+						me:AddMsg(XT("[NAME]消耗星石50，剩余星石"..JF..""));
+						else
+							me:AddMsg(XT("星石不足。"));
+						end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>星尘战甲</Display>
+				<Tip>使用消耗星石80，每次兑换一件</Tip>
+				<DisplayCondition>World:GetFlag(10000036) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_XFXS")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 80 then
+						me:DropAwardItem("TXFXY",1);
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_XFXS",80)
+						me:AddMsg(XT("[NAME]消耗星石80，剩余星石"..JF..""));
+						else
+							me:AddMsg(XT("星石不足。"));
+						end
+				
+				
+				]]>
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开星宫</Display> 
+				<OKResult><![CDATA[
+				me:AddMsg("[NAME]离开了星象峰星宫");
+
+				]]>
+				</OKResult>
+			
+			</li>
+			
+		</Selections>
+	</Story>
+	
+	<Story Name="XXFXZ"  Parent="BaseFillingStory">
+		<DisplayName>星阵</DisplayName>
+		<Desc>[NAME]走进了星阵。</Desc>
+		<Selections>
+			<li>
+				<Display>星皇界</Display>
+				<Tip>进入需消耗3000星石，百分50概率获得1月石。</Tip>
+				<DisplayCondition>World:GetFlag(10000053) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_XFXS")
+				local SJ = me:RandomInt(0,100)
+						if JF >= 3000 then
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_XFXS",3000)
+						me:AddMsg(XT("[NAME]消耗星石3000，剩余星石"..JF..""));
+							if SJ >= 50 then
+								me:DropAwardItem("Item_XFYS",1);
+							
+							else
+								me:AddMsg(XT("一无所获"));
+							end
+						else
+							me:AddMsg(XT("星石不足。"));
+						end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>地动星沉</Display>
+				<Tip>学习消耗积分400，单体伤害200附加星石数量百分10伤害加成,需要自身术法威力属性达到百分300.</Tip>
+				<DisplayCondition>World:GetFlag(10000034) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				if me:GetProperty("NpcFight_SpellPowerAddP") >= 3 then
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 400 then
+						me:AddModifier("XXFKJ3_4")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",400)
+						me:AddMsg(XT("[NAME]消耗积分400，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				else
+				me:AddMsg("[NAME]实力不足，离开了星象峰大殿");
+				end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>群星坠</Display>
+				<Tip>学习消耗积分700，群体术法伤害，同时减低对手命中持续20s,需要自身术法威力属性达到百分400.</Tip>
+				<DisplayCondition>World:GetFlag(10000034) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+				if me:GetProperty("NpcFight_SpellPowerAddP") >= 4 then
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 700 then
+						me:AddModifier("XXFKJ4_4")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",700)
+						me:AddMsg(XT("[NAME]消耗积分700，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				
+				else
+				me:AddMsg("[NAME]实力不足，离开了星象峰大殿");
+				end
+				
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>推星掌</Display>
+				<Tip>学习消耗积分500，单体伤害300每次伤害额外减低敌方移动速度</Tip>
+				<DisplayCondition>World:GetFlag(10000062) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 500 then
+						me:AddModifier("XXFKJ6_2")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",500)
+						me:AddMsg(XT("[NAME]消耗积分500，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>挽星辰</Display>
+				<Tip>消耗积分1000，习得仙法挽星辰.</Tip>
+				<DisplayCondition>World:GetFlag(10000072) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1000 then
+						me:AddModifier("XXFKJ7_2")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+						me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>摘星手</Display>
+				<Tip>消耗积分600，获得秘体摘星手.</Tip>
+				<DisplayCondition>World:GetFlag(10000064) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 600 then
+						me:UnLockSuperPart("XXFZXS")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",600)
+						me:AddMsg(XT("[NAME]消耗积分600，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>星玄之体</Display>
+				<Tip>消耗积分1600，获得秘体星玄之体.</Tip>
+				<DisplayCondition>World:GetFlag(10000073) == 1</DisplayCondition>  <!--门派是否臣服或加入-->
+				<OKResult>	
+				<![CDATA[
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						if JF >= 1600 then
+						me:UnLockSuperPart("XXFZXXZT")
+						GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1600)
+						me:AddMsg(XT("[NAME]消耗积分1600，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("积分不足。"));
+						end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>离开星阵</Display> 
+				<OKResult><![CDATA[
+				me:AddMsg("[NAME]离开了星象峰星阵");
+
+				]]>
+				</OKResult>
+			
+			</li>
+			
+		</Selections>
+	</Story>
+</List></Stories>

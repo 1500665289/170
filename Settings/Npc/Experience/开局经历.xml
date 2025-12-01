@@ -1,0 +1,31 @@
+﻿<Experiences><List>
+	<Experience Name="ZT_Experiences_WX">
+		<DisplayName>无限开局</DisplayName>
+		<Desc>进入以后先造个主神空间。</Desc>
+		<Point>1</Point>
+		<NpcSlot>1</NpcSlot>
+		<ModifierDef>
+			<BaseFive>1,1,1,1,1</BaseFive>
+		</ModifierDef>	
+		
+		<Items>
+			<li Name= "Item_PTJB" Count="5000"/>
+			<li Name= "Item_BasePracticeDrug" Count="2"/>
+			<li Name= "WX_BS1" Count="2"/>
+		</Items>	
+	</Experience>	
+	<Experience Name="ZT_Experiences_WX1">
+		<DisplayName>礼物</DisplayName>
+		<Desc>快乐被虐！</Desc>
+		<Point>-2</Point>
+		<NpcSlot>1</NpcSlot>
+		<ModifierDef>
+			<BaseFive>1,1,1,1,1</BaseFive>
+		</ModifierDef>	
+		
+		<Items>
+			<li Name= "WXQX_SQ1" Count="2"/>
+			<li Name= "WXQX_BQ1" Count="2"/>
+		</Items>	
+	</Experience>
+</List></Experiences>

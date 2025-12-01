@@ -1,0 +1,975 @@
+<Stories><List>
+	<Story Name="ZKJ0_1"  Parent="BaseFillingStory">
+		<DisplayName>了不起的修仙-科技树</DisplayName>
+		<Desc>[NAME]打开了科技树。（外交类选项暂时没效果，下回更新）</Desc>
+		<Selections>
+			<li>
+				<Display>黄阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100001) >= 2]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJSC1");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>玄阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100002) >= 3]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJSC2");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>地阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100003) >= 2]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJSC3");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>天阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100004) >== 1]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJSC4");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>神阶科技（没做好）</Display>
+				<Condition><![CDATA[	World:GetFlag(1100005) >== 1]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJSC5");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+		
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJSC0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="ZKJSC1"  Parent="BaseFillingStory">
+		<DisplayName>主-黄阶</DisplayName>
+		<Desc>[NAME]打开了黄阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>气海研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 40000]]></Condition>
+				<Tip>科技点需求:40000 解锁“液化灵力”研究。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 40000 then
+					if World:GetFlag(1000000011) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000011,1)
+					World:AddFlag(99999,-60000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵力液化</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 80000 and World:GetFlag(1000000011) == 1 ]]></Condition>
+				<Tip>科技点需求:80000、灵石5w颗。 解锁"灵力提取"。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingStone")
+				if World:GetFlag(99999) >= 80000 and JF >= 500000 then
+					if World:GetFlag(10000000012) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					
+					else
+
+					World:SetFlag(1000000012,1)
+					World:AddFlag(99999,-80000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingStone",500000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵力提取</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 65000 and World:GetFlag(1000000012) == 1 ]]></Condition>
+				<Tip>科技点需求:65000 解锁“灵力探测仪”。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 65000 then
+					if World:GetFlag(1000000013) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					
+					else
+
+					World:SetFlag(1000000013,1)
+					World:AddFlag(99999,-65000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵力探测仪</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 45000 and World:GetFlag(1000000013) == 1]]></Condition>
+				<Tip>科技点需求:45000 玄铁矿石5b 解锁“灵核压缩装置”。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_DarksteelRock")
+				if World:GetFlag(99999) >= 45000 and JF >= 500 then
+					if World:GetFlag(1000000014) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					
+					else
+
+					World:SetFlag(1000000014,1)
+					World:AddFlag(99999,-45000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_DarksteelRock",500)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵核压缩装置</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 95000 and World:GetFlag(1000000014) == 1]]></Condition>
+				<Tip>科技点需求:95000 星随1b 解锁“灵石产出”。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 95000 and JF >= 100 then
+					if World:GetFlag(1000000015) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					
+					else
+
+					World:SetFlag(1000000015,1)
+					World:AddFlag(99999,-95000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_StarEssence",100)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJSC0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="ZKJSC2"  Parent="BaseFillingStory">
+		<DisplayName>主-玄阶</DisplayName>
+		<Desc>[NAME]打开了玄阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>灵石生产</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 150000 and World:GetFlag(100000014) == 1]]></Condition>
+				<Tip>科技点需求:15W 解锁建筑选项可选项，设置为产出灵石，每日定点生产50-400灵石，维修费白天8点-夜间8点每秒1科技点</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 150000 then
+					if World:GetFlag(1000000021) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000021,1)
+					World:AddFlag(99999,-150000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁，或前置科技未研究");</NOResult>
+			</li>
+			<li>
+				<Display>五行灵石</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 200000]]></Condition>
+				<Tip>科技点需求:20w 解锁“灵石再利用”“灵石风化”。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 200000 then
+					if World:GetFlag(1000000022) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000022,1)
+					World:AddFlag(99999,-200000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵石再利用</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 300000 and World:GetFlag(100000022) == 1 and World:GetFlag(100000024) == 0  ]]></Condition>
+				<Tip>科技点需求:30w 解锁提高灵石产量 50-500。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 300000 then
+					if World:GetFlag(1000000023) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000023,1)
+					World:AddFlag(99999,-300000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵石风化</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 300000 and World:GetFlag(100000022) == 1 and World:GetFlag(100000023) == 0  ]]></Condition>
+				<Tip>科技点需求:100w 解锁提高灵石生产下限，减低上限 100-300。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 300000 then
+					if World:GetFlag(1000000023) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000023,1)
+					World:AddFlag(99999,-300000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵石锁闭技术</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 500000 ]]></Condition>
+				<Tip>科技点需求:50w 解锁提高秘灵祈愿台的维护科技点，每日可额外一次获得灵石产出 50-400。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 500000 then
+					if World:GetFlag(1000000025) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000025,1)
+					World:AddFlag(99999,-500000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵石纹路研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 500000 ]]></Condition>
+				<Tip>科技点需求:50w 解锁“灵石晶体剖析”。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 500000 then
+					if World:GetFlag(1000000026) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000026,1)
+					World:AddFlag(99999,-500000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵石晶体剖析</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 800000 ]]></Condition>
+				<Tip>科技点需求:50w 解锁“灵晶篆刻装置”。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 800000 then
+					if World:GetFlag(1000000027) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000027,1)
+					World:AddFlag(99999,-800000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵纹应用推广</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 1000000 World:GetFlag(100000026) == 1  ]]></Condition>
+				<Tip>科技点需求:50w 灵石20w 解锁提高灵石生产时长。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingStone")
+				if World:GetFlag(99999) >= 500000 then
+					if World:GetFlag(1000000029) == 1 and JF >= 200000 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000029,1)
+					World:AddFlag(99999,-500000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingStone",200000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵晶篆刻装置</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 1000000 and World:GetFlag(100000027) == 1 and World:GetFlag(100000026) == 1  ]]></Condition>
+				<Tip>科技点需求:100w 解锁“灵晶合成仪”。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 1000000 then
+					if World:GetFlag(1000000028) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000028,1)
+					World:AddFlag(99999,-1000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJSC0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="ZKJSC3"  Parent="BaseFillingStory">
+		<DisplayName>主-地阶</DisplayName>
+		<Desc>[NAME]打开了地阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>灵晶合成仪</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 1800000 and World:GetFlag(100000028) == 1 ]]></Condition>
+				<Tip>科技点需求:180w 解锁“灵晶生产选项” 灵晶生产 5-30 维修费用 2。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 1800000 then
+					if World:GetFlag(1000000031) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000031,1)
+					World:AddFlag(99999,-1800000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>高精度灵晶合成仪</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 2000000 and World:GetFlag(100000033) == 0  ]]></Condition>
+				<Tip>科技点需求:200w 解锁提高灵晶生产为固定值，20。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 2000000 then
+					if World:GetFlag(1000000032) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000032,1)
+					World:AddFlag(99999,-2000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>不稳定灵晶量造器</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 2000000 and World:GetFlag(100000032) == 0]]></Condition>
+				<Tip>科技点需求:200w 解锁提高灵晶生产 1-50。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 2000000 then
+					if World:GetFlag(1000000033) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000033,1)
+					World:AddFlag(99999,-2000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>高亮度祈愿台</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 3000000 and World:GetFlag(100000035) == 0 ]]></Condition>
+				<Tip>科技点需求:300w 解锁提高灵晶生产时长，提高维修费用 1。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 3000000 then
+					if World:GetFlag(1000000034) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000034,1)
+					World:AddFlag(99999,-3000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵晶层发掘</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 3500000 and World:GetFlag(100000034) == 0 ]]></Condition>
+				<Tip>科技点需求:350w 解锁提高生产上限下限 10。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_StarEssence")
+				if World:GetFlag(99999) >= 3500000 then
+					if World:GetFlag(1000000035) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000035,1)
+					World:AddFlag(99999,-3500000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵晶结构研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 4000000 ]]></Condition>
+				<Tip>科技点需求:800w 灵晶5k 解锁全天候自动生产灵晶1 维修费100灵石，1科技点。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 8000000 and JF >= 5000 then
+					if World:GetFlag(1000000036) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000036,1)
+					World:AddFlag(99999,-8000000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingCrystal",5000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵晶质地</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 4000000 and World:GetFlag(100000036) == 1 ]]></Condition>
+				<Tip>科技点需求:400w 灵晶5k 解锁新型结构阵法。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 4000000 and JF >= 5000 then
+					if World:GetFlag(1000000037) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000037,1)
+					World:AddFlag(99999,-4000000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingCrystal",5000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>新型结构阵法</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 5000000 and World:GetFlag(100000037) == 1 ]]></Condition>
+				<Tip>科技点需求:500w 解锁深度灵力提取研究。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 5000000 then
+					if World:GetFlag(1000000038) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000038,1)
+					World:AddFlag(99999,-5000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>深度灵力提取研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 7000000 and World:GetFlag(100000038) == 1 ]]></Condition>
+				<Tip>科技点需求:700w 解锁灵枢延展器。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 7000000 then
+					if World:GetFlag(1000000039) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000039,1)
+					World:AddFlag(99999,-7000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵枢延展器</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 9000000 and World:GetFlag(100000039) == 1 ]]></Condition>
+				<Tip>科技点需求:900w 解锁灵枢糅合阵法。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 9000000 then
+					if World:GetFlag(1000000040) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000040,1)
+					World:AddFlag(99999,-9000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJSC0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="ZKJSC4"  Parent="BaseFillingStory">
+		<DisplayName>主-天阶</DisplayName>
+		<Desc>[NAME]打开了天阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>灵枢糅合阵法</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 12000000 and World:GetFlag(100000040) == 1 ]]></Condition>
+				<Tip>科技点需求:1200w 解锁灵枢生产  5-10 维修费3 消耗灵晶50。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 12000000 then
+					if World:GetFlag(1000000041) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000041,1)
+					World:AddFlag(99999,-12000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>聚变研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 22000000  ]]></Condition>
+				<Tip>科技点需求:2200w 解锁提高灵枢生产 4-15 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 22000000 then
+					if World:GetFlag(1000000042) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000042,1)
+					World:AddFlag(99999,-22000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>质变晶体</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 22000000 and World:GetFlag(100000044) == 0 ]]></Condition>
+				<Tip>科技点需求:2200w 解锁减少灵晶消耗 30。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 22000000 then
+					if World:GetFlag(1000000043) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000043,1)
+					World:AddFlag(99999,-22000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>聚合型晶体</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 32000000 and World:GetFlag(100000043) == 0 ]]></Condition>
+				<Tip>科技点需求:3200w 解锁增加灵晶消耗至 70 增加灵枢产出 上限下限增加2 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 32000000 then
+					if World:GetFlag(1000000044) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000044,1)
+					World:AddFlag(99999,-32000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>粘合枢阵</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 37000000 ]]></Condition>
+				<Tip>科技点需求:3700w 解锁增加灵枢产出上限 5 维修费加1 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 37000000 then
+					if World:GetFlag(1000000045) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000045,1)
+					World:AddFlag(99999,-37000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵枢合成研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 42000000 ]]></Condition>
+				<Tip>科技点需求:4200w 解锁“灵脉检测” 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 42000000 then
+					if World:GetFlag(1000000046) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000046,1)
+					World:AddFlag(99999,-42000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵脉检测</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 56000000 ]]></Condition>
+				<Tip>科技点需求:5600w 解锁“合纵之道” 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 56000000 then
+					if World:GetFlag(1000000047) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000047,1)
+					World:AddFlag(99999,-56000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>合纵之道</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 56000000 ]]></Condition>
+				<Tip>科技点需求:5600w 解锁“高精度采集装置” 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 56000000 then
+					if World:GetFlag(1000000048) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000048,1)
+					World:AddFlag(99999,-56000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>高精度采集装置</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 76000000 ]]></Condition>
+				<Tip>科技点需求:7600w 解锁“灵脉转轮装置” 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 76000000 then
+					if World:GetFlag(1000000049) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000049,1)
+					World:AddFlag(99999,-76000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJSC0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="ZKJSC5"  Parent="BaseFillingStory">
+		<DisplayName>主-神阶</DisplayName>
+		<Desc>[NAME]打开了神阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>灵脉转轮装置</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 96000000 ]]></Condition>
+				<Tip>科技点需求:9600w 解锁“灵脉生产” 维修费5 灵枢 15 产出2 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingCrystal")
+				if World:GetFlag(99999) >= 96000000 then
+					if World:GetFlag(1000000051) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000051,1)
+					World:AddFlag(99999,-96000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>灵脉腾空系统</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 100000000 ]]></Condition>
+				<Tip>科技点需求:10000w 1000w灵石 解锁提高灵脉生产上限1 。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingStone")
+				if World:GetFlag(99999) >= 100000000 and JF >= 10000000 then
+					if World:GetFlag(1000000052) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000052,1)
+					World:AddFlag(99999,-100000000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingStone",10000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>超负荷运作</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 100000000 ]]></Condition>
+				<Tip>科技点需求:10000w 100w灵晶 解锁提高灵脉生产上限3 维修费8。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_LingStone")
+				if World:GetFlag(99999) >= 100000000 and JF >= 1000000 then
+					if World:GetFlag(1000000053) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000053,1)
+					World:AddFlag(99999,-100000000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingCrystal",1000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>超负荷运作</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 100000000 ]]></Condition>
+				<Tip>科技点需求:10000w 10000灵枢 解锁减少灵枢消耗3。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_WXLS")
+				if World:GetFlag(99999) >= 100000000 and JF >= 10000 then
+					if World:GetFlag(1000000054) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000054,1)
+					World:AddFlag(99999,-100000000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingCrystal",10000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>双倍注入</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 100000000 ]]></Condition>
+				<Tip>科技点需求:10000w 500灵脉 解锁减少维修费-2。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_WXLM")
+				if World:GetFlag(99999) >= 100000000 and JF >= 500 then
+					if World:GetFlag(1000000055) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(1000000055,1)
+					World:AddFlag(99999,-100000000)
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_LingCrystal",500)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJSC0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</List></Stories>

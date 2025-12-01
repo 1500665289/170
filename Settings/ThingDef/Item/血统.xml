@@ -1,0 +1,36 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_XT1" Parent="MaterialBase">
+		<ThingName>血统水晶</ThingName>
+		<TexPath>Spr\Object\XT\XTSJ.PNG</TexPath>
+		<Desc>随机抽取一个血统</Desc>
+		<MaxHitPoints>10000</MaxHitPoints>
+		<Rate>20</Rate>
+		<Beauty>12</Beauty>
+		<MaxStack>1</MaxStack>
+		<ElementKind>None</ElementKind>
+		<Item>
+			<NotRandom>1</NotRandom>
+			<BeMade>
+			<WorkToMake>30000</WorkToMake>
+			<Quality>0</Quality>
+			<ArtDesc></ArtDesc>
+			<CostItems>
+					<Item name = "Item_PTJB" count = "500"/>
+			</CostItems>		
+		</BeMade> 
+			<PhysicalLables>
+				<li>PhysicalLables_None</li>	
+
+			</PhysicalLables>
+		</Item>
+		<StoryBnts>
+			<li Name="吸收" Desc="融合血统" Appoint="1" Story="WX_XTRH" Cost="5" Icon="Spr\Object\XT\XTSJ.PNG"/>
+		</StoryBnts>
+		<Element>
+			<Kind>None</Kind>
+			<Value>8</Value>
+			<Radius>2</Radius>
+		</Element>
+	</ThingDef>
+	
+</List></ThingDefs>

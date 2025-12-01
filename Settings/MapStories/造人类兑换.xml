@@ -1,0 +1,144 @@
+<Stories><List>
+	<Story Name="WX_ZRL" Parent="BaseFillingStory">
+		<DisplayName>女娲大神</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/ZRA.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>造个随机外门弟子吧（100积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local nN = me:RandomInt(1,3);
+					local nt = me:RandomInt(1,4);
+					local nD = me:RandomFloat(0.2,1);
+					local WW1 = me:RandomInt(-5,10);
+					local WW2 = me:RandomInt(-5,10);
+					local WW3 = me:RandomInt(-5,10);
+					local WW4 = me:RandomInt(-5,10);
+					local WW5 = me:RandomInt(-5,10);
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 100 then
+					me:AddJoiners(nN,nt,nD,WW1,WW2,WW3,WW4,WW5);
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",100)
+					me:AddMsg(XT("[NAME]消耗积分100，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>造个带血统的随机外门弟子（300积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local nN = me:RandomInt(1,3);
+					local nt = me:RandomInt(1,4);
+					local nD = me:RandomFloat(0.2,1);
+					local WW1 = me:RandomInt(-5,10);
+					local WW2 = me:RandomInt(-5,10);
+					local WW3 = me:RandomInt(-5,10);
+					local WW4 = me:RandomInt(-5,10);
+					local WW5 = me:RandomInt(-5,10);
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+					local npc = me.npcObj;
+					local npcmgr = me.npcObj.PropertyMgr;
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 300 then
+					me:AddJoiners(nN,nt,nD,WW1,WW2,WW3,WW4,WW5);
+					local XM = {"XT_QLAR","XT_KXSR","XT_XXGXT","XT_BSJRXT","XT_DTSXT","XT_STSXT",
+								"XT_QLAR1","XT_KXSR1","XT_XXGXT1","XT_BSJRXT1","XT_DTSXT1","XT_STSXT1",
+								"XT_QLAR2","XT_KXSR2","XT_XXGXT2","XT_BSJRXT2","XT_DTSXT2","XT_STSXT2"}
+					local XMR = me:RandomInt(0,#XM+1);
+					npcmgr:AddFeature(""..XM[XMR].."");
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",300)
+					me:AddMsg(XT("[NAME]消耗积分300，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>造个满五维外门弟子（300积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local nN = me:RandomInt(1,3);
+					local nt = me:RandomInt(1,4);
+					local nD = me:RandomFloat(0.2,1);
+					local WW1 = me:RandomInt(-5,10);
+					local WW2 = me:RandomInt(-5,10);
+					local WW3 = me:RandomInt(-5,10);
+					local WW4 = me:RandomInt(-5,10);
+					local WW5 = me:RandomInt(-5,10);
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 300 then
+					me:AddJoiners(nN,nt,nD,10,10,10,10,10);
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",300)
+					me:AddMsg(XT("[NAME]消耗积分300，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>造个满五维带随机血统的外门弟子（1800积分）</Display>
+				<OKResult>
+				<![CDATA[	
+					local nN = me:RandomInt(1,3);
+					local nt = me:RandomInt(1,4);
+					local nD = me:RandomFloat(0.2,1);
+					local WW1 = me:RandomInt(-5,10);
+					local WW2 = me:RandomInt(-5,10);
+					local WW3 = me:RandomInt(-5,10);
+					local WW4 = me:RandomInt(-5,10);
+					local WW5 = me:RandomInt(-5,10);
+					local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+					local npc = me.npcObj;
+					local npcmgr = me.npcObj.PropertyMgr;
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+					if JF >= 1800 then
+					me:AddJoiners(nN,nt,nD,10,10,10,10,10);
+					local XM = {"XT_QLAR","XT_KXSR","XT_XXGXT","XT_BSJRXT","XT_DTSXT","XT_STSXT",
+								"XT_QLAR1","XT_KXSR1","XT_XXGXT1","XT_BSJRXT1","XT_DTSXT1","XT_STSXT1",
+								"XT_QLAR2","XT_KXSR2","XT_XXGXT2","XT_BSJRXT2","XT_DTSXT2","XT_STSXT2"}
+					local XMR = me:RandomInt(0,#XM+1);
+					npcmgr:AddFeature(""..XM[XMR].."");
+					GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1800)
+					me:AddMsg(XT("[NAME]消耗积分1800，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+					else
+						me:AddMsg(XT("积分不足。"));
+					end
+				]]>
+				</OKResult>
+			</li>
+		
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+</List></Stories>

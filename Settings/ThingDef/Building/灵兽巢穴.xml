@@ -1,0 +1,41 @@
+﻿<ThingDefs><List>
+	
+	<ThingDef Type="Building" Name="WX_LS_1" Parent="OrnamentBase">
+	<TexPath>Spr\Object\LC\QL.png</TexPath>
+	<TexScale>1.5</TexScale>
+	<ThingName>麒麟巢</ThingName>
+	<Desc>麒麟的家。</Desc>
+	<Tags>
+		<Tag Name="_LSSTONE" Level="1"/>
+		<Tag Name="WX_QLStone" Level="1"/>
+	</Tags>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>1</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>60</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "2000"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	
+	</ThingDef>
+	
+	
+</List></ThingDefs>

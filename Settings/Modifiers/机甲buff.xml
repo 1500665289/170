@@ -1,0 +1,102 @@
+<ModifierDefs><List>
+	
+
+	<Modifier Name="WX_YJJJ" Type="Normal">
+		<DisplayName>一阶机甲基础属性</DisplayName>
+		<Desc>拥有1000层能源，驾驶机甲后的凡人无法修行。能源耗尽之时移除该单位(包括该修行者)。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WX_YJJJ</LuaClassName>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONFLY</li>
+			
+		</SpecialFlags>
+		<Properties>
+			<li Name="MoveSpeed" AddV="20"/>
+			<li Name="PainTolerance" AddV="100000"/><!--疼痛忍耐 6-->
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="5"/><!--疼痛忍耐 6-->
+			<li Name="RecoveryPower" AddV="10"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_JJNY" Type="Normal">
+		<DisplayName>机甲能源</DisplayName>
+		<Desc>该buff为1时，移除机甲单位。</Desc>
+		<MaxStack>999999999</MaxStack>
+		<Duration>6000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_ADDTIONLINGMAX</li>
+		</SpecialFlags>
+		<Properties>
+			
+			<li Name="MagicDamageRecoveryPowerAddV" AddV="1"/><!--疼痛忍耐 6-->
+			<li Name="RecoveryPower" AddV="5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_JJNY_1" Type="Normal">
+		<DisplayName>机甲能源</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="WX_JJNY_2" Type="Normal">
+		<DisplayName>机甲能源</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="WX_JJNY_3" Type="Normal">
+		<DisplayName>机甲能源</DisplayName>
+		<Desc></Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="WX_JJS_H" Type="Normal">
+		<DisplayName>机甲核心损坏</DisplayName>
+		<Desc>机甲核心损坏影响对法宝伤害的免疫层数。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="WX_JJS_SJ" Type="Normal">
+		<DisplayName>机甲四肢损坏</DisplayName>
+		<Desc>机甲四肢损坏影响对体修伤害的免疫层数。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	<Modifier Name="WX_JJS_NLD" Type="Normal">
+		<DisplayName>机甲能量盾损坏</DisplayName>
+		<Desc>机甲能量盾损坏影响对术法伤害的免疫层数。</Desc>
+		<MaxStack>100</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

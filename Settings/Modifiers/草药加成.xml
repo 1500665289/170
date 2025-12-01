@@ -1,0 +1,555 @@
+<ModifierDefs><List>
+	<Modifier Name="ZTDrug_AL" Type="Normal">
+		<DisplayName>闇莲</DisplayName>
+		<Desc>吃下后加成五行减伤1%,抗药性60%。副作用扣除一万灵力上限。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="0.01"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="0.01"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="0.01"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="0.01"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="0.01"/>
+			<li Name="NpcLingMaxValue" AddV="-10000"/>
+		</Properties>
+	</Modifier> 
+	
+	<Modifier Name="ZTDrug_YYC" Type="Normal">
+		<DisplayName>阴阳草</DisplayName>
+		<Desc>吃下后加成4倍修行速度，持续5天，副作用持续期间将导致更容易饥饿。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="4"/>
+			<li Name="NutritionConsumeConstant" AddP="2"/>
+			<li Name="NutritionToJingYuanK" AddV="-0.5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_YMC" Type="Normal">
+		<DisplayName>阴瞑叶</DisplayName>
+		<Desc>服用后扣除一点神识，减低天劫到来的时间1000s，提高灵力值上限3000</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>-1,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="3000"/>
+			<li Name="NeckCountdownAddV" AddV="-1000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_JMY" Type="Normal">
+		<DisplayName>境明叶</DisplayName>
+		<Desc>服用提高突破瓶颈成功率0.1，并获得5000灵力提升，副作用减低修行速度2</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="5000"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="-2"/>
+			<li Name="PracticeRateAddPFromDan" AddV="0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_SMG" Type="Normal">
+		<DisplayName>双明果</DisplayName>
+		<Desc>吃下后持续300s内，能让人减低100点道行，持续时间过后因受激烈的阴阳冲击而导致昏迷五日。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EndModifier>ZTDrug_SMG1</EndModifier>
+		<Properties>
+			<li Name="AbilityLvAddV" AddV="-100"/>
+			
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_SMG1" Type="Normal">
+		<DisplayName>双明果副作用</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>3000</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="ZTDrug_HYY" Type="Normal">
+		<DisplayName>混元叶</DisplayName>
+		<Desc>服用后半日内免疫所有伤害，持续时间结束后，扣除四分一灵力上限。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>300</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EndModifier>ZTDrug_HYY1</EndModifier>
+		<Properties>
+			<li Name="NpcFight_ShieldResistanceToShui" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToHuo" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToTu" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToJin" AddV="9999"/>
+			<li Name="NpcFight_ShieldResistanceToMu" AddV="9999"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_HYY1" Type="Normal">
+		<DisplayName>混元叶副作用</DisplayName>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddP="-0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_SYC" Type="Normal">
+		<DisplayName>三阳春</DisplayName>
+		<Desc>服用持续10天提高1倍修行速度，副作用减低1点机缘。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EndModifier>ZTDrug_SYC1</EndModifier>
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_SYC1" Type="Normal">
+		<DisplayName>三阳春副作用</DisplayName>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,-1,0</BaseFive>
+	</Modifier>
+	<Modifier Name="ZTDrug_JC" Type="Normal">
+		<DisplayName>剑簇</DisplayName>
+		<Desc>服用后提高1.5基础法宝威力，同时受到剑簇中剑气伤害。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" BAddV="1.5"/>
+		</Properties>
+		<Damages>
+			<li Part="TheWholeBody" Damage="LingSpillsInjury_Sp"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="ZTDrug_SJG" Type="Normal">
+		<DisplayName>死劫根</DisplayName>
+		<Desc>服用后减低雷劫降临时间3600s，提高60雷劫强度持续5天，持续时间后减低90道行，永久提高0.5倍修行速度。</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>3600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EndModifier>ZTDrug_SJG1</EndModifier>
+		<Properties>
+			<li Name="NeckCountdownAddV" AddV="-3600"/>
+			<li Name="GodPenaltyAddV" AddV="60"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_SJG1" Type="Normal">
+		<DisplayName>死劫根副作用</DisplayName>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		
+		<Properties>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5"/>
+			<li Name="AbilityLvAddV" AddV="-90"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_SLS" Type="Normal">
+		<DisplayName>死戾笋</DisplayName>
+		<Desc>服用后昏迷3天，召唤敌人打自己，为什么？不知道啊。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EndModifier>ZTDrug_SLS1</EndModifier>
+		<LuaClassName>modifier_SLS</LuaClassName>
+	</Modifier>
+	<Modifier Name="ZTDrug_SLS1" Type="Normal">
+		<DisplayName>死戾笋</DisplayName>
+		<Desc>服用后昏迷3天，召唤敌人打自己，为什么？不知道啊。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="ZTDrug_DCC" Type="Normal">
+		<DisplayName>笪簇草</DisplayName>
+		<Desc>服用后灵力恢复值提高0.5点。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddV="0.5"/>
+			
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_TSZG" Type="Normal">
+		<DisplayName>铁树枝干</DisplayName>
+		<Desc>食用后增强0.1点护盾值，副作用修炼速度减低0.2 。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="0.1"/>
+			<li Name="DeepPracticeSpeedSpecialCoefficient" AddV="-0.2"/>
+			
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_ZWX" Type="Normal">
+		<DisplayName>紫微星</DisplayName>
+		<Desc>服用后获得一些神秘的惊喜。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <LuaClassName>modifier_ZWX</LuaClassName>
+	</Modifier>
+	<Modifier Name="ZTDrug_SXM" Type="Normal">
+		<DisplayName>神血木</DisplayName>
+		<Desc>服用后获得百分1属性加成。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <Properties>
+				<li Name="MaxAge" AddV="1000"/><!--寿元-->
+				<li Name="MindStateBaseValue" AddV="10"/><!--心情基础值-->
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.03"/><!--学习速度-->
+				<li Name="VisionRadius" AddP="0.01"/><!--感知范围-->
+				<li Name="MoveSpeed" AddP="0.01"/><!--移动速度-->
+				<li Name="RecoveryPower" AddP="0.01"/><!--自然恢复力-->
+				<li Name="MagicDamageRecoveryPowerAddV" AddV="0.01"/><!--内门伤自然恢复力-->
+				<li Name="FatigueConsumeConstant" AddP="-0.01"/><!--精力消耗速度加成-->
+				<li Name="NutritionConsumeConstant" AddP="-0.01"/><!--食物消耗速度加成-->
+				<li Name="WaterConsumeConstant" AddP="-0.01"/><!--饮水消耗速度加成-->
+				<li Name="HappyConsumeConstant" AddP="-0.01"/><!--娱乐消耗速度加成-->
+				<li Name="ToleranceTMin" AddV="-10"/><!--最低极限温度-->
+				<li Name="ToleranceTMax" AddV="10"/><!--最高极限温度-->
+				<li Name="ComfyTMin" AddV="-10"/><!--最低舒适温度-->
+				<li Name="ComfyTMax" AddV="10"/><!--最高舒适温度-->
+				<li Name="PainTolerance" AddV="1"/><!--疼痛忍受极限-->
+				<li Name="IntelligenceSkillEXPConstant" AddP="0.01"/><!--学习速度加成-->
+				<li Name="PracticeFoodConsumeConstant" AddP="0.01"/><!--精元消耗速度-->
+				<li Name="FatigueConsumeConstant" AddP="-0.01"/><!--精力消耗速度-->
+				
+				战斗
+				<li Name="NpcFight_BaseHitChance" AddV="0.01"/><!--战斗命中-->
+				<li Name="NpcFight_BaseDodgeChance" AddV="0.01"/><!--战斗闪避-->
+				<li Name="NpcFight_FabaoPowerAddP" AddP="0.01"/><!--法宝威力加成-->
+				<li Name="NpcFight_FabaoLingRecoverAddP" AddP="0.01"/><!--法宝灵气恢复速度加成-->
+				<li Name="NpcFight_FabaoMaxLingAddP" AddP="0.01"/><!--法宝灵气最大值加成-->
+				<li Name="NpcFight_FabaoRepelDistanceAddV" AddV="0.01"/><!--法宝击退距离加成-->
+				<li Name="NpcFight_FabaoFlySpeedAddP" AddP="0.01"/><!--法宝飞行速度加成-->
+				<li Name="NpcFight_FabaoTurnSpeedAddP" AddP="0.01"/><!--法宝转向速度加成-->
+				<li Name="NpcFight_FabaoRepelResistanceAddV" AddP="0.01"/><!--法宝击退距离抗性-->
+				<li Name="NpcFight_FabaoTrailingLengthAddP" AddP="0.01"/><!--法宝拖尾长度加成-->
+				<li Name="NpcFight_SpellLingCostAddP" AddP="-0.01"/><!--术法灵气消耗加成-->
+				<li Name="NpcFight_SpellCastTimeAddP" AddP="-0.01"/><!--术法吟唱时间加成-->
+				<li Name="NpcFight_SpellPowerAddP" AddP="0.01"/><!--术法伤害加成-->
+				<li Name="NpcFight_SpellCoolDownAddP" AddP="-0.01"/><!--术法冷却时间加成-->
+				<li Name="NpcFight_ShieldConversionRate" AddP="0.01"/><!--护盾强度加值-->
+				<li Name="NpcFight_ShieldConversionRateAddP" AddV="0.01"/><!--护盾强度加成-->
+				<li Name="NpcFight_FabaoNum" AddV="1"/><!--法宝数量-->
+				
+				
+				修行
+				<li Name="PracticeRateAddPFromDan" AddP="0.01"/><!--瓶颈突破概率加成系数-->
+				<li Name="ExperienceNeckTimeCostCoefficient" AddP="-0.01"/><!--历练型瓶颈时间放大系数-->
+				<li Name="PotentialOfBasepracticeAddValue" AddV="0.01"/><!--潜力值-->
+				<li Name="GodPenaltyAddV" AddV="10"/><!--天谴，正的加天谴的。-->
+				<li Name="MaxAccumulativeLingAddV" AddV="100"/><!--炉鼎值-->
+				<li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.01"/><!--瓶颈突破概率加成系数-->
+				<li Name="InspirationCoefficient" AddP="0.01"/><!--领悟悟性-->
+				<li Name="LingAbsorbSpeed" AddP="0.01"/><!--灵气吸收速度-->
+				<li Name="NpcLingMaxValue" AddV="1000"/><!--基础灵气最大值-->
+				<li Name="WorldMapFlySpeed" AddP="0.01"/><!--历练飞行速度-->
+				<li Name="WorldMapFlySpeedAddP" AddP="-0.01"/><!--历练飞行速度加成-->
+				<li Name="ExperiencePrestigeAddP" AddP="0.01"/><!--历练型声望放大系数-->
+				<li Name="EsotericaNum" AddV="1"/><!--秘籍数量限制-->
+				<li Name="AbilityLvAddV" AddV="10"/><!--道行加值-->
+				<li Name="BodyPratice_BodyRecover" AddP="0.01"/><!--炼体者肉体自愈率 0.005 0.02-->
+				<li Name="BodyPratice_MaxZhenQi" AddV="100"/><!--真炁最大值 1000 10000 -->
+				<li Name="BodyPratice_RecoverZhenQi" AddP="0.01"/><!--真炁恢复速度基础值 2 5-->
+				<li Name="BodyPratice_DefenseRecoverZhenQi" AddP="0.01"/><!--回气状态下的回气速度 0.05 0.5-->
+				<li Name="BodyPratice_BodyStrong" AddV="0.1"/><!--身体强大系数。 1 9-->
+				<li Name="BodyPratice_QuenchingSpeed" AddP="0.01"/><!--淬体速度 0.01 10-->
+				<li Name="BodyPractice_SuperPartAtk_EquptMaxCount" AddV="-1"/><!--秘体进攻秘体启用栏数量 6-->
+				<li Name="BodyPractice_SuperPartDef_EquptMaxCount" AddV="-1"/><!--秘体防御秘体启用栏数量 6-->
+				<li Name="BodyPractice_SuperPartBuff_EquptMaxCount" AddP="-1"/><!--秘体效果秘体启用栏数量 6-->
+				<li Name="BodyPractice_Other_TunaAddp" AddP="0.01"/><!--额外吐纳效果加成。 -0.45 2-->
+				<li Name="BodyPratice_SuperPartCostAddP" AddV="-0.01"/><!--秘体真炁消耗速度加成 -1 1-->
+				<li Name="BodyPratice_SuperPartRecoverAddP" AddV="0.01"/><!--秘体真炁恢复速度加成 1 1 -->
+				<li Name="BodyPractice_AngerFireNum" AddV="1"/><!--痛苦追忆最大记忆数量 0 5-->
+				<li Name="BodyPractice_AngerFireEffectAddp" AddP="0.1"/><!--激狂之怒效果倍率 0 10-->
+				<li Name="BodyPractice_EatItemMaxRate" AddV="1"/><!--吞噬物品的最高品阶。 1 10-->
+				<li Name="BodyPractice_EatItemProduceCountAddp" AddP="0.01"/><!--吞噬后获得精华数量的提升比率 0 1-->
+				<li Name="BodyPractice_EatItemProduceRateAddp" AddP="0.01"/><!--吞噬后得到精华的几率提升比率 0 1-->
+				<li Name="NpcFight_FightSkillSoul" AddV="1"/><!--术法元灵数量 -10 10-->
+				<li Name="BodyPractice_SuperPartAddp_AtkPower" AddP="0.01"/><!--伤害百分比加成 -10 10-->
+				<li Name="BodyPractice_SuperPartAddp_DefPower" AddP="0.01"/><!--坚韧百分比加成 -10 10-->
+				<li Name="BodyPractice_SuperPartAddp_AtkRate" AddP="0.01"/><!--命中率百分比加成 -10 10-->
+				<li Name="BodyPractice_SuperPartAddp_DefRate" AddP="0.01"/><!--防御百分比加成 -10 10-->
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddP="0.01"/><!--穿透百分比加成 -10 10-->
+				<li Name="BodyPractice_SuperPartAddp_CatchFabao" AddP="0.01"/><!--镇压百分比加成 -10 10-->
+				<li Name="BodyPractice_SuperPartAddv_AtkPower" AddV="1000"/><!--伤害百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_DefPower" AddV="1000"/><!--坚韧百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_AtkRate" AddV="0.01"/><!--命中率百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_DefRate" AddV="0.01"/><!--防御百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_ArmorPenetration" AddV="0.01"/><!--穿透百分比加成 -50000 50000-->
+				<li Name="BodyPractice_SuperPartAddv_CatchFabao" AddV="0.01"/><!--镇压百分比加成 -50000 50000-->
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_JHZ" Type="Normal">
+		<DisplayName>净魂枝</DisplayName>
+		<Desc>服用后昏迷9天，醒来后提高2点神识，百分20灵力上限。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>5400</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<EndModifier>ZTDrug_JHZ1</EndModifier>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="ZTDrug_HYC" Type="Normal">
+		<DisplayName>厚源草</DisplayName>
+		<Desc>服用后提高五维属性1点。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<BaseFive>1,1,1,1,1</BaseFive>
+	</Modifier>
+	<Modifier Name="ZTDrug_JY" Type="Normal">
+		<DisplayName>厚源草</DisplayName>
+		<Desc>食用后短时间内增加灵力恢复50，持续3天</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>	
+		<li Name="LingAbsorbSpeed" AddV="50"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_LYBX" Type="Normal">
+		<DisplayName>六叶白须</DisplayName>
+		<Desc>食用后短时间内提高心情基础值20，并提高心境稳定性3天</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>1800</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>	
+		<li Name="MindStateBaseValue" AddV="20"/><!--基础灵气最大值-->	
+		<li Name="SpeedOfMindStateCoefficient" AddV="10"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_LHY" Type="Normal">
+		<DisplayName>麟寒叶</DisplayName>
+		<Desc>食用后增加术法威力2倍，持续4天，副作用减低4术法威力，持续6天</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2400</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<EndModifier>ZTDrug_LHY1</EndModifier>
+		<Properties>	
+		<li Name="NpcFight_SpellPowerAddP" AddP="2"/><!--基础灵气最大值-->	
+		
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_LHY1" Type="Normal">
+		<DisplayName>麟寒叶</DisplayName>
+	
+		<MaxStack>1</MaxStack>
+		<Duration>3600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>	
+		<li Name="NpcFight_SpellPowerAddP" AddP="-4"/><!--基础灵气最大值-->	
+		
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_HG" Type="Normal">
+		<DisplayName>幻菇</DisplayName>
+		<Desc>服用后扣除1000寿元，直接突破一个境界。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<LuaClassName>ZTDrug_HG</LuaClassName>
+		
+		<Properties>	
+		<li Name="MaxAge" AddV="-1000"/><!--基础灵气最大值-->	
+		
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_JHZ1" Type="Normal">
+		<DisplayName>净魂枝</DisplayName>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>2,0,0,0,0</BaseFive>
+		 <Properties>	
+		<li Name="NpcLingMaxValue" AddP="0.2"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_CL" Type="Normal">
+		<DisplayName>赤莲</DisplayName>
+		<Desc>服用后永久提高10%术法威力，减低20%法宝威力</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <Properties>	
+		<li Name="NpcFight_FabaoPowerAddP" AddP="-0.2"/><!--基础灵气最大值-->	
+		<li Name="NpcFight_SpellPowerAddP" AddP="0.1"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_FX" Type="Normal">
+		<DisplayName>焚仙</DisplayName>
+		<Desc>服用后永久提高10%法宝威力，减低20%术法威力</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <Properties>	
+		<li Name="NpcFight_FabaoPowerAddP" AddP="0.1"/><!--基础灵气最大值-->	
+		<li Name="NpcFight_SpellPowerAddP" AddP="-0.2"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_XYC" Type="Normal">
+		<DisplayName>薪叶草</DisplayName>
+		<Desc>食用后永久增加战斗等级1，副作用减低术法等级1</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2400</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>	
+		<li Name="Fight" LevelOver="1"/>
+		<li Name="FightSkill" LevelOver="-1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="ZTDrug_FXY" Type="Normal">
+		<DisplayName>凤曦叶</DisplayName>
+		<Desc>食用后永久增加术法等级1级，法宝等级减低一级</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>2400</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Skills>	
+		<li Name="Fabao" LevelOver="-1"/>
+		<li Name="FightSkill" LevelOver="1"/>
+		</Skills>
+	</Modifier>
+	<Modifier Name="ZTDrug_GJZ" Type="Normal">
+		<DisplayName>诡节竹</DisplayName>
+		<Desc>服用后死透透了。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="ZTDrug_LX" Type="Normal">
+		<DisplayName>老须</DisplayName>
+		<Desc>服用后永久提高200寿元，增强10雷劫值。</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <Properties>	
+		<li Name="MaxAge" AddV="200"/><!--基础灵气最大值-->	
+		<li Name="GodPenaltyAddV" AddV="10"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_CBS" Type="Normal">
+		<DisplayName>长白参</DisplayName>
+		<Desc>服用后永久提高300寿元</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <Properties>	
+		<li Name="MaxAge" AddV="300"/><!--基础灵气最大值-->	
+		
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_ZRH" Type="Normal">
+		<DisplayName>紫绒花</DisplayName>
+		<Desc>服用后1天内提高百分50战斗闪避，。</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>600</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <Properties>	
+		<li Name="NpcFight_BaseDodgeChance" AddV="0.5"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="ZTDrug_YS" Type="Normal">
+		<DisplayName>幽参</DisplayName>
+		<Desc>服用后永久减低200寿元，减低10雷劫值。</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <Properties>	
+		<li Name="MaxAge" AddV="-200"/><!--基础灵气最大值-->	
+		<li Name="GodPenaltyAddV" AddV="-10"/><!--基础灵气最大值-->	
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_LS" Type="Normal">
+		<DisplayName>灵枢</DisplayName>
+		<Desc>服用后恢复一半灵力体修恢复一半真气。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <LuaClassName>WX_LS</LuaClassName>
+	</Modifier>
+	<Modifier Name="WX_LM" Type="Normal">
+		<DisplayName>灵脉</DisplayName>
+		<Desc>服用后恢复全部灵力体修恢复全部真气。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<BaseFive>0,0,0,0,0</BaseFive>
+		 <LuaClassName>WX_LM</LuaClassName>
+	</Modifier>
+</List></ModifierDefs>

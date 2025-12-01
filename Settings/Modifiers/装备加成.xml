@@ -1,0 +1,79 @@
+<ModifierDefs><List>
+	<Modifier Name="XTWQ_TMXT" Type="Normal">
+		<DisplayName>戮魔★笔</DisplayName>
+		<Desc>屠魔族的专属武器</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+			<LuaClassName>TMXT</LuaClassName>
+		<Properties>
+				<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="2"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+	</Modifier>
+	
+
+	<Modifier Name="BSDJ" Type="Normal">
+		<DisplayName>冰霜★大剑</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+			<LuaClassName>BSDJ</LuaClassName>
+		<Properties>
+				<li Name="BodyPratice_BodyRecover" AddP="10"/><!--炼体者肉体自愈率 0.005 0.02-->
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="YAHJ" Type="Normal">
+		<DisplayName>原闇★荒戟</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+			<LuaClassName>YAHJ</LuaClassName>
+		
+	</Modifier>
+		
+	
+	<Modifier Name="WX_XMPXD" Type="Normal">
+		<DisplayName>星刀</DisplayName>
+		<Desc>。</Desc>
+		<MaxStack>0</MaxStack>
+		<Duration>-1</Duration>
+		<Display>0</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WX_XMPXD</LuaClassName>
+		<Properties>
+				
+				<li Name="SLD_D" AddV="10"/><!--身体强大系数。 1 9-->
+		</Properties>
+	</Modifier>
+		
+	<Modifier Name="WX_XMPXD_X" Type="Normal">
+		<DisplayName>星痕</DisplayName>
+		<Desc>受到紫薇之意的标记</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		
+	</Modifier>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

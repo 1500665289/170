@@ -1,0 +1,394 @@
+<FightSkills><List>
+	<Skill Name="WX_SLDDJ3X3"><!--伤害技能基础模板 -->
+		<DisplayName>万山裂</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\FXLJ.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>5</SingTime>
+		<CD>45</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>50000</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>27</MissileEffect>
+		<HitEffect>39</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="FXLZ"><!--伤害技能基础模板 -->
+		<DisplayName>蓄力击</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\FXLJ.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>15</SingTime>
+		<CD>25</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>50</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>FXLZ</ClassName>
+		<MissileEffect>27</MissileEffect>
+		<HitEffect>39</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="Q_CC"><!--伤害技能基础模板 -->
+		<DisplayName>穿肠</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\CC.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>15</SingTime>
+		<CD>25</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>50</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>CC</ClassName>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>39</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="Q_CC2"><!--伤害技能基础模板 -->
+		<DisplayName>流光</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\CC.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>225</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>1000</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>CC2</ClassName>
+		<MissileEffect>26</MissileEffect>
+		<HitEffect>39</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_G"><!--伤害技能基础模板 -->
+		<DisplayName>响灵箭</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_G.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CD>25</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>150</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>SLD_G</ClassName>
+		<MissileEffect>27</MissileEffect>
+		<HitEffect>82</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_G3"><!--伤害技能基础模板 -->
+		<DisplayName>集中火力</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_G2.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CD>95</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>900</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>SLD_G3</ClassName>
+		<MissileEffect>27</MissileEffect>
+		<HitEffect>82</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="WX_SLDG2X2"><!--伤害技能基础模板 -->
+		<DisplayName>风行</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_G2.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Health</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.1</SingTime>
+		<CD>120</CD>
+		<LingCost>10000</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng7</CastAni>
+		<Value>5000</Value>
+		<TargetCamp>Friendly</TargetCamp>
+		<ClassName>SLD_G2</ClassName>
+		<Shape>Single</Shape>
+		<SelectType>Self</SelectType>
+		<HitEffect>90001</HitEffect>
+
+	</Skill>
+	
+	<Skill Name="SLD_F"><!--伤害技能基础模板 -->
+		<DisplayName>奋力一斩</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_F.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0.2</SingTime>
+		<CD>45</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>400</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>AllNpc</SelectType>
+		<ClassName>SLD_F</ClassName>
+		<SelectCount>3</SelectCount>
+		<MissileEffect>13</MissileEffect>
+		<HitEffect>82</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_J"><!--伤害技能基础模板 -->
+		<DisplayName>万剑归一</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_J.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>0</SingTime>
+		<CD>30</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>1000</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<ClassName>SLD_J</ClassName>
+		<SelectType>Target</SelectType>
+		<MissileEffect>2</MissileEffect>
+		<HitEffect>63</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_FZ"><!--伤害技能基础模板 -->
+		<DisplayName>域灭</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_FZ.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>10</SingTime>
+		<CD>50</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>300</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>AllNpc</SelectType>
+		<ClassName>SLD_FZ</ClassName>
+		<MissileEffect>6</MissileEffect>
+		<BombEffect>39</BombEffect>
+		<HitEffect>63</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>25</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_JJ"><!--伤害技能基础模板 -->
+		<DisplayName>横扫</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_JJ.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>10</SingTime>
+		<CD>80</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>100</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>AllNpc</SelectType>
+		<ClassName>SLD_JJ</ClassName>
+		<MissileEffect>5</MissileEffect>
+		<BombEffect>36</BombEffect>
+		<HitEffect>65</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>25</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_JJ2"><!--伤害技能基础模板 -->
+		<DisplayName>天崩地裂</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_JJ2.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>300</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>0</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>SLD_D</ClassName>
+		<MissileEffect>2</MissileEffect>
+		<BombEffect>44</BombEffect>
+		<HitEffect>63</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>25</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_D"><!--伤害技能基础模板 -->
+		<DisplayName>空灵斩</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_D.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>1</SingTime>
+		<CD>300</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>0</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>SLD_D</ClassName>
+		<MissileEffect>2</MissileEffect>
+		<BombEffect>44</BombEffect>
+		<HitEffect>63</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>25</Speed>
+		</Missile>
+	</Skill>
+	<Skill Name="SLD_FZ2"><!--伤害技能基础模板 -->
+		<DisplayName>灵虚咒术</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\SLD_FZ2.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>5</SingTime>
+		<CD>90</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>900</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<ClassName>SLD_FZ2</ClassName>
+		<MissileEffect>8</MissileEffect>
+		<BombEffect>42</BombEffect>
+		<HitEffect>61</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>25</Speed>
+		</Missile>
+	</Skill>
+	
+	
+	<Skill Name="WXGJAT"><!--伤害技能基础模板 -->
+		<DisplayName>G</DisplayName>
+		
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<ShowInUI>0</ShowInUI>
+		<SingTime>0</SingTime>
+		<CD>2</CD>
+		<LingCost>0</LingCost>
+		<SingAni>assemble</SingAni>
+		<CastAni>LJjineng4</CastAni>
+		<Value>100</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>11</MissileEffect>
+		<HitEffect>50</HitEffect>
+		<Missile>	<!--弹道数据，贝塞尔曲线的四个参数-->
+			<p1>0</p1>
+			<p2>0</p2>
+			<p3>0</p3>
+			<p4>0</p4>
+			<Speed>15</Speed>
+		</Missile>
+	</Skill>
+	
+	
+</List></FightSkills>

@@ -1,0 +1,502 @@
+<RaceDefs><List>
+
+<RaceDef Name="Boss_MS1">
+	<DisplayName>金刚</DisplayName>
+	<Mod>Mod/GW/DJG/DJG.FBX</Mod>
+	<RaceType>Boss</RaceType>
+	<Revive>0</Revive>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>1000</GenerateMinAge>
+	<GenerateMaxAge>1000</GenerateMaxAge>
+	<AdultAge>500</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>1</StrikeBack>
+	<FightDriver>MS1</FightDriver>
+	<HitBip>Bip01 Spine1</HitBip>
+	<PartBrokenEffect>Effect/gsq/Prefab/long/fx_long002_diaoluo</PartBrokenEffect>
+	<Modifier>Boss_MS1</Modifier>
+	<FightModifier>Boss_MSFight</FightModifier>
+	<FightParts>
+		<li Name="root"><!--root会自动判断为身体本身-->
+			<Local>Bip01 Spine1</Local>
+			<DisplayName>金刚之躯</DisplayName>
+		</li>
+		<li Name="SSRB">
+			<Local>Bip01 R UpperArm</Local>
+			<DisplayName>金刚右臂</DisplayName>
+			<Ling>1000000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Jing</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>3</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>4</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSZB">
+			<Local>Bip01 L UpperArm</Local>
+			<DisplayName>金刚左臂</DisplayName>
+			<Ling>35000000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Jiao</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSY">
+			<Local>Bip01 Pelvis</Local>
+			<DisplayName>金刚屁屁</DisplayName>
+			<Ling>25000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSYT">
+			<Local>Bip01 R Thigh</Local>
+			<DisplayName>金刚右腿</DisplayName>
+			<Ling>25000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSZT">
+			<Local>Bip01 L Thigh</Local>
+			<DisplayName>金刚左腿</DisplayName>
+			<Ling>25000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		
+		<li Name="SH">
+			<Local>Bip01 Head</Local>
+			<DisplayName>金刚之心</DisplayName>
+			<Ling>300000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="LongNuCount" Min="3" Max="99999"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_NiLin</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+	</FightParts>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/> 
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="BossComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="BossComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="BossToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="BossToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<Preloading>
+		<li>Effect/gsq/Prefab/long/fx_long002_potu01 -</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_shuilei_02</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_nuhou biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_zhenshui01</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_longxishu  biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_nuhou biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_tianyao_02</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_tianyao_01</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_zeguo_xuli</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan02   biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan01   biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou  biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLeyes biped Head</li>
+	</Preloading>
+</RaceDef>
+
+
+<RaceDef Name="Boss_MS2">
+	<DisplayName>魔神机甲</DisplayName>
+	<Mod>Mod/GW/JJ1/MSJJ.FBX</Mod>
+	<RaceType>Boss</RaceType>
+	<Revive>0</Revive>
+	<MaleName></MaleName>
+	<FemaleName></FemaleName>
+	<NormalAttack>Human_NormalAttack</NormalAttack>
+	<Body>QuadrupedBody</Body>
+	<HasGenders>0</HasGenders>
+	<HasEquip>0</HasEquip>
+	<GenerateMinAge>1000</GenerateMinAge>
+	<GenerateMaxAge>1000</GenerateMaxAge>
+	<AdultAge>500</AdultAge>
+	<FreeLength>2.7</FreeLength>
+	<WarningRange>0</WarningRange>
+	<StrikeBack>1</StrikeBack>
+	<FightDriver>Jiaolong</FightDriver>
+	<HitBip>Bip01 Spine1</HitBip>
+	<PartBrokenEffect>Effect/gsq/Prefab/long/fx_long002_diaoluo</PartBrokenEffect>
+	<Modifier>Boss_MS1</Modifier>
+	<FightModifier>Boss_MSFight</FightModifier>
+	<FightParts>
+		<li Name="root"><!--root会自动判断为身体本身-->
+			<Local>Bip01 Spine1</Local>
+			<DisplayName>金刚之躯</DisplayName>
+		</li>
+		<li Name="SSRB">
+			<Local>Bip01 R UpperArm</Local>
+			<DisplayName>金刚右臂</DisplayName>
+			<Ling>1000000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Jing</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>3</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>4</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSZB">
+			<Local>Bip01 L UpperArm</Local>
+			<DisplayName>金刚左臂</DisplayName>
+			<Ling>35000000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Jiao</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSY">
+			<Local>Bip01 Pelvis</Local>
+			<DisplayName>金刚屁屁</DisplayName>
+			<Ling>25000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSYT">
+			<Local>Bip01 R Thigh</Local>
+			<DisplayName>金刚右腿</DisplayName>
+			<Ling>25000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		<li Name="SSZT">
+			<Local>Bip01 L Thigh</Local>
+			<DisplayName>金刚左腿</DisplayName>
+			<Ling>25000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="_Stage" Min="0" Max="0"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_Zhua</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>1</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Meat</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+				<li>
+					<ThingDef>Item_BossLong_Lin</ThingDef>
+					<Count>2</Count>
+					<Rate>0.5</Rate>
+				</li>
+			</DropItems>
+		</li>
+		
+		<li Name="SH">
+			<Local>Bip01 Head</Local>
+			<DisplayName>金刚之心</DisplayName>
+			<Ling>300000</Ling>
+			<Modifier>Boss_MS_Part</Modifier>
+			<FightModifier>Boss_MSPartFight</FightModifier>
+			<Condtions>
+				<li Name="LongNuCount" Min="3" Max="99999"/>
+			</Condtions>
+			<DropItems>
+				<li>
+					<ThingDef>Item_BossLong_NiLin</ThingDef>
+					<Count>1</Count>
+					<Rate>1</Rate>
+				</li>
+			</DropItems>
+		</li>
+	</FightParts>
+	<BaseFive>
+		<li Sex="Male" 	 AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+		<li Sex="Female" AgeMin="0" 	AgeMax="9999999"	>10,10,10,10,10</li> 
+	</BaseFive>
+	<BaseP>
+		<li Name="RaceMaxAge" Value="BossMaxAge"/>
+		<li Name="RaceMoveSpeed" Value="MammalMoveSpeed_Slow"/> 
+		<li Name="RaceMaxHp" Value="MammalMaxHp"/>
+		<li Name="RaceComfyTMin" Value="BossComfyTMin"/>
+		<li Name="RaceComfyTMax" Value="BossComfyTMax"/>
+		<li Name="RaceToleranceTMin" Value="BossToleranceTMin"/>
+		<li Name="RaceToleranceTMax" Value="BossToleranceTMax"/>
+		<li Name="RaceVisionRadius" Value="MammalVisionRadius"/>
+		<li Name="RaceBaseWorkSpeed" Value="MammalBaseWorkSpeed"/>
+		<li Name="RaceRecoveryPower" Value="MammalRecoveryPower"/>
+	</BaseP>
+	<Preloading>
+		<li>Effect/gsq/Prefab/long/fx_long002_potu01 -</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_shuilei_02</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_nuhou biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_zhenshui01</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_longxishu  biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_nuhou biped Head</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_tianyao_02</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_tianyao_01</li>
+		<li>Effect/gsq/Prefab/long/fx_long002_zeguo_xuli</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLbody</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan02   biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou yan01   biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLlongtou  biped Head</li>
+		<li>Effect/gsq/Prefab/long/zhenlong/fx_long002_ZLeyes biped Head</li>
+	</Preloading>
+</RaceDef>
+
+</List></RaceDefs>

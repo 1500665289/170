@@ -1,0 +1,123 @@
+<Magics><List>
+	
+	<Magic Name="XT_QLARGD" Type="Class">
+		<DisplayName>山中财宝</DisplayName>
+		<Desc>每次使用随机获得一个物品，数量为1-10</Desc>
+		<Icon>Spr\Object\JNTB\SZCB.png</Icon>
+		<Kind>None</Kind>
+		<Param1>1</Param1>
+		<Penalty>5</Penalty>
+		<ScoreBase>-10</ScoreBase>
+		<ScoreBad>15</ScoreBad>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>SZCB</ClassName>
+		
+	</Magic>
+	
+	<Magic Name="XT_XXGXT1" Type="Class">
+		<DisplayName>血宴</DisplayName>
+		<Desc>吸食一名濒死的修士，可获得其灵力上限百分五十的灵力恢复，以及100寿元</Desc>
+		<Icon>Spr\Object\JNTB\XY.png</Icon>
+		<Kind>None</Kind>
+		<Param1>15</Param1><!--消耗时间-->
+		<SelectMode>Single</SelectMode>
+		<SelectTarget>Npc</SelectTarget>
+		<Ani>chuangong1</Ani>
+		<ClassName>XT_XXGXT1</ClassName>
+		
+	</Magic>
+	<Magic Name="XT_DTSXT" Type="Class">
+		<DisplayName>原闇★荒戟</DisplayName>
+		<Desc>召唤原闇★荒戟。</Desc>
+		<Icon>Spr\Object\WQ\YAHJ.png</Icon>
+		<Kind>None</Kind>
+		<Param1>1</Param1>
+		<Penalty>5</Penalty>
+		<ScoreBase>-10</ScoreBase>
+		<ScoreBad>15</ScoreBad>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>XT_DTSXT</ClassName>
+	</Magic>
+	
+	<Magic Name="XT_STSXT1" Type="Class">
+		<DisplayName>天降神灵</DisplayName>
+		<Desc>每次使用消耗100寿元，减低10点神性，获得圣心buff</Desc>
+		<Icon>Spr\Object\JNTB\TJSL.png</Icon>
+		<Kind>None</Kind>
+		<Param1>1</Param1>
+		<Penalty>5</Penalty>
+		<ScoreBase>-10</ScoreBase>
+		<ScoreBad>15</ScoreBad>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>XT_STSXT1</ClassName>
+	</Magic>
+	
+	<Magic Name="XT_LYJLXT2" Type="Class">
+		<DisplayName>山火异界</DisplayName>
+		<Desc>每次使用随机获得一个秘宝</Desc>
+		<Icon>Spr\Object\JNTB\LYJL.png</Icon>
+		<Kind>None</Kind>
+		<Param1>1</Param1>
+		<Penalty>5</Penalty>
+		<ScoreBase>-10</ScoreBase>
+		<ScoreBad>15</ScoreBad>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>LYJLXT2</ClassName>
+		
+	</Magic>
+	<Magic Name="XT_JLXT1" Type="Class">
+		<DisplayName>无双</DisplayName>
+		<Desc>获得一层buff，无双：持续30s。对灵力值，或真气值小于自己的地方单位造成额外伤害。每次使用消耗60寿元</Desc>
+		<Icon>Spr\Object\JNTB\WS.png</Icon>
+		<Kind>None</Kind>
+		<Param1>3</Param1>
+		<Penalty>10</Penalty>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>JLXT1</ClassName>
+		
+	</Magic>
+	<Magic Name="XT_JLXT2" Type="Class">
+		<DisplayName>唤祖</DisplayName>
+		<Desc>获得一层buff，无双：对灵力值，或真气值小于自己的敌方单位造成额外伤害。每次使用消耗200寿元</Desc>
+		<Icon>Spr\Object\JNTB\HZ.png</Icon>
+		<Kind>None</Kind>
+		<Param1>25</Param1>
+		<Penalty>-5</Penalty>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>JLXT2</ClassName>
+		
+	</Magic>
+	
+	<Magic Name="XT_YYXT1" Type="Class">
+		<DisplayName>夜渊召唤</DisplayName>
+		<Desc>召唤小蝙蝠，每次使用消耗200寿元</Desc>
+		<Icon>Spr\Object\WQ\YYXT1.png</Icon>
+		<Kind>None</Kind>
+		<Param1>1</Param1>
+		<Penalty>5</Penalty>
+		<ScoreBase>-10</ScoreBase>
+		<ScoreBad>15</ScoreBad>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>XT_YYXT1</ClassName>
+	</Magic>
+	<Magic Name="XT_YYXT2" Type="Class">
+		<DisplayName>夜渊融合</DisplayName>
+		<Desc>将五种不同的小蝙蝠融合起来。每次使用消耗500寿元</Desc>
+		<Icon>Spr\Object\WQ\YYXT2.png</Icon>
+		<Kind>None</Kind>
+		<Param1>1</Param1>
+		<Penalty>5</Penalty>
+		<ScoreBase>-10</ScoreBase>
+		<ScoreBad>15</ScoreBad>
+		<SelectTarget>InLight</SelectTarget>
+		<SelectMode>None</SelectMode>
+		<ClassName>XT_YYXT2</ClassName>
+	</Magic>
+</List></Magics>

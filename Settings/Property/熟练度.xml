@@ -1,0 +1,158 @@
+<Properties><List>	
+<Property Name="SLD_JJL">
+	<DisplayName>机甲熟练度</DisplayName>
+	<Desc>机甲熟练度，驾驶机甲战斗中获得熟练度，150/300/600/800分别解锁维修间的能源补充，四肢修复，能量盾充能，能核修复功能。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue> 
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>600</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_DJ">
+	<DisplayName>大剑类武器熟练度</DisplayName>
+	<Desc>大剑类武器熟练度，升级到100可解锁，战技：蓄力斩伤害乘战斗等级*100*1.5</Desc>
+	<DisplayValue>{0:N2}</DisplayValue> 
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_CQ">
+	<DisplayName>长枪类武器熟练度</DisplayName>
+	<Desc>长枪类武器熟练度，升级到百级可解锁，战技：穿肠，百分20概率击穿敌人心脏</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_G">
+	<DisplayName>弓类武器熟练度</DisplayName>
+	<Desc>弓类武器熟练度，升级到百级可解锁，战技：响灵箭，每次使用扣除对手灵力上限5w或真气上限1w</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_F">
+	<DisplayName>斧类武器熟练度</DisplayName>
+	<Desc>斧类武器熟练度，升级到百级可解锁，战技：奋力一斩，对至多三个随机敌人造成高额伤害</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_J">
+	<DisplayName>剑类武器熟练度</DisplayName>
+	<Desc>剑类武器熟练度，升级到百级可解锁，战技：万剑归一，极强单体伤害技能</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_FZ">
+	<DisplayName>法杖类武器熟练度</DisplayName>
+	<Desc>法杖类武器熟练度，升级到百级可解锁，战技：域灭，对群体敌人造成高额伤害，并沉默30s。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_C">
+	<DisplayName>錘类武器熟练度</DisplayName>
+	<Desc>錘类武器熟练度，升级到百级可解锁，战技：地动星沉（被动技能），单体造成1w点雷电伤害。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_D">
+	<DisplayName>刀类武器熟练度</DisplayName>
+	<Desc>刀类武器熟练度，升级到百级可解锁，战技：割裂，每次造成伤害使对手获得一层标记，当标记到9999时直接抹杀对手。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_BS">
+	<DisplayName>匕首类武器熟练度</DisplayName>
+	<Desc>匕首类武器熟练度，升级到百级可解锁，战技：暗刺，每次攻击对随机部位造成0.5-1的穿透伤害。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_JJ">
+	<DisplayName>巨型武器类武器熟练度</DisplayName>
+	<Desc>巨型武器类武器熟练度，升级到百级可解锁，战技：横戟，每次攻击获得全地图友方单位数量系数灵力或真气上限加成持续10s，停止战斗后效果消失。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+<Property Name="SLD_P">
+	<DisplayName>战刃类武器熟练度</DisplayName>
+	<Desc>战刃类武器熟练度，升级到百级可解锁，战技：轮转，进入战斗状态获得对手相应功法的加成。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+<Property Name="SLD_L">
+	<DisplayName>拳套类武器熟练度</DisplayName>
+	<Desc>拳套类武器熟练度，升级到百级可解锁，战技：神轮，每攻击对同属性功法敌方单位造成额外神圣伤害，异属性按五行增强与减弱，同时对体修造成额外真气损耗。</Desc>
+	<DisplayValue>{0:N2}</DisplayValue>
+
+	<FunctionKind>基础属性</FunctionKind>
+	<ShowInUI>1</ShowInUI>	
+	<SupportCustom>1</SupportCustom>
+	<BaseValue>0</BaseValue>
+	<MaxValue>10000</MaxValue>
+	<MinValue>0</MinValue> 
+</Property>
+
+</List></Properties>

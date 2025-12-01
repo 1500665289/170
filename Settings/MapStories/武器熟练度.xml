@@ -1,0 +1,899 @@
+<Stories><List>
+	<Story Name="WX_SLDP"  Parent="BaseFillingStory">
+		<DisplayName>战刃类熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高战刃类熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高获得的加成上限层数。</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDP2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+					World:SetFlag(55555561,1)					
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>圣者之心：当自身灵力或真气为零时，可获得180s无敌状态buff</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDP2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>秘体：轮回眼（体修适用）</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDP2X3",1,false,1,false,-1)
+					me:UnLockSuperPart("WX_SLDP2X3")
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDP2"  Parent="BaseFillingStory">
+		<DisplayName>战刃类熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高战刃类熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高同时给予敌人负面加成。</Display>
+				<DisplayCondition> World:GetFlag(55555561) == 1 </DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDP3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>五行淬炼：根据自身功法加成法宝属性（仅限仙修有效）。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDP3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>圣性：自身神性越高，则获得护盾值提高越高。（仅限神修有效）</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDP3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+	<Story Name="WX_SLDJJ"  Parent="BaseFillingStory">
+		<DisplayName>巨型武器熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高巨型武器熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高巨食效果，同时获得战斗等级与御器等级上限提高每层1级。</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJJ2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+					World:SetFlag(55555560,1)					
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>横扫：习得群体伤害技能：对敌方单位造成随机debuff。沉默、缴械、眩晕、威力降低。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJJ2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>巨大化：体型变大，同时获得伤害减免，灵力伤害减免40%，部位伤害减免40%</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJJ2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDJJ2"  Parent="BaseFillingStory">
+		<DisplayName>巨型武器熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高巨型武器熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高横戟效果，战斗中不断瓦解对手的护盾值。</Display>
+				<DisplayCondition> World:GetFlag(55555560) == 1 </DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJJ3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>天地崩碎：以命抵命。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJJ3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>天下无双：降低其他技能等级上限，体修获得战斗等级上限9999提高，仙修获得御器战斗等级9999提高。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJJ3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+
+	<Story Name="WX_SLDL"  Parent="BaseFillingStory">
+		<DisplayName>拳套、环熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高拳套、环熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高神轮的伤害加成。乘上雅艺等级。</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDL2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+					World:SetFlag(55555559,1)					
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>圣职之拳，每次攻击使全体友方获得一层恢复增强的buff，持续10s可叠加。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDL2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>信仰振幅：（仅限神修）每次攻击时直接恢复全体友方灵力值/真气值，数值为神民数量*处世等级。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDL2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDL2"  Parent="BaseFillingStory">
+		<DisplayName>拳套、环熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高拳套、环熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高神轮基础伤害。</Display>
+				<DisplayCondition> World:GetFlag(55555559) == 1 </DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDL3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>天陨：牺牲自我，赋予全队一天的无敌时间。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDL3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>身守：受到超过10w的灵力攻击伤害时全队获得护盾值加成持续10s。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDL3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+
+	<Story Name="WX_SLDBS"  Parent="BaseFillingStory">
+		<DisplayName>匕首熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高匕首熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高暗刺造成部位伤害时的上限。</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDBS2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));
+					World:SetFlag(55555558,1)						
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>背刺：对敌方造成敌方当前灵力值/真气值百分10的额外伤害。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDBS2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>暗杀：对单独的目标造成5倍伤害，单独目标（单位范围10格内没有其他敌方单位时算作单独）</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDBS2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDBS2"  Parent="BaseFillingStory">
+		<DisplayName>匕首熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高匕首熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高暗刺对核心部位造成伤害的概率。</Display>
+				<DisplayCondition> World:GetFlag(55555558) == 1 </DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDBS3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>嗜血，战斗中可恢复该次伤害百分15的灵力值/真气值。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDBS3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>惑幻，神通技能，迷惑一个敌人30s，使其加入己方。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDBS3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	
+	<Story Name="WX_SLDD"  Parent="BaseFillingStory">
+		<DisplayName>刀熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高刀熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高每次割裂造成的层数，每次造成3层的加成</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDD2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));
+					World:SetFlag(55555557,1)
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>刀刀烈火：每次攻击附带火属性额外伤害，伤害系数为术法等级/雅艺等级*500，持续10s</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDD2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>护盾等级上限提高15</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDD2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDD2"  Parent="BaseFillingStory">
+		<DisplayName>刀熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高刀熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高每次割裂造成的层数，每次造成6层的加成。</Display>
+				<DisplayCondition> World:GetFlag(55555557) == 1 </DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDD3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>霸气：将自身灵力/真气化为霸气，每50层霸气提供战斗、术法、御器、结阵等级上限提升五级</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDD3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>空灵斩：无视境界，一刀斩空对手灵力或真气值。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDD3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	
+	<Story Name="WX_SLDC"  Parent="BaseFillingStory">
+		<DisplayName>锤熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高锤熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高地动星沉伤害，提高伤害至10w。</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDC2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+					World:SetFlag(55555556,1)					
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>震爆，每次攻击受战斗等级影响，战斗等级/500的概率造成一次眩晕昏迷伤害</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDC2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>奔雷之体：使自身免疫金属性伤害</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDC2X3",1,false,1,false,-1)
+					me:UnLockSuperPart("WX_SLDC3X3")
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDC2"  Parent="BaseFillingStory">
+		<DisplayName>锤熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高锤熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高地动星沉伤害，提高伤害至100w</Display>
+				<DisplayCondition>World:GetFlag(55555556) == 1</DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDC3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>神兵之锤：每次攻击引动敌方雷劫降临时间。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDC3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>信仰一击：神修限定，攻击加成神民数*战斗等级系数的额外加成。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDC3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	
+	<Story Name="WX_SLDFZ"  Parent="BaseFillingStory">
+		<DisplayName>法杖熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高法杖熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高域灭效果，对群体敌人造成高额伤害，并沉默，缴械（对体修）30s。</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDFZ2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));
+					World:SetFlag(55555555,1)					
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>奥术天球：围绕修行者形成一个法术天球，检测到周遭敌人会自动进行攻击，伤害为灵力上限/真气上限*0.00005/*0.0005*术法等级/格物等级，消耗为1w/1000</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDFZ2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>气海波涛：提高气海等级上限15级</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDFZ2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDFZ2"  Parent="BaseFillingStory">
+		<DisplayName>法杖熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高法杖熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高域灭效果，对群体敌人造成高额伤害，并沉默，缴械（对体修与仙修）若自身术法等级超出对手20倍造成10s眩晕，30s。</Display>
+				<DisplayCondition>World:GetFlag(55555555) == 1</DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDFZ3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>奥术至尊，百分30概率将高于10w的灵力伤害，暴击提高百分800。（只提高仙修造成的灵力伤害）</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDFZ3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>虚灵咒术，使敌人法宝失效，体修无法攻击，持续20s，同时受到灵力伤害提高20倍。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDFZ3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+	<Story Name="WX_SLDJ"  Parent="BaseFillingStory">
+		<DisplayName>剑熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高剑熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高万剑归一伤害，造成额外心境系数*1w伤害加成</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJ2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+					World:SetFlag(55555554,1)
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>提高御器技能等级上限15</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJ2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>剑甲：每次受到超过5w的灵力伤害时，百分50概率免疫该次伤害</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJ2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDJ2"  Parent="BaseFillingStory">
+		<DisplayName>剑熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高剑熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高万剑归一伤害，自身心境高于对方心境上限值8倍时，造成5s昏迷效果。</Display>
+				<DisplayCondition>World:GetFlag(55555554) == 1</DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJ3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>万剑窟，每次点击可在其中随机获取一把圣级剑（适用法宝）。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJ3X2",1,false,1,false,-1)
+					me:DropAwardItem("Item_XiangHuo2",1);
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>逸剑术，战斗中不断获得闪避能力提高，达到峰值时，获得一段时间无敌的buff，并清空闪避能力的提高。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDJ3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+	
+	<Story Name="WX_SLDF"  Parent="BaseFillingStory">
+		<DisplayName>斧熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高斧熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高奋力一斩，附带额外debuff，使敌人每次受到额外的神圣伤害（固定值仙修20000，体修1000，持续30s）。</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDF2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+					World:SetFlag(55555553,1)
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>杀戮之心：健康值越低造成伤害越高最高可达10倍，并获得大量恢复能力提升</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDF2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>秘体：狂战之躯（体修适用）</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDF2X3",1,false,1,false,-1)
+					me:UnLockSuperPart("WX_SLDF2X3")
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDF2"  Parent="BaseFillingStory">
+		<DisplayName>斧熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高斧熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高奋力一斩，附带额外debuff，使敌人每次受到所有伤害系数百分三百。</Display>
+				<DisplayCondition>World:GetFlag(55555553) == 1</DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDF3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>杀神：每杀一人获得一层buff加成，体修获得战斗等级提升，仙修获得御器等级提升。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDF3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>双刃斧：自身造成伤害3倍系数加成，受到伤害3倍系数加成。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDF3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+	<Story Name="WX_SLDG"  Parent="BaseFillingStory">
+		<DisplayName>弓熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高弓熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高响灵箭每次削减的上限10w，2w</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDG2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+					World:SetFlag(55555552,1)
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>风行：获得一段时间百分百闪避</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDG2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>破甲箭，每次攻击减少敌方的护盾值和强度 3 2</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDG2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDG2"  Parent="BaseFillingStory">
+		<DisplayName>弓熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高弓熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高响灵箭每次削减的上限40w，5w</Display>
+				<DisplayCondition>World:GetFlag(55555552) == 1</DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDG3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>新技能集中火力，对一个敌方进行标记，短时间内造成巨量伤害</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDG3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>心眼，每次攻击百分20概率造成百分600暴击。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDG3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+	<Story Name="WX_SLDCQ"  Parent="BaseFillingStory">
+		<DisplayName>长枪熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高长枪熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高穿肠概率至40</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDQ2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+					World:SetFlag(55555551,1)
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>一身胆气：受到穿透伤害时，减轻百分50伤害并可转移至五脏</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDQ2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>解锁新天赋，枪出如龙：提高战斗等级上限10</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDQ2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDCQ2"  Parent="BaseFillingStory">
+		<DisplayName>长枪熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高长枪熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高穿肠概率至70</Display>
+				<DisplayCondition>World:GetFlag(55555551) == 1</DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDQ3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>新技能流光，仙修适用。销毁第一个法宝，造成其法宝威力数值*3000的真实伤害，该伤害不至死</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDQ3X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>获得一枚灵契。</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDQ3X3",1,false,1,false,-1)
+					world:GetSelectThing().LuaHelper:DropAwardItem("WXWFT_LQ1",1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	
+	<Story Name="WX_SLDDJ"  Parent="BaseFillingStory">
+		<DisplayName>大剑熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高大剑熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高蓄力斩伤害系数至3</Display>
+				<DisplayCondition></DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDDJ2X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+					World:SetFlag(55555550,1)
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>提高护盾等级上限10级</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDDJ2X2",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>解锁新天赋，剑连剑：每次造成伤害时，百分30概率额外造成连击</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDDJ2X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+	<Story Name="WX_SLDDJ2"  Parent="BaseFillingStory">
+		<DisplayName>大剑熟练度天赋树</DisplayName>
+		<Desc>[NAME]获得一次提高大剑熟练度天赋树的机会。</Desc>
+		<Selections>
+			<li>
+				<Display>提高蓄力斩伤害系数至9</Display>
+				<DisplayCondition>World:GetFlag(55555550) == 1</DisplayCondition>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDDJ3X",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));		
+				]]>
+				</OKResult>
+
+			</li>
+			<li>
+				<Display>秘体：剑骨（体修才能有效）</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDDJ3X2",1,false,1,false,-1)
+					me:UnLockSuperPart("WX_SLDDJ3X2")
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			<li>
+				<Display>解锁新技能：万山裂（高威力单体伤害技能）</Display>
+				<OKResult>	
+				<![CDATA[
+					me.npcObj.PropertyMgr:AddModifier("WX_SLDDJ3X3",1,false,1,false,-1)
+					me:AddMsg(XT("成功提升了。"));	
+				]]>
+				</OKResult>
+			</li>
+			
+		</Selections>
+	</Story>
+
+</List></Stories>

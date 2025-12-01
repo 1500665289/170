@@ -1,0 +1,142 @@
+<ModifierDefs><List>
+	<Modifier Name="WXQX_NJD" Type="Normal">
+		<DisplayName>枪械耐久值</DisplayName>
+		<Desc>耐久度为1时，武器损坏</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WXQX_YM45" Type="Normal">
+		<DisplayName>YM-45</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXQX_YM45</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_BP25" Type="Normal">
+		<DisplayName>BP-25</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXQX_BP25</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_GT2" Type="Normal">
+		<DisplayName>GT-2</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXQX_GT2</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_KL00" Type="Normal">
+		<DisplayName>KL-00</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXQX_KL00</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_AG25" Type="Normal">
+		<DisplayName>AG-25</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXQX_AG25</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_P92" Type="Normal">
+		<DisplayName>P92</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WXQX_P92</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_AG28" Type="Normal">
+		<DisplayName>AG-28</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+			<LuaClassName>WXQX_AG28</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_P90" Type="Normal">
+		<DisplayName>P90</DisplayName>
+		<Desc></Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WXQX_P90</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_PJHD" Type="Normal">
+		<DisplayName>红点瞄准镜</DisplayName>
+		<Desc>提高精准度</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WXQX_PJSB" Type="Normal">
+		<DisplayName>四倍瞄准镜</DisplayName>
+		<Desc>提高精准度</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WXQX_TYDJ_1" Type="Normal">
+		<DisplayName>高精度子弹弹夹</DisplayName>
+		<Desc>30发子弹</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WXQX_TYDJ</LuaClassName>
+	</Modifier>
+	<Modifier Name="WXQX_TYDJ" Type="Normal">
+		<DisplayName>通用弹夹</DisplayName>
+		<Desc>30发子弹</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>WXQX_TYDJ</LuaClassName>
+	</Modifier>
+	<Modifier Name="QX_ZDS" Type="Normal">
+		<DisplayName>子弹数量</DisplayName>
+		<Desc>子弹计数</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>60000</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WXQX_ZD" Type="Normal">
+		<DisplayName>无限子弹</DisplayName>
+		<Desc>无限的子弹</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_GJJC" Type="Normal">
+		<DisplayName>攻击计次</DisplayName>
+		<Desc>攻击次数计数。</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	
+	
+</List></ModifierDefs>

@@ -1,0 +1,58 @@
+<DamageDefs><List>
+
+	<Damage Name="CQSH">
+		<DisplayName>贯穿</DisplayName>                                      <!--血肉，内脏-->
+		        <!--伤害类别-->
+		<TreatConstant>1</TreatConstant>  <!-- 是否可以自愈-->
+		<ValueMin>0.2</ValueMin>    <!-- 最低损伤器官百分比-->
+		<ValueMax>1</ValueMax>       <!--最高损伤器官百分比-->
+		<Pain>0.2</Pain>               <!--疼痛程度-->
+		<Trend>1</Trend>			<!--恶化速度-->
+		<Previous></Previous>      <!--治疗后转变的伤势-->
+		<Next></Next>              <!--恶化后转变的伤势-->
+	</Damage>
+	<Damage Name="BSD">
+		<DisplayName>暗刺</DisplayName>                                      <!--血肉，内脏-->
+		<Lable>Jin</Lable>            <!--伤害类别-->
+		<TreatConstant>1</TreatConstant>  <!-- 是否可以自愈-->
+		<ValueMin>0.5</ValueMin>    <!-- 最低损伤器官百分比-->
+		<ValueMax>1</ValueMax>       <!--最高损伤器官百分比-->
+		<Pain>0.1</Pain>               <!--疼痛程度-->
+		<Trend>1</Trend>			<!--恶化速度-->
+		<Previous></Previous>      <!--治疗后转变的伤势-->
+		<Next></Next>              <!--恶化后转变的伤势-->
+	</Damage>
+	<Damage Name="HXB">
+		<DisplayName>恒星爆</DisplayName>                                      <!--血肉，内脏-->
+		<Lable>None</Lable>            <!--伤害类别-->
+		<TreatConstant>1</TreatConstant>  <!-- 是否可以自愈-->
+		<ValueMin>1</ValueMin>    <!-- 最低损伤器官百分比-->
+		<ValueMax>1</ValueMax>       <!--最高损伤器官百分比-->
+		<Pain>0.5</Pain>               <!--疼痛程度-->
+		<Trend>1</Trend>			<!--恶化速度-->
+		<Previous></Previous>      <!--治疗后转变的伤势-->
+		<Next></Next>              <!--恶化后转变的伤势-->
+	</Damage>
+	<Damage Name="BT">
+		<DisplayName>爆头</DisplayName>                                      <!--血肉，内脏-->
+		<Lable>None</Lable>            <!--伤害类别-->
+		<TreatConstant>1</TreatConstant>  <!-- 是否可以自愈-->
+		<ValueMin>1</ValueMin>    <!-- 最低损伤器官百分比-->
+		<ValueMax>1</ValueMax>       <!--最高损伤器官百分比-->
+		<Pain>1</Pain>               <!--疼痛程度-->
+		<Trend>1</Trend>			<!--恶化速度-->
+		<Previous></Previous>      <!--治疗后转变的伤势-->
+		<Next></Next>              <!--恶化后转变的伤势-->
+	</Damage>
+	<Damage Name="JJSH">
+		<DisplayName>机甲伤害</DisplayName>                                      <!--血肉，内脏-->
+		<Lable>None</Lable>            <!--伤害类别-->
+		<TreatConstant>1</TreatConstant>  <!-- 是否可以自愈-->
+		<ValueMin>0</ValueMin>    <!-- 最低损伤器官百分比-->
+		<ValueMax>1</ValueMax>       <!--最高损伤器官百分比-->
+		<Pain>0.5</Pain>               <!--疼痛程度-->
+		<Trend>1</Trend>			<!--恶化速度-->
+		<Previous></Previous>      <!--治疗后转变的伤势-->
+		<Next></Next>              <!--恶化后转变的伤势-->
+	</Damage>
+</List></DamageDefs>

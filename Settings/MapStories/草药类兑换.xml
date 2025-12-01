@@ -1,0 +1,1071 @@
+<Stories><List>
+	<Story Name="WX_CYL" Parent="BaseFillingStory">
+		<DisplayName>碧野药园（一阶）</DisplayName>
+		<Desc>[img]Spr/Building/ZSKJ/BYYY.png[/img]</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>无属性草药</Display>
+				<OKResult>
+				me:TriggerStory("CYL_W");
+				</OKResult>
+			</li>
+			<li>
+				<Display>金属性草药</Display>
+				<OKResult>
+				me:TriggerStory("CYL_J");
+				</OKResult>
+			</li>
+			<li>
+				<Display>木属性草药</Display>
+				<OKResult>
+				me:TriggerStory("CYL_M");
+				</OKResult>
+			</li>
+			<li>
+				<Display>水属性草药</Display>
+				<OKResult>
+				me:TriggerStory("CYL_S");
+				</OKResult>
+			</li>
+			<li>
+				<Display>火属性草药</Display>
+				<OKResult>
+				me:TriggerStory("CYL_H");
+				</OKResult>
+			</li>
+			<li>
+				<Display>土属性草药</Display>
+				<OKResult>
+				me:TriggerStory("CYL_T");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="CYL_W" Parent="BaseFillingStory">
+		<DisplayName>无属性草药兑换</DisplayName>
+		<Desc>草药类兑换价格不一定</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>闇莲</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_AL",SJ2);
+							else
+							me:DropAwardItem("Item_AL",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>阴阳草</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_YYC",SJ2);
+							else
+							me:DropAwardItem("Item_YYC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>三阳春</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_SYC",SJ2);
+							else
+							me:DropAwardItem("Item_SYC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>境明叶</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_JMY",SJ2);
+							else
+							me:DropAwardItem("Item_JMY",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>双明果</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_SMG",SJ2);
+							else
+							me:DropAwardItem("Item_SMG",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他属性草药</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_CYL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CYL_J" Parent="BaseFillingStory">
+		<DisplayName>金属性草药兑换</DisplayName>
+		<Desc>草药类兑换价格不一定</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>剑簇</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_JC",SJ2);
+							else
+							me:DropAwardItem("Item_JC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>铁树枝干</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_TSZG",SJ2);
+							else
+							me:DropAwardItem("Item_TSZG",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>笪簇草</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_DCC",SJ2);
+							else
+							me:DropAwardItem("Item_DCC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>三戾笋</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_SLS",SJ2);
+							else
+							me:DropAwardItem("Item_SLS",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>死劫根</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_SJG",SJ2);
+							else
+							me:DropAwardItem("Item_SJG",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他属性草药</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_CYL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CYL_M" Parent="BaseFillingStory">
+		<DisplayName>木属性草药兑换</DisplayName>
+		<Desc>草药类兑换价格不一定</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>诡节竹</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_GJZ",SJ2);
+							else
+							me:DropAwardItem("Item_GJZ",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>紫薇星</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_ZWX",SJ2);
+							else
+							me:DropAwardItem("Item_ZWX",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>神血木</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_SXM",SJ2);
+							else
+							me:DropAwardItem("Item_SXM",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>厚源草</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_HYC",SJ2);
+							else
+							me:DropAwardItem("Item_HYC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>九叶</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_JY",SJ2);
+							else
+							me:DropAwardItem("Item_JY",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他属性草药</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_CYL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+		<Story Name="CYL_S" Parent="BaseFillingStory">
+		<DisplayName>水属性草药兑换</DisplayName>
+		<Desc>草药类兑换价格不一定</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>阴瞑叶</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_YMY",SJ2);
+							else
+							me:DropAwardItem("Item_YMY",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>净魂枝</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_JHZ",SJ2);
+							else
+							me:DropAwardItem("Item_JHZ",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>蓝焰草</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_LYC",SJ2);
+							else
+							me:DropAwardItem("Item_LYC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>六叶白须</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_LYBX",SJ2);
+							else
+							me:DropAwardItem("Item_LYBX",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>麟寒叶</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_LHY",SJ2);
+							else
+							me:DropAwardItem("Item_LHY",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他属性草药</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_CYL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CYL_H" Parent="BaseFillingStory">
+		<DisplayName>火属性草药兑换</DisplayName>
+		<Desc>草药类兑换价格不一定</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>混元叶</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_HYY",SJ2);
+							else
+							me:DropAwardItem("Item_HYY",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>赤莲</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_CL",SJ2);
+							else
+							me:DropAwardItem("Item_CL",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>焚仙草</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_FXC",SJ2);
+							else
+							me:DropAwardItem("Item_FXC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>薪叶草</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_XYC",SJ2);
+							else
+							me:DropAwardItem("Item_XYC",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>凤曦叶</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_FXY",SJ2);
+							else
+							me:DropAwardItem("Item_FXY",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他属性草药</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_CYL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="CYL_T" Parent="BaseFillingStory">
+		<DisplayName>土属性草药兑换</DisplayName>
+		<Desc>草药类兑换价格不一定</Desc>
+		<Kind>None</Kind>
+		<Selections>
+			<li>
+				<Display>老须</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_LX",SJ2);
+							else
+							me:DropAwardItem("Item_LX",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>幽参</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_YS",SJ2);
+							else
+							me:DropAwardItem("Item_YS",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>幻菇</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_HG",SJ2);
+							else
+							me:DropAwardItem("Item_HG",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>紫绒花</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_ZRH",SJ2);
+							else
+							me:DropAwardItem("Item_ZRH",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>长白参</Display>
+				<OKResult>
+				<![CDATA[	
+
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						local JQD = world:GetWorldFlag(4444)
+						local JQC = world:GetWorldFlag(4445)
+						local JQB = world:GetWorldFlag(4446)
+						local JQA = world:GetWorldFlag(4447)
+						local JQS = world:GetWorldFlag(4448)
+						local SJ = me:RandomInt(100,2000)
+						local SJ1 = me:RandomInt(15,100)
+						local SJ1 = me:RandomInt(5,15)
+						if JF >= SJ then
+							if SJ >= 1000 then
+							me:DropAwardItem("Item_CBS",SJ2);
+							else
+							me:DropAwardItem("Item_CBS",SJ1);
+							end
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",SJ)
+							me:AddMsg(XT("[NAME]消耗积分"..SJ.."，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg(XT("受天地元气影响，结出的草药不多，本次需要"..SJ.."积分，积分不足。"));
+						end
+
+				]]>		
+				</OKResult>
+			</li>
+			<li>
+				<Display>看看其他属性草药</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_CYL");
+				</OKResult>
+			</li>
+			<li>
+				<Display>算了，我就看看</Display>
+				<OKResult>
+				me:AddMsg(XT("[NAME]打算回头看看。"))
+				me:TriggerStory("WX_ZSKJ");
+				</OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></Stories>

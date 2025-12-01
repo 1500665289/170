@@ -1,0 +1,333 @@
+<Places><List>
+	
+
+	<Place Name="WXP_DD1" Parent="Place_Level1Base">
+		<Location X="1160" Y="780"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\SHWJ.png</Icon>
+		<DisplayName>任务接取点</DisplayName>
+		<Desc>[color=#F5FF3E]所有的任务都在这里接[/color]</Desc>
+		
+	</Place>
+	
+	<Place Name="WXP_XMP1" Parent="Place_Level1Base">
+		<Location X="966" Y="370"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P1.png</Icon>
+		<DisplayName>星象峰</DisplayName>
+		<Desc>[color=#F5FF3E]掌门：天星上人[/color]，曾于六百年前飞升仙界，也是盛极一时的门派。后因门后出了一名叛徒，近百年来一蹶不振，从一流门派变作了遗留门派。该门派善观星象，以引[color=#F2FF9F]星斗玄力[/color]淬炼己身，但较难修炼对于资质要求较高,[color=#BC1717]臣服[/color]解锁：[color=#666699]星象-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_StarEssence</ThingDef>
+				<Count>5</Count>
+				<Rate>0.5</Rate>
+			</li>
+			<li>
+				<ThingDef>Item_XFXS</ThingDef>
+				<Count>1</Count>
+				<Rate>0.1</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP2" Parent="Place_Level1Base">
+		<Location X="366" Y="422"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P2.png</Icon>
+		<DisplayName>烛龙渊</DisplayName>
+		<Desc>[color=#F5FF3E]掌门：白龙老道[/color]，传言上古年间烛龙渊第一任掌门，天资过人拥有常人不可及的气运，食烛龙肉，浴烛龙血，更在烛龙之躯领悟了[color=#F2FF9F]风烛一息[/color]的无上绝学，只可惜没能度过最后的心魔劫，在那一次劫难中屠戮了大半修仙界，更是将自身一手建立的烛龙渊毁于一旦，最后清醒时，天人五衰将至，掌门无奈之下封印山门五千年，五十年前方重现于世。[color=#BC1717]臣服[/color]解锁：[color=#666699]龙渊-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_BossZhuLong_FengYin</ThingDef>
+				<Count>1</Count>
+				<Rate>0.01</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP3" Parent="Place_Level1Base">
+		<Location X="1566" Y="622"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P3.png</Icon>
+		<DisplayName>四象殿</DisplayName>
+		<Desc>[color=#F5FF3E]殿主：渡罪散仙[/color]，今年来颇具名声的三线门派，掌门原是一无名之辈，曾自号天涯散人，一朝顿悟堕入心魔轮回，成就无上秘体[color=#F2FF9F]魔淬之心[/color]，后开山立派香火不断。[color=#BC1717]臣服[/color]解锁：[color=#666699]四极-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_LingCrystal</ThingDef>
+				<Count>20</Count>
+				<Rate>0.75</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP4" Parent="Place_Level1Base">
+		<Location X="1766" Y="223"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P4.png</Icon>
+		<DisplayName>魔灵堂</DisplayName>
+		<Desc>[color=#F5FF3E]堂主：玄幽尊者[/color]，千年前臭名昭著的邪派，炼尸炼魂，被其门中人盯上的哪怕是一派之主，也要胆战心惊，只因其门中的绝学[color=#F2FF9F]五华绝心咒[/color]太过诡异，施咒者失去三魂六魄，余下一魄附于中咒者身心之中，无时无刻折磨着对方，又不令其死去。但因为其门下太过嚣张跋扈，七十年前被仙界众门派合力拔除，但最终也没能斩草除根，玄幽尊者当时在围剿之下遁入虚空之中，足足50年月，不知气运还是其他，硬生生苟活了50年之久，归来后更是修为大增，似乎又是一场血雨腥风欲来。[color=#BC1717]臣服[/color]解锁：[color=#666699]阡魔-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_XieHunLu</ThingDef>
+				<Count>1</Count>
+				<Rate>0.25</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP5" Parent="Place_Level1Base">
+		<Location X="479" Y="283"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P5.png</Icon>
+		<DisplayName>大易宫</DisplayName>
+		<Desc>[color=#F5FF3E]宫主：仙台圣人[/color]，此门派有一流门派之实力，却无争此虚名之心，说是仙家门派，却更像江湖武夫，门中之人皆炼一特殊法身[color=#F2FF9F]八九天功[/color]身体强度几乎可媲美金刚之躯，但始终声明不显。[color=#BC1717]臣服[/color]解锁：[color=#666699]義易-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_DarksteelRock</ThingDef>
+				<Count>10</Count>
+				<Rate>0.55</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP6" Parent="Place_Level1Base">
+		<Location X="1273" Y="113"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P6.png</Icon>
+		<DisplayName>昇阳书院</DisplayName>
+		<Desc>[color=#F5FF3E]院长：圣墟大帝[/color]，从不参与各门各派争斗，也从不自命几流门派，立于仙界与凡界之间，更有大帝于门中坐镇，在此间可谓是地位特殊，各门派中亦有其门中弟子，遵从有教无类，各门派资质优秀的弟子皆会派进书院进修一番。若能有幸获得大帝青睐，习得其帝法[color=#F2FF9F]太衍仙经[/color]的一鳞半爪，便能在世间横着走一遭了。[color=#BC1717]臣服[/color]解锁：[color=#666699]万藏-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_XianDaoShenNian</ThingDef>
+				<Count>1</Count>
+				<Rate>0.001</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP7" Parent="Place_Level1Base">
+		<Location X="1006" Y="63"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P7.png</Icon>
+		<DisplayName>问世盟</DisplayName>
+		<Desc>[color=#F5FF3E]盟主：万里老道[/color]，十年前由万里老道带着一帮元神境界仙友共同建立的组织，以更好修炼互通有无为目的而建立的商业联盟，每个人在此都可换取自身所需，有实力者更可当其供奉长老，获得优待，盟中更收藏了不少上古年间的不世绝学，其藏书量连学院院长来访时都不得不叹一句，若无书院，此间可称仙阁。其中最为惊艳的是万年前阴阳仙人所创[color=#F2FF9F]阴阳天道法[/color]。[color=#BC1717]臣服[/color]解锁：[color=#666699]乾坤-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_God_ZhiNianJieJing</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP8" Parent="Place_Level1Base">
+		<Location X="1036" Y="923"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P8.png</Icon>
+		<DisplayName>烈光楼</DisplayName>
+		<Desc>[color=#F5FF3E]楼主：纹鼎仙尊[/color]，主修火属性功法，门派也只招收身居火灵根之人，术法之能极其强悍，门中元神可抵十数名元神的围攻，其修炼的玄法[color=#F2FF9F]火曜青天[/color]更是在世间闻名，但修炼其功法每三十年便要经历一次玄冰之劫，度过则相安无事，但度不过的十之八九。因此该门派人数少而又少。[color=#BC1717]臣服[/color]解锁：[color=#666699]焚宇-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_HuoEssence</ThingDef>
+				<Count>1</Count>
+				<Rate>0.15</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP9" Parent="Place_Level1Base">
+		<Location X="236" Y="939"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P9.png</Icon>
+		<DisplayName>净羽世家</DisplayName>
+		<Desc>[color=#F5FF3E]家主：净羽山[/color]，净羽山，年幼时被仙鹤叼入一处仙府，在其中食仙丹，饮仙露，阅仙经。更是在府中获得一仙人戒指，原来戒指本是仙府主人遨游太虚之前遗留的灵戒，依靠着戒灵一步步成长至今，凭着一手[color=#F2FF9F]无量乾坤定[/color]将世家带领至极高的高度。[color=#BC1717]臣服[/color]解锁：[color=#666699]仙府-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_EarthEssence_1</ThingDef>
+				<Count>1</Count>
+				<Rate>0.15</Rate>
+			</li>
+		</Produce>
+	</Place>
+	<Place Name="WXP_XMP10" Parent="Place_Level1Base">
+		<Location X="534" Y="733"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\P10.png</Icon>
+		<DisplayName>天极神宗</DisplayName>
+		<Desc>[color=#F5FF3E]宗主：棣通上人[/color]，不知其来历，似是突然出现的一个门派，近年来又十分低调，似乎在谋划些什么，但却无人可知。[color=#BC1717]臣服[/color]解锁：[color=#666699]上殇-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_ThunderAir</ThingDef>
+				<Count>1</Count>
+				<Rate>0.05</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	
+	<Place Name="WXP_XMP11" Parent="Place_Level1Base">
+		<Location X="1666" Y="923"/>
+		<Scale>0.15</Scale>
+		<Icon>Spr\Building\XMP\ZSKJT.png</Icon>
+		<DisplayName>无界门</DisplayName>
+		<Desc>[color=#F5FF3E]门主：无[/color]，主神空间于此的人间投影，似是为了筛选合适的人选。[color=#BC1717]臣服[/color]解锁：[color=#666699]万宗-科技树。[/color]</Desc>
+			<Biome></Biome>
+			<Snow>0</Snow>
+			<Weather>DustPlace</Weather>
+			<PowerLevel>25</PowerLevel>
+		<Events><!-- 嗯-->
+			<li Name="Story" Rate="1"/>
+			<li Name="GoodFight" Rate="0.5"/>
+			<li Name="BadFight" Rate="1"/>
+			<li Name="Find" Rate="2"/>
+			<li Name="HighFind" Rate="0.5"/>
+			<li Name="Secret" Rate="2"/>
+			<li Name="Treasure" Rate="0.5"/>
+		</Events>
+		<Produce>
+			<li>
+				<ThingDef>Item_XianBone</ThingDef>
+				<Count>1</Count>
+				<Rate>0.01</Rate>
+			</li>
+		</Produce>
+	</Place>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></Places>

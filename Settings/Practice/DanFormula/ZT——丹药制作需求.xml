@@ -1,0 +1,1187 @@
+<DanFormulas><List>
+	<Dan Name="MJM">
+		<Normal>0</Normal>
+		<ItemName>MJM</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT27">
+		<Normal>0</Normal>
+		<ItemName>NP_CT27</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT26">
+		<Normal>0</Normal>
+		<ItemName>NP_CT26</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT25">
+		<Normal>0</Normal>
+		<ItemName>NP_CT25</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT24">
+		<Normal>0</Normal>
+		<ItemName>NP_CT24</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT23">
+		<Normal>0</Normal>
+		<ItemName>NP_CT23</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT22">
+		<Normal>0</Normal>
+		<ItemName>NP_CT22</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT21">
+		<Normal>0</Normal>
+		<ItemName>NP_CT21</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT20">
+		<Normal>0</Normal>
+		<ItemName>NP_CT20</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT19">
+		<Normal>0</Normal>
+		<ItemName>NP_CT19</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT18">
+		<Normal>0</Normal>
+		<ItemName>NP_CT18</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT17">
+		<Normal>0</Normal>
+		<ItemName>NP_CT17</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT16">
+		<Normal>0</Normal>
+		<ItemName>NP_CT16</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT15">
+		<Normal>0</Normal>
+		<ItemName>NP_CT15</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT14">
+		<Normal>0</Normal>
+		<ItemName>NP_CT14</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT13">
+		<Normal>0</Normal>
+		<ItemName>NP_CT13</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT12">
+		<Normal>0</Normal>
+		<ItemName>NP_CT12</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT11">
+		<Normal>0</Normal>
+		<ItemName>NP_CT11</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT10">
+		<Normal>0</Normal>
+		<ItemName>NP_CT10</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT9">
+		<Normal>0</Normal>
+		<ItemName>NP_CT9</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT8">
+		<Normal>0</Normal>
+		<ItemName>NP_CT8</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT7">
+		<Normal>0</Normal>
+		<ItemName>NP_CT7</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT6">
+		<Normal>0</Normal>
+		<ItemName>NP_CT6</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT5">
+		<Normal>0</Normal>
+		<ItemName>NP_CT5</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT4">
+		<Normal>0</Normal>
+		<ItemName>NP_CT4</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT3">
+		<Normal>0</Normal>
+		<ItemName>NP_CT3</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT2">
+		<Normal>0</Normal>
+		<ItemName>NP_CT2</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CT1">
+		<Normal>0</Normal>
+		<ItemName>NP_CT1</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP27">
+		<Normal>0</Normal>
+		<ItemName>NP_XP27</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP26">
+		<Normal>0</Normal>
+		<ItemName>NP_XP26</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP25">
+		<Normal>0</Normal>
+		<ItemName>NP_XP25</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP24">
+		<Normal>0</Normal>
+		<ItemName>NP_XP24</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP23">
+		<Normal>0</Normal>
+		<ItemName>NP_XP23</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP22">
+		<Normal>0</Normal>
+		<ItemName>NP_XP22</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP21">
+		<Normal>0</Normal>
+		<ItemName>NP_XP21</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP20">
+		<Normal>0</Normal>
+		<ItemName>NP_XP20</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP19">
+		<Normal>0</Normal>
+		<ItemName>NP_XP19</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP18">
+		<Normal>0</Normal>
+		<ItemName>NP_XP18</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP17">
+		<Normal>0</Normal>
+		<ItemName>NP_XP17</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP16">
+		<Normal>0</Normal>
+		<ItemName>NP_XP16</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP15">
+		<Normal>0</Normal>
+		<ItemName>NP_XP15</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP14">
+		<Normal>0</Normal>
+		<ItemName>NP_XP14</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP13">
+		<Normal>0</Normal>
+		<ItemName>NP_XP13</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP12">
+		<Normal>0</Normal>
+		<ItemName>NP_XP12</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP11">
+		<Normal>0</Normal>
+		<ItemName>NP_XP11</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP10">
+		<Normal>0</Normal>
+		<ItemName>NP_XP10</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP9">
+		<Normal>0</Normal>
+		<ItemName>NP_XP9</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP8">
+		<Normal>0</Normal>
+		<ItemName>NP_XP8</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP7">
+		<Normal>0</Normal>
+		<ItemName>NP_XP7</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP6">
+		<Normal>0</Normal>
+		<ItemName>NP_XP6</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP5">
+		<Normal>0</Normal>
+		<ItemName>NP_XP5</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP4">
+		<Normal>0</Normal>
+		<ItemName>NP_XP4</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP3">
+		<Normal>0</Normal>
+		<ItemName>NP_XP3</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP2">
+		<Normal>0</Normal>
+		<ItemName>NP_XP2</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XP1">
+		<Normal>0</Normal>
+		<ItemName>NP_XP1</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TJD">
+		<Normal>0</Normal>
+		<ItemName>NP_TJD</ItemName>
+		<Level>90</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_THD">
+		<Normal>0</Normal>
+		<ItemName>NP_THD</ItemName>
+		<Level>90</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_NPD">
+		<Normal>0</Normal>
+		<ItemName>NP_NPD</ItemName>
+		<Level>90</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TSD">
+		<Normal>0</Normal>
+		<ItemName>NP_TSD</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TSD1">
+		<Normal>0</Normal>
+		<ItemName>NP_TSD1</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TSD2">
+		<Normal>0</Normal>
+		<ItemName>NP_TSD2</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TSD3">
+		<Normal>0</Normal>
+		<ItemName>NP_TSD3</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TSD4">
+		<Normal>0</Normal>
+		<ItemName>NP_TSD4</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHD1">
+		<Normal>0</Normal>
+		<ItemName>NP_DHD1</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHD1J">
+		<Normal>0</Normal>
+		<ItemName>NP_DHD1J</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHD1M">
+		<Normal>0</Normal>
+		<ItemName>NP_DHD1M</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHD1S">
+		<Normal>0</Normal>
+		<ItemName>NP_DHD1S</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHD1H">
+		<Normal>0</Normal>
+		<ItemName>NP_DHD1H</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHD1T">
+		<Normal>0</Normal>
+		<ItemName>NP_DHD1T</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHD">
+		<Normal>0</Normal>
+		<ItemName>NP_DHD</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHDJ">
+		<Normal>0</Normal>
+		<ItemName>NP_DHDJ</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHDM">
+		<Normal>0</Normal>
+		<ItemName>NP_DHDM</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHDS">
+		<Normal>0</Normal>
+		<ItemName>NP_DHDS</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHDH">
+		<Normal>0</Normal>
+		<ItemName>NP_DHDH</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DHDT">
+		<Normal>0</Normal>
+		<ItemName>NP_DHDT</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TDJ">
+		<Normal>0</Normal>
+		<ItemName>NP_TDJ</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TDJ1">
+		<Normal>0</Normal>
+		<ItemName>NP_TDJ1</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TDJ2">
+		<Normal>0</Normal>
+		<ItemName>NP_TDJ2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TDJ3">
+		<Normal>0</Normal>
+		<ItemName>NP_TDJ3</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TDJ4">
+		<Normal>0</Normal>
+		<ItemName>NP_TDJ4</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TDJ5">
+		<Normal>0</Normal>
+		<ItemName>NP_TDJ5</ItemName>
+		<Level>80</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DDJ">
+		<Normal>0</Normal>
+		<ItemName>NP_DDJ</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DDJ1">
+		<Normal>0</Normal>
+		<ItemName>NP_DDJ1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD2">
+		<Normal>0</Normal>
+		<ItemName>NP_DDJ2</ItemName>
+		<Level>60</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD1">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD2">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD2</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD3">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD3</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD4">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD4</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD5">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD5</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD6">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD6</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CQD7">
+		<Normal>0</Normal>
+		<ItemName>NP_CQD7</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_FXD">
+		<Normal>0</Normal>
+		<ItemName>NP_FXD</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CHD">
+		<Normal>0</Normal>
+		<ItemName>NP_CHD</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_CHD2">
+		<Normal>0</Normal>
+		<ItemName>NP_CHD2</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_STW">
+		<Normal>0</Normal>
+		<ItemName>NP_STW</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_STW2">
+		<Normal>0</Normal>
+		<ItemName>NP_STW2</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_LLD">
+		<Normal>0</Normal>
+		<ItemName>NP_LLD</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_LLD1">
+		<Normal>0</Normal>
+		<ItemName>NP_LLD1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_LLD3">
+		<Normal>0</Normal>
+		<ItemName>NP_LLD3</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_LLD4">
+		<Normal>0</Normal>
+		<ItemName>NP_LLD4</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYDW">
+		<Normal>0</Normal>
+		<ItemName>NP_TYDW</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYDJ">
+		<Normal>0</Normal>
+		<ItemName>NP_TYDJ</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYDM">
+		<Normal>0</Normal>
+		<ItemName>NP_TYDM</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYDS">
+		<Normal>0</Normal>
+		<ItemName>NP_TYDS</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYDH">
+		<Normal>0</Normal>
+		<ItemName>NP_TYDH</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYDT">
+		<Normal>0</Normal>
+		<ItemName>NP_TYDT</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYD4">
+		<Normal>0</Normal>
+		<ItemName>NP_TYD4</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYD3">
+		<Normal>0</Normal>
+		<ItemName>NP_TYD3</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYD2">
+		<Normal>0</Normal>
+		<ItemName>NP_TYD2</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TYD">
+		<Normal>0</Normal>
+		<ItemName>NP_TYD</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD91">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD91</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD81">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD81</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD71">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD71</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD61">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD61</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD9">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD9</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD8">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD8</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD7">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD7</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD6">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD6</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD41">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD41</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD31">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD31</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD21">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD21</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD11">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD11</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD4">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD4</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD3">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD3</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD2">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD2</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_QHD1">
+		<Normal>0</Normal>
+		<ItemName>NP_QHD1</ItemName>
+		<Level>10</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_DD">
+		<Normal>0</Normal>
+		<ItemName>NP_DD</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TD">
+		<Normal>0</Normal>
+		<ItemName>NP_TD</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+		<Dan Name="NP_TXW2">
+		<Normal>0</Normal>
+		<ItemName>NP_TXW2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_TXW1">
+		<Normal>0</Normal>
+		<ItemName>NP_TXW1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>2</Count>
+	</Dan>
+	<Dan Name="NP_TXW">
+		<Normal>0</Normal>
+		<ItemName>NP_TXW</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+		<Dan Name="NP_HXW2">
+		<Normal>0</Normal>
+		<ItemName>NP_HXW2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_HXW1">
+		<Normal>0</Normal>
+		<ItemName>NP_HXW1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>2</Count>
+	</Dan>
+	<Dan Name="NP_HXW">
+		<Normal>0</Normal>
+		<ItemName>NP_HXW</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+		<Dan Name="NP_SXW2">
+		<Normal>0</Normal>
+		<ItemName>NP_SXW2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_SXW1">
+		<Normal>0</Normal>
+		<ItemName>NP_SXW1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>2</Count>
+	</Dan>
+	<Dan Name="NP_SXW">
+		<Normal>0</Normal>
+		<ItemName>NP_SXW</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+		<Dan Name="NP_MXW2">
+		<Normal>0</Normal>
+		<ItemName>NP_MXW2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_MXW1">
+		<Normal>0</Normal>
+		<ItemName>NP_MXW1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>2</Count>
+	</Dan>
+	<Dan Name="NP_MXW">
+		<Normal>0</Normal>
+		<ItemName>NP_MXW</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<Dan Name="NP_JXW2">
+		<Normal>0</Normal>
+		<ItemName>NP_JXW2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_JXW1">
+		<Normal>0</Normal>
+		<ItemName>NP_JXW1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>2</Count>
+	</Dan>
+	<Dan Name="NP_JXW">
+		<Normal>0</Normal>
+		<ItemName>NP_JXW</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<Dan Name="NP_WXW2">
+		<Normal>0</Normal>
+		<ItemName>NP_WXW2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_WXW1">
+		<Normal>0</Normal>
+		<ItemName>NP_WXW1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>2</Count>
+	</Dan>
+	<Dan Name="NP_WXW">
+		<Normal>0</Normal>
+		<ItemName>NP_WXW</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<Dan Name="NP_XWD2">
+		<Normal>0</Normal>
+		<ItemName>NP_XWD2</ItemName>
+		<Level>50</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="NP_XWD1">
+		<Normal>0</Normal>
+		<ItemName>NP_XWD1</ItemName>
+		<Level>40</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>2</Count>
+	</Dan>
+	<Dan Name="NP_XWD">
+		<Normal>0</Normal>
+		<ItemName>NP_XWD</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.1</SuccessRate>
+		<Count>4</Count>
+	</Dan>
+	<!-- ======================伏羲1分割线====================== -->
+	<Dan Name="Item_JMBSY">
+		<Normal>0</Normal>
+		<ItemName>Item_JMBSY</ItemName>
+		<Level>45</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Item_Dan_SYD">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_SYD</ItemName>
+		<Level>30</Level>
+		<SuccessRate>0.01</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Item_MY">
+		<Normal>0</Normal>
+		<ItemName>Item_MY</ItemName>
+		<Level>15</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_JQLLD">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_JQLLD</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_2</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_3</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_BCY">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_BCY</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_HYD">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_HYD</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_PTMY">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_PTMY</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.05</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	
+	<Dan Name="Item_Dan_BHW1">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_BHW1</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Item_Dan_BHW2">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_BHW2</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Item_Dan_BHW3">
+		<Normal>0</Normal>
+		<ItemName>Item_Dan_BHW3</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Dan_XZSZ">
+		<Normal>0</Normal>
+		<ItemName>Dan_XZSZ</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Dan_FZSZ">
+		<Normal>0</Normal>
+		<ItemName>Dan_FZSZ</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Dan_PZSZ">
+		<Normal>0</Normal>
+		<ItemName>Dan_PZSZ</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Dan_SZSZ">
+		<Normal>0</Normal>
+		<ItemName>Dan_SZSZ</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+	<Dan Name="Dan_GZSZ">
+		<Normal>0</Normal>
+		<ItemName>Dan_GZSZ</ItemName>
+		<Level>20</Level>
+		<SuccessRate>0.5</SuccessRate>
+		<Count>1</Count>
+	</Dan>
+</List></DanFormulas>

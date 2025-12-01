@@ -1,0 +1,1078 @@
+<Stories><List>
+	<Story Name="ZKJ0"  Parent="BaseFillingStory">
+		<DisplayName>了不起的修仙-科技树</DisplayName>
+
+		<Desc>[NAME]心念一动点开了科技树。</Desc>
+
+		<Selections>
+			<li>
+				<Display>械技之树</Display>
+				<OKResult>	
+				me:TriggerStory("ZKJ0_0");
+				me:AddMsg("在做了在做了");
+				</OKResult>
+			</li>
+			<li>
+				<Display>自动化生产</Display>
+				<OKResult>	
+				me:TriggerStory("ZKJ0_1");
+				me:AddMsg("灵石方面的自动生产科技");
+				</OKResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[
+				me:AddMsg("[NAME]关闭了科技树");
+				me:TriggerStory("WX_ZSYJY1");
+				]]>
+				</OKResult>
+			
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[
+				me:AddMsg("[NAME]关闭了科技树");
+
+				]]>
+				</OKResult>
+			
+			</li>
+			
+		</Selections>
+	</Story>
+	
+	<Story Name="ZKJ0_0"  Parent="BaseFillingStory">
+		<DisplayName>了不起的修仙-科技树</DisplayName>
+		<Desc>[NAME]打开了科技树。（外交类选项暂时没效果，下回更新）</Desc>
+		<Selections>
+			<li>
+				<Display>黄阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100001) >= 2]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJ1");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>玄阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100002) >= 3]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJ2");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>地阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100003) >= 2]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJ3");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>天阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100004) >== 1]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJ4");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>神阶科技（没做好）</Display>
+				<Condition><![CDATA[	World:GetFlag(1100005) >== 1]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJ5");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>圣阶科技（没做好）</Display>
+				<Condition><![CDATA[	World:GetFlag(1100006) >== 1]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJ6");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>仙阶科技（没做好）</Display>
+				<Condition><![CDATA[	World:GetFlag(1100007) >== 1]]></Condition>
+				<OKResult>	me:TriggerStory("ZKJ7");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="ZKJ1"  Parent="BaseFillingStory">
+		<DisplayName>主-黄阶</DisplayName>
+		<Desc>[NAME]打开了黄阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>金属提炼</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 60000]]></Condition>
+				<Tip>科技点需求:60000 解锁金属兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 60000 then
+					if World:GetFlag(100000011) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(100000011,1)
+					World:AddFlag(99999,-60000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>手枪研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 40000]]></Condition>
+				<Tip>科技点需求:40000 解锁手枪P-90兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 40000 then
+					if World:GetFlag(100000012) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					
+					else
+
+					World:SetFlag(100000012,1)
+					World:AddFlag(99999,-40000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>子弹研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 35000]]></Condition>
+				<Tip>科技点需求:35000 解锁子弹兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 35000 then
+					if World:GetFlag(100000013) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					
+					else
+
+					World:SetFlag(100000013,1)
+					World:AddFlag(99999,-35000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>弹匣应用</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 55000]]></Condition>
+				<Tip>科技点需求:35000 解锁弹匣兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 35000 then
+					if World:GetFlag(100000014) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					
+					else
+
+					World:SetFlag(100000014,1)
+					World:AddFlag(99999,-35000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足，或前置条件未解锁。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="ZKJ2"  Parent="BaseFillingStory">
+		<DisplayName>主-玄阶</DisplayName>
+		<Desc>[NAME]打开了玄阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>地形研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 450000 and World:GetFlag(100000011) == 1]]></Condition>
+				<Tip>科技点需求:45W 解锁建筑地井，每日定点生产随机矿料，维修费白天8点-夜间5点每秒2科技点</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000021) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000021,1)
+				world:UnlockBuilding("WX_KMDJ")
+				World:AddFlag(99999,-450000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁，或前置科技未研究");</NOResult>
+			</li>
+			<li>
+				<Display>配料研制</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 300000]]></Condition>
+				<Tip>科技点需求:30w 解锁配件包-红点瞄准镜兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000022) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000022,1)
+
+				World:AddFlag(99999,-300000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>黑心商人</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 500000]]></Condition>
+				<Tip>科技点需求:50w 解锁卖出枪械选项。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000023) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000023,1)
+
+				World:AddFlag(99999,-500000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>步枪研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 10000000  and World:GetFlag(100000012) == 1 ]]></Condition>
+				<Tip>科技点需求:100w 解锁步枪兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000024) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000024,1)
+
+				World:AddFlag(99999,-10000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>冲锋枪研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 10000000  and World:GetFlag(100000012) == 1 ]]></Condition>
+				<Tip>科技点需求:100w 解锁冲锋枪兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000025) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000025,1)
+
+				World:AddFlag(99999,-10000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>散弹枪研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 10000000  and World:GetFlag(100000012) == 1 ]]></Condition>
+				<Tip>科技点需求:100w 解锁冲锋枪兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000026) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000026,1)
+
+				World:AddFlag(99999,-10000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>高精度子弹研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 1200000 and World:GetFlag(100000024) == 1 and World:GetFlag(100000025) == 1 and World:GetFlag(100000026) == 1 ]]></Condition>
+				<Tip>科技点需求:120w 提高枪械百分20伤害。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000027) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000027,1)
+
+				World:AddFlag(99999,-12000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>枪斗术</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 1500000  ]]></Condition>
+				<Tip>科技点需求:150w 提高全体单位的身体恢复能力。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(100000028) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000028,1)
+				World:AddModifier("ZDJS_QDS")
+				World:AddFlag(99999,-15000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="ZKJ3"  Parent="BaseFillingStory">
+		<DisplayName>主-地阶</DisplayName>
+		<Desc>[NAME]打开了地阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>灵力探地</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 8500000]]></Condition>
+				<Tip>科技点需求:850w 提高矿井的产量</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(100000031) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(100000031,1)
+					World:AddFlag(99999,-8500000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>循环再生</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 9000000]]></Condition>
+				<Tip>科技点需求:900w 增加一次矿产产出次数，提高维修费为4。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(100000032) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(100000032,1)
+					World:AddFlag(99999,-9000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>心跳训练</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 5000000]]></Condition>
+				<Tip>科技点需求:500w 提高小人潜行值3点。每次300积分</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000033) == 1 then
+					local m = me.npcObj.PropertyMgr:FindModifier("QX_ZDS")
+					if m.Stack == 10 then
+					me:AddMsg("[NAME]这个小伙已经进行过10训练，练无可练了。");
+					else
+					me:AddMsg("[NAME]进行了一次心跳训练获得潜行者提升");
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						if JF >= 300 then
+							me:AddModifier("ZDJS_XTXL")
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",300)
+							me:AddMsg(XT("[NAME]消耗积分300，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg("积分不足，无法进行训练");
+						end
+					end
+				else
+				World:SetFlag(100000033,1)
+				World:AddFlag(99999,-6000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>有氧呼吸</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 7000000]]></Condition>
+				<Tip>科技点需求:700w 解锁训练有氧呼吸，每次训练花费1000积分，提高小人2战斗等级上限。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000034) == 1 then
+					local m = me.npcObj.PropertyMgr:FindModifier("ZDJS_YYXL")
+					if m.Stack == 10 then
+					me:AddMsg("[NAME]这个小伙已经进行过10训练，练无可练了。");
+					else
+					me:AddMsg("[NAME]进行了一次有氧训练获得潜行者提升");
+						local JF = GameMain:GetMod("ZTWP"):GetItemCount("Item_PTJB")
+						if JF >== 1000 then
+							me:AddModifier("ZDJS_YYXL")
+							GameMain:GetMod("ZTWP"):SubItemCount("Item_PTJB",1000)
+							me:AddMsg(XT("[NAME]消耗积分1000，剩余积分"..JF.."，剩余\n支线剧情D："..JQD.."个 \n支线剧情C："..JQC.."个 \n支线剧情B："..JQB.."个 \n支线剧情A："..JQA.."个 \n支线剧情S："..JQS.."个"));
+						else
+							me:AddMsg("积分不足，无法进行训练");
+						end
+					end
+				else
+				World:SetFlag(100000034,1)
+				World:AddFlag(99999,-7000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>倍镜科技</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 6000000 and  World:GetFlag(100000022) == 1]]></Condition>
+				<Tip>科技点需求:600w 解锁四倍镜兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000035) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000035,1)
+				World:AddFlag(99999,-5000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>利中利</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 7000000]]></Condition>
+				<Tip>科技点需求:700w 解锁材料的出售。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000037) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000037,1)
+				World:AddFlag(99999,-7000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>专断独行</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 5000000 and World:GetFlag(10000038) == 15  ]]></Condition>
+				<Tip>科技点需求:500w 提高出售物品的百分20积分兑换量。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000038) == 16 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000038,1)
+				World:AddFlag(99999,-7000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>狙击枪研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 8000000 and World:GetFlag(10000024) == 1  ]]></Condition>
+				<Tip>科技点需求:800w 解锁狙击枪兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000039) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000039,1)
+				World:AddFlag(99999,-8000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>重机枪研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 9000000 and World:GetFlag(10000025) == 1  ]]></Condition>
+				<Tip>科技点需求:900w 解锁重机兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000040) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000040,1)
+				World:AddFlag(99999,-9000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>枪械工厂研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 9000000 and World:GetFlag(100000392) == 1  ]]></Condition>
+				<Tip>科技点需求:900w 解锁建筑枪械工厂，维修费6点科技点每天早8点至晚6点。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000391) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000391,1)
+				world:UnlockBuilding("WX_QXGC")
+				World:AddFlag(99999,-9000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>高级压缩火药研究</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 9000000  ]]></Condition>
+				<Tip>科技点需求:900w 解锁建筑枪械工厂科技研究，同时解锁火箭筒兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000392) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000392,1)
+				World:AddFlag(99999,-9000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>精心养护</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 7000000  ]]></Condition>
+				<Tip>科技点需求:700w 减少所有枪械耐久度的消耗，可升3阶每次700w。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000393) == 0 then
+				World:SetFlag(100000393,1)
+				World:AddFlag(99999,-7000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				elseif World:GetFlag(100000393) == 1 then
+				World:SetFlag(100000393,2)
+				World:AddFlag(99999,-7000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				elseif World:GetFlag(100000393) == 2 then
+				World:SetFlag(100000393,3)
+				World:AddFlag(99999,-7000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				else
+				me:AddMsg("该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>手枪精通</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 6000000 World:GetFlag(100000044) == 0 ]]></Condition>
+				<Tip>科技点需求:600w 提高手枪伤害200。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000394) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000394,1)
+				World:AddFlag(99999,-6000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>冲锋枪连射</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 12000000 and World:GetFlag(100000394) == 0   ]]></Condition>
+				<Tip>科技点需求:1200w 使冲锋枪每次攻击造成额外伤害200。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000395) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000395,1)
+				World:AddFlag(99999,-6000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="ZKJ4"  Parent="BaseFillingStory">
+		<DisplayName>主-天阶</DisplayName>
+		<Desc>[NAME]打开了天阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>深度解析</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 13000000]]></Condition>
+				<Tip>科技点需求:1300w 2阶解锁新的生产建筑，深层地井，维修费3点全天消耗。生产高阶材料</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(100000041) == 1 then
+					World:SetFlag(100000041,1)
+					World:AddFlag(99999,-13000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					elseif World:GetFlag(100000041) == 2 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(100000041,1)
+					World:AddFlag(99999,-13000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>修理技工</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 11000000 ]]></Condition>
+				<Tip>科技点需求:1100w 解锁枪械工厂中维修选项，每阶修复耐久度10/30/60。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(100000042) == 1 then
+					World:SetFlag(100000042,2)
+					World:AddFlag(99999,-11000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					elseif World:GetFlag(100000042) == 2 then
+					World:SetFlag(100000042,3)
+					World:AddFlag(99999,-11000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					elseif World:GetFlag(100000042) == 3 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(100000042,1)
+					World:AddFlag(99999,-11000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>凡人崛起</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 14000000]]></Condition>
+				<Tip>科技点需求:1400w 解锁防护服的兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000043) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000043,1)
+				World:AddFlag(99999,-14000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或未研究地动星沉");</NOResult>
+			</li>
+			<li>
+				<Display>P-92</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 10000000 and World:GetFlag(100000394) == 0 ]]></Condition>
+				<Tip>科技点需求:1000w 解锁P92手枪，每攻击30次，造成一次百分百概率的爆头伤害。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000044) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000044,1)
+				World:AddFlag(99999,-10000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或未研究地动星沉");</NOResult>
+			</li>
+			<li>
+				<Display>AG-25</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 15000000 and World:GetFlag(100000394) == 0 ]]></Condition>
+				<Tip>科技点需求:1500w 解锁AG—25步枪，拥有比普通步枪更高的伤害。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000045) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000045,1)
+				World:AddFlag(99999,-15000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或未研究地动星沉");</NOResult>
+			</li>
+			<li>
+				<Display>冰霜弹</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 15000000 and World:GetFlag(100000394) == 0 ]]></Condition>
+				<Tip>科技点需求:1500w ，解锁冰霜弹兑换，每次攻击减少其移动速度与法宝攻击间隔。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(100000046) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(100000046,1)
+				World:AddFlag(99999,-15000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或未研究地动星沉");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="ZKJ5"  Parent="BaseFillingStory">
+		<DisplayName>主-神阶</DisplayName>
+		<Desc>[NAME]打开了神阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>星空之路（前置：星门与唤星阵）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 35000 and World:GetFlag(10000042) == 1 and World:GetFlag(10000043) == 1 ]]></Condition>
+				<Tip>科技点需求:35000/60000/200000 解锁星宫中星空之路选项</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000051) > 2 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					elseif World:GetFlag(10000051) == 2 then
+					World:SetFlag(10000051,3)
+					World:AddFlag(99999,-20000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					elseif World:GetFlag(10000051) == 1 then
+					World:SetFlag(10000051,2)
+					World:AddFlag(99999,-60000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000051,1)
+					World:AddFlag(99999,-35000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或前置条件未满足");</NOResult>
+			</li>
+			<li>
+				<Display>星契（前置：星印）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 28000 and World:GetFlag(10000021) == 1]]></Condition>
+				<Tip>科技点需求:28000 解锁提高星石产量。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000052) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000052,1)
+					World:AddFlag(99999,-28000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>星皇界（与星门互斥）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 30000 and World:GetFlag(10000042) == 0 ]]></Condition>
+				<Tip>科技点需求:30000 解锁可进入星阵中的星皇界获取月石。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000053) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000053,1)
+				World:AddFlag(99999,-30000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或已研究星门");</NOResult>
+			</li>
+			<li>
+				<Display>紫薇之意（前置：星眼）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 32000 and World:GetFlag(10000026) == 1 ]]></Condition>
+				<Tip>科技点需求:32000 解锁进阶星刀的额外效果，每攻击15次可减低对手身体强度系数1，小于5后，造成穿透伤害对身体。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000054) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000054,1)
+				World:AddFlag(99999,-32000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或未研究前置");</NOResult>
+			</li>
+			<li>
+				<Display>荧惑之意（互斥：贪狼之意）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 27000 and World:GetFlag(10000056) == 0 ]]></Condition>
+				<Tip>科技点需求:27000 解锁升级战衣获得额外秘体攻击强度百分10提升。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000055) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000055,1)
+				World:AddFlag(99999,-27000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或已研究互斥科技");</NOResult>
+			</li>
+			<li>
+				<Display>贪狼之意（互斥：荧惑之意）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 47000 and World:GetFlag(10000055) == 0 ]]></Condition>
+				<Tip>科技点需求:47000 解锁塔：褐祖。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000056) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000056,1)
+				world:UnlockBuilding("WX_XMPT1")
+				World:AddFlag(99999,-47000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或已研究互斥科技");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="ZKJ6"  Parent="BaseFillingStory">
+		<DisplayName>主-圣阶</DisplayName>
+		<Desc>[NAME]打开了圣阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>明浩（互斥：推星掌）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 60000 and World:GetFlag(10000062) == 0 ]]></Condition>
+				<Tip>科技点需求:60000 解锁明浩塔</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000061) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000061,1)
+				world:UnlockBuilding("WX_XMPT2")
+				World:AddFlag(99999,-60000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或前置条件未满足");</NOResult>
+			</li>
+			<li>
+				<Display>推星掌（前置：星印）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 68000 and World:GetFlag(10000061) == 0]]></Condition>
+				<Tip>科技点需求:68000 解锁星阵武技，命中敌人后减低其移动速度。。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000062) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000062,1)
+					World:AddFlag(99999,-68000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>摘星阁</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 70000 ]]></Condition>
+				<Tip>科技点需求:70000 解锁星宫顶层摘星阁。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000063) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000063,1)
+				World:AddFlag(99999,-70000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或已研究星门");</NOResult>
+			</li>
+			<li>
+				<Display>摘星手（互斥：墨灵）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 52000 and World:GetFlag(10000065) == 0 ]]></Condition>
+				<Tip>科技点需求:32000 解锁秘体摘星手，星阵中获取。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000064) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000064,1)
+				World:AddFlag(99999,-32000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或未研究前置");</NOResult>
+			</li>
+			<li>
+				<Display>墨灵（互斥：摘星手）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 60000 and World:GetFlag(10000064) == 0 ]]></Condition>
+				<Tip>科技点需求:60000 解锁塔墨灵。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000065) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000065,1)
+				world:UnlockBuilding("WX_XMPT3")
+				World:AddFlag(99999,-60000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或已研究互斥科技");</NOResult>
+			</li>
+			
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="ZKJ7"  Parent="BaseFillingStory">
+		<DisplayName>主-仙阶</DisplayName>
+		<Desc>[NAME]打开了仙阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>幕星蕴刹</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 1000000  ]]></Condition>
+				<Tip>科技点需求:100w 解锁三座塔的羁绊效果。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000071) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000071,1)
+
+				World:AddFlag(99999,-1000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁");</NOResult>
+			</li>
+			<li>
+				<Display>挽星辰</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 1000000]]></Condition>
+				<Tip>科技点需求:100w 解锁星阵仙法，挽星辰。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000072) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000072,1)
+					World:AddFlag(99999,-1000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>星玄之体</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >== 1000000 ]]></Condition>
+				<Tip>科技点需求:100w 解锁星阵仙体。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000073) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000073,1)
+				World:AddFlag(99999,-1000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足，或前置条件未解锁或已研究星门");</NOResult>
+			</li>
+			
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("ZKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了科技大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</List></Stories>

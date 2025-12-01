@@ -1,0 +1,834 @@
+<BPSuperPartDefs><List>
+	<Def Name="WX_BSR"><!--一阶丧尸秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>兽人</Prefix>
+		<Suffix>身躯</Suffix>
+		<Desc>兽人，永不为奴！</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/gsq/Prefab/tixiu/fx_langya01</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1\n提高秘体防御成功率</Desc>
+				<Modifier>WX_SD_1</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="DefRate" AddV="0.1"/>
+					<li Name="AtkPower" AddV="1000"/>
+
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高防御1</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" AddV="1000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SSZ"><!--一阶丧尸秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>丧尸</Prefix>
+		<Suffix>臂</Suffix>
+		<Desc>附带尸毒特性，会将感染者变异为丧尸</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Shadow/ShadowImpactNormal</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1\n提高秘体防御成功率</Desc>
+				<Modifier>WX_SD_1</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="DefRate" AddV="0.1"/>
+					<li Name="AtkPower" AddV="1"/>
+
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高防御1</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" AddV="1"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SSJBTB"><!--二阶丧尸秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>畸变</Prefix>
+		<Suffix>铁臂</Suffix>
+		<Desc>附带尸毒特性，会将感染者变异为丧尸</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Light/LightImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>根本上提高攻击防御1000</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+					<li Name="AtkPower" BAddV="1000"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高攻击防御1000</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+					<li Name="AtkPower" BAddV="1000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>根本上提高攻击防御1000</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+					<li Name="AtkPower" BAddV="1000"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SSJBXM"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>畸变</Prefix>
+		<Suffix>邪眸</Suffix>
+		<Desc>附带尸毒特性，会将感染者变异为丧尸</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1\n提高秘体防御成功率</Desc>
+				<Modifier>WX_XM</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="DefRate" AddV="0.1"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高防御攻击100</Desc>
+				<Modifier>WX_XM1</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="100"/>
+					<li Name="AtkPower" BAddV="100"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier>WX_XM2</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" BAddV="0.6"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SSJBJP"><!--测试秘体-->
+		<EquptAdvise>Defense</EquptAdvise>
+		<Prefix>畸变</Prefix>
+		<Suffix>疾跑</Suffix>
+		<Desc>攻速较快</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1\n提高秘体防御成功率</Desc>
+				<Modifier>JP</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="DefRate" AddV="0.1"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高功防100</Desc>
+				<Modifier>JP</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="100"/>
+					<li Name="AtkPower" BAddV="100"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier>JP</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SSJBFH"><!--测试秘体-->
+		<EquptAdvise>Defense</EquptAdvise>
+		<Prefix>畸变</Prefix>
+		<Suffix>缝合</Suffix>
+		<Desc>身体强度与自愈能力，以及护盾值高</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1\n提高秘体防御成功率</Desc>
+				<Modifier>FH</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="DefRate" AddV="0.1"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高功防100</Desc>
+				<Modifier>FH</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="100"/>
+					<li Name="AtkPower" BAddV="100"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier>FH</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" AddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SSJBBM"><!--测试秘体-->
+		<EquptAdvise>Effect</EquptAdvise>
+		<Prefix>畸变</Prefix>
+		<Suffix>BOOM</Suffix>
+		<Desc>附带尸毒特性，会将感染者变异为丧尸</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1\n提高秘体防御成功率</Desc>
+				<Modifier>SS_BM1</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.1"/>
+					<li Name="DefRate" AddV="0.1"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高攻击防御200</Desc>
+				<Modifier>SS_BM2</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="200"/>
+					<li Name="AtkPower" BAddV="200"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier>SS_BM3</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.25"/>
+					<li Name="CatchFabao" BAddV="0.25"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	
+	
+	<Def Name="SSJBGT"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>畸变</Prefix>
+		<Suffix>鬼瞳</Suffix>
+		<Desc>附带尸毒特性，会将感染者变异为丧尸</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n根本上提高攻击力1\n提高秘体防御成功率</Desc>
+				<Modifier>WX_GT</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.3"/>
+					<li Name="DefRate" AddV="0.3"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高防御攻击1000</Desc>
+				<Modifier>WX_GT</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="1000"/>
+					<li Name="AtkPower" BAddV="1000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier>WX_GT</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" BAddV="0.5"/>
+					<li Name="CatchFabao" AddV="0.75"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>	
+	<Def Name="SSYBDX"><!--测试秘体-->
+		<EquptAdvise>Effect</EquptAdvise>
+		<Prefix>异变</Prefix>
+		<Suffix>毒至心</Suffix>
+		<Desc>每次攻击额外增加三阶尸毒十层，携带血清者效果减半</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n提高秘体防御成功率</Desc>
+				<Modifier>SSW_DX</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.3"/>
+					<li Name="DefRate" AddV="0.3"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高攻击防御2000</Desc>
+				<Modifier>SSW_DX</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="2000"/>
+					<li Name="AtkPower" BAddV="2000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier>SSW_DX</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.55"/>
+					<li Name="CatchFabao" BAddV="0.55"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	<Def Name="SSYBCB"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>异变</Prefix>
+		<Suffix>长臂</Suffix>
+		<Desc>超高基础属性</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n提高秘体防御成功率</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.6"/>
+					<li Name="DefRate" AddV="0.6"/>
+					<li Name="DefPower" BAddV="4000"/>
+					<li Name="AtkPower" BAddV="4000"/>
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高攻击防御2000</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="4000"/>
+					<li Name="AtkPower" BAddV="4000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.75"/>
+					<li Name="CatchFabao" BAddV="0.75"/>
+					<li Name="DefPower" BAddV="4000"/>
+					<li Name="AtkPower" BAddV="4000"/>
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	<Def Name="SSYBCX"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>异变</Prefix>
+		<Suffix>嗜血之心</Suffix>
+		<Desc>超高基础属性</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n提高秘体防御成功率</Desc>
+				<Modifier>SSW_SX1</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.4"/>
+					<li Name="DefRate" AddV="0.4"/>
+					
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高攻击防御2000</Desc>
+				<Modifier>SSW_SX2</Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="2000"/>
+					<li Name="AtkPower" BAddV="2000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier>SSW_SX3</Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.55"/>
+					<li Name="CatchFabao" BAddV="0.55"/>
+
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	
+	<Def Name="SSYBWZ"><!--测试秘体-->
+		<EquptAdvise>Attack</EquptAdvise>
+		<Prefix>异变</Prefix>
+		<Suffix>丧尸王</Suffix>
+		<Desc>召唤小丧尸</Desc>
+		<AtkAni>TXtieshankao</AtkAni>
+		<DefAni>TXshenqufangyu</DefAni>
+		<AtkEffect>Effect/A/Prefabs/Projectiles/Frost/FrostImpactTiny</AtkEffect>
+		<Parts>
+			<li Name="LeftHumerus"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv0_Base_Bone" Levels="33,54,99"/>
+				</Labels>
+			</li>
+			<li Name="LeftPostbrachium"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_F01_WuHuiJingHua" Levels="0,3,9"/>
+				</Labels>
+			</li>
+			<li Name="LeftRadiusAndUlna"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv2_B01_WuHuiJingHua" Levels="1,4,9"/>
+				</Labels>
+			</li>
+				<li Name="LeftMetacarpal"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_B01_WuHuiJingHua" Levels="4,4,4"/>
+				</Labels>
+			</li>
+			<li Name="LeftForearm"><!--紫府-->
+				<Labels>
+					<li Name="QuenchingLabel_Lv3_F01_EXHuo" Levels="2,3,4"/>
+				</Labels>
+			</li>
+		</Parts>
+		<Levels>
+			<li>
+				<Title>第一重</Title>
+				<Desc>提高秘体攻击命中率\n提高秘体防御成功率</Desc>
+				<Modifier>SSW_WZ1</Modifier>
+				<SuperPartProperties>
+					<li Name="AtkRate" AddV="0.4"/>
+					<li Name="DefRate" AddV="0.4"/>
+					
+				</SuperPartProperties>
+				
+			</li>
+			<li>
+				<Title>第二重</Title>
+				<Desc>根本上提高攻击防御2000</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="DefPower" BAddV="2000"/>
+					<li Name="AtkPower" BAddV="2000"/>
+				</SuperPartProperties>
+			</li>
+			<li>
+				<Title>第三重</Title>
+				<Desc>提高秘体法宝镇压率0.25\n提高秘体灵气护盾穿透率0.25</Desc>
+				<Modifier></Modifier>
+				<SuperPartProperties>
+					<li Name="ArmorPenetration" AddV="0.55"/>
+					<li Name="CatchFabao" BAddV="0.55"/>
+
+				</SuperPartProperties>
+			</li>
+		</Levels>
+	</Def>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></BPSuperPartDefs>

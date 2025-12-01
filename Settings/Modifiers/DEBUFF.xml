@@ -1,0 +1,570 @@
+<ModifierDefs><List>
+	<Modifier Name="WX_SHD" Type="Normal">
+		<DisplayName>破甲</DisplayName>
+		<Desc>降低护盾值</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>10</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_ShieldConversionRate" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SHJS" Type="Normal">
+		<DisplayName>伤害加深</DisplayName>
+		<Desc>提高受到的灵力伤害</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+	<Modifier Name="WX_SHJS2" Type="Normal">
+		<DisplayName>伤害加深</DisplayName>
+		<Desc>提高受到的体修伤害</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+	</Modifier>
+		<Modifier Name="WX_SM" Type="Normal">
+		<DisplayName>噬命</DisplayName>
+		<Desc>降低了300寿元</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="MaxAge" AddV="-300"/>
+		</Properties>
+	</Modifier>
+	
+	<Modifier Name="WX_STX1" Type="Normal">
+		<DisplayName>虚弱</DisplayName>
+		<Desc>降低了秘体全局攻击力</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-10000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX2" Type="Normal">
+		<DisplayName>破防</DisplayName>
+		<Desc>降低了秘体全局防御</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="-10000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX3" Type="Normal">
+		<DisplayName>钝化</DisplayName>
+		<Desc>降低了秘体全局穿透</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_ArmorPenetration" AddV="-0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX4" Type="Normal">
+		<DisplayName>威压</DisplayName>
+		<Desc>降低了秘体全局镇压</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_CatchFabao" AddV="-0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX5" Type="Normal">
+		<DisplayName>秘体miss</DisplayName>
+		<Desc>降低了秘体进攻命中率</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkRate" AddV="-0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX6" Type="Normal">
+		<DisplayName>无法抵御</DisplayName>
+		<Desc>降低了秘体防御率</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_DefRate" AddV="-0.1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX7" Type="Normal">
+		<DisplayName>狂暴</DisplayName>
+		<Desc>降低了激狂之怒倍率</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_AngerFireEffectAddp" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX8" Type="Normal">
+		<DisplayName>饥饿</DisplayName>
+		<Desc>降低了饱食度最大值</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_MaxFoodAddtion" AddV="-5"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX9" Type="Normal">
+		<DisplayName>内气不通</DisplayName>
+		<Desc>降低了真气最大值</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPratice_MaxZhenQi" AddV="-1000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX10" Type="Normal">
+		<DisplayName>经脉闭塞</DisplayName>
+		<Desc>降低了真气恢复值</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPratice_RecoverZhenQi" AddV="-20"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX11" Type="Normal">
+		<DisplayName>负重</DisplayName>
+		<Desc>降低了镇压消耗</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPratice_CatchFaboValue" AddV="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX12" Type="Normal">
+		<DisplayName>断</DisplayName>
+		<Desc>降低了秘体进攻栏</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAtk_EquptMaxCount" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX13" Type="Normal">
+		<DisplayName>禁</DisplayName>
+		<Desc>降低了秘体效果栏</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartBuff_EquptMaxCount" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX14" Type="Normal">
+		<DisplayName>封</DisplayName>
+		<Desc>降低了秘体防御栏</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartDef_EquptMaxCount" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_STX15" Type="Normal">
+		<DisplayName>乱体</DisplayName>
+		<Desc>降低了秘体全局攻击力和防御力</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="BodyPractice_SuperPartAddp_AtkPower" AddV="-1000"/>
+			<li Name="BodyPractice_SuperPartAddp_DefPower" AddV="-1000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SX1" Type="Normal">
+		<DisplayName>坠仙</DisplayName>
+		<Desc>降低了法宝威力与术法威力</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoPowerAddP" AddP="-0.25"/>
+			<li Name="NpcFight_SpellPowerAddP" AddP="-0.25"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SX2" Type="Normal">
+		<DisplayName>噬灵</DisplayName>
+		<Desc>降低了灵气上限5w</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="NpcLingMaxValue" AddV="-50000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SX3" Type="Normal">
+		<DisplayName>灵乱</DisplayName>
+		<Desc>降低了灵气恢复速度</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="LingAbsorbSpeed" AddV="-1000"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SX4" Type="Normal">
+		<DisplayName>重力场</DisplayName>
+		<Desc>降低了法宝攻击间隔</Desc>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Properties>
+			<li Name="NpcFight_FabaoCoolDownAddP" AddV="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_SJN_1" Type="Normal">
+		<DisplayName>全能力下降</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Fight" LevelOver="-1"/><!-- 御物 -->
+				<li Name="Qi" LevelOver="-1"/><!-- 气感 -->
+				<li Name="Fabao" LevelOver="-1"/><!-- 法宝 -->
+				<li Name="DouFa" LevelOver="-1"/><!-- 斗法 -->
+				<li Name="Barrier" LevelOver="-1"/><!-- 护盾 -->
+				<li Name="Zhen" LevelOver="-1"/><!-- 阵法 -->
+				<li Name="FightSkill" LevelOver="-1"/><!-- 术法 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SJN_2" Type="Normal">
+		<DisplayName>御器上限降低</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+			<li Name="Fight" LevelOver="-1"/><!-- 御物 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SJN_3" Type="Normal">
+		<DisplayName>气感上限降低</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Qi" LevelOver="-1"/><!-- 气感 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SJN_4" Type="Normal">
+		<DisplayName>法宝上限降低</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Fabao" LevelOver="-1"/><!-- 法宝 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SJN_5" Type="Normal">
+		<DisplayName>斗法上限降低</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="DouFa" LevelOver="-1"/><!-- 斗法 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SJN_6" Type="Normal">
+		<DisplayName>术法上限降低</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="FightSkill" LevelOver="-1"/><!-- 术法 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SJN_7" Type="Normal">
+		<DisplayName>护盾上限降低</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Barrier" LevelOver="-1"/><!-- 护盾 -->
+				
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_SJN_8" Type="Normal">
+		<DisplayName>阵法上限降低</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Zhen" LevelOver="-1"/><!-- 阵法-->
+				
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_1" Type="Normal">
+		<DisplayName>全能力增强</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Fight" LevelOver="1"/><!-- 御物 -->
+				<li Name="Qi" LevelOver="1"/><!-- 气感 -->
+				<li Name="Fabao" LevelOver="1"/><!-- 法宝 -->
+				<li Name="DouFa" LevelOver="1"/><!-- 斗法 -->
+				<li Name="Barrier" LevelOver="1"/><!-- 护盾 -->
+				<li Name="Zhen" LevelOver="1"/><!-- 阵法 -->
+				<li Name="FightSkill" LevelOver="1"/><!-- 术法 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_2" Type="Normal">
+		<DisplayName>御器上限提高</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+			<li Name="Fight" LevelOver="1"/><!-- 御物 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_3" Type="Normal">
+		<DisplayName>气感上限提高</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Qi" LevelOver="1"/><!-- 气感 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_4" Type="Normal">
+		<DisplayName>法宝上限提高</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Fabao" LevelOver="1"/><!-- 法宝 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_5" Type="Normal">
+		<DisplayName>斗法上限提高</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="DouFa" LevelOver="1"/><!-- 斗法 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_6" Type="Normal">
+		<DisplayName>术法上限提高</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="FightSkill" LevelOver="1"/><!-- 术法 -->
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_7" Type="Normal">
+		<DisplayName>护盾上限提高</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Barrier" LevelOver="1"/><!-- 护盾 -->
+				
+		</Skills>
+	</Modifier>
+	<Modifier Name="WX_ZJN_8" Type="Normal">
+		<DisplayName>阵法上限提高</DisplayName>
+		<MaxStack>999</MaxStack>
+		<Duration>20</Duration>
+		<Display>1</Display><Sync>1</Sync>
+		<Skills>
+				<li Name="Zhen" LevelOver="1"/><!-- 阵法-->
+				
+		</Skills>
+	</Modifier>
+	
+	<Modifier Name="WX_FS" Type="Normal">
+		<DisplayName>五行减少</DisplayName>
+		<Desc>减少五行抗性</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>  
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_WXKXJ" Type="Normal">
+		<DisplayName>五行减少</DisplayName>
+		<Desc>减少五行抗性</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>  
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="-1"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="-1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_WXKXZ" Type="Normal">
+		<DisplayName>五行增加</DisplayName>
+		<Desc>提高五行抗性</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Properties>  
+				<li Name="NpcFight_ShieldResistanceToJin" AddV="1"/>
+				<li Name="NpcFight_ShieldResistanceToMu" AddV="1"/>
+				<li Name="NpcFight_ShieldResistanceToShui" AddV="1"/>
+				<li Name="NpcFight_ShieldResistanceToHuo" AddV="1"/>
+				<li Name="NpcFight_ShieldResistanceToTu" AddV="1"/>
+		</Properties>
+	</Modifier>
+	<Modifier Name="WX_WD" Type="Normal">
+		<DisplayName>无敌</DisplayName>
+		<Desc>无敌状态</Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_GODMODE</li>
+		</SpecialFlags>
+		<EffectBind>
+			<li Path="Effect/System/Shield/StormShield" />
+		</EffectBind>
+	</Modifier>
+	<Modifier Name="WX_HM" Type="Normal">
+		<DisplayName>昏迷</DisplayName>
+		<Desc>陷入昏迷</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<Damages>
+			<li Part="Brain" Damage="LostSoul"/>
+		</Damages>
+	</Modifier>
+	<Modifier Name="WX_JXT" Type="Normal">
+		<DisplayName>缴械</DisplayName>
+		<Desc>使体修无法攻击</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_BODY_FORCE_DEF</li>
+		</SpecialFlags>
+	</Modifier>
+	<Modifier Name="WX_CM" Type="Normal">
+		<DisplayName>沉默</DisplayName>
+		<Desc>无法使用术法</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_FORBID_SKILL</li>
+		</SpecialFlags>
+	</Modifier>
+	<Modifier Name="WX_JX" Type="Normal">
+		<DisplayName>缴械</DisplayName>
+		<Desc>无法使用法宝攻击</Desc>
+		<MaxStack>99</MaxStack>
+		<Duration>1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<SpecialFlags>
+			<li>FLAG_FORBID_FABAO</li>
+		</SpecialFlags>
+	</Modifier>
+		<Modifier Name="MY_NormalAttack" Type="Normal">
+		<DisplayName>免疫体修伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_FabaoAttack" Type="Normal">
+		<DisplayName>免疫法宝伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_SkillAttack" Type="Normal">
+		<DisplayName>免疫法术伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_None" Type="Normal">
+		<DisplayName>免疫无属性伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_Jin" Type="Normal">
+		<DisplayName>免疫金属性伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_Mu" Type="Normal">
+		<DisplayName>免疫木属性伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_Shui" Type="Normal">
+		<DisplayName>免疫水属性伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_Huo" Type="Normal">
+		<DisplayName>免疫火属性伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier> 
+	<Modifier Name="MY_Tu" Type="Normal">
+		<DisplayName>免疫土属性伤害</DisplayName>
+		<Desc></Desc>
+		<MaxStack>9999</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+	</Modifier>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</List></ModifierDefs>

@@ -1,0 +1,107 @@
+<FightSkills><List>
+
+		
+	
+	<Skill Name="XXFKJ3_4"><!--单体强力伤害，减术法和法宝威力3000百分比-->
+		<DisplayName>地动星沉</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\XXFKJ3_4.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>22</SingTime>
+		<CD>30</CD>
+		<LingCost>3000</LingCost>
+		<SelectFight>1</SelectFight>
+		<Value>200</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>XXFKJ3_4</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>1</MissileEffect>
+		<BombEffect>61</BombEffect>
+		<HitEffect>33</HitEffect>	
+	</Skill>
+	
+	<Skill Name="XXFKJ4_4"><!--单体强力伤害，减术法和法宝威力3000百分比-->
+		<DisplayName>群星坠</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\XXFKJ3_4.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>20</SingTime>
+		<CD>40</CD>
+		<LingCost>9000</LingCost>
+		<SelectFight>1</SelectFight>
+		<Value>400</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>XXFKJ4_4</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>AllNpc</SelectType>
+		<MissileEffect>1</MissileEffect>
+		<BombEffect>61</BombEffect>
+		<HitEffect>33</HitEffect>	
+	</Skill>
+	<Skill Name="XXFKJ7_2"><!--单体强力伤害，减术法和法宝威力3000百分比-->
+		<DisplayName>挽星辰</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\XXFKJ3_4.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>30</SingTime>
+		<CD>60</CD>
+		<LingCost>9000</LingCost>
+		<SelectFight>1</SelectFight>
+		<Value>800</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>XXFKJ7_2</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>AllNpc</SelectType>
+		<MissileEffect>1</MissileEffect>
+		<BombEffect>61</BombEffect>
+		<HitEffect>33</HitEffect>	
+	</Skill>
+	
+	<Skill Name="XXFKJ6_2"><!--单体强力伤害，减术法和法宝威力3000百分比-->
+		<DisplayName>推星掌</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\XXFKJ3_4.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>20</SingTime>
+		<CD>60</CD>
+		<LingCost>0</LingCost>
+		<SelectFight>1</SelectFight>
+		<Value>300</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<ClassName>XXFKJ6_2</ClassName>
+		<Shape>Missile</Shape>
+		<SelectType>Target</SelectType>
+		<MissileEffect>1</MissileEffect>
+		<BombEffect>61</BombEffect>
+		<HitEffect>33</HitEffect>	
+	</Skill>
+	<Skill Name="XXFKJ6_4"><!--单体强力伤害，减术法和法宝威力3000百分比-->
+		<DisplayName>推星掌</DisplayName>
+		<Icon>Spr\Object\JNTB\ZDJN\XXFKJ3_4.png</Icon>
+		<IsTemplate>0</IsTemplate>
+		<Kind>Damage</Kind>
+		<Element>None</Element>
+		<ShowInUI>1</ShowInUI>
+		<SingTime>20</SingTime>
+		<CD>60</CD>
+		<LingCost>0</LingCost>
+		<SelectFight>1</SelectFight>
+		<Value>1600</Value>
+		<TargetCamp>Enemy</TargetCamp>
+		<Shape>Missile</Shape>
+		<SelectType>AllNpc</SelectType>
+		<MissileEffect>1</MissileEffect>
+		<BombEffect>61</BombEffect>
+		<HitEffect>33</HitEffect>	
+	</Skill>
+	
+</List></FightSkills>

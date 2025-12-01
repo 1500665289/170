@@ -1,0 +1,86 @@
+﻿<Gongs><List>
+	<Gong Name="Gong_SS">
+		<DisplayName>丧尸</DisplayName>
+		<Desc>异变而来的种族，拥有天生的修行方法。</Desc>
+		<SelectDesc>踏上体修之路意味着与精气神三者彻底合一，与灵气绝缘，无法使用任何玄妙之物，从此行走天地只凭肉身，确定要走上这条路么？</SelectDesc>
+		<FiveBaseNeed>-1,-1,-1,-1,-1</FiveBaseNeed>
+		<ElementKind>None</ElementKind>
+		<GongKind>Body</GongKind>
+		<Hide>1</Hide>
+		<SuperParts>
+			<li>SSZ</li>
+			
+		</SuperParts>
+		<QuenchingMethods>
+			<li>BPQuenchingMethods_ReQuenching</li>
+			<li>BPQuenchingMethods_1</li>
+			<li>BPQuenchingMethods_2</li>
+			<li>BPQuenchingMethods_3</li>
+			<li>BPQuenchingMethods_4</li>
+			<li>BPQuenchingMethods_5</li>
+			<li>BPQuenchingMethods_6</li>
+		</QuenchingMethods>
+		<Magic>
+			<li>Magic_Body_Banyunqixue</li>
+		</Magic>
+		<Stages>
+			<Stage Name="Stage1" Level="3">
+				<DisplayName>一阶丧尸</DisplayName>
+				<Desc></Desc>
+				<Value>10000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>腐烂形态</DisplayName>
+						<Desc></Desc>
+						<CostTime>100</CostTime>
+						<SuccessChange>1</SuccessChange>
+						
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			<Stage Name="Stage2" Level="6">
+				<DisplayName>二阶丧尸</DisplayName>
+				<Desc></Desc>
+				<Value>500000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>异变</DisplayName>
+						<Desc></Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>1</SuccessChange>
+					</Neck>
+				</Necks>
+			</Stage>
+			<Stage Name="Stage3" Level="9">
+				<DisplayName>丧尸头领</DisplayName>
+				<Desc></Desc>
+				<Value>1000000</Value>
+				<Necks>
+					<Neck Location="1" Kind="Chance">
+						<DisplayName>灵智</DisplayName>
+						<Desc></Desc>
+						<CostTime>300</CostTime>
+						<SuccessChange>1</SuccessChange>
+					
+					</Neck>
+				</Necks>
+			</Stage>
+			
+			
+			<Stage Name="Stage4" Level="12">
+				<DisplayName>丧尸王</DisplayName>
+				<Desc></Desc>
+				<Value>100000000</Value>
+				<Necks>
+					<Neck Location="1" Kind="God">
+						<DisplayName>尸王</DisplayName>
+						<Desc></Desc>
+						<ThunderValue>100000000</ThunderValue>
+						<NeckCountdown>3000</NeckCountdown>
+					</Neck>
+				</Necks>
+			</Stage>
+		</Stages>
+	</Gong>
+</List></Gongs>

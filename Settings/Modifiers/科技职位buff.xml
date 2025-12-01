@@ -1,0 +1,86 @@
+<ModifierDefs><List>
+	
+	<Modifier Name="KJCH1" Type="Normal">
+		<DisplayName>精英弟子</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH1</LuaClassName>
+	</Modifier> 
+	<Modifier Name="KJCH2" Type="Normal">
+		<DisplayName>供奉</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH2</LuaClassName>
+	</Modifier> 
+	<Modifier Name="KJCH3" Type="Normal">
+		<DisplayName>大能</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH3</LuaClassName>
+	</Modifier> 
+	<Modifier Name="KJCH4" Type="Normal">
+		<DisplayName>长老</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH4</LuaClassName>
+	</Modifier> 
+	<Modifier Name="KJCH5" Type="Normal">
+		<DisplayName>宿老</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH5</LuaClassName>
+	</Modifier> 
+	<Modifier Name="KJCH6" Type="Normal">
+		<DisplayName>掌门</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH6</LuaClassName>
+	</Modifier> 
+	<Modifier Name="KJCH7" Type="Normal">
+		<DisplayName>地仙</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH7</LuaClassName>
+	</Modifier> 
+	<Modifier Name="KJCH8" Type="Normal">
+		<DisplayName>仙</DisplayName>
+		<Desc>！</Desc>
+		<MaxStack>1</MaxStack>
+		<Duration>-1</Duration>
+		<Display>1</Display>
+		<Sync>1</Sync>
+		<LuaClassName>KJCH8</LuaClassName>
+	</Modifier> 	
+
+
+
+
+	
+
+
+
+
+
+
+</List></ModifierDefs>

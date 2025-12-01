@@ -1,0 +1,79 @@
+﻿<ThingDefs><List>
+	
+	<ThingDef Type="Building" Name="WX_MLQYT" Parent="OrnamentBase">
+	<TexPath>Spr\Building\ZKJ\MLQYT.png</TexPath>
+	<TexScale>1.2</TexScale>
+	<ThingName>秘灵祈愿台</ThingName>
+	<Desc>每日可根据选择项目生产灵石、灵晶、灵枢、灵脉。</Desc>
+	<ClassName>WX_MLQYT</ClassName>
+	<Tags>
+	</Tags>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0.2</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>20</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>600</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "3000"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="进行祈愿" Desc="跪拜秘灵祈愿台" Cost="1" Appoint="3" Scope="0"  Story="WX_MLQYT"/>
+		
+		</StoryBnts>
+	</ThingDef>
+	<ThingDef Type="Building" Name="WX_LSYZ" Parent="OrnamentBase">
+	<TexPath>Spr\Building\ZKJ\LSYM.png</TexPath>
+	<TexScale>1</TexScale>
+	<ThingName>灵枢源阵</ThingName>
+	<Desc>每日可根据选择项目生产各种矿物。</Desc>
+	<Tags>
+	</Tags>
+	<Collider>
+		<!--(0Empty 1Base) 2EmptyCenter 4EmptyWorkspace-->
+		<Data>
+
+		[1,3,1],
+		[1,1,1],
+		</Data>
+		<Offset>
+			<y>0.5</y>
+			<x>0</x>
+		</Offset>
+	</Collider>
+	<Building>
+		<MaxCount>20</MaxCount>
+		<BePackage>0</BePackage>
+		<BeMade>
+			<WorkToMake>100</WorkToMake>
+				<Quality>0</Quality>
+				
+				<CostStuffCount>600</CostStuffCount>
+				<CostItems>
+					<Item name = "Item_PTJB" count = "2000"/>
+				</CostItems>
+		</BeMade>		
+	</Building>
+	<StoryBnts>
+		<li Name="进行设置" Desc="打开源阵控制台" Cost="1" Appoint="3" Scope="0"  Story="WX_MLQYT"/>
+		
+		</StoryBnts>
+	</ThingDef>
+	
+</List></ThingDefs>

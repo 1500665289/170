@@ -1,0 +1,48 @@
+<ThingDefs><List>
+	<ThingDef Type="Item" Name="Item_TBDXQ" Parent="MaterialBase">
+	<ThingName>T病毒血清</ThingName> 
+	<TexPath>Spr\Object\CL\TBDXQ.PNG</TexPath> 
+	<Desc>可免疫丧尸毒，并清理丧尸毒在毒发前。</Desc> 
+	<MaxStack>9999</MaxStack>
+	<Rate>12</Rate>  
+	<Beauty>24</Beauty>
+	<MaxHitPoints>1000</MaxHitPoints>  
+	<ElementKind>None</ElementKind>
+	<Flammability>   燃烧性
+		<Flammability>0.2</Flammability> 
+		<FlameSpawnThingDef></FlameSpawnThingDef>
+		<FlameSpawnChance>0</FlameSpawnChance>
+		<BurningPoint>200</BurningPoint>
+	</Flammability>
+	<Item>
+			<Prices>
+				<TalkType>2</TalkType>
+				<BaseCount>1</BaseCount>
+				<li PriceTag="School">
+					<BuyPrice Value="15000"/>
+					<SalePrice Value="1000" />
+				</li>
+				<li PriceTag="Trade">
+					<BuyPrice Value="15000" />
+					<SalePrice Value="2000" />
+				</li>
+				<li PriceTag="Auction">
+					<BuyPrice Value="10000" />
+					<SalePrice Value="900" />
+				</li>
+			</Prices>
+		<Food>
+			<Modifier>WX_TBDXQ</Modifier>
+		</Food>
+	</Item>
+	<Element>
+		<Kind>None</Kind>   五行属性
+		<Value>6</Value>         五行强度
+		<Radius>2</Radius>    影响范围
+		<Failing>0.8</Failing>
+		<FailRadius>2</FailRadius>
+	</Element>
+	</ThingDef>
+	
+	
+</List></ThingDefs>

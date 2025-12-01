@@ -1,0 +1,15 @@
+<BPAttitudes><List>
+	<Def Name="WX_SLDF2X3"><!--通用常驻-->
+		<DisplayName>狂战士</DisplayName>
+		<Desc>瞬间激发，获得高额疼痛忍耐加成，获得高额秘体全局攻击力加成，获得高额身体强度提高，同时寿元流逝速度增加。</Desc>
+		<AtkFabaoCount>999</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>WX_SLDF2X32</Modifier><!--用可见的modfieir-->
+	</Def>
+	<Def Name="WX_SLDP2X3"><!--通用常驻-->
+		<DisplayName>狂战士</DisplayName>
+		<Desc>瞬间激发，开启期间获得大量真气恢复速度，同时每秒减少1年寿元。</Desc>
+		<AtkFabaoCount>999</AtkFabaoCount><!--至少多少个法宝以我为目标时会攻击法宝-->
+		<Modifier>WX_SLDF2X31</Modifier><!--用可见的modfieir-->
+	</Def>
+	
+</List></BPAttitudes>

@@ -1,0 +1,870 @@
+<Stories><List>
+	<Story Name="XXFKJ0"  Parent="BaseFillingStory">
+		<DisplayName>星象峰大殿</DisplayName>
+
+		<Desc>[NAME]走进了星象峰大殿。</Desc>
+
+		<Selections>
+			<li>
+				<Display>查看科技树</Display>
+				<!--<DisplayCondition>World:GetFlag(1000000) == 10</DisplayCondition>-->
+				<OKResult>	
+				me:TriggerStory("XXFKJ0_0");
+				</OKResult>
+			</li>
+			
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[
+				me:AddMsg("[NAME]离开了星象峰大殿");
+
+				]]>
+				</OKResult>
+			
+			</li>
+			
+		</Selections>
+	</Story>
+	
+	<Story Name="XXFKJ0_0"  Parent="BaseFillingStory">
+		<DisplayName>星象-科技树</DisplayName>
+		<Desc>[NAME]打开了星象科技树。（外交类选项暂时没效果，下回更新）</Desc>
+		<Selections>
+			<li>
+				<Display>黄阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100001) >= 2]]></Condition>
+				<OKResult>	me:TriggerStory("XXFKJ1");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>玄阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100002) >= 3]]></Condition>
+				<OKResult>	me:TriggerStory("XXFKJ2");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>地阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100003) >= 2]]></Condition>
+				<OKResult>	me:TriggerStory("XXFKJ3");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>天阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100004) >= 1]]></Condition>
+				<OKResult>	me:TriggerStory("XXFKJ4");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>神阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100005) >= 1]]></Condition>
+				<OKResult>	me:TriggerStory("XXFKJ5");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>圣阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100006) >= 1]]></Condition>
+				<OKResult>	me:TriggerStory("XXFKJ6");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>仙阶科技</Display>
+				<Condition><![CDATA[	World:GetFlag(1100007) >= 1]]></Condition>
+				<OKResult>	me:TriggerStory("XXFKJ7");</OKResult>
+				<NOResult>me:AddMsg("未达成解锁条件");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="XXFKJ1"  Parent="BaseFillingStory">
+		<DisplayName>星象-黄阶</DisplayName>
+		<Desc>[NAME]打开了黄阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>星解术</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 3500000]]></Condition>
+				<Tip>科技点需求:3500000/8500000/15000000 增加全体修炼速度百分50/100(玄阶)/200（天阶）,重复点击可进阶。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 3500000 then
+				if World:GetFlag(10000011) > 2 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				elseif World:GetFlag(10000011) == 2 then
+					if World:GetFlag(1000004) == 1 and World:GetFlag(99999) >= 15000000 then
+					me:AddModifier("XXFKJ1_1_2")
+					World:SetFlag(10000011,3)
+					World:AddFlag(99999,-15000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究满级。剩余科技点"..KJD.."");
+					else
+					me:AddMsg("门派品阶不足，或科技点不足。无法升级，剩余科技点"..KJD.."");
+					end
+				elseif World:GetFlag(10000011) == 1 then
+					if World:GetFlag(1000002) == 1 and World:GetFlag(99999) >= 8500000 then
+					me:AddModifier("XXFKJ1_1_1")
+					World:SetFlag(10000011,2)
+					World:AddFlag(99999,-8500000)
+					else
+					me:AddMsg("门派品阶不足，或科技点不足。无法升级，剩余科技点"..KJD.."");
+					end
+				else
+				me:AddModifier("XXFKJ1_1")
+				World:SetFlag(10000011,1)
+				World:AddFlag(99999,-3500000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				else
+				me:AddMsg("科技点不足。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星斗术</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 5500000]]></Condition>
+				<Tip>科技点需求:5500000/45000000 增加全体术法等级上限5/5（天阶）级,重复点击可进阶。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 5500000 then
+					if World:GetFlag(10000012) > 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					elseif World:GetFlag(10000012) == 1 then
+						if World:GetFlag(1000004) == 1 and World:GetFlag(99999) >= 45000000 then
+						me:AddModifier("XXFKJ1_2_1")
+						World:SetFlag(10000012,2)
+						World:AddFlag(99999,-45000000)
+						me:AddMsg("经过一段时间研究，该科技已被研究满级。剩余科技点"..KJD.."");
+						else
+						me:AddMsg("门派品阶不足，或科技点不足。无法升级，剩余科技点"..KJD.."");
+						end
+					else
+					me:AddModifier("XXFKJ1_2")
+					World:SetFlag(10000012,1)
+					World:AddFlag(99999,-5500000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星淬术</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 3500000]]></Condition>
+				<Tip>科技点需求:3500000 每次每人使用20点科技值百分80概率成功增加1点身体强大系数（仅限炼气期），百分10概率死亡。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(99999) >= 3500000 then
+					if World:GetFlag(10000013) == 1 then
+					local R = me:RandomInt(0,100)
+						if me:GetGLevel() > 3 then
+						me:AddMsg("[NAME]境界过高无法有效吸收其中精华。剩余科技点"..KJD.."");
+						else
+							if R >= 90 then
+							me:DoDeath("星淬失败，剩余科技点"..KJD.."")
+							World:AddFlag(99999,-20)
+							elseif R >=80 then
+							me:AddMsg("淬炼失败了。剩余科技点"..KJD.."");
+							World:AddFlag(99999,-20)
+							else	
+								local M = me.npcObj.PropertyMgr:FindModifier("XXFKJ1_3");
+								if M.Stack == 10 then
+								me:AddMsg("[NAME]已经达到星淬术淬炼极限了。剩余科技点"..KJD.."");
+								else
+								me.npcObj.PropertyMgr:AddModifier("XXFKJ1_3",1,false,1,false,-1)
+								World:AddFlag(99999,-20)
+								end
+							end
+						end
+					else
+					World:SetFlag(10000013,1)
+					World:AddFlag(99999,-3500000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				else
+				me:AddMsg("科技点不足。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	<Story Name="XXFKJ2"  Parent="BaseFillingStory">
+		<DisplayName>星象-玄阶</DisplayName>
+		<Desc>[NAME]打开了玄阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>星宫</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 45000000]]></Condition>
+				<Tip>科技点需求:45000000 解锁建筑星宫（材料星石：50颗），聚灵50，范围4</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999) 
+				if World:GetFlag(10000021) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000021,1)
+				world:UnlockBuilding("WX_XMPXG")
+				World:AddFlag(99999,-45000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>引星诀</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 380000]]></Condition>
+				<Tip>科技点需求:380000/720000 增加全体术法威力百分100/200（天阶）级,重复点击可进阶。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000022) > 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				elseif World:GetFlag(10000022) == 1 then
+					if World:GetFlag(1000004) == 1 and World:GetFlag(99999) >= 720000 then
+					me:AddModifier("XXFKJ2_2_1")
+					World:SetFlag(10000022,2)
+					World:AddFlag(99999,-720000)
+					else
+					me:AddMsg("门派品阶不足，或科技点不足。无法升级，剩余科技点"..KJD.."");
+					end
+				else
+				me:AddModifier("XXFKJ2_2")
+				World:SetFlag(10000022,1)
+				World:AddFlag(99999,-380000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>夺星法</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 300000]]></Condition>
+				<Tip>科技点需求:300000 解锁建筑星阵，每天可从中获得一枚至四枚星石。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000023) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000023,1)
+				world:UnlockBuilding("WX_XMPXZ")
+				World:AddFlag(99999,-300000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>连星</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 500000  and World:GetFlag(10000025) == 0]]></Condition>
+				<Tip>科技点需求:500000/120000000 提高全体灵力恢复速度25/50。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000024) > 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				elseif  World:GetFlag(10000024) == 1 then
+				me:AddModifier("XXFKJ2_4_1")
+				World:SetFlag(10000024,2)
+				World:AddFlag(99999,-120000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究满级。剩余科技点"..KJD.."");
+				else
+				me:AddModifier("XXFKJ2_4")
+				World:SetFlag(10000024,1)
+				World:AddFlag(99999,-500000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星眼（互斥：连星、星耀）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 70000000 and World:GetFlag(10000024) == 0 and  and World:GetFlag(10000026) == 0 ]]></Condition>
+				<Tip>科技点需求:70000000 淬炼双眼需500科技点，有百分40概率瞎，瞎了就无法再淬炼，成功后可攻击时可探查敌方破绽，造成穿透伤害。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local R = me:RandomInt(0,100)
+				if World:GetFlag(10000025) == 1 then
+					if me.npcObj.PropertyMgr:HasModifier("XXFKJ2_5_1") then
+					me:AddMsg("[NAME]眼都瞎了还练啥。剩余科技点"..KJD.."");
+					else
+						if R >= 60 then
+						me:AddModifier("XXFKJ2_5")
+						me:AddMsg("[NAME]成功了。剩余科技点"..KJD.."");
+						World:AddFlag(99999,-500)
+						else
+						me:AddModifier("XXFKJ2_5_1")
+						World:AddFlag(99999,-500)
+						me:AddMsg("[NAME]失败了，瞎了。剩余科技点"..KJD.."");
+						end
+					end
+				else
+				World:SetFlag(10000025,1)
+				World:AddFlag(99999,-70000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星耀（互斥：星眼）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 600000  and World:GetFlag(10000025) == 0]]></Condition>
+				<Tip>科技点需求:600000 解锁星宫中设施：洗星池，可于池中炼体，获得自愈能力提升，金丹前有效。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				local R = me:RandomInt(0,100)
+				if World:GetFlag(10000026) == 1 then
+					me:AddMsg("该科技已经研究结束。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000026,1)
+				World:AddFlag(99999,-600000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="XXFKJ3"  Parent="BaseFillingStory">
+		<DisplayName>星象-地阶</DisplayName>
+		<Desc>[NAME]打开了地阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>星印</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 85000000]]></Condition>
+				<Tip>科技点需求:85000000 解锁星象峰额外拜访的秘境选项，解锁蕴星洞，蕴星洞探索终点，增加星阵每日获取量</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000031) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000031,1)
+					World:AddFlag(99999,-85000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星冠</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 900000]]></Condition>
+				<Tip>科技点需求:900000 解锁星象峰额外拜访的秘境选项探索，最终可获得群体加成护盾强度4点。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000032) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000032,1)
+					World:AddFlag(99999,-900000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星咒（前置：星沉地动）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 600000 and World:GetFlag(10000034) == 1 ]]></Condition>
+				<Tip>科技点需求:600000 解锁星象峰额外拜访的秘境选项探索，可对鹿汤山进行探索历练，可获得修行经验提升。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000033) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000033,1)
+				World:AddFlag(99999,-600000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或未研究地动星沉");</NOResult>
+			</li>
+			<li>
+				<Display>地动星沉</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 70000000]]></Condition>
+				<Tip>科技点需求:70000000 解锁术法：地动星沉于星阵中学习。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000034) > 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000034,1)
+				World:AddFlag(99999,-70000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星刀</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 500000]]></Condition>
+				<Tip>科技点需求:500000 解锁星宫内物品星刀兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000035) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000035,1)
+				World:AddFlag(99999,-500000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星尘战甲</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 500000]]></Condition>
+				<Tip>科技点需求:500000 解锁星宫内物品星尘战甲兑换。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000036) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000036,1)
+				World:AddFlag(99999,-500000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="XXFKJ4"  Parent="BaseFillingStory">
+		<DisplayName>星象-天阶</DisplayName>
+		<Desc>[NAME]打开了天阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>星衍术</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 1300000]]></Condition>
+				<Tip>科技点需求:1300000 解锁与天星门的求援选项</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000041) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000041,1)
+					World:AddFlag(99999,-1300000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>星门（前置：星冠，星咒，互斥：星皇界）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 1100000 and World:GetFlag(10000032) == 1 and World:GetFlag(10000033) == 1 and World:GetFlag(10000053) == 0 ]]></Condition>
+				<Tip>科技点需求:1100000 解锁星门后，拜访天星峰可不用再历练触发，在星宫即可触发沟通，每次消耗星石10颗。。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000042) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000042,1)
+					World:AddFlag(99999,-1100000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>唤星阵</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 1400000]]></Condition>
+				<Tip>科技点需求:1400000 解锁星宫中的唤星阵，对法宝进行淬炼，提高其法宝灵力上限125。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000043) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000043,1)
+				World:AddFlag(99999,-1400000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或未研究地动星沉");</NOResult>
+			</li>
+			<li>
+				<Display>群星坠</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 70000000]]></Condition>
+				<Tip>科技点需求:70000000 解锁术法：群星坠于星阵中学习。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000044) > 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000044,1)
+				World:AddFlag(99999,-70000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="XXFKJ5"  Parent="BaseFillingStory">
+		<DisplayName>星象-神阶</DisplayName>
+		<Desc>[NAME]打开了神阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>星空之路（前置：星门与唤星阵）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 35000000 and World:GetFlag(10000042) == 1 and World:GetFlag(10000043) == 1 ]]></Condition>
+				<Tip>科技点需求:35000000/60000000000/200000000 解锁星宫中星空之路选项</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000051) > 2 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					elseif World:GetFlag(10000051) == 2 then
+					World:SetFlag(10000051,3)
+					World:AddFlag(99999,-200000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					elseif World:GetFlag(10000051) == 1 then
+					World:SetFlag(10000051,2)
+					World:AddFlag(99999,-60000000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000051,1)
+					World:AddFlag(99999,-35000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或前置条件未满足");</NOResult>
+			</li>
+			<li>
+				<Display>星契（前置：星印）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 28000000 and World:GetFlag(10000021) == 1]]></Condition>
+				<Tip>科技点需求:28000000 解锁提高星石产量。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000052) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000052,1)
+					World:AddFlag(99999,-28000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>星皇界（与星门互斥）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 300000000 and World:GetFlag(10000042) == 0 ]]></Condition>
+				<Tip>科技点需求:300000000 解锁可进入星阵中的星皇界获取月石。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000053) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000053,1)
+				World:AddFlag(99999,-300000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或已研究星门");</NOResult>
+			</li>
+			<li>
+				<Display>紫薇之意（前置：星眼）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 32000000 and World:GetFlag(10000026) == 1 ]]></Condition>
+				<Tip>科技点需求:32000000 解锁进阶星刀的额外效果，每攻击15次可减低对手身体强度系数1，小于5后，造成穿透伤害对身体。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000054) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000054,1)
+				World:AddFlag(99999,-32000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或未研究前置");</NOResult>
+			</li>
+			<li>
+				<Display>荧惑之意（互斥：贪狼之意）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 270000000000000 and World:GetFlag(10000056) == 0 ]]></Condition>
+				<Tip>科技点需求:270000000000000 解锁升级战衣获得额外秘体攻击强度百分10提升。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000055) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000055,1)
+				World:AddFlag(99999,-270000000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或已研究互斥科技");</NOResult>
+			</li>
+			<li>
+				<Display>贪狼之意（互斥：荧惑之意）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 470000000000000 and World:GetFlag(10000055) == 0 ]]></Condition>
+				<Tip>科技点需求:470000000000000 解锁塔：褐祖。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000056) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000056,1)
+				world:UnlockBuilding("WX_XMPT1")
+				World:AddFlag(99999,-470000000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或已研究互斥科技");</NOResult>
+			</li>
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+	
+	<Story Name="XXFKJ6"  Parent="BaseFillingStory">
+		<DisplayName>星象-圣阶</DisplayName>
+		<Desc>[NAME]打开了圣阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>明浩（互斥：推星掌）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 60000000000 and World:GetFlag(10000062) == 0 ]]></Condition>
+				<Tip>科技点需求:60000000000 解锁明浩塔</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000061) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000061,1)
+				world:UnlockBuilding("WX_XMPT2")
+				World:AddFlag(99999,-60000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或前置条件未满足");</NOResult>
+			</li>
+			<li>
+				<Display>推星掌（前置：星印）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 6800000000 and World:GetFlag(10000061) == 0]]></Condition>
+				<Tip>科技点需求:6800000000 解锁星阵武技，命中敌人后减低其移动速度。。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000062) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000062,1)
+					World:AddFlag(99999,-6800000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>摘星阁</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 7000000000000 ]]></Condition>
+				<Tip>科技点需求:7000000000000 解锁星宫顶层摘星阁。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000063) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000063,1)
+				World:AddFlag(99999,-7000000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或已研究星门");</NOResult>
+			</li>
+			<li>
+				<Display>摘星手（互斥：墨灵）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 5200000000000 and World:GetFlag(10000065) == 0 ]]></Condition>
+				<Tip>科技点需求:5200000000000 解锁秘体摘星手，星阵中获取。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000064) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000064,1)
+				World:AddFlag(99999,-5200000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或未研究前置");</NOResult>
+			</li>
+			<li>
+				<Display>墨灵（互斥：摘星手）</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 600000000000 and World:GetFlag(10000064) == 0 ]]></Condition>
+				<Tip>科技点需求:600000000000 解锁塔墨灵。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000065) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000065,1)
+				world:UnlockBuilding("WX_XMPT3")
+				World:AddFlag(99999,-600000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或已研究互斥科技");</NOResult>
+			</li>
+			
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+	<Story Name="XXFKJ7"  Parent="BaseFillingStory">
+		<DisplayName>星象-仙阶</DisplayName>
+		<Desc>[NAME]打开了仙阶科技树。</Desc>
+		<Selections>
+			<li>
+				<Display>幕星蕴刹</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 100000000000  ]]></Condition>
+				<Tip>科技点需求:1000y 解锁三座塔的羁绊效果。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000071) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000071,1)
+
+				World:AddFlag(99999,-100000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足");</NOResult>
+			</li>
+			<li>
+				<Display>挽星辰</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 100000000000]]></Condition>
+				<Tip>科技点需求:1000y 解锁星阵仙法，挽星辰。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+					if World:GetFlag(10000072) == 1 then
+					me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+					else
+					World:SetFlag(10000072,1)
+					World:AddFlag(99999,-100000000000)
+					me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+					end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或前置需求未完成");</NOResult>
+			</li>
+			<li>
+				<Display>星玄之体</Display>
+				<Condition><![CDATA[	World:GetFlag(99999) >= 100000000000 ]]></Condition>
+				<Tip>科技点需求:100w 解锁星阵仙体。</Tip>
+				<OKResult><![CDATA[
+				local KJD = World:GetFlag(99999)
+				if World:GetFlag(10000073) == 1 then
+				me:AddMsg("该科技以升至满级，或已研究透彻，不需要重复研究。剩余科技点"..KJD.."");
+				else
+				World:SetFlag(10000073,1)
+				World:AddFlag(99999,-100000000000)
+				me:AddMsg("经过一段时间研究，该科技已被研究完成。剩余科技点"..KJD.."");
+				end
+				]]></OKResult>
+				<NOResult>me:AddMsg("科技点不足或已研究星门");</NOResult>
+			</li>
+			
+			<li>
+				<Display>返回上一层</Display> 
+				<OKResult><![CDATA[me:TriggerStory("XXFKJ0_0")]]></OKResult>
+			</li>
+			<li>
+				<Display>离开大殿</Display> 
+				<OKResult><![CDATA[me:AddMsg("[NAME]离开了星象峰大殿");]]></OKResult>
+			</li>
+		</Selections>
+	</Story>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</List></Stories>
